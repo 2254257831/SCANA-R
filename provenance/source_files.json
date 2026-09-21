@@ -1,0 +1,590 @@
+[
+  {
+    "source": "code/scana_experiments/audited_metrics.py",
+    "destination": "src/scana_experiments/audited_metrics.py",
+    "source_sha256": "95d91b9e504f38467af078798d82b392d67a24b046700f181497da24c9e97756",
+    "release_sha256": "95d91b9e504f38467af078798d82b392d67a24b046700f181497da24c9e97756",
+    "modified": false
+  },
+  {
+    "source": "code/scana_experiments/chunks.py",
+    "destination": "src/scana_experiments/chunks.py",
+    "source_sha256": "28797bbdb5d3a9282b4fbef669b7eedf8f568a14fac42a4226778f190aeaf77f",
+    "release_sha256": "28797bbdb5d3a9282b4fbef669b7eedf8f568a14fac42a4226778f190aeaf77f",
+    "modified": false
+  },
+  {
+    "source": "code/scana_experiments/config.py",
+    "destination": "src/scana_experiments/config.py",
+    "source_sha256": "f9ed482f2b11e63b15957a7fb8993357770843ddca107f9d8906f33ac468788c",
+    "release_sha256": "f9ed482f2b11e63b15957a7fb8993357770843ddca107f9d8906f33ac468788c",
+    "modified": false
+  },
+  {
+    "source": "code/scana_experiments/constraints.py",
+    "destination": "src/scana_experiments/constraints.py",
+    "source_sha256": "f7c82e3f2e0ee4ffdbe06ef98940a7aafb6f51e0faec80f324203bff1a27aebc",
+    "release_sha256": "f7c82e3f2e0ee4ffdbe06ef98940a7aafb6f51e0faec80f324203bff1a27aebc",
+    "modified": false
+  },
+  {
+    "source": "code/scana_experiments/experiments.py",
+    "destination": "src/scana_experiments/experiments.py",
+    "source_sha256": "4babbc75221aae05da40a37f788ec9783cc924ac48ede71153d32c83e233ab7c",
+    "release_sha256": "4babbc75221aae05da40a37f788ec9783cc924ac48ede71153d32c83e233ab7c",
+    "modified": false
+  },
+  {
+    "source": "code/scana_experiments/io_lerobot.py",
+    "destination": "src/scana_experiments/io_lerobot.py",
+    "source_sha256": "d6f4293f055c56868968a7415433d9f09e78fe4a95ddab38407e4ed38aa7b9e9",
+    "release_sha256": "d6f4293f055c56868968a7415433d9f09e78fe4a95ddab38407e4ed38aa7b9e9",
+    "modified": false
+  },
+  {
+    "source": "code/scana_experiments/metrics.py",
+    "destination": "src/scana_experiments/metrics.py",
+    "source_sha256": "23bcba8d0d556b510ae7a62cc36e1415f60208affe526de02eb3b279c94576b1",
+    "release_sha256": "23bcba8d0d556b510ae7a62cc36e1415f60208affe526de02eb3b279c94576b1",
+    "modified": false
+  },
+  {
+    "source": "code/scana_experiments/models.py",
+    "destination": "src/scana_experiments/models.py",
+    "source_sha256": "9ece735e0253026765df7bbebce214b0f496f77404c6d0169214cfa4cffff129",
+    "release_sha256": "9ece735e0253026765df7bbebce214b0f496f77404c6d0169214cfa4cffff129",
+    "modified": false
+  },
+  {
+    "source": "code/scana_experiments/recovery_augmentation.py",
+    "destination": "src/scana_experiments/recovery_augmentation.py",
+    "source_sha256": "b5a5d9f8be1b0623ecfb2106817f4feb17ff119496f2847d52f9ce33436d6cb9",
+    "release_sha256": "b5a5d9f8be1b0623ecfb2106817f4feb17ff119496f2847d52f9ce33436d6cb9",
+    "modified": false
+  },
+  {
+    "source": "code/scana_experiments/replay_augmentation.py",
+    "destination": "src/scana_experiments/replay_augmentation.py",
+    "source_sha256": "cc7d908537bef4f3becec1c55dd8835c8e40c1f0008081f36c3ab983bb668a93",
+    "release_sha256": "cc7d908537bef4f3becec1c55dd8835c8e40c1f0008081f36c3ab983bb668a93",
+    "modified": false
+  },
+  {
+    "source": "code/scana_experiments/__init__.py",
+    "destination": "src/scana_experiments/__init__.py",
+    "source_sha256": "48fdfbbec94402f792c3e1d6e6798dd6837f7e9b34ed2e3d2ceb957b10fbd6fc",
+    "release_sha256": "48fdfbbec94402f792c3e1d6e6798dd6837f7e9b34ed2e3d2ceb957b10fbd6fc",
+    "modified": false
+  },
+  {
+    "source": "code/tests/test_audited_evaluation.py",
+    "destination": "tests/test_audited_evaluation.py",
+    "source_sha256": "152a178cec82f7e66eb0dbb52e00ede7e5f3c91a53ee1657ad683c9cb051e03a",
+    "release_sha256": "adebe063b4bb5de4608cb8e03a0c829e25967055b98946f56076923c0fd6c3e0",
+    "modified": true
+  },
+  {
+    "source": "code/tests/test_recovery_augmentation.py",
+    "destination": "tests/test_recovery_augmentation.py",
+    "source_sha256": "a7185e8b2251530f5dbf9b97ce389b7caa9f2333b74e3eb45bf4328fec3f9f29",
+    "release_sha256": "a7185e8b2251530f5dbf9b97ce389b7caa9f2333b74e3eb45bf4328fec3f9f29",
+    "modified": false
+  },
+  {
+    "source": "code/tests/test_replay_augmentation.py",
+    "destination": "tests/test_replay_augmentation.py",
+    "source_sha256": "da267b79ad7c5f55699d51825722f29bf9609506429cb9dc03e80e6d67f7393a",
+    "release_sha256": "da267b79ad7c5f55699d51825722f29bf9609506429cb9dc03e80e6d67f7393a",
+    "modified": false
+  },
+  {
+    "source": "code/tests/test_scana_repairs.py",
+    "destination": "tests/test_scana_repairs.py",
+    "source_sha256": "e231de88370770e69b294c25781605b5fccd9e8a626bc6590e2c730d15409763",
+    "release_sha256": "e231de88370770e69b294c25781605b5fccd9e8a626bc6590e2c730d15409763",
+    "modified": false
+  },
+  {
+    "source": "投稿/图表/SCANA_R_Figures1-4_OriginalPPT_v38_20260921/Figure1.png",
+    "destination": "docs/assets/figure1.png",
+    "source_sha256": "ef504d583a5c4717d7c9e8d4773835ca185e8620a4a2b0aa0eae33f35df74870",
+    "release_sha256": "ef504d583a5c4717d7c9e8d4773835ca185e8620a4a2b0aa0eae33f35df74870",
+    "modified": false
+  },
+  {
+    "source": "投稿/图表/SCANA_R_Figures1-4_OriginalPPT_v38_20260921/Figure2.png",
+    "destination": "docs/assets/figure2.png",
+    "source_sha256": "dd8e51d91a1b59a98e8b21ebf7c2e0f68b1f61a2df6874d01ff8f8b51aae6436",
+    "release_sha256": "dd8e51d91a1b59a98e8b21ebf7c2e0f68b1f61a2df6874d01ff8f8b51aae6436",
+    "modified": false
+  },
+  {
+    "source": "投稿/图表/SCANA_R_Figures1-4_OriginalPPT_v38_20260921/Figure3.png",
+    "destination": "docs/assets/figure3.png",
+    "source_sha256": "eed244bfcb52ba17f2c66e28d32fb02978dea2e1fd15e7916697918f763eff74",
+    "release_sha256": "eed244bfcb52ba17f2c66e28d32fb02978dea2e1fd15e7916697918f763eff74",
+    "modified": false
+  },
+  {
+    "source": "投稿/图表/SCANA_R_Figures1-4_OriginalPPT_v38_20260921/Figure4.png",
+    "destination": "docs/assets/figure4.png",
+    "source_sha256": "ece8af5fa68c586c64f3f36e01186bcdc6441a1eca48ab55924a649125a1f925",
+    "release_sha256": "ece8af5fa68c586c64f3f36e01186bcdc6441a1eca48ab55924a649125a1f925",
+    "modified": false
+  },
+  {
+    "source": "投稿/图表/SCANA_R_Figures1-4_OriginalPPT_v38_20260921/SCANA_R_四图_原PPT局部适配_TimesNewRoman_v38_20260921.pptx",
+    "destination": "figures/scana-r-method-figures.pptx",
+    "source_sha256": "c7991a9a83a6ae0921c6f3fdf664c5ddcb6303c20a4a32d92a688551a8d597ee",
+    "release_sha256": "c7991a9a83a6ae0921c6f3fdf664c5ddcb6303c20a4a32d92a688551a8d597ee",
+    "modified": false
+  },
+  {
+    "source": "revision_work/full_repair_v35_20260918/simulation/act/constants.py",
+    "destination": "third_party/act/constants.py",
+    "source_sha256": "2e27d4412e2b7e1f2e4148105fdf514d8c52ec6c8f1c86ef0549c475e8b91d86",
+    "release_sha256": "2e27d4412e2b7e1f2e4148105fdf514d8c52ec6c8f1c86ef0549c475e8b91d86",
+    "modified": false
+  },
+  {
+    "source": "revision_work/full_repair_v35_20260918/simulation/act/sim_env.py",
+    "destination": "third_party/act/sim_env.py",
+    "source_sha256": "691f555cb3d8ede94c8ddc9c76a996f03b00f3bbdee9726efa44cd75b19d0ada",
+    "release_sha256": "691f555cb3d8ede94c8ddc9c76a996f03b00f3bbdee9726efa44cd75b19d0ada",
+    "modified": false
+  },
+  {
+    "source": "revision_work/full_repair_v35_20260918/simulation/act/ee_sim_env.py",
+    "destination": "third_party/act/ee_sim_env.py",
+    "source_sha256": "4c93d949c0829ffbbd1ea613e8278c095e8265ebf0dd33ca129958edd93e76c4",
+    "release_sha256": "4c93d949c0829ffbbd1ea613e8278c095e8265ebf0dd33ca129958edd93e76c4",
+    "modified": false
+  },
+  {
+    "source": "revision_work/full_repair_v35_20260918/simulation/act/scripted_policy.py",
+    "destination": "third_party/act/scripted_policy.py",
+    "source_sha256": "8b8425ea09c248d086e47eebaf3875be77bea7d3694fee83a1d7c8f0e1f25c36",
+    "release_sha256": "8b8425ea09c248d086e47eebaf3875be77bea7d3694fee83a1d7c8f0e1f25c36",
+    "modified": false
+  },
+  {
+    "source": "revision_work/full_repair_v35_20260918/simulation/act/utils.py",
+    "destination": "third_party/act/utils.py",
+    "source_sha256": "71315de9e613024e781f089c2f46baa6a94be79daa97a45c8601829fc1badcec",
+    "release_sha256": "71315de9e613024e781f089c2f46baa6a94be79daa97a45c8601829fc1badcec",
+    "modified": false
+  },
+  {
+    "source": "revision_work/full_repair_v35_20260918/simulation/act/LICENSE",
+    "destination": "third_party/act/LICENSE",
+    "source_sha256": "4666c312da313e6c46929f6695d06cf98a2e7359b9c7dcbb0ea232d01b32cd42",
+    "release_sha256": "4666c312da313e6c46929f6695d06cf98a2e7359b9c7dcbb0ea232d01b32cd42",
+    "modified": false
+  },
+  {
+    "source": "revision_work/full_repair_v35_20260918/simulation/act/assets/bimanual_viperx_ee_insertion.xml",
+    "destination": "third_party/act/assets/bimanual_viperx_ee_insertion.xml",
+    "source_sha256": "4b06ed8281af253229db966d869729a3087245d555bce62755b23f62891f873b",
+    "release_sha256": "4b06ed8281af253229db966d869729a3087245d555bce62755b23f62891f873b",
+    "modified": false
+  },
+  {
+    "source": "revision_work/full_repair_v35_20260918/simulation/act/assets/bimanual_viperx_ee_transfer_cube.xml",
+    "destination": "third_party/act/assets/bimanual_viperx_ee_transfer_cube.xml",
+    "source_sha256": "f206b36e128975685add6d73f7ae0d73b90e923d1c7f8a9f7b20fd996bd7d890",
+    "release_sha256": "f206b36e128975685add6d73f7ae0d73b90e923d1c7f8a9f7b20fd996bd7d890",
+    "modified": false
+  },
+  {
+    "source": "revision_work/full_repair_v35_20260918/simulation/act/assets/bimanual_viperx_insertion.xml",
+    "destination": "third_party/act/assets/bimanual_viperx_insertion.xml",
+    "source_sha256": "5da2b62720aff42dbc741c76b810f22fbfd12a38c7a15f8f0a376fe235b8c31c",
+    "release_sha256": "5da2b62720aff42dbc741c76b810f22fbfd12a38c7a15f8f0a376fe235b8c31c",
+    "modified": false
+  },
+  {
+    "source": "revision_work/full_repair_v35_20260918/simulation/act/assets/bimanual_viperx_transfer_cube.xml",
+    "destination": "third_party/act/assets/bimanual_viperx_transfer_cube.xml",
+    "source_sha256": "ff520a803d0de93661d84d0bdf20289401a63e57443b53bdb5b7ac41b27588f8",
+    "release_sha256": "ff520a803d0de93661d84d0bdf20289401a63e57443b53bdb5b7ac41b27588f8",
+    "modified": false
+  },
+  {
+    "source": "revision_work/full_repair_v35_20260918/simulation/act/assets/scene.xml",
+    "destination": "third_party/act/assets/scene.xml",
+    "source_sha256": "7928fe2c986159493c71cc74d5ab4606fafa8b651805f98df40a26ef141afd9b",
+    "release_sha256": "7928fe2c986159493c71cc74d5ab4606fafa8b651805f98df40a26ef141afd9b",
+    "modified": false
+  },
+  {
+    "source": "revision_work/full_repair_v35_20260918/simulation/act/assets/tabletop.stl",
+    "destination": "third_party/act/assets/tabletop.stl",
+    "source_sha256": "76a1571d1aa36520f2bd81c268991b99816c2a7819464d718e0fd9976fe30dce",
+    "release_sha256": "76a1571d1aa36520f2bd81c268991b99816c2a7819464d718e0fd9976fe30dce",
+    "modified": false
+  },
+  {
+    "source": "revision_work/full_repair_v35_20260918/simulation/act/assets/vx300s_10_custom_finger_left.stl",
+    "destination": "third_party/act/assets/vx300s_10_custom_finger_left.stl",
+    "source_sha256": "df73ae5b9058e5d50a6409ac2ab687dade75053a86591bb5e23ab051dbf2d659",
+    "release_sha256": "df73ae5b9058e5d50a6409ac2ab687dade75053a86591bb5e23ab051dbf2d659",
+    "modified": false
+  },
+  {
+    "source": "revision_work/full_repair_v35_20260918/simulation/act/assets/vx300s_10_custom_finger_right.stl",
+    "destination": "third_party/act/assets/vx300s_10_custom_finger_right.stl",
+    "source_sha256": "56fb3cc1236d4193106038adf8e457c7252ae9e86c7cee6dabf0578c53666358",
+    "release_sha256": "56fb3cc1236d4193106038adf8e457c7252ae9e86c7cee6dabf0578c53666358",
+    "modified": false
+  },
+  {
+    "source": "revision_work/full_repair_v35_20260918/simulation/act/assets/vx300s_10_gripper_finger.stl",
+    "destination": "third_party/act/assets/vx300s_10_gripper_finger.stl",
+    "source_sha256": "a4baacd9a64df1be60ea5e98f50f3c660e1b7a1fe9684aace6004c5058c09483",
+    "release_sha256": "a4baacd9a64df1be60ea5e98f50f3c660e1b7a1fe9684aace6004c5058c09483",
+    "modified": false
+  },
+  {
+    "source": "revision_work/full_repair_v35_20260918/simulation/act/assets/vx300s_11_ar_tag.stl",
+    "destination": "third_party/act/assets/vx300s_11_ar_tag.stl",
+    "source_sha256": "a18a1601074d29ed1d546ead70cd18fbb063f1db7b5b96b9f0365be714f3136a",
+    "release_sha256": "a18a1601074d29ed1d546ead70cd18fbb063f1db7b5b96b9f0365be714f3136a",
+    "modified": false
+  },
+  {
+    "source": "revision_work/full_repair_v35_20260918/simulation/act/assets/vx300s_1_base.stl",
+    "destination": "third_party/act/assets/vx300s_1_base.stl",
+    "source_sha256": "d100cafe656671ca8fde98fb6a4cf2d1b746995c51c61c25ad9ea2715635d146",
+    "release_sha256": "d100cafe656671ca8fde98fb6a4cf2d1b746995c51c61c25ad9ea2715635d146",
+    "modified": false
+  },
+  {
+    "source": "revision_work/full_repair_v35_20260918/simulation/act/assets/vx300s_2_shoulder.stl",
+    "destination": "third_party/act/assets/vx300s_2_shoulder.stl",
+    "source_sha256": "139745a74055cb0b23430bb5bc032bf68cf7bea5e4975c8f4c04107ae005f7f0",
+    "release_sha256": "139745a74055cb0b23430bb5bc032bf68cf7bea5e4975c8f4c04107ae005f7f0",
+    "modified": false
+  },
+  {
+    "source": "revision_work/full_repair_v35_20260918/simulation/act/assets/vx300s_3_upper_arm.stl",
+    "destination": "third_party/act/assets/vx300s_3_upper_arm.stl",
+    "source_sha256": "900f236320dd3d500870c5fde763b2d47502d51e043a5c377875e70237108729",
+    "release_sha256": "900f236320dd3d500870c5fde763b2d47502d51e043a5c377875e70237108729",
+    "modified": false
+  },
+  {
+    "source": "revision_work/full_repair_v35_20260918/simulation/act/assets/vx300s_4_upper_forearm.stl",
+    "destination": "third_party/act/assets/vx300s_4_upper_forearm.stl",
+    "source_sha256": "4104fc54bbfb8a9b533029f1e7e3ade3d54d638372b3195daa0c98f57e0295b5",
+    "release_sha256": "4104fc54bbfb8a9b533029f1e7e3ade3d54d638372b3195daa0c98f57e0295b5",
+    "modified": false
+  },
+  {
+    "source": "revision_work/full_repair_v35_20260918/simulation/act/assets/vx300s_5_lower_forearm.stl",
+    "destination": "third_party/act/assets/vx300s_5_lower_forearm.stl",
+    "source_sha256": "66814e27fa728056416e25e02e89eb7d34c51d51c51e7c3df873829037ddc6b8",
+    "release_sha256": "66814e27fa728056416e25e02e89eb7d34c51d51c51e7c3df873829037ddc6b8",
+    "modified": false
+  },
+  {
+    "source": "revision_work/full_repair_v35_20260918/simulation/act/assets/vx300s_6_wrist.stl",
+    "destination": "third_party/act/assets/vx300s_6_wrist.stl",
+    "source_sha256": "90eb145c85627968c3776ae6de23ccff7e112c9dd713c46bc9acdfdaa859a048",
+    "release_sha256": "90eb145c85627968c3776ae6de23ccff7e112c9dd713c46bc9acdfdaa859a048",
+    "modified": false
+  },
+  {
+    "source": "revision_work/full_repair_v35_20260918/simulation/act/assets/vx300s_7_gripper.stl",
+    "destination": "third_party/act/assets/vx300s_7_gripper.stl",
+    "source_sha256": "786c1077bfd226f14219581b11d5f19464ca95b17132e0bb7532503568f5af90",
+    "release_sha256": "786c1077bfd226f14219581b11d5f19464ca95b17132e0bb7532503568f5af90",
+    "modified": false
+  },
+  {
+    "source": "revision_work/full_repair_v35_20260918/simulation/act/assets/vx300s_8_gripper_prop.stl",
+    "destination": "third_party/act/assets/vx300s_8_gripper_prop.stl",
+    "source_sha256": "d1275a93fe2157c83dbc095617fb7e672888bdd48ec070a35ef4ab9ebd9755b0",
+    "release_sha256": "d1275a93fe2157c83dbc095617fb7e672888bdd48ec070a35ef4ab9ebd9755b0",
+    "modified": false
+  },
+  {
+    "source": "revision_work/full_repair_v35_20260918/simulation/act/assets/vx300s_9_gripper_bar.stl",
+    "destination": "third_party/act/assets/vx300s_9_gripper_bar.stl",
+    "source_sha256": "a4de62c9a2ed2c78433010e4c05530a1254b1774a7651967f406120c9bf8973e",
+    "release_sha256": "a4de62c9a2ed2c78433010e4c05530a1254b1774a7651967f406120c9bf8973e",
+    "modified": false
+  },
+  {
+    "source": "revision_work/full_repair_v35_20260918/simulation/act/assets/vx300s_dependencies.xml",
+    "destination": "third_party/act/assets/vx300s_dependencies.xml",
+    "source_sha256": "7d1000c9206e654ce76fe04eb131edab33efbafb5e74c8011e8e2ae758089274",
+    "release_sha256": "7d1000c9206e654ce76fe04eb131edab33efbafb5e74c8011e8e2ae758089274",
+    "modified": false
+  },
+  {
+    "source": "revision_work/full_repair_v35_20260918/simulation/act/assets/vx300s_left.xml",
+    "destination": "third_party/act/assets/vx300s_left.xml",
+    "source_sha256": "335b72f4bdd0e166e72de303c8ea0d987b54766960fba980aca8daed06a04086",
+    "release_sha256": "335b72f4bdd0e166e72de303c8ea0d987b54766960fba980aca8daed06a04086",
+    "modified": false
+  },
+  {
+    "source": "revision_work/full_repair_v35_20260918/simulation/act/assets/vx300s_right.xml",
+    "destination": "third_party/act/assets/vx300s_right.xml",
+    "source_sha256": "1977f05fcc800b8071b2e353202c3fec1ec58ef29d86f3982607b52b6235fb23",
+    "release_sha256": "1977f05fcc800b8071b2e353202c3fec1ec58ef29d86f3982607b52b6235fb23",
+    "modified": false
+  },
+  {
+    "source": "revision_work/full_repair_v35_20260918/sim_bridge.py",
+    "destination": "experiments/scana_r/sim_bridge.py",
+    "source_sha256": "d498878dbc01441291d6cf73cedd7d5bce966818a31ad405415e795c4fe8208e",
+    "release_sha256": "88b95f6b42cee185b7ab59fd2a924adad50e02c0a07abe09dfac3206a149a589",
+    "modified": true
+  },
+  {
+    "source": "revision_work/scana_algorithm_redesign_v36_20260919/experiment.py",
+    "destination": "experiments/scana_r/experiment.py",
+    "source_sha256": "7780f1b67d0c4bb83889aa55123a3742fdc0134db50d34f4c2d8df2ecf3a0e75",
+    "release_sha256": "b526b5130abe3ee25622823a86059b616939a8a8382a7df8f7e5bbba391ad60e",
+    "modified": true
+  },
+  {
+    "source": "revision_work/scana_algorithm_redesign_v36_20260919/recovery.py",
+    "destination": "experiments/scana_r/recovery.py",
+    "source_sha256": "633a0bd37617de2aa7633e2b6fd8af97994372f43f88fdc114a832f02d7133bf",
+    "release_sha256": "cdba5fbe3666af2d52f89d23dc892644ba61818ff0579d205d20b33a311e6be2",
+    "modified": true
+  },
+  {
+    "source": "revision_work/scana_algorithm_redesign_v36_20260919/final_evaluate.py",
+    "destination": "experiments/scana_r/final_evaluate.py",
+    "source_sha256": "2fdd0de8972970754fbd09de7a541538e19b0f46e54499c0aa05b075429a42ba",
+    "release_sha256": "bb0cf86300fb555707adcd36a5386352f0304d4a51e6310b85776b153cf227b2",
+    "modified": true
+  },
+  {
+    "source": "revision_work/scana_algorithm_redesign_v36_20260919/audit_recovery.py",
+    "destination": "experiments/scana_r/audit_recovery.py",
+    "source_sha256": "9cc97ad04b91c6326df733fe528df9fd0f8bfb1e021cc08718ff88943d1df748",
+    "release_sha256": "bee1e3f6334a8f41d310f23b30c042ee02569fbdecf835e4acb9cc896e7cdac6",
+    "modified": true
+  },
+  {
+    "source": "revision_work/scana_algorithm_redesign_v36_20260919/relocation_smoke.py",
+    "destination": "experiments/scana_r/replay_check.py",
+    "source_sha256": "747bb0db66da91447df6b4787cad7582ee28e4fbb3004895a7d6a1234e1aeb84",
+    "release_sha256": "747bb0db66da91447df6b4787cad7582ee28e4fbb3004895a7d6a1234e1aeb84",
+    "modified": false
+  },
+  {
+    "source": "revision_work/full_repair_v35_20260918/common.py",
+    "destination": "legacy/original_v35/common.py",
+    "source_sha256": "3f3648fad509f0fe5b65987eb201bf042740622ef61fa9a162f9f8bf915a440e",
+    "release_sha256": "3f3648fad509f0fe5b65987eb201bf042740622ef61fa9a162f9f8bf915a440e",
+    "modified": false
+  },
+  {
+    "source": "revision_work/full_repair_v35_20260918/run_local.py",
+    "destination": "legacy/original_v35/run_local.py",
+    "source_sha256": "51c5ecb1223021de85436785d723ac08efd08b8fef121b20a9c12e592d28ddb3",
+    "release_sha256": "51c5ecb1223021de85436785d723ac08efd08b8fef121b20a9c12e592d28ddb3",
+    "modified": false
+  },
+  {
+    "source": "revision_work/full_repair_v35_20260918/run_public.py",
+    "destination": "legacy/original_v35/run_public.py",
+    "source_sha256": "486ab793634615a01e4505c638b94a6f3e4dbb6df8cad97460746080234f378a",
+    "release_sha256": "486ab793634615a01e4505c638b94a6f3e4dbb6df8cad97460746080234f378a",
+    "modified": false
+  },
+  {
+    "source": "revision_work/full_repair_v35_20260918/run_simulation.py",
+    "destination": "legacy/original_v35/run_simulation.py",
+    "source_sha256": "dc8303e0dc7a76a7b3d3c974ec58f17c4e9330528db3725a53608f6c2eaa8afd",
+    "release_sha256": "dc8303e0dc7a76a7b3d3c974ec58f17c4e9330528db3725a53608f6c2eaa8afd",
+    "modified": false
+  },
+  {
+    "source": "revision_work/full_repair_v35_20260918/diagnose_support.py",
+    "destination": "legacy/original_v35/diagnose_support.py",
+    "source_sha256": "a4960e56d4c00b55839f25cfdc4766bac0ee241d86ab44d545bd6d0af9f06fff",
+    "release_sha256": "a4960e56d4c00b55839f25cfdc4766bac0ee241d86ab44d545bd6d0af9f06fff",
+    "modified": false
+  },
+  {
+    "source": "revision_work/full_repair_v35_20260918/summarize_simulation.py",
+    "destination": "legacy/original_v35/summarize_simulation.py",
+    "source_sha256": "04ea4eebf472865395c4903e7d7c86ad311270e1a9d916f79701a66c7640be2e",
+    "release_sha256": "04ea4eebf472865395c4903e7d7c86ad311270e1a9d916f79701a66c7640be2e",
+    "modified": false
+  },
+  {
+    "source": "tools/scana_public_lerobot_reproduce_20260714.py",
+    "destination": "legacy/tools/scana_public_lerobot_reproduce_20260714.py",
+    "source_sha256": "2928358358a81a99f31f7dc8d51f0f1b1ba8d95707059636367e69ffb9c8efb9",
+    "release_sha256": "2928358358a81a99f31f7dc8d51f0f1b1ba8d95707059636367e69ffb9c8efb9",
+    "modified": false
+  },
+  {
+    "source": "tools/scana_public_policy_physics_closure_20260714.py",
+    "destination": "legacy/tools/scana_public_policy_physics_closure_20260714.py",
+    "source_sha256": "2090fbdba473f81c8c397a5a371f91afe67ed8157317a7f057db958c7ed83e23",
+    "release_sha256": "2090fbdba473f81c8c397a5a371f91afe67ed8157317a7f057db958c7ed83e23",
+    "modified": false
+  },
+  {
+    "source": "code/run_scana_pipeline.py",
+    "destination": "legacy/tools/run_scana_pipeline.py",
+    "source_sha256": "0157d18b2aefc4ee0aa71068ca8d316ff9add651f9d729859dea8a4207dcff97",
+    "release_sha256": "0157d18b2aefc4ee0aa71068ca8d316ff9add651f9d729859dea8a4207dcff97",
+    "modified": false
+  },
+  {
+    "source": "code/run_scana_projection_ablation.py",
+    "destination": "legacy/tools/run_scana_projection_ablation.py",
+    "source_sha256": "58592098256020e6a76e0b1b0cdd908cebbcc790b67b2a52b4b0340cdd5313cc",
+    "release_sha256": "58592098256020e6a76e0b1b0cdd908cebbcc790b67b2a52b4b0340cdd5313cc",
+    "modified": false
+  },
+  {
+    "source": "code/analyze_action_noise.py",
+    "destination": "legacy/tools/analyze_action_noise.py",
+    "source_sha256": "cad89c9fa4d1fad613f3537a64b502f4b23345e86b368ce703791c7038dab4f9",
+    "release_sha256": "cad89c9fa4d1fad613f3537a64b502f4b23345e86b368ce703791c7038dab4f9",
+    "modified": false
+  },
+  {
+    "source": "code/plot_scana_offline_results.py",
+    "destination": "legacy/tools/plot_scana_offline_results.py",
+    "source_sha256": "cfbf31e5837bccde9f0b7af27c9d2ce3ca1c2cb827b589eb6c07458aeef5ac66",
+    "release_sha256": "cfbf31e5837bccde9f0b7af27c9d2ce3ca1c2cb827b589eb6c07458aeef5ac66",
+    "modified": false
+  },
+  {
+    "source": "code/configs/scana_single_arm.json",
+    "destination": "legacy/configs/scana_single_arm.json",
+    "source_sha256": "8f7b584ba22af572e05f0283c2e150da4d1c09d87bf31b2ba3242cb1645f13c2",
+    "release_sha256": "8f7b584ba22af572e05f0283c2e150da4d1c09d87bf31b2ba3242cb1645f13c2",
+    "modified": false
+  },
+  {
+    "source": "revision_work/scana_algorithm_redesign_v36_20260919/independent_test/per_episode.csv",
+    "destination": "results/independent_test/per_episode.csv",
+    "source_sha256": "f4d83bd1a4f02609003de48756b7c3203f5a9d4691ae48c082773a688baf125a",
+    "release_sha256": "f4d83bd1a4f02609003de48756b7c3203f5a9d4691ae48c082773a688baf125a",
+    "modified": false
+  },
+  {
+    "source": "revision_work/scana_algorithm_redesign_v36_20260919/independent_test/summary.csv",
+    "destination": "results/independent_test/summary.csv",
+    "source_sha256": "32eb132ca6f7844d4e93eeb3a03fb7c8f892fbf87916a92bf0844e5df4755c29",
+    "release_sha256": "32eb132ca6f7844d4e93eeb3a03fb7c8f892fbf87916a92bf0844e5df4755c29",
+    "modified": false
+  },
+  {
+    "source": "revision_work/scana_algorithm_redesign_v36_20260919/independent_test/paired_contrasts.csv",
+    "destination": "results/independent_test/paired_contrasts.csv",
+    "source_sha256": "4a02721cdda53ad5dc7714802afebef0068752467255544c735c1e5d37ec5920",
+    "release_sha256": "4a02721cdda53ad5dc7714802afebef0068752467255544c735c1e5d37ec5920",
+    "modified": false
+  },
+  {
+    "source": "revision_work/scana_algorithm_redesign_v36_20260919/independent_test/terminal_success.csv",
+    "destination": "results/independent_test/terminal_success.csv",
+    "source_sha256": "85109cdb99d11d70401c3eb83bba9be90e295dc4ec10dbd9b6a45407fbdccc87",
+    "release_sha256": "85109cdb99d11d70401c3eb83bba9be90e295dc4ec10dbd9b6a45407fbdccc87",
+    "modified": false
+  },
+  {
+    "source": "revision_work/scana_algorithm_redesign_v36_20260919/independent_test/protocol_frozen.json",
+    "destination": "results/independent_test/protocol_frozen.json",
+    "source_sha256": "86b95b9a3157f2dfa0dad32e5df311d80227951472908821e0d7f16aa30b3c23",
+    "release_sha256": "86b95b9a3157f2dfa0dad32e5df311d80227951472908821e0d7f16aa30b3c23",
+    "modified": false
+  },
+  {
+    "source": "revision_work/scana_algorithm_redesign_v36_20260919/independent_test/protocol_clarification.json",
+    "destination": "results/independent_test/protocol_clarification.json",
+    "source_sha256": "2f77744c2b94e3001a87ed2a8b795b8ed835fe786f78d8e3e2c009fae67a5d36",
+    "release_sha256": "2f77744c2b94e3001a87ed2a8b795b8ed835fe786f78d8e3e2c009fae67a5d36",
+    "modified": false
+  },
+  {
+    "source": "revision_work/scana_algorithm_redesign_v36_20260919/independent_test/integrity.json",
+    "destination": "results/independent_test/integrity.json",
+    "source_sha256": "de1391a56934127c0bd185adf9cb0c14e94fadc3bac6a5c7111bd00f3b16eee5",
+    "release_sha256": "de1391a56934127c0bd185adf9cb0c14e94fadc3bac6a5c7111bd00f3b16eee5",
+    "modified": false
+  },
+  {
+    "source": "revision_work/scana_algorithm_redesign_v36_20260919/independent_test/acceptance.json",
+    "destination": "results/independent_test/acceptance.json",
+    "source_sha256": "069df9bebe696672fbf16efc16775600cc94c44c5160c53a58b8453db3e4c8de",
+    "release_sha256": "069df9bebe696672fbf16efc16775600cc94c44c5160c53a58b8453db3e4c8de",
+    "modified": false
+  },
+  {
+    "source": "revision_work/scana_algorithm_redesign_v36_20260919/recovery_verified_development/per_episode.csv",
+    "destination": "results/development/per_episode.csv",
+    "source_sha256": "5f6013866cacfa56a67d5d6be49ce7348741330ca84f030591bb27e5d13c6116",
+    "release_sha256": "5f6013866cacfa56a67d5d6be49ce7348741330ca84f030591bb27e5d13c6116",
+    "modified": false
+  },
+  {
+    "source": "revision_work/scana_algorithm_redesign_v36_20260919/recovery_verified_development/summary.csv",
+    "destination": "results/development/summary.csv",
+    "source_sha256": "955b474642576ca9053166290692abd5f9da2ea7d2ddf89aeba8ea38530f62b0",
+    "release_sha256": "955b474642576ca9053166290692abd5f9da2ea7d2ddf89aeba8ea38530f62b0",
+    "modified": false
+  },
+  {
+    "source": "revision_work/scana_algorithm_redesign_v36_20260919/recovery_verified_development/protocol.json",
+    "destination": "results/development/protocol.json",
+    "source_sha256": "086a7749630b3ac803f8f8f8053132db25521e0936bfe0364fd7dc1c69717cdf",
+    "release_sha256": "086a7749630b3ac803f8f8f8053132db25521e0936bfe0364fd7dc1c69717cdf",
+    "modified": false
+  },
+  {
+    "source": "revision_work/scana_algorithm_redesign_v36_20260919/recovery_verified_development/branch_summary.csv",
+    "destination": "results/development/branch_summary.csv",
+    "source_sha256": "96b45bbad639bf2e4df06254feebafd016d0c888cccd9b067973c83313dd356f",
+    "release_sha256": "96b45bbad639bf2e4df06254feebafd016d0c888cccd9b067973c83313dd356f",
+    "modified": false
+  },
+  {
+    "source": "revision_work/scana_algorithm_redesign_v36_20260919/environment.json",
+    "destination": "configs/recorded_environment.json",
+    "source_sha256": "c812a0bcfe3790687d6bba85e5f329f02dc56e95272a296b55c3738e894cd6f4",
+    "release_sha256": "c812a0bcfe3790687d6bba85e5f329f02dc56e95272a296b55c3738e894cd6f4",
+    "modified": false
+  },
+  {
+    "source": "revision_work/scana_algorithm_redesign_v36_20260919/independent_test/protocol_frozen.json",
+    "destination": "configs/protocol_frozen.json",
+    "source_sha256": "86b95b9a3157f2dfa0dad32e5df311d80227951472908821e0d7f16aa30b3c23",
+    "release_sha256": "86b95b9a3157f2dfa0dad32e5df311d80227951472908821e0d7f16aa30b3c23",
+    "modified": false
+  },
+  {
+    "source": "revision_work/scana_algorithm_redesign_v36_20260919/independent_test/summary.csv",
+    "destination": "docs/data/summary.csv",
+    "source_sha256": "32eb132ca6f7844d4e93eeb3a03fb7c8f892fbf87916a92bf0844e5df4755c29",
+    "release_sha256": "32eb132ca6f7844d4e93eeb3a03fb7c8f892fbf87916a92bf0844e5df4755c29",
+    "modified": false
+  },
+  {
+    "source": "revision_work/scana_algorithm_redesign_v36_20260919/independent_test/paired_contrasts.csv",
+    "destination": "docs/data/paired_contrasts.csv",
+    "source_sha256": "4a02721cdda53ad5dc7714802afebef0068752467255544c735c1e5d37ec5920",
+    "release_sha256": "4a02721cdda53ad5dc7714802afebef0068752467255544c735c1e5d37ec5920",
+    "modified": false
+  },
+  {
+    "source": "revision_work/scana_algorithm_redesign_v36_20260919/independent_test/per_episode.csv",
+    "destination": "docs/data/per_episode.csv",
+    "source_sha256": "f4d83bd1a4f02609003de48756b7c3203f5a9d4691ae48c082773a688baf125a",
+    "release_sha256": "f4d83bd1a4f02609003de48756b7c3203f5a9d4691ae48c082773a688baf125a",
+    "modified": false
+  }
+]

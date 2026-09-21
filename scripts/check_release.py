@@ -1,0 +1,44 @@
+"""Static release checks: source syntax, page resources, evidence and provenance."""
+from pathlib import Path
+from html.parser import HTMLParser
+from urllib.parse import urlsplit, unquote
+import ast,hashlib,json
+ROOT=Path(__file__).resolve().parents[1]
+
+class Page(HTMLParser):
+    def __init__(self):super().__init__();self.refs=[];self.ids=set();self.missing_alt=0
+    def handle_starttag(self,tag,attrs):
+        a=dict(attrs)
+        if 'id' in a:self.ids.add(a['id'])
+        for key in ['href','src']:
+            if key in a:self.refs.append(a[key])
+        if tag=='img' and not a.get('alt'):self.missing_alt+=1
+
+def main():
+    pyfiles=[]
+    for folder in ['src','scripts','experiments','tests','legacy']:
+        for p in (ROOT/folder).rglob('*.py'):
+            ast.parse(p.read_text(encoding='utf-8-sig'),filename=str(p));pyfiles.append(p)
+    pages={}
+    for p in (ROOT/'docs').glob('*.html'):
+        parser=Page();parser.feed(p.read_text(encoding='utf-8'));pages[p.resolve()]=parser
+    refs=0
+    for p,page in pages.items():
+        assert page.missing_alt==0,f'Missing image alt text: {p}'
+        for link in page.refs:
+            u=urlsplit(link)
+            if u.scheme or u.netloc:continue
+            target=(p.parent/unquote(u.path)).resolve() if u.path else p
+            assert target.is_file(),f'Missing {link} in {p.name}'
+            assert target.is_relative_to((ROOT/'docs').resolve()),'Pages asset outside published docs directory'
+            if u.fragment and target in pages:assert unquote(u.fragment) in pages[target].ids,f'Missing anchor {link}'
+            refs+=1
+    rows=json.loads((ROOT/'provenance/source_files.json').read_text(encoding='utf-8'))
+    for row in rows:
+        got=hashlib.sha256((ROOT/row['destination']).read_bytes()).hexdigest()
+        assert got==row['release_sha256'],f'Update provenance for {row["destination"]}'
+    info=dict(python_files=len(pyfiles),html_pages=len(pages),local_links_verified=refs,provenance_files=len(rows),static_checks_passed=True,browser_visual_qa='Not performed: local file navigation blocked by browser security policy')
+    print(json.dumps(info,indent=2))
+    return info
+
+if __name__=='__main__':main()

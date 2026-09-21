@@ -1,0 +1,12 @@
+{
+  "date": "2026-09-21",
+  "scope": "Local release preparation on the original Windows host; no upload",
+  "unit_tests": {"passed": 26, "failed": 0},
+  "statistics": {"rows": 3200, "summary_and_paired_intervals_match": true, "absolute_tolerance": 1e-14},
+  "artifact_import": {"manifest_files": 16783, "all_entry_hashes_verified": true},
+  "recovery_audit": {"branches": 3840, "observation_and_executed_label_checks": true, "terminal_success_checks": true},
+  "relocated_replay": {"task": "transfer_cube", "training_seed": 7, "layout": 92000, "action_max_error": 0.0, "state_max_error": 0.0, "success": 1},
+  "wheel_build": {"passed": true, "package": "scana_r-0.1.0-py3-none-any.whl"},
+  "website": {"static_html_pages": 6, "local_resource_links_checked": 41, "javascript_syntax_checked": true, "browser_visual_qa": "Blocked by local-file navigation security policy; not performed"},
+  "not_claimed": ["Fresh-machine installation", "New independent simulation test", "Full from-scratch retraining", "Real-robot or visual-policy verification", "GitHub publication"]
+}

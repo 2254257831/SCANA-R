@@ -1,0 +1,17 @@
+{
+  "scope": "clarification of legacy controls, not a change to the frozen experiment",
+  "exactly_matched_new_training": [
+    "Clean repeat",
+    "Calibrated recovery",
+    "Gaussian recovery",
+    "Frozen context"
+  ],
+  "legacy_controls": [
+    "Old SCANA",
+    "Old kNN",
+    "Old deterministic",
+    "Clip only"
+  ],
+  "clarification": "New primary methods share initialization, minibatch stream and source/copy index quantiles; frozen context has exactly the same labels and source times as calibrated recovery. Legacy controls retain v35 checkpoints and their original draw streams; optimization budgets match but row draws are not identical to the new methods. Treat legacy comparisons as version diagnostics, not isolation of a single new component.",
+  "images": "Only privileged state was collected; no RGB, language or GR00T training in this experiment."
+}

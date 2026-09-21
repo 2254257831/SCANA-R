@@ -1,0 +1,17 @@
+﻿task,method,sum,count,mean
+insertion,Calibrated recovery,123,200,0.615
+insertion,Clean repeat,33,200,0.165
+insertion,Clip only,24,200,0.12
+insertion,Frozen context,32,200,0.16
+insertion,Gaussian recovery,47,200,0.235
+insertion,Old SCANA,0,200,0.0
+insertion,Old deterministic,0,200,0.0
+insertion,Old kNN,0,200,0.0
+transfer_cube,Calibrated recovery,182,200,0.91
+transfer_cube,Clean repeat,121,200,0.605
+transfer_cube,Clip only,129,200,0.645
+transfer_cube,Frozen context,104,200,0.52
+transfer_cube,Gaussian recovery,173,200,0.865
+transfer_cube,Old SCANA,0,200,0.0
+transfer_cube,Old deterministic,0,200,0.0
+transfer_cube,Old kNN,0,200,0.0

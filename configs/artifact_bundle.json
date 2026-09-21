@@ -1,0 +1,11 @@
+{
+  "filename": "SCANA-R-artifacts-v1.zip",
+  "sha256": "6f5b31ab754d5b52fdf5bb6aab7550352c9a46d6626ea145da5b059637928ea5",
+  "bytes": 828785256,
+  "files": 16783,
+  "public_url": null,
+  "smoke_files": [
+    "scana_r/independent_test/policies/transfer_cube/7/Calibrated recovery.pt",
+    "scana_r/independent_test/rollouts/transfer_cube/7/Calibrated recovery/92000.npz"
+  ]
+}

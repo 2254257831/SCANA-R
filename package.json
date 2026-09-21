@@ -1,0 +1,6 @@
+{
+  "name": "scana-r-project-page",
+  "private": true,
+  "scripts": {"build:docs": "node scripts/build_docs.mjs"},
+  "devDependencies": {"marked": "17.0.5"}
+}

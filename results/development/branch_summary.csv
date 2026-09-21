@@ -1,0 +1,9 @@
+﻿task,mode,amplitude,branches,sources,attempts,full_scale,fallback,post_pulse_success,terminal_success
+insertion,calibrated,0.03,480,40,569,412,3,480,480
+insertion,calibrated,0.08,480,40,915,211,23,480,480
+insertion,gaussian,0.03,480,40,564,415,3,480,480
+insertion,gaussian,0.08,480,40,887,212,31,480,480
+transfer_cube,calibrated,0.03,480,40,482,478,0,480,480
+transfer_cube,calibrated,0.08,480,40,666,308,0,480,480
+transfer_cube,gaussian,0.03,480,40,485,475,0,480,480
+transfer_cube,gaussian,0.08,480,40,622,351,0,480,480

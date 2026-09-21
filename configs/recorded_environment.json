@@ -1,0 +1,17 @@
+{
+  "python": "3.10.19 | packaged by conda-forge | (main, Oct 22 2025, 22:23:22) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26100-SP0",
+  "packages": {
+    "numpy": "2.2.6",
+    "torch": "2.7.1",
+    "pandas": "2.3.3",
+    "scipy": "1.15.3",
+    "h5py": "3.15.1",
+    "pyarrow": "19.0.1",
+    "PyYAML": "6.0.3",
+    "mujoco": "2.3.3",
+    "dm-control": "1.0.9",
+    "pyquaternion": "0.9.9"
+  },
+  "scope": "Bundled pinned simulation libraries; requires the listed Python 3.10 scientific environment. Historical public-human generator training is not reproduced; frozen legacy controls included."
+}

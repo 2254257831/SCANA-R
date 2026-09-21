@@ -1,0 +1,114 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Frozen simulation protocol · SCANA-R</title><link rel="stylesheet" href="assets/style.css"><style>main{max-width:1100px;margin:40px auto;padding:0 24px}main h1{font-size:36px;margin-bottom:26px}main table{font-size:16px;margin:25px 0}main h2{margin-top:35px}li{margin-bottom:10px}main pre{background:#f3f7f8}main code{overflow-wrap:anywhere}</style></head><body><header class="topbar"><a href="index.html" class="wordmark">SCANA-R</a><nav><a href="index.html#reproduce">Back to project</a></nav></header><main><h1>Frozen simulation protocol</h1>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Tasks</td>
+<td>ACT Transfer Cube and Insertion; bimanual simulation</td>
+</tr>
+<tr>
+<td>Action</td>
+<td>14 absolute position commands; 12 joints in radians; grippers 6, 13 normalized</td>
+</tr>
+<tr>
+<td>Observation</td>
+<td>Current 14 qpos, object xyz (3 / 6), elapsed step / 400; 18 / 21 inputs</td>
+</tr>
+<tr>
+<td>Episode</td>
+<td>400 steps, 50 Hz, 8 seconds</td>
+</tr>
+<tr>
+<td>Reference split</td>
+<td>40 training and 10 development successful episodes per task</td>
+</tr>
+<tr>
+<td>Windows</td>
+<td>H = 16, stride 8; 1,960 train / 490 development</td>
+</tr>
+<tr>
+<td>Calibration</td>
+<td>Five source-episode folds; eight held-out sources per fold</td>
+</tr>
+<tr>
+<td>Auxiliary selection</td>
+<td>Minimum fitting-fold training MSE, checked every 100 steps; held-out fold excluded</td>
+</tr>
+<tr>
+<td>Policy</td>
+<td>d → 256 LayerNorm SiLU → 256 LayerNorm SiLU → 224</td>
+</tr>
+<tr>
+<td>Optimizer</td>
+<td>AdamW, lr 0.001, weight decay 0.0001, batch 128, 1,200 steps</td>
+</tr>
+<tr>
+<td>Pulse</td>
+<td>8 steps; same-task bank within ±8 steps of pulse start; no centering or random sign</td>
+</tr>
+<tr>
+<td>Amplitude</td>
+<td>Joint RMS σ, coordinate cap ±3σ; gripper perturbations zero</td>
+</tr>
+<tr>
+<td>Selected σ</td>
+<td>0.03 Transfer Cube; 0.08 Insertion, for both calibrated and Gaussian families</td>
+</tr>
+<tr>
+<td>Branches</td>
+<td>12 per source; endpoints stratified over 16, 24, …, 368</td>
+</tr>
+<tr>
+<td>Collection acceptance</td>
+<td>Last reward = 4 after complete 400-step replay</td>
+</tr>
+<tr>
+<td>Backtracking</td>
+<td>Same pulse scaled by 1, 0.5, 0.25, 0; reset original initial state each attempt</td>
+</tr>
+<tr>
+<td>Recovery windows</td>
+<td>Starts u, u+8, u+16, u+24 while a full 16-step chunk fits</td>
+</tr>
+<tr>
+<td>Final training mix</td>
+<td>2,048 original + 2,048 method windows, sampled with replacement</td>
+</tr>
+<tr>
+<td>Final scalers</td>
+<td>Fit only on 1,960 original training windows; standard deviation floor 1e−5</td>
+</tr>
+<tr>
+<td>Final selection</td>
+<td>Minimum 490-window development MSE checked every 100 steps</td>
+</tr>
+<tr>
+<td>Execution</td>
+<td>Predict 16 actions, execute 8, reobserve</td>
+</tr>
+<tr>
+<td>Test</td>
+<td>Seeds 7, 11, 23, 31, 47 × layouts 92000–92039, two tasks</td>
+</tr>
+<tr>
+<td>Main metric</td>
+<td>Maximum episode reward = 4; terminal success reported separately</td>
+</tr>
+<tr>
+<td>Statistics</td>
+<td>5,000 paired two-way bootstrap replicates; seed 20260919</td>
+</tr>
+</tbody></table>
+<p>The four current methods share initialization, minibatch stream and resampling
+quantiles. Historical controls preserve their original checkpoints/draw streams;
+they are version diagnostics rather than single-factor ablations. SCANA-R&#39;s
+zero-scale branches preserve source coverage but are not new recovery experience.
+The calibrated error bank and recovery bank are fixed across final policy seeds.</p>
+<p>The frozen JSON files retain original source hashes for provenance. They do not
+assert that refactored release filenames have those original hashes. See
+<code>../provenance/source_files.json</code> for the release mapping.</p>
+</main><footer>SCANA-R · Local release documentation</footer></body></html>

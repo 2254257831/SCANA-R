@@ -1,0 +1,28 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Portable release changes · SCANA-R</title><link rel="stylesheet" href="assets/style.css"><style>main{max-width:1100px;margin:40px auto;padding:0 24px}main h1{font-size:36px;margin-bottom:26px}main table{font-size:16px;margin:25px 0}main h2{margin-top:35px}li{margin-bottom:10px}main pre{background:#f3f7f8}main code{overflow-wrap:anywhere}</style></head><body><header class="topbar"><a href="index.html" class="wordmark">SCANA-R</a><nav><a href="index.html#reproduce">Back to project</a></nav></header><main><h1>Portable release changes</h1>
+<p>The original v35/v36 research code and the v38 manuscript remain untouched.
+<code>provenance/source_files.json</code> records the input and output SHA-256 of copied
+files. The recovery primitive module is unchanged byte-for-byte.</p>
+<p>Changes in the supported current experiment:</p>
+<ul>
+<li>Repository-relative <code>src/</code>, <code>third_party/act/</code> and configurable artifact roots
+replace workspace-specific imports and bundled binary environments.</li>
+<li>The existing Standardizer and ChunkPolicy definitions are extracted into
+<code>policy_network.py</code> without numerical changes.</li>
+<li>Current experiment I/O helpers are separated from unused historical models.</li>
+<li>Abandoned continuous-noise development functions are removed from the current
+entry file; they are not part of the reported SCANA-R algorithm.</li>
+<li>The cross-fit comment now correctly says minimum fitting-fold training MSE,
+matching the unchanged code, rather than incorrectly saying last checkpoint.</li>
+<li>The clean development policy is fitted when missing, allowing a fresh run
+without relying on an earlier abandoned development directory.</li>
+<li>An optional four-method evaluation enables from-scratch reproduction without
+the frozen legacy control checkpoints. Eight-method replay remains available.</li>
+<li>Numerical summary logic is separated from the simulator and writes to a new
+output directory. Test-grid and duplicate checks are enforced.</li>
+<li>The ASCII simulator asset cache handles simultaneous first-use processes.</li>
+</ul>
+<p>Changes to imports/paths are release maintenance, not new experimental results.
+See <code>validation/release_validation.json</code> for the checks actually performed in
+this release. Passing a replay check on the same host is not a fresh-machine
+reproduction or an additional independent test.</p>
+</main><footer>SCANA-R · Local release documentation</footer></body></html>

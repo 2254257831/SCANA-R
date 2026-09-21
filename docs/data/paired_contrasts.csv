@@ -1,0 +1,15 @@
+﻿task,method,reference,difference,paired_low,paired_high,family_adjusted_low,family_adjusted_high
+transfer_cube,Calibrated recovery,Clean repeat,0.25,0.075,0.425,0.05,0.455
+transfer_cube,Calibrated recovery,Gaussian recovery,0.045,-0.05,0.16,-0.05,0.19
+transfer_cube,Calibrated recovery,Frozen context,0.335,0.06,0.62,0.03,0.6525624999999992
+transfer_cube,Calibrated recovery,Old SCANA,0.92,0.835,0.985,0.825,0.99
+transfer_cube,Calibrated recovery,Old kNN,0.92,0.835,0.985,0.825,0.99
+transfer_cube,Calibrated recovery,Old deterministic,0.92,0.835,0.985,0.825,0.99
+transfer_cube,Calibrated recovery,Clip only,0.25,0.105,0.41,0.085,0.4375624999999991
+insertion,Calibrated recovery,Clean repeat,0.24,0.125,0.36,0.105,0.38
+insertion,Calibrated recovery,Gaussian recovery,0.22,0.05,0.405,0.025,0.44
+insertion,Calibrated recovery,Frozen context,0.235,0.105,0.365,0.085,0.385
+insertion,Calibrated recovery,Old SCANA,0.67,0.54,0.785,0.52,0.8
+insertion,Calibrated recovery,Old kNN,0.67,0.54,0.785,0.52,0.8
+insertion,Calibrated recovery,Old deterministic,0.67,0.54,0.785,0.52,0.8
+insertion,Calibrated recovery,Clip only,0.36,0.225,0.51,0.2,0.53

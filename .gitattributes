@@ -1,0 +1,6 @@
+# Preserve exact bytes for the source and evidence SHA-256 manifests across OSes.
+* -text
+*.png binary
+*.pptx binary
+*.zip binary
+*.stl binary

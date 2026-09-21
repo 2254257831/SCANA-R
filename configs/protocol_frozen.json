@@ -1,0 +1,107 @@
+{
+  "frozen_utc": "2026-09-18T16:50:48.012382+00:00",
+  "stage": "one independent test after development",
+  "tasks": [
+    "transfer_cube",
+    "insertion"
+  ],
+  "methods": [
+    "Clean repeat",
+    "Calibrated recovery",
+    "Gaussian recovery",
+    "Frozen context",
+    "Old SCANA",
+    "Old kNN",
+    "Old deterministic",
+    "Clip only"
+  ],
+  "seeds": [
+    7,
+    11,
+    23,
+    31,
+    47
+  ],
+  "layouts": [
+    92000,
+    92001,
+    92002,
+    92003,
+    92004,
+    92005,
+    92006,
+    92007,
+    92008,
+    92009,
+    92010,
+    92011,
+    92012,
+    92013,
+    92014,
+    92015,
+    92016,
+    92017,
+    92018,
+    92019,
+    92020,
+    92021,
+    92022,
+    92023,
+    92024,
+    92025,
+    92026,
+    92027,
+    92028,
+    92029,
+    92030,
+    92031,
+    92032,
+    92033,
+    92034,
+    92035,
+    92036,
+    92037,
+    92038,
+    92039
+  ],
+  "choices": {
+    "transfer_cube": {
+      "calibrated": {
+        "amplitude": 0.03,
+        "development_success": 1.0
+      },
+      "gaussian": {
+        "amplitude": 0.03,
+        "development_success": 1.0
+      }
+    },
+    "insertion": {
+      "calibrated": {
+        "amplitude": 0.08,
+        "development_success": 0.6666666666666666
+      },
+      "gaussian": {
+        "amplitude": 0.08,
+        "development_success": 0.5333333333333333
+      }
+    }
+  },
+  "choice_rule": "Within each task and noise family, highest success over three development seeds x ten selection layouts; ties use smaller amplitude. Frozen-context ablation uses selected calibrated amplitude. Earlier continuous-noise iteration failed and is archived.",
+  "train": "40 source episodes per task; same as v35; 12 eight-step pulse branches each; thereafter execute reference actions; require terminal reward 4; backtrack pulse scale [1,.5,.25,0]; all attempts retained in audit; 1908 actual recovery windows per method/task",
+  "protocol": "Current qpos + current object xyz + elapsed clock; 16-action MLP; execute first 8; 400 steps, official ACT reward; no deployment access to reference actions or future states",
+  "budget": "4096 resampled windows, exactly 2048 clean + 2048 method; same index quantiles, initialization and minibatch stream; 1200 optimization steps; checkpoint chosen by selection clean MSE",
+  "original_controls": "Old generator-based SCANA/kNN/deterministic and clip-only checkpoints are reused from v35; raw action units restored exactly; no new training/layout evidence is supplied to them",
+  "primary": "Calibrated recovery vs Clean repeat separately on both tasks; practical improvement >=.05 on each; report paired two-way seed/layout bootstrap intervals, not iid episode intervals",
+  "secondary": "Calibrated recovery vs tuned generic Gaussian recovery; do not claim calibration-specific gain if difference is unsupported. Frozen context uses identical source times and nominal labels but original source observations.",
+  "acceptance": "Both tasks exceed clean by >=5 percentage points; primary paired 95% empirical intervals exclude zero; task-specific calibrated-vs-Gaussian comparisons reported regardless of direction",
+  "multiplicity": "Also report 97.5% paired intervals for the family of two primary comparisons; no adaptive stopping or changing algorithms after test access",
+  "files": {
+    "experiment.py": "7780f1b67d0c4bb83889aa55123a3742fdc0134db50d34f4c2d8df2ecf3a0e75",
+    "recovery.py": "633a0bd37617de2aa7633e2b6fd8af97994372f43f88fdc114a832f02d7133bf",
+    "final_evaluate.py": "2fdd0de8972970754fbd09de7a541538e19b0f46e54499c0aa05b075429a42ba",
+    "recovery_augmentation.py": "b5a5d9f8be1b0623ecfb2106817f4feb17ff119496f2847d52f9ce33436d6cb9",
+    "replay_augmentation.py": "cc7d908537bef4f3becec1c55dd8835c8e40c1f0008081f36c3ab983bb668a93",
+    "development_per_episode.csv": "5f6013866cacfa56a67d5d6be49ce7348741330ca84f030591bb27e5d13c6116"
+  },
+  "limits": "Privileged-state simulation pilot, five independent policy trainings per method/task; not GR00T, vision-language, real robot or proof of novelty. Acceptance is practical simulation feasibility only."
+}

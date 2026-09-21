@@ -1,0 +1,49 @@
+{
+  "practical_simulation_feasibility": true,
+  "both_adjusted_intervals_positive": true,
+  "primary": [
+    {
+      "task": "transfer_cube",
+      "method": "Calibrated recovery",
+      "reference": "Clean repeat",
+      "difference": 0.25,
+      "paired_low": 0.075,
+      "paired_high": 0.425,
+      "family_adjusted_low": 0.05,
+      "family_adjusted_high": 0.455
+    },
+    {
+      "task": "insertion",
+      "method": "Calibrated recovery",
+      "reference": "Clean repeat",
+      "difference": 0.24,
+      "paired_low": 0.125,
+      "paired_high": 0.36,
+      "family_adjusted_low": 0.105,
+      "family_adjusted_high": 0.38
+    }
+  ],
+  "calibration_comparison": [
+    {
+      "task": "transfer_cube",
+      "method": "Calibrated recovery",
+      "reference": "Gaussian recovery",
+      "difference": 0.045,
+      "paired_low": -0.05,
+      "paired_high": 0.16,
+      "family_adjusted_low": -0.05,
+      "family_adjusted_high": 0.19
+    },
+    {
+      "task": "insertion",
+      "method": "Calibrated recovery",
+      "reference": "Gaussian recovery",
+      "difference": 0.22,
+      "paired_low": 0.05,
+      "paired_high": 0.405,
+      "family_adjusted_low": 0.025,
+      "family_adjusted_high": 0.44
+    }
+  ],
+  "warning": "Five trained seeds crossed with forty layouts per task. No independence claim for all 200 rollouts; no general VLA or real robot claim."
+}

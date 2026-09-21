@@ -1,0 +1,17 @@
+﻿task,method,successes,rollouts,mean,seed_sd,bootstrap_low,bootstrap_high
+transfer_cube,Clean repeat,134,200,0.67,0.1514513123086096,0.505,0.83
+transfer_cube,Calibrated recovery,184,200,0.92,0.03259601202601322,0.835,0.985
+transfer_cube,Gaussian recovery,175,200,0.875,0.10752906583803283,0.75,0.975
+transfer_cube,Frozen context,117,200,0.585,0.33754629312140283,0.3,0.855
+transfer_cube,Old SCANA,0,200,0.0,0.0,0.0,0.0
+transfer_cube,Old kNN,0,200,0.0,0.0,0.0,0.0
+transfer_cube,Old deterministic,0,200,0.0,0.0,0.0,0.0
+transfer_cube,Clip only,134,200,0.67,0.12424773639789176,0.515,0.81
+insertion,Clean repeat,86,200,0.43,0.11096170510586073,0.29987500000000006,0.57
+insertion,Calibrated recovery,134,200,0.67,0.08177713616898065,0.54,0.785
+insertion,Gaussian recovery,90,200,0.45,0.19764235376052372,0.25,0.63
+insertion,Frozen context,87,200,0.435,0.05477225575051662,0.325,0.545
+insertion,Old SCANA,0,200,0.0,0.0,0.0,0.0
+insertion,Old kNN,0,200,0.0,0.0,0.0,0.0
+insertion,Old deterministic,0,200,0.0,0.0,0.0,0.0
+insertion,Clip only,62,200,0.31,0.1764227876437735,0.15,0.48

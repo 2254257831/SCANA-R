@@ -1,0 +1,16 @@
+{
+  "complete": true,
+  "unique_rollouts": 3200,
+  "checkpoints": 80,
+  "frozen_code_unchanged": true,
+  "development_results_unchanged": true,
+  "source_selection_test_disjoint": true,
+  "verified_recovery_branches": 3840,
+  "all_labels_actually_executed": true,
+  "all_accepted_branches_terminally_successful": true,
+  "max_current_qpos_error": 1.1741921657204557e-07,
+  "max_elapsed_clock_error": 2.8610229518832853e-08,
+  "max_legacy_affine_conversion_error": 2.384185791015625e-07,
+  "legacy_model_weights_unchanged": true,
+  "original_manuscripts_unchanged": true
+}
