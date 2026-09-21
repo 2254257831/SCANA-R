@@ -1,0 +1,84 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Simulation videos: provenance and reproduction · SCANA-R</title><link rel="stylesheet" href="assets/style.css"><style>main{max-width:1100px;margin:40px auto;padding:0 24px}main h1{font-size:36px;margin-bottom:26px}main table{font-size:16px;margin:25px 0}main h2{margin-top:35px}li{margin-bottom:10px}main pre{background:#f3f7f8}main code{overflow-wrap:anywhere}</style></head><body><header class="topbar"><a href="index.html" class="wordmark">SCANA-R</a><nav><a href="index.html#reproduce">Back to project</a></nav></header><main><h1>Simulation videos: provenance and reproduction</h1>
+<p>The homepage embeds real MuJoCo renderings of archived evaluation trajectories.
+They are not generated illustrations, newly collected results, or real-robot footage.
+The policies use current privileged simulator state; the RGB renderings are for
+presentation and are not policy inputs.</p>
+<h2>What the videos show</h2>
+<table>
+<thead>
+<tr>
+<th>Task</th>
+<th align="right">Training seed</th>
+<th align="right">Initial layout</th>
+<th>Clean repeat</th>
+<th>SCANA-R</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Transfer Cube</td>
+<td align="right">7</td>
+<td align="right">92000</td>
+<td>Failure</td>
+<td>Success</td>
+</tr>
+<tr>
+<td>Insertion</td>
+<td align="right">7</td>
+<td align="right">92001</td>
+<td>Failure</td>
+<td>Success</td>
+</tr>
+</tbody></table>
+<p>Examples are selected intentionally: fix training seed 7, then choose the lowest
+layout in each task where the archived SCANA-R rollout succeeds and Clean repeat
+fails. This is a reproducible illustrative contrast, not a random sample. It must
+not substitute for the aggregate results across five seeds and 40 layouts.</p>
+<ul>
+<li><a href="assets/videos/teaser.mp4">Two-task teaser</a>: SCANA-R on both tasks.</li>
+<li><a href="assets/videos/transfer-comparison.mp4">Transfer Cube comparison</a>: Clean repeat and SCANA-R.</li>
+<li><a href="assets/videos/insertion-comparison.mp4">Insertion comparison</a>: Clean repeat and SCANA-R.</li>
+</ul>
+<p>The two panels of each comparison share the same seed and initial layout. They
+are combined into a single file so that playback, seeking and pausing remain
+synchronized. Each video is uncut, eight seconds at 25 frames per second and
+real-time speed. One frame is rendered for every two 50 Hz simulator steps.
+Only a neutral title strip and side-by-side composition are added. Posters are
+actual frames at five seconds, rather than invented or retouched robot scenes.</p>
+<h2>Replay verification</h2>
+<p>The renderer applies all 400 recorded actions under the pinned ACT/MuJoCo
+environment. At every step it compares the current 14-dimensional joint-state
+observation against the archived pre-action state, then compares all rewards.
+All four clips have a maximum state error of <strong>0.0</strong> and identical reward arrays
+on the reference host. It changes only offscreen framebuffer capacity and the
+camera used for rendering; no physics, policy weights or actions are changed.
+This checks replay consistency, not a new independent evaluation.</p>
+<p><a href="assets/videos/provenance.json">Machine-readable provenance</a> records the source
+rollout hashes, selected layouts, replay checks and video hashes.</p>
+<p>Individual source renderings:</p>
+<ul>
+<li><a href="assets/videos/transfer_cube-scana-r.mp4">Transfer Cube / SCANA-R</a></li>
+<li><a href="assets/videos/transfer_cube-clean.mp4">Transfer Cube / Clean repeat</a></li>
+<li><a href="assets/videos/insertion-scana-r.mp4">Insertion / SCANA-R</a></li>
+<li><a href="assets/videos/insertion-clean.mp4">Insertion / Clean repeat</a></li>
+</ul>
+<h2>Render again</h2>
+<p>From the repository root, after importing the <strong>full</strong> frozen artifact bundle:</p>
+<pre><code class="language-bash">python -m pip install -r requirements-video.txt
+python scripts/import_artifacts.py ../SCANA-R-artifacts-v1.zip
+python scripts/render_project_videos.py
+</code></pre>
+<p>The default output directory is <code>docs/assets/videos</code>. To keep the checked-in
+media intact, use <code>--output outputs/project-videos</code>. To compose existing clips
+without replaying the simulator, add <code>--compose-only</code>. For an alternate title
+font, pass <code>--font /path/to/font.ttf</code>; the default searches for system Arial on
+Windows, then DejaVu Sans on Linux. Font rasterization, OpenGL drivers and video
+encoder versions may change output hashes across machines.</p>
+<p>Video encoding uses H.264, yuv420p and MP4 fast-start metadata. The page uses
+native playback controls, a real-frame poster and a direct MP4 link. The teaser
+starts muted when autoplay is permitted; reduced-motion preferences disable
+automatic playback. Starting a comparison pauses the other videos. There is
+no audio track. On a phone, full-screen playback makes the side-by-side details
+easier to inspect.</p>
+<p>ACT simulator code and assets retain the original MIT notice in <code>third_party/act</code>.
+See <a href="evidence.html">the evidence scope</a> and <a href="protocol.html">protocol</a> for interpretation.</p>
+</main><footer>SCANA-R · Local release documentation</footer></body></html>

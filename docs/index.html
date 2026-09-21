@@ -3,68 +3,105 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="SCANA-R calibrates action perturbations and collects verified simulation recovery data. Code, protocol and results for two ACT manipulation tasks.">
-  <meta name="theme-color" content="#31566b">
-  <title>SCANA-R · Simulation Recovery Learning</title>
+  <meta name="description" content="SCANA-R: calibrating action perturbations and learning from verified recovery trajectories. Watch simulation rollouts, explore the method and reproduce the evidence.">
+  <meta name="theme-color" content="#ffffff">
+  <title>SCANA-R | Simulation Recovery Learning</title>
   <link rel="stylesheet" href="assets/style.css">
   <script src="assets/site.js" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<header class="topbar"><a class="wordmark" href="#">SCANA-R</a><nav aria-label="Page sections"><a href="#method">Method</a><a href="#results">Results</a><a href="#reproduce">Reproduce</a></nav><span class="status">LOCAL PREVIEW</span></header>
 <main id="main">
-  <section class="hero">
-    <p class="eyebrow">ROBOT LEARNING · CALIBRATED RECOVERY DATA</p>
-    <h1><span>SCANA-R</span>Success Demonstration Based Action Noise Calibration<br class="wide"> and Simulation Recovery Learning</h1>
-    <p class="subtitle" lang="zh-CN">成功示范驱动的动作噪声校准与仿真恢复学习</p>
-    <p class="lead">Calibrate short action perturbations.<br>Learn to recover from states the robot actually visits.</p>
-    <div class="actions"><a class="button primary" href="assets/scana-r-source.zip" download>Download code <span aria-hidden="true">↗</span></a><a class="button" href="#reproduce">Reproduction guide</a><a class="button" href="data/per_episode.csv" download>Evaluation data</a></div>
-    <p class="release-note">Research manuscript · Apache-2.0 · Local release preparation</p>
-  </section>
-  <figure class="overview" id="method">
-    <a href="assets/figure1.png" target="_blank" rel="noopener" aria-label="Open the full-resolution SCANA-R overview"><img src="assets/figure1.png" width="2661" height="1331" alt="SCANA-R framework in three stages: same-task source organization, cross-fitted error calibration and simulator-verified recovery collection."></a>
-    <figcaption><strong>From calibrated errors to verified recovery supervision.</strong> Short perturbations generate recovery states. Accepted trajectories provide current observations and the actions actually executed after the perturbation.</figcaption>
+  <header class="hero">
+    <h1><span class="project-name">SCANA-R:</span> Success Demonstration Based Action Noise Calibration and Simulation Recovery Learning</h1>
+    <p class="paper-context">Research manuscript <span aria-hidden="true">·</span> State-based robot learning in simulation</p>
+    <div class="actions" aria-label="Project resources">
+      <a class="button" href="assets/scana-r-source.zip" download><span aria-hidden="true">&lt;/&gt;</span> Code</a>
+      <a class="button" href="protocol.html"><span aria-hidden="true">≡</span> Protocol</a>
+      <a class="button" href="data/per_episode.csv" download><span aria-hidden="true">↓</span> Data</a>
+      <a class="button" href="#rollouts"><span aria-hidden="true">▶</span> Videos</a>
+    </div>
+  </header>
+
+  <figure class="teaser wide-wrap">
+    <video id="teaser-video" class="film" width="1456" height="544" controls muted loop playsinline preload="metadata" data-autoplay poster="assets/videos/teaser-poster.jpg" aria-label="SCANA-R simulation rollouts: Transfer Cube and Insertion" aria-describedby="teaser-caption">
+      <source src="assets/videos/teaser.mp4" type="video/mp4">
+      Your browser cannot play this video. <a href="assets/videos/teaser.mp4">Open the MP4.</a>
+    </video>
+    <figcaption id="teaser-caption"><p class="takeaway">Learn recovery from states the robot actually visits.</p><p>SCANA-R calibrates short action perturbations, verifies recovery in simulation, and trains on the resulting observations and executed actions.</p><p class="media-note">Selected simulation examples · 1× speed · muted, looping video <a href="assets/videos/teaser.mp4">Open MP4 ↗</a></p></figcaption>
   </figure>
-  <section class="abstract narrow">
-    <p class="section-label">THE RESEARCH QUESTION</p><h2>Can calibrated perturbations produce useful recovery data?</h2>
-    <p>Successful demonstrations sparsely cover the states encountered after a policy deviates from its reference trajectory. SCANA-R uses source-episode cross-fitting to estimate policy errors, samples a short perturbation from the same task and nearby phase, and executes it in simulation. The reference action sequence then resumes. A branch is accepted only when its terminal state satisfies the task’s success criterion.</p>
-    <p>Recovery supervision pairs newly observed states with actions that were actually executed. With a matched final training budget, this improves success from <strong>67% to 92%</strong> on Transfer Cube and from <strong>43% to 67%</strong> on Insertion. The study uses current privileged state in two ACT simulation tasks; visual policies and real robots remain outside the present evaluation.</p>
-    <details class="translation"><summary>中文摘要概览</summary><p lang="zh-CN">SCANA-R 从源回合交叉拟合误差中校准短时动作扰动，在仿真中执行扰动并恢复参考动作，以末态任务成功验收分支。恢复标签对应实际观测与真实执行的动作。在相同最终训练预算下，方块传递成功率由 67% 提升至 92%，插入任务由 43% 提升至 67%。当前证据来自特权状态仿真策略，不包含视觉 VLA、GR00T 或实机闭环。</p></details>
-  </section>
-  <section class="method-detail wrap">
-    <div class="section-heading"><div><p class="section-label">HOW IT WORKS</p><h2>Three stages, one consistent training record</h2></div><a href="protocol.html">Full protocol ↗</a></div>
-    <div class="stages">
-      <article><span class="step">01</span><h3>Calibrate by source episode</h3><p>Five auxiliary models predict action chunks for held-out source episodes. Calibration errors retain the task and temporal phase of their source.</p></article>
-      <article><span class="step">02</span><h3>Execute and verify</h3><p>An eight-step joint pulse is bounded and gripper-protected. Failed branches retry with a smaller pulse; acceptance requires terminal task success.</p></article>
-      <article><span class="step">03</span><h3>Train on observed recovery</h3><p>After the pulse, record actual observations and executed reference actions. Mix recovery and original data in equal proportions.</p></article>
+
+  <nav class="section-nav" aria-label="Page sections"><a href="#abstract">Abstract</a><a href="#method">Method</a><a href="#rollouts">Rollouts</a><a href="#results">Results</a><a href="#reproduce">Reproduce</a></nav>
+
+  <section class="abstract band" id="abstract"><div class="reading-width">
+    <h2>Abstract</h2>
+    <p>Successful demonstrations sparsely cover the states encountered after a policy deviates from its reference trajectory. SCANA-R uses source-episode cross-fitting to estimate policy errors, samples short action perturbations from the same task and nearby phase, and executes them in simulation. The reference action sequence then resumes; a recovery branch is accepted only when its terminal state satisfies the task’s success criterion. Recovery supervision pairs newly observed states with actions that were actually executed.</p>
+    <p>At a matched final training budget, task success improves from <strong>67% to 92%</strong> on Transfer Cube and from <strong>43% to 67%</strong> on Insertion relative to repeating clean demonstrations. Compared with Gaussian recovery, calibration provides a supported gain on Insertion, while the Transfer Cube comparison is inconclusive. The evaluation uses current privileged state in two ACT simulation tasks.</p>
+    <details class="translation"><summary>中文概览</summary><p lang="zh-CN">SCANA-R 从源回合交叉拟合误差中校准短时动作扰动，在仿真中执行扰动并恢复参考动作，以末态任务成功验收分支。恢复标签对应实际观测与实际执行的动作。在相同最终训练预算下，方块传递成功率由 67% 提升至 92%，插入任务由 43% 提升至 67%。相较高斯恢复，校准扰动在插入任务上具有区间支持的收益，方块传递上的差异尚不确定。当前证据来自特权状态仿真策略。</p></details>
+  </div></section>
+
+  <section class="section wide-wrap" id="method">
+    <h2>Method</h2>
+    <p class="section-intro">Calibrate the perturbation. Execute the recovery. Keep the observation and action together.</p>
+    <figure class="overview">
+      <a href="assets/figure1.png" target="_blank" rel="noopener" aria-label="View the full-resolution SCANA-R method figure"><img src="assets/figure1.png" width="2661" height="1331" loading="lazy" alt="Three-stage SCANA-R framework: same-task source organization, cross-fitted error calibration and simulator-verified recovery collection."></a>
+      <figcaption>Short perturbations expose recovery states. Accepted branches provide the observations and executed actions used for policy learning.</figcaption>
+    </figure>
+    <div class="method-steps">
+      <article><h3><span>1.</span> Calibrate</h3><p>Five auxiliary policies predict chunks for held-out source episodes. The error bank preserves task and temporal phase.</p></article>
+      <article><h3><span>2.</span> Execute &amp; verify</h3><p>A bounded eight-step pulse perturbs the joints while protecting the grippers. Failed branches retry with a smaller pulse.</p></article>
+      <article><h3><span>3.</span> Learn recovery</h3><p>After the pulse, pair actual observations with executed reference actions. Mix original and recovery records equally.</p></article>
     </div>
     <div class="figure-details">
-      <details><summary>Figure 2 · Source episodes and recovery records</summary><a href="assets/figure2.png" target="_blank" rel="noopener"><img loading="lazy" src="assets/figure2.png" width="2661" height="1331" alt="Source episode splitting, record definition and branch provenance."></a></details>
-      <details><summary>Figure 3 · Cross-fitted error calibration</summary><a href="assets/figure3.png" target="_blank" rel="noopener"><img loading="lazy" src="assets/figure3.png" width="2661" height="1331" alt="Cross-fitted policies and error-bank sampling for same-task short perturbations."></a></details>
-      <details><summary>Figure 4 · Bounded pulse and verified recovery export</summary><a href="assets/figure4.png" target="_blank" rel="noopener"><img loading="lazy" src="assets/figure4.png" width="2661" height="1331" alt="Pulse scaling, amplitude bounds, simulator replay and verified recovery record export."></a></details>
+      <details><summary>Source episodes and recovery records · Figure 2</summary><a href="assets/figure2.png" target="_blank" rel="noopener"><img loading="lazy" src="assets/figure2.png" width="2661" height="1331" alt="Source episode splitting, the recovery record contract and traceable branch identities."></a></details>
+      <details><summary>Cross-fitted error calibration · Figure 3</summary><a href="assets/figure3.png" target="_blank" rel="noopener"><img loading="lazy" src="assets/figure3.png" width="2661" height="1331" alt="Cross-fitted policies and same-task, phase-local error sampling for short perturbations."></a></details>
+      <details><summary>Bounded perturbation and recovery export · Figure 4</summary><a href="assets/figure4.png" target="_blank" rel="noopener"><img loading="lazy" src="assets/figure4.png" width="2661" height="1331" alt="Pulse scaling, amplitude bounds, simulator replay, terminal success acceptance and recovery record export."></a></details>
     </div>
   </section>
-  <section class="results-section" id="results"><div class="wrap">
-    <div class="section-heading"><div><p class="section-label">FROZEN SIMULATION EVALUATION</p><h2>Recovery data improves task success</h2></div><a href="data/summary.csv" download>Download summary CSV ↗</a></div>
-    <p class="section-intro">Five training seeds × 40 common layouts per task. Results below cover the four methods with matched initialization, batch streams and final training budgets.</p>
-    <div class="result-highlights"><div><span class="task">TRANSFER CUBE</span><p><span class="baseline">67%</span><span class="arrow">→</span><strong>92%</strong></p><small>SCANA-R versus Clean repeat · +25 percentage points</small></div><div><span class="task">INSERTION</span><p><span class="baseline">43%</span><span class="arrow">→</span><strong>67%</strong></p><small>SCANA-R versus Clean repeat · +24 percentage points</small></div></div>
-    <div class="table-scroll"><table><caption>Task success: count / 200 rollouts (percentage)</caption><thead><tr><th scope="col">Method</th><th scope="col">Transfer Cube</th><th scope="col">Insertion</th></tr></thead><tbody><tr><th scope="row">Clean repeat</th><td>134 / 200 <span>67.0%</span></td><td>86 / 200 <span>43.0%</span></td></tr><tr><th scope="row">Gaussian recovery</th><td>175 / 200 <span>87.5%</span></td><td>90 / 200 <span>45.0%</span></td></tr><tr><th scope="row">Frozen observations</th><td>117 / 200 <span>58.5%</span></td><td>87 / 200 <span>43.5%</span></td></tr><tr class="ours"><th scope="row">SCANA-R</th><td>184 / 200 <span>92.0%</span></td><td>134 / 200 <span>67.0%</span></td></tr></tbody></table></div>
-    <p class="result-note">Success means maximum episode reward = 4. Collection acceptance instead requires terminal reward = 4. The CSV label <code>Calibrated recovery</code> denotes SCANA-R; <code>Frozen context</code> denotes frozen observations.</p>
-    <div class="interpretation"><h3>Where calibration helps</h3><p>Against Gaussian recovery, SCANA-R gains 22 points on Insertion (paired 95% interval: 5.0 to 40.5). Transfer Cube gains 4.5 points with an interval spanning zero (−5.0 to 16.0). The current evidence supports a task-dependent benefit, rather than uniform superiority.</p><p>Intervals use paired resampling of both seeds and layouts. Five policy fits are not 200 independent training runs. <a href="data/paired_contrasts.csv" download>Inspect all paired comparisons ↗</a></p></div>
-    <details class="legacy-results"><summary>Historical method diagnostics and evidence limits</summary><p>The complete CSV includes four historical label-only controls, bringing the total to 3,200 rollouts. Their original checkpoints and sampling streams are retained; these comparisons diagnose earlier versions and are not single-component ablations. No same-collection-budget DART reproduction is included. One recovery bank is shared across final training seeds. <a href="evidence.html">Read the evidence scope.</a></p></details>
+
+  <section class="section media-section band" id="rollouts"><div class="wide-wrap">
+    <h2>Simulation rollouts</h2>
+    <p class="section-intro">Same training seed. Same initial layout. Synchronized, uncut playback.</p>
+    <figure class="comparison">
+      <h3>Transfer Cube</h3>
+      <video class="film" width="1456" height="544" controls muted loop playsinline preload="none" poster="assets/videos/transfer-comparison-poster.jpg" aria-label="Transfer Cube: Clean repeat and SCANA-R on the same layout" aria-describedby="transfer-caption">
+        <source src="assets/videos/transfer-comparison.mp4" type="video/mp4">
+        <a href="assets/videos/transfer-comparison.mp4">Play the Transfer Cube comparison.</a>
+      </video>
+      <figcaption id="transfer-caption">Training seed 7 · Layout 92000 · Clean repeat: failure · SCANA-R: success <a href="assets/videos/transfer-comparison.mp4">Open MP4 ↗</a></figcaption>
+    </figure>
+    <figure class="comparison">
+      <h3>Insertion</h3>
+      <video class="film" width="1456" height="544" controls muted loop playsinline preload="none" poster="assets/videos/insertion-comparison-poster.jpg" aria-label="Insertion: Clean repeat and SCANA-R on the same layout" aria-describedby="insertion-caption">
+        <source src="assets/videos/insertion-comparison.mp4" type="video/mp4">
+        <a href="assets/videos/insertion-comparison.mp4">Play the Insertion comparison.</a>
+      </video>
+      <figcaption id="insertion-caption">Training seed 7 · Layout 92001 · Clean repeat: failure · SCANA-R: success <a href="assets/videos/insertion-comparison.mp4">Open MP4 ↗</a></figcaption>
+    </figure>
+    <p class="selection-note">These are illustrative contrasts, selected as the lowest layout for seed 7 where SCANA-R succeeds and Clean repeat fails in each task. They are not a random sample. Videos replay archived actions at real-time speed; all 400 joint-state observations and step rewards per rollout match the saved records. Aggregate evaluation is reported below. <a href="videos.html">Video provenance and rendering ↗</a></p>
   </div></section>
-  <section class="wrap reproduce" id="reproduce">
-    <div class="section-heading"><div><p class="section-label">CODE & REPRODUCIBILITY</p><h2>Start with the recorded evidence</h2></div><span class="license">Apache-2.0</span></div>
-    <p>Recompute every reported success rate from the included evaluation records. Full simulator replay uses a separate hash-verified artifact bundle.</p>
-    <div class="code-block"><div><span>From the repository root · Python 3.10</span><button type="button" class="copy" data-copy="quickstart">Copy</button></div><pre id="quickstart"><code>python -m pip install -r requirements-simulation.txt
+
+  <section class="section reading-width results" id="results">
+    <h2>Quantitative results</h2>
+    <p class="section-intro">Five training seeds × 40 common layouts per task.<br>Matched initialization, batch streams and final training budgets.</p>
+    <div class="table-scroll"><table><caption>Task success · successes / 200 rollouts</caption><thead><tr><th scope="col">Method</th><th scope="col">Transfer Cube</th><th scope="col">Insertion</th></tr></thead><tbody><tr><th scope="row">Clean repeat</th><td>134 / 200 <strong>67.0%</strong></td><td>86 / 200 <strong>43.0%</strong></td></tr><tr><th scope="row">Gaussian recovery</th><td>175 / 200 <strong>87.5%</strong></td><td>90 / 200 <strong>45.0%</strong></td></tr><tr><th scope="row">Frozen observations</th><td>117 / 200 <strong>58.5%</strong></td><td>87 / 200 <strong>43.5%</strong></td></tr><tr class="ours"><th scope="row">SCANA-R</th><td>184 / 200 <strong>92.0%</strong></td><td>134 / 200 <strong>67.0%</strong></td></tr></tbody></table></div>
+    <p class="table-note">Evaluation success uses maximum episode reward = 4; collection acceptance requires terminal reward = 4. In the CSV, “Calibrated recovery” denotes SCANA-R and “Frozen context” denotes frozen observations.</p>
+    <p>SCANA-R gains <strong>25 and 24 percentage points</strong> over Clean repeat; paired 95% intervals are [7.5, 42.5] and [12.5, 36.0]. Against Gaussian recovery, the gain is 4.5 points on Transfer Cube [−5.0, 16.0] and 22 points on Insertion [5.0, 40.5]. The calibration benefit is task-dependent.</p>
+    <p class="small">Intervals jointly resample paired seeds and layouts. Five policy fits are not 200 independent training runs; the recovery bank is fixed across seeds. <a href="data/summary.csv" download>Summary CSV</a> · <a href="data/paired_contrasts.csv" download>Paired comparisons</a></p>
+    <details class="evidence-details"><summary>Evaluation scope and historical diagnostics</summary><p>The complete CSV includes four historical label-only controls, for 3,200 rollouts in total. Their original checkpoints and sampling streams are retained; they diagnose earlier versions and are not single-component ablations. Recovery collection has additional simulator and auxiliary-training costs. There is no same-collection-budget DART reproduction. The experiments do not establish visual VLA/GR00T transfer, real-robot performance or general collision safety. <a href="evidence.html">Full evidence scope.</a></p></details>
+  </section>
+
+  <section class="section band" id="reproduce"><div class="reading-width">
+    <h2>Code &amp; reproduction</h2>
+    <p>Start by recomputing the reported statistics from the included evaluation records. Simulator replay and video rendering use the separate, hash-verified trajectory bundle.</p>
+    <div class="code-block"><div><span>Python 3.10 · From the repository root</span><button type="button" class="copy" data-copy="quickstart">Copy</button></div><pre id="quickstart"><code>python -m pip install -r requirements-simulation.txt
 python -m pip install -e . --no-deps
 python -m unittest discover -s tests -v
 python scripts/summarize.py</code></pre><span class="copy-status" role="status" aria-live="polite"></span></div>
-    <div class="resources"><a href="assets/scana-r-source.zip" download><strong>Source package ↗</strong><span>Algorithm, simulator adapter, tests, protocol and editable PPT</span></a><a href="data/per_episode.csv" download><strong>3,200 evaluation records ↗</strong><span>All current methods and historical diagnostics</span></a><a href="protocol.html"><strong>Experiment protocol ↗</strong><span>Splits, seeds, observation contract and training budget</span></a></div>
-    <p class="availability">The full trajectory/checkpoint bundle is prepared locally as <code>SCANA-R-artifacts-v1.zip</code>; a public download URL will be added after release. Author information, the formal paper link and the official repository URL will be added when finalized.</p>
-  </section>
-  <section class="narrow limitations"><h2>Scope of the current study</h2><p>SCANA-R is evaluated with current privileged simulator state on two bimanual tasks. Recovery collection requires simulator resets, a reference action sequence, auxiliary-policy training and additional rollouts. The present experiments do not establish visual-policy transfer, real-robot performance or general collision safety. Recovery collection is related to <a href="https://berkeleyautomation.github.io/DART/">DART</a>; the results isolate the comparisons documented above.</p></section>
+    <div class="resource-links"><a href="assets/scana-r-source.zip" download>Source package ↗</a><a href="protocol.html">Experiment protocol ↗</a><a href="videos.html">Render the videos ↗</a></div>
+    <p class="small availability">Code: Apache-2.0; ACT simulator assets: MIT. The trajectory and checkpoint bundle is prepared locally as <code>SCANA-R-artifacts-v1.zip</code>. This page is a local release preview; the paper, author list, official repository and public artifact URL will be added when finalized.</p>
+  </div></section>
 </main>
-<footer><p>SCANA-R · Local project preview · 2026</p><p>Page organization inspired by <a href="https://github.com/eliahuhorwitz/Academic-project-page-template">Academic Project Page Template</a> and <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>. Original implementation, figures and evidence for this project.</p><a href="#">Back to top ↑</a></footer>
+<footer><p>SCANA-R · Research code and simulation evidence</p><p>Page design references: <a href="https://github.com/eliahuhorwitz/Academic-project-page-template">Academic Project Page Template</a> and <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>. Independently implemented; project figures retain their original PPT design.</p><a href="#main">Back to top ↑</a></footer>
 </body>
 </html>

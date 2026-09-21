@@ -1,0 +1,122 @@
+{
+  "selection_rule": "For each task, fix training seed 7 and select the lowest layout where recorded SCANA-R succeeds and Clean repeat fails. Intentionally selected illustrative contrast, not a random sample or a replacement for aggregate results.",
+  "rendering": "Replay recorded actions under the pinned simulator; no policy retraining; every recorded state and reward verified. 50 Hz simulation rendered every second step at 25 fps, real-time speed.",
+  "clips": [
+    {
+      "task": "transfer_cube",
+      "training_seed": 7,
+      "layout": 92000,
+      "method": "Calibrated recovery",
+      "source": "artifacts/scana_r/independent_test/rollouts/transfer_cube/7/Calibrated recovery/92000.npz",
+      "source_sha256": "098fb32d5f1af190542a866813f828835c34ae53adbd877a302fca5214c02086",
+      "state_max_error": 0.0,
+      "rewards_identical": true,
+      "success": 1,
+      "terminal_success": 1,
+      "rendered_frames": 200,
+      "fps": 25,
+      "duration_seconds": 8,
+      "camera": "angle",
+      "video": "transfer_cube-scana-r.mp4",
+      "video_sha256": "c77bfbcf1cc0adc0191d1ecdce9432ad76a5ab0403ef1ab99d9a648c056afbae"
+    },
+    {
+      "task": "transfer_cube",
+      "training_seed": 7,
+      "layout": 92000,
+      "method": "Clean repeat",
+      "source": "artifacts/scana_r/independent_test/rollouts/transfer_cube/7/Clean repeat/92000.npz",
+      "source_sha256": "6026617031215a9420490fa760b216cd88365c3824bd2587c9ae684dca6e596d",
+      "state_max_error": 0.0,
+      "rewards_identical": true,
+      "success": 0,
+      "terminal_success": 0,
+      "rendered_frames": 200,
+      "fps": 25,
+      "duration_seconds": 8,
+      "camera": "angle",
+      "video": "transfer_cube-clean.mp4",
+      "video_sha256": "72e55dac10e5d8edb1547f7aef1a0c347edd469478215ebc3ae1e5a250a4b16e"
+    },
+    {
+      "task": "insertion",
+      "training_seed": 7,
+      "layout": 92001,
+      "method": "Calibrated recovery",
+      "source": "artifacts/scana_r/independent_test/rollouts/insertion/7/Calibrated recovery/92001.npz",
+      "source_sha256": "4d30402deec7a3d82ec72cb541fe3c5f019cb50b7f65e0575d7faa4aef0a44f6",
+      "state_max_error": 0.0,
+      "rewards_identical": true,
+      "success": 1,
+      "terminal_success": 1,
+      "rendered_frames": 200,
+      "fps": 25,
+      "duration_seconds": 8,
+      "camera": "angle",
+      "video": "insertion-scana-r.mp4",
+      "video_sha256": "b22cb32471c80d2eba93923b8a7444d5b8f8ed2125e2a1ddfe02ee7a7ca76f1c"
+    },
+    {
+      "task": "insertion",
+      "training_seed": 7,
+      "layout": 92001,
+      "method": "Clean repeat",
+      "source": "artifacts/scana_r/independent_test/rollouts/insertion/7/Clean repeat/92001.npz",
+      "source_sha256": "5fe790b20cf3bd5d08b7dcf89879cbd198959697e769b64f2090f4b09daffb45",
+      "state_max_error": 0.0,
+      "rewards_identical": true,
+      "success": 0,
+      "terminal_success": 0,
+      "rendered_frames": 200,
+      "fps": 25,
+      "duration_seconds": 8,
+      "camera": "angle",
+      "video": "insertion-clean.mp4",
+      "video_sha256": "5e4ae459672fae14828daa7ad2cab1db632e642d017f9a76f8dc1f03c51721ac"
+    }
+  ],
+  "compositions": [
+    {
+      "video": "teaser.mp4",
+      "inputs": [
+        "transfer_cube-scana-r.mp4",
+        "insertion-scana-r.mp4"
+      ],
+      "sha256": "1e6b674318fd5fc4c9b636a0374042e38949cf5a2b3e3080011282824f8eaf11",
+      "width": 1456,
+      "height": 544,
+      "frames": 200,
+      "fps": 25,
+      "seconds": 8,
+      "edits": "Synchronized side-by-side composition and title strip only; no cuts or speed changes."
+    },
+    {
+      "video": "transfer-comparison.mp4",
+      "inputs": [
+        "transfer_cube-clean.mp4",
+        "transfer_cube-scana-r.mp4"
+      ],
+      "sha256": "a35d1a2c4bb21db303a921a1d0ac802ea9b0a976aa8b8b178ea68a5ac154058d",
+      "width": 1456,
+      "height": 544,
+      "frames": 200,
+      "fps": 25,
+      "seconds": 8,
+      "edits": "Synchronized side-by-side composition and title strip only; no cuts or speed changes."
+    },
+    {
+      "video": "insertion-comparison.mp4",
+      "inputs": [
+        "insertion-clean.mp4",
+        "insertion-scana-r.mp4"
+      ],
+      "sha256": "1c73afca85125c70ef6bfbaf95f1106ac7dd25fc5cd749d15ff6a28d30ff777e",
+      "width": 1456,
+      "height": 544,
+      "frames": 200,
+      "fps": 25,
+      "seconds": 8,
+      "edits": "Synchronized side-by-side composition and title strip only; no cuts or speed changes."
+    }
+  ]
+}

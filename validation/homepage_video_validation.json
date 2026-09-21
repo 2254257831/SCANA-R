@@ -1,0 +1,151 @@
+{
+  "date": "2026-09-22",
+  "scope": "Local project-page revision; no new experiments or publication",
+  "static_checks": {
+    "python_files": 43,
+    "html_pages": 7,
+    "local_links_verified": 69,
+    "provenance_files": 84,
+    "video_hashes_verified": 7,
+    "static_checks_passed": true,
+    "browser_visual_qa": "Not performed: local file navigation blocked by browser security policy"
+  },
+  "video_decode": [
+    {
+      "file": "transfer_cube-scana-r.mp4",
+      "frames": 200,
+      "fps": 25.0,
+      "seconds": 8.0,
+      "size": [
+        720,
+        480
+      ],
+      "codec": "h264",
+      "pixel_format": "yuv420p(progressive)",
+      "sha256": "c77bfbcf1cc0adc0191d1ecdce9432ad76a5ab0403ef1ab99d9a648c056afbae",
+      "all_frames_decoded": true
+    },
+    {
+      "file": "transfer_cube-clean.mp4",
+      "frames": 200,
+      "fps": 25.0,
+      "seconds": 8.0,
+      "size": [
+        720,
+        480
+      ],
+      "codec": "h264",
+      "pixel_format": "yuv420p(progressive)",
+      "sha256": "72e55dac10e5d8edb1547f7aef1a0c347edd469478215ebc3ae1e5a250a4b16e",
+      "all_frames_decoded": true
+    },
+    {
+      "file": "insertion-scana-r.mp4",
+      "frames": 200,
+      "fps": 25.0,
+      "seconds": 8.0,
+      "size": [
+        720,
+        480
+      ],
+      "codec": "h264",
+      "pixel_format": "yuv420p(progressive)",
+      "sha256": "b22cb32471c80d2eba93923b8a7444d5b8f8ed2125e2a1ddfe02ee7a7ca76f1c",
+      "all_frames_decoded": true
+    },
+    {
+      "file": "insertion-clean.mp4",
+      "frames": 200,
+      "fps": 25.0,
+      "seconds": 8.0,
+      "size": [
+        720,
+        480
+      ],
+      "codec": "h264",
+      "pixel_format": "yuv420p(progressive)",
+      "sha256": "5e4ae459672fae14828daa7ad2cab1db632e642d017f9a76f8dc1f03c51721ac",
+      "all_frames_decoded": true
+    },
+    {
+      "file": "teaser.mp4",
+      "frames": 200,
+      "fps": 25.0,
+      "seconds": 8.0,
+      "size": [
+        1456,
+        544
+      ],
+      "codec": "h264",
+      "pixel_format": "yuv420p(progressive)",
+      "sha256": "1e6b674318fd5fc4c9b636a0374042e38949cf5a2b3e3080011282824f8eaf11",
+      "all_frames_decoded": true
+    },
+    {
+      "file": "transfer-comparison.mp4",
+      "frames": 200,
+      "fps": 25.0,
+      "seconds": 8.0,
+      "size": [
+        1456,
+        544
+      ],
+      "codec": "h264",
+      "pixel_format": "yuv420p(progressive)",
+      "sha256": "a35d1a2c4bb21db303a921a1d0ac802ea9b0a976aa8b8b178ea68a5ac154058d",
+      "all_frames_decoded": true
+    },
+    {
+      "file": "insertion-comparison.mp4",
+      "frames": 200,
+      "fps": 25.0,
+      "seconds": 8.0,
+      "size": [
+        1456,
+        544
+      ],
+      "codec": "h264",
+      "pixel_format": "yuv420p(progressive)",
+      "sha256": "1c73afca85125c70ef6bfbaf95f1106ac7dd25fc5cd749d15ff6a28d30ff777e",
+      "all_frames_decoded": true
+    }
+  ],
+  "replay_checks": [
+    {
+      "task": "transfer_cube",
+      "training_seed": 7,
+      "layout": 92000,
+      "method": "Calibrated recovery",
+      "state_max_error": 0.0,
+      "rewards_identical": true
+    },
+    {
+      "task": "transfer_cube",
+      "training_seed": 7,
+      "layout": 92000,
+      "method": "Clean repeat",
+      "state_max_error": 0.0,
+      "rewards_identical": true
+    },
+    {
+      "task": "insertion",
+      "training_seed": 7,
+      "layout": 92001,
+      "method": "Calibrated recovery",
+      "state_max_error": 0.0,
+      "rewards_identical": true
+    },
+    {
+      "task": "insertion",
+      "training_seed": 7,
+      "layout": 92001,
+      "method": "Clean repeat",
+      "state_max_error": 0.0,
+      "rewards_identical": true
+    }
+  ],
+  "manual_media_qa": "Camera previews, five-second posters and a contact sheet at 1.0, 4.0 and 7.8 seconds inspected. Panels and labels are legible, and the task progression and paired outcomes are visible.",
+  "browser_visual_qa": "Blocked by local-file browser security policy. No browser rendering or interactive playback QA performed.",
+  "research_code_changed": false,
+  "figures_changed": false
+}

@@ -1,4 +1,22 @@
 'use strict';
+// Native controls remain available if autoplay is unavailable or JavaScript is off.
+const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+const teaser = document.querySelector('[data-autoplay]');
+if (teaser && !reducedMotion.matches) {
+  teaser.muted = true;
+  teaser.play().catch(() => { /* Poster and native play control remain visible. */ });
+}
+reducedMotion.addEventListener('change', event => {
+  if (event.matches && teaser) teaser.pause();
+});
+// Starting a comparison pauses any other video. Clips inside each file stay synced.
+document.querySelectorAll('video').forEach(video => {
+  video.addEventListener('play', () => {
+    document.querySelectorAll('video').forEach(other => {
+      if (other !== video) other.pause();
+    });
+  });
+});
 document.querySelectorAll('[data-copy]').forEach(button => {
   button.addEventListener('click', async () => {
     const text = document.getElementById(button.dataset.copy).innerText;

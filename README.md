@@ -141,6 +141,16 @@ equal in collection cost to simply repeating clean data.
 
 ## Project website
 
+The project page follows the classic computer-vision paper layout: a centered
+title and resource links, a large two-task video teaser, abstract, original PPT
+method figures, synchronized baseline comparisons, and quantitative results.
+The checked-in H.264 videos play locally and need no external service. They
+replay selected archived simulation trajectories; all four source clips have
+zero joint-state replay error and identical rewards. Selection is disclosed
+explicitly and does not replace aggregate evaluation. See
+[video provenance and rendering](docs/videos.md) for the exact source records,
+optional dependencies and reproduction commands.
+
 Open `docs/index.html` directly, or preview using a loopback-only server:
 
 ```bash

@@ -10,7 +10,7 @@ class Page(HTMLParser):
     def handle_starttag(self,tag,attrs):
         a=dict(attrs)
         if 'id' in a:self.ids.add(a['id'])
-        for key in ['href','src']:
+        for key in ['href','src','poster']:
             if key in a:self.refs.append(a[key])
         if tag=='img' and not a.get('alt'):self.missing_alt+=1
 
@@ -37,7 +37,12 @@ def main():
     for row in rows:
         got=hashlib.sha256((ROOT/row['destination']).read_bytes()).hexdigest()
         assert got==row['release_sha256'],f'Update provenance for {row["destination"]}'
-    info=dict(python_files=len(pyfiles),html_pages=len(pages),local_links_verified=refs,provenance_files=len(rows),static_checks_passed=True,browser_visual_qa='Not performed: local file navigation blocked by browser security policy')
+    media=json.loads((ROOT/'docs/assets/videos/provenance.json').read_text(encoding='utf-8'))
+    for item in media['clips']+media['compositions']:
+        video=ROOT/'docs/assets/videos'/item['video']
+        expected=item.get('video_sha256',item.get('sha256'))
+        assert hashlib.sha256(video.read_bytes()).hexdigest()==expected,f'Video hash mismatch: {video.name}'
+    info=dict(python_files=len(pyfiles),html_pages=len(pages),local_links_verified=refs,provenance_files=len(rows),video_hashes_verified=len(media['clips'])+len(media['compositions']),static_checks_passed=True,browser_visual_qa='Not performed: local file navigation blocked by browser security policy')
     print(json.dumps(info,indent=2))
     return info
 
