@@ -1,0 +1,145 @@
+task,scenario,metric,reference,difference,paired_low,paired_high,task_family_low,task_family_high
+transfer_cube,nominal,success,Clean repeat,0.31,0.16,0.48,0.14,0.5
+transfer_cube,nominal,success,Gaussian recovery,-0.01,-0.12,0.1,-0.14512499999999995,0.12
+transfer_cube,nominal,success,Frozen context,0.33,0.08,0.63,0.06,0.6751249999999982
+insertion,nominal,success,Clean repeat,0.29,0.06,0.5,0.02,0.55
+insertion,nominal,success,Gaussian recovery,0.21,-0.01,0.44,-0.04,0.47
+insertion,nominal,success,Frozen context,0.3,0.09,0.52,0.06,0.55
+Macro average,nominal,success,Clean repeat,0.3,0.16,0.435,0.14,0.455
+Macro average,nominal,success,Gaussian recovery,0.1,-0.05,0.245,-0.075,0.265
+Macro average,nominal,success,Frozen context,0.315,0.155,0.49,0.135,0.515
+transfer_cube,nominal,terminal_success,Clean repeat,0.4,0.18,0.61,0.15,0.64
+transfer_cube,nominal,terminal_success,Gaussian recovery,0.02,-0.12,0.16,-0.14,0.18
+transfer_cube,nominal,terminal_success,Frozen context,0.4,0.13,0.69,0.1,0.73
+insertion,nominal,terminal_success,Clean repeat,0.55,0.3,0.76,0.26,0.79
+insertion,nominal,terminal_success,Gaussian recovery,0.39,0.2,0.57,0.17,0.6
+insertion,nominal,terminal_success,Frozen context,0.5,0.31,0.69,0.2748750000000001,0.7151249999999981
+Macro average,nominal,terminal_success,Clean repeat,0.475,0.3248750000000001,0.6251249999999982,0.295,0.65
+Macro average,nominal,terminal_success,Gaussian recovery,0.205,0.06987500000000005,0.34,0.042437500000000024,0.36
+Macro average,nominal,terminal_success,Frozen context,0.45,0.3,0.625,0.28,0.66
+transfer_cube,replan_1,success,Clean repeat,0.26,0.04,0.48,0.01,0.52
+transfer_cube,replan_1,success,Gaussian recovery,-0.01,-0.27,0.25,-0.32,0.28
+transfer_cube,replan_1,success,Frozen context,0.27,0.06,0.49,0.04,0.52
+insertion,replan_1,success,Clean repeat,0.12,-0.01,0.29,-0.03,0.32
+insertion,replan_1,success,Gaussian recovery,0.02,-0.14,0.19,-0.17,0.22
+insertion,replan_1,success,Frozen context,0.13,0.01,0.29,0.0,0.32
+Macro average,replan_1,success,Clean repeat,0.19,0.06,0.33,0.04,0.36
+Macro average,replan_1,success,Gaussian recovery,0.005,-0.165,0.16,-0.2,0.18
+Macro average,replan_1,success,Frozen context,0.2,0.09,0.33,0.08,0.35256249999999906
+transfer_cube,replan_1,terminal_success,Clean repeat,0.18,0.02,0.36,0.01,0.4
+transfer_cube,replan_1,terminal_success,Gaussian recovery,-0.13,-0.37,0.1,-0.42,0.13
+transfer_cube,replan_1,terminal_success,Frozen context,0.2,0.06,0.37,0.04,0.41
+insertion,replan_1,terminal_success,Clean repeat,0.11,-0.02,0.28,-0.03,0.3
+insertion,replan_1,terminal_success,Gaussian recovery,0.06,-0.12,0.25,-0.15,0.28
+insertion,replan_1,terminal_success,Frozen context,0.12,0.0,0.28,0.0,0.3
+Macro average,replan_1,terminal_success,Clean repeat,0.145,0.055,0.23,0.04,0.245
+Macro average,replan_1,terminal_success,Gaussian recovery,-0.035,-0.205,0.105,-0.23256249999999998,0.13
+Macro average,replan_1,terminal_success,Frozen context,0.16,0.085,0.24,0.075,0.25
+transfer_cube,replan_4,success,Clean repeat,0.49,0.16,0.78,0.12,0.81
+transfer_cube,replan_4,success,Gaussian recovery,0.05,-0.47,0.51,-0.55,0.58
+transfer_cube,replan_4,success,Frozen context,0.46,0.12,0.77,0.08,0.81
+insertion,replan_4,success,Clean repeat,0.31,0.03,0.57,-0.01,0.6
+insertion,replan_4,success,Gaussian recovery,0.16,-0.12,0.41,-0.15,0.45
+insertion,replan_4,success,Frozen context,0.38,0.05,0.67,0.0,0.71
+Macro average,replan_4,success,Clean repeat,0.4,0.215,0.5751249999999981,0.19,0.605
+Macro average,replan_4,success,Gaussian recovery,0.105,-0.195,0.4051249999999982,-0.24,0.45
+Macro average,replan_4,success,Frozen context,0.42,0.22,0.625,0.195,0.6575624999999992
+transfer_cube,replan_4,terminal_success,Clean repeat,0.48,0.1597500000000001,0.75,0.11487500000000005,0.78
+transfer_cube,replan_4,terminal_success,Gaussian recovery,0.03,-0.47,0.46,-0.55,0.52
+transfer_cube,replan_4,terminal_success,Frozen context,0.47,0.15,0.7402499999999963,0.1,0.78
+insertion,replan_4,terminal_success,Clean repeat,0.35,0.06,0.6,0.02,0.63
+insertion,replan_4,terminal_success,Gaussian recovery,0.27,-0.01,0.51,-0.05,0.54
+insertion,replan_4,terminal_success,Frozen context,0.37,0.06,0.65,0.01,0.68
+Macro average,replan_4,terminal_success,Clean repeat,0.415,0.215,0.6,0.18,0.63
+Macro average,replan_4,terminal_success,Gaussian recovery,0.15,-0.16,0.43,-0.205,0.455
+Macro average,replan_4,terminal_success,Frozen context,0.42,0.24,0.59,0.21,0.62
+transfer_cube,replan_16,success,Clean repeat,0.0,-0.11,0.1,-0.12,0.12
+transfer_cube,replan_16,success,Gaussian recovery,-0.05,-0.16,0.0,-0.18,0.0
+transfer_cube,replan_16,success,Frozen context,-0.01,-0.08,0.04,-0.1,0.06
+insertion,replan_16,success,Clean repeat,0.17,-0.03,0.37,-0.05,0.4
+insertion,replan_16,success,Gaussian recovery,0.11,-0.05,0.28,-0.07,0.31
+insertion,replan_16,success,Frozen context,0.09,-0.07,0.25,-0.1,0.27
+Macro average,replan_16,success,Clean repeat,0.085,-0.035,0.195,-0.05,0.21
+Macro average,replan_16,success,Gaussian recovery,0.03,-0.06,0.115,-0.075,0.125
+Macro average,replan_16,success,Frozen context,0.04,-0.05,0.125,-0.065,0.14
+transfer_cube,replan_16,terminal_success,Clean repeat,0.0,-0.11,0.1,-0.12,0.12
+transfer_cube,replan_16,terminal_success,Gaussian recovery,-0.05,-0.16,0.0,-0.18,0.0
+transfer_cube,replan_16,terminal_success,Frozen context,-0.01,-0.08,0.04,-0.1,0.06
+insertion,replan_16,terminal_success,Clean repeat,0.47,0.21,0.72,0.16,0.75
+insertion,replan_16,terminal_success,Gaussian recovery,0.28,0.06,0.54,0.03,0.59
+insertion,replan_16,terminal_success,Frozen context,0.41,0.16,0.67,0.12,0.7
+Macro average,replan_16,terminal_success,Clean repeat,0.235,0.105,0.35012499999999813,0.09,0.37
+Macro average,replan_16,terminal_success,Gaussian recovery,0.115,0.015,0.235,-0.005,0.255
+Macro average,replan_16,terminal_success,Frozen context,0.2,0.09,0.325,0.075,0.34
+transfer_cube,pulse_early,success,Clean repeat,0.27,0.09,0.46,0.07,0.49
+transfer_cube,pulse_early,success,Gaussian recovery,-0.33,-0.58,-0.08,-0.61,-0.06
+transfer_cube,pulse_early,success,Frozen context,0.31,0.11,0.5,0.08,0.52
+insertion,pulse_early,success,Clean repeat,0.25,0.01,0.5,-0.04,0.5351249999999982
+insertion,pulse_early,success,Gaussian recovery,0.2,-0.02,0.43,-0.05,0.46
+insertion,pulse_early,success,Frozen context,0.35,0.15,0.58,0.12,0.63
+Macro average,pulse_early,success,Clean repeat,0.26,0.1,0.41,0.075,0.44
+Macro average,pulse_early,success,Gaussian recovery,-0.065,-0.24,0.115,-0.265,0.14
+Macro average,pulse_early,success,Frozen context,0.33,0.185,0.475,0.16,0.5
+transfer_cube,pulse_early,terminal_success,Clean repeat,0.27,0.08,0.47,0.05,0.49
+transfer_cube,pulse_early,terminal_success,Gaussian recovery,-0.33,-0.57,-0.09,-0.6,-0.06
+transfer_cube,pulse_early,terminal_success,Frozen context,0.32,0.12,0.5,0.09487500000000004,0.52
+insertion,pulse_early,terminal_success,Clean repeat,0.5,0.24,0.74,0.2,0.77
+insertion,pulse_early,terminal_success,Gaussian recovery,0.4,0.1597500000000001,0.63,0.12,0.67
+insertion,pulse_early,terminal_success,Frozen context,0.55,0.3,0.7702499999999963,0.27,0.8
+Macro average,pulse_early,terminal_success,Clean repeat,0.385,0.235,0.53,0.21,0.555
+Macro average,pulse_early,terminal_success,Gaussian recovery,0.035,-0.15,0.205,-0.175,0.235
+Macro average,pulse_early,terminal_success,Frozen context,0.435,0.26,0.59,0.23,0.61
+transfer_cube,pulse_early,post_pulse_success,Clean repeat,0.27,0.09,0.46,0.07,0.49
+transfer_cube,pulse_early,post_pulse_success,Gaussian recovery,-0.33,-0.58,-0.08,-0.61,-0.06
+transfer_cube,pulse_early,post_pulse_success,Frozen context,0.31,0.11,0.5,0.08,0.52
+insertion,pulse_early,post_pulse_success,Clean repeat,0.25,0.01,0.5,-0.04,0.5351249999999982
+insertion,pulse_early,post_pulse_success,Gaussian recovery,0.2,-0.02,0.43,-0.05,0.46
+insertion,pulse_early,post_pulse_success,Frozen context,0.35,0.15,0.58,0.12,0.63
+Macro average,pulse_early,post_pulse_success,Clean repeat,0.26,0.1,0.41,0.075,0.44
+Macro average,pulse_early,post_pulse_success,Gaussian recovery,-0.065,-0.24,0.115,-0.265,0.14
+Macro average,pulse_early,post_pulse_success,Frozen context,0.33,0.185,0.475,0.16,0.5
+transfer_cube,pulse_late,success,Clean repeat,-0.01,-0.06,0.0,-0.06,0.0
+transfer_cube,pulse_late,success,Gaussian recovery,-0.01,-0.06,0.0,-0.06,0.0
+transfer_cube,pulse_late,success,Frozen context,0.0,0.0,0.0,0.0,0.0
+insertion,pulse_late,success,Clean repeat,0.01,0.0,0.06,0.0,0.06
+insertion,pulse_late,success,Gaussian recovery,0.0,0.0,0.0,0.0,0.0
+insertion,pulse_late,success,Frozen context,0.01,0.0,0.06,0.0,0.06
+Macro average,pulse_late,success,Clean repeat,0.0,-0.025,0.025,-0.03,0.03
+Macro average,pulse_late,success,Gaussian recovery,-0.005,-0.03,0.0,-0.03,0.0
+Macro average,pulse_late,success,Frozen context,0.005,0.0,0.03,0.0,0.03
+transfer_cube,pulse_late,terminal_success,Clean repeat,0.0,0.0,0.0,0.0,0.0
+transfer_cube,pulse_late,terminal_success,Gaussian recovery,0.0,0.0,0.0,0.0,0.0
+transfer_cube,pulse_late,terminal_success,Frozen context,0.0,0.0,0.0,0.0,0.0
+insertion,pulse_late,terminal_success,Clean repeat,0.01,0.0,0.06,0.0,0.06
+insertion,pulse_late,terminal_success,Gaussian recovery,0.0,0.0,0.0,0.0,0.0
+insertion,pulse_late,terminal_success,Frozen context,0.01,0.0,0.06,0.0,0.06
+Macro average,pulse_late,terminal_success,Clean repeat,0.005,0.0,0.03,0.0,0.03
+Macro average,pulse_late,terminal_success,Gaussian recovery,0.0,0.0,0.0,0.0,0.0
+Macro average,pulse_late,terminal_success,Frozen context,0.005,0.0,0.03,0.0,0.03
+transfer_cube,pulse_late,post_pulse_success,Clean repeat,-0.01,-0.06,0.0,-0.06,0.0
+transfer_cube,pulse_late,post_pulse_success,Gaussian recovery,-0.01,-0.06,0.0,-0.06,0.0
+transfer_cube,pulse_late,post_pulse_success,Frozen context,0.0,0.0,0.0,0.0,0.0
+insertion,pulse_late,post_pulse_success,Clean repeat,0.01,0.0,0.06,0.0,0.06
+insertion,pulse_late,post_pulse_success,Gaussian recovery,0.0,0.0,0.0,0.0,0.0
+insertion,pulse_late,post_pulse_success,Frozen context,0.01,0.0,0.06,0.0,0.06
+Macro average,pulse_late,post_pulse_success,Clean repeat,0.0,-0.025,0.025,-0.03,0.03
+Macro average,pulse_late,post_pulse_success,Gaussian recovery,-0.005,-0.03,0.0,-0.03,0.0
+Macro average,pulse_late,post_pulse_success,Frozen context,0.005,0.0,0.03,0.0,0.03
+transfer_cube,observation_noise,success,Clean repeat,0.0,0.0,0.0,0.0,0.0
+transfer_cube,observation_noise,success,Gaussian recovery,-0.83,-0.96,-0.67,-0.98,-0.64
+transfer_cube,observation_noise,success,Frozen context,0.0,0.0,0.0,0.0,0.0
+insertion,observation_noise,success,Clean repeat,0.36,0.18,0.56,0.15,0.59
+insertion,observation_noise,success,Gaussian recovery,0.29,-0.03,0.54,-0.07512499999999996,0.57
+insertion,observation_noise,success,Frozen context,0.34,0.1,0.57,0.06,0.61
+Macro average,observation_noise,success,Clean repeat,0.18,0.09,0.28,0.075,0.295
+Macro average,observation_noise,success,Gaussian recovery,-0.27,-0.445,-0.11,-0.47,-0.08743750000000092
+Macro average,observation_noise,success,Frozen context,0.17,0.05,0.285,0.03,0.305
+transfer_cube,observation_noise,terminal_success,Clean repeat,0.0,0.0,0.0,0.0,0.0
+transfer_cube,observation_noise,terminal_success,Gaussian recovery,-0.83,-0.96,-0.67,-0.98,-0.64
+transfer_cube,observation_noise,terminal_success,Frozen context,0.0,0.0,0.0,0.0,0.0
+insertion,observation_noise,terminal_success,Clean repeat,0.25,0.06,0.43,0.03,0.46
+insertion,observation_noise,terminal_success,Gaussian recovery,0.28,0.09,0.48,0.06,0.51
+insertion,observation_noise,terminal_success,Frozen context,0.27,0.1,0.45,0.08,0.5
+Macro average,observation_noise,terminal_success,Clean repeat,0.125,0.03,0.215,0.015,0.23
+Macro average,observation_noise,terminal_success,Gaussian recovery,-0.275,-0.395,-0.14,-0.405,-0.12
+Macro average,observation_noise,terminal_success,Frozen context,0.135,0.05,0.225,0.04,0.25

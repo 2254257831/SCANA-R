@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "tasks": [
+    "reach-v3",
+    "push-v3",
+    "pick-place-v3",
+    "door-open-v3",
+    "drawer-open-v3",
+    "button-press-v3"
+  ],
+  "metaworld": "3.1.1",
+  "mujoco": "3.3.0",
+  "gymnasium": "1.1.1",
+  "horizon": 250,
+  "scope": "Six independent task-specific state policies; custom imitation protocol, not the official MT10/ML10 benchmark.",
+  "demonstration": "Official task expert; clip actions to [-1,1]; after first success hold xyz command at zero and retain last gripper command. This stopping rule is used only for demonstration collection, never policy evaluation.",
+  "train": "First 40 terminal-success reference episodes scanning seeds 10000..10999 per task; preserve failures.",
+  "development": "First 10 terminal-success reference episodes scanning seeds 20000..20999 per task; preserve failures.",
+  "input": "22D: current observation indices 0:18 + goal xyz 36:39 + t/250. No previous/future states, action-derived features or deployment success signal.",
+  "action": "4D Cartesian xyz command and gripper in [-1,1]; 16-step prediction, execute first 8, reobserve.",
+  "network": "22-256-LayerNorm-SiLU-256-LayerNorm-SiLU-64 MLP; AdamW lr=0.001 wd=0.0001; 1200 updates, batch128; best development MSE every100 steps.",
+  "calibration": "Five source-episode folds; each auxiliary fits32 sources; choose fitting-fold training MSE checkpoint; each error computed only for held-out sources.",
+  "recovery": {
+    "branches_per_source": 6,
+    "pulse_steps": 8,
+    "phase_radius": 8,
+    "gripper_channels": [
+      3
+    ],
+    "amplitudes": [
+      0.1,
+      0.25
+    ],
+    "bound": "3x amplitude; also clip all executed commands to official [-1,1] actuator interface.",
+    "backtracking": [
+      1,
+      0.5,
+      0.25,
+      0
+    ],
+    "acceptance": "Official success on the final step; record post-pulse actual observations and executed reference chunks."
+  },
+  "selection": "Calibrated and correlated Gaussian amplitudes selected separately on development only, seeds7/11; mean ever-success, ties choose lower amplitude.",
+  "budget": "4096 draws: 2048 original + 2048 method; same original indices, auxiliary index quantiles, initialization and minibatches. Frozen observations reuses SCANA-R source times and executed labels. kNN uses 4096 clean draws, 5 neighbors, inverse-distance mean in train-standardized current-state space.",
+  "training_seeds": [
+    7,
+    11,
+    23,
+    31,
+    47
+  ],
+  "test_layouts": [
+    30000,
+    30001,
+    30002,
+    30003,
+    30004,
+    30005,
+    30006,
+    30007,
+    30008,
+    30009,
+    30010,
+    30011,
+    30012,
+    30013,
+    30014,
+    30015,
+    30016,
+    30017,
+    30018,
+    30019
+  ],
+  "test_scenarios": [
+    "nominal",
+    "pulse"
+  ],
+  "test_pulse": "8 steps starting64; Cartesian-command RMS0.25, cap0.75; gripper unchanged; shared deterministic noise across methods and policy seeds.",
+  "primary": "Macro-average SCANA-R minus Clean repeat ever-success over six fixed tasks, nominal condition. Taskwise and Gaussian contrasts always reported.",
+  "inference": "Paired two-way bootstrap over policy seeds and layouts,5000 replicates. Macro-average conditional on six tasks and fixed recovery libraries. Six taskwise comparisons use 99.1667% marginal intervals for Bonferroni family control; raw95% intervals also reported.",
+  "limitations": "Five trained seeds share a recovery bank per task/family/amplitude. State-based simulation only; no claims of language planning, visual VLA or real robots."
+}

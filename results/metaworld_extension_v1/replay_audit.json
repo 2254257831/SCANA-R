@@ -1,0 +1,486 @@
+{
+  "verified_rollouts": 60,
+  "method": "Fresh model inference and environment stepping; not action-only playback.",
+  "rows": [
+    {
+      "task": "reach-v3",
+      "method": "Clean repeat",
+      "scenario": "nominal",
+      "seed": 7,
+      "layout": 30000,
+      "all_arrays_exact": true
+    },
+    {
+      "task": "reach-v3",
+      "method": "Clean repeat",
+      "scenario": "pulse",
+      "seed": 7,
+      "layout": 30000,
+      "all_arrays_exact": true
+    },
+    {
+      "task": "reach-v3",
+      "method": "Gaussian recovery",
+      "scenario": "nominal",
+      "seed": 7,
+      "layout": 30000,
+      "all_arrays_exact": true
+    },
+    {
+      "task": "reach-v3",
+      "method": "Gaussian recovery",
+      "scenario": "pulse",
+      "seed": 7,
+      "layout": 30000,
+      "all_arrays_exact": true
+    },
+    {
+      "task": "reach-v3",
+      "method": "Frozen observations",
+      "scenario": "nominal",
+      "seed": 7,
+      "layout": 30000,
+      "all_arrays_exact": true
+    },
+    {
+      "task": "reach-v3",
+      "method": "Frozen observations",
+      "scenario": "pulse",
+      "seed": 7,
+      "layout": 30000,
+      "all_arrays_exact": true
+    },
+    {
+      "task": "reach-v3",
+      "method": "SCANA-R",
+      "scenario": "nominal",
+      "seed": 7,
+      "layout": 30000,
+      "all_arrays_exact": true
+    },
+    {
+      "task": "reach-v3",
+      "method": "SCANA-R",
+      "scenario": "pulse",
+      "seed": 7,
+      "layout": 30000,
+      "all_arrays_exact": true
+    },
+    {
+      "task": "reach-v3",
+      "method": "Demonstration kNN",
+      "scenario": "nominal",
+      "seed": 7,
+      "layout": 30000,
+      "all_arrays_exact": true
+    },
+    {
+      "task": "reach-v3",
+      "method": "Demonstration kNN",
+      "scenario": "pulse",
+      "seed": 7,
+      "layout": 30000,
+      "all_arrays_exact": true
+    },
+    {
+      "task": "push-v3",
+      "method": "Clean repeat",
+      "scenario": "nominal",
+      "seed": 7,
+      "layout": 30000,
+      "all_arrays_exact": true
+    },
+    {
+      "task": "push-v3",
+      "method": "Clean repeat",
+      "scenario": "pulse",
+      "seed": 7,
+      "layout": 30000,
+      "all_arrays_exact": true
+    },
+    {
+      "task": "push-v3",
+      "method": "Gaussian recovery",
+      "scenario": "nominal",
+      "seed": 7,
+      "layout": 30000,
+      "all_arrays_exact": true
+    },
+    {
+      "task": "push-v3",
+      "method": "Gaussian recovery",
+      "scenario": "pulse",
+      "seed": 7,
+      "layout": 30000,
+      "all_arrays_exact": true
+    },
+    {
+      "task": "push-v3",
+      "method": "Frozen observations",
+      "scenario": "nominal",
+      "seed": 7,
+      "layout": 30000,
+      "all_arrays_exact": true
+    },
+    {
+      "task": "push-v3",
+      "method": "Frozen observations",
+      "scenario": "pulse",
+      "seed": 7,
+      "layout": 30000,
+      "all_arrays_exact": true
+    },
+    {
+      "task": "push-v3",
+      "method": "SCANA-R",
+      "scenario": "nominal",
+      "seed": 7,
+      "layout": 30000,
+      "all_arrays_exact": true
+    },
+    {
+      "task": "push-v3",
+      "method": "SCANA-R",
+      "scenario": "pulse",
+      "seed": 7,
+      "layout": 30000,
+      "all_arrays_exact": true
+    },
+    {
+      "task": "push-v3",
+      "method": "Demonstration kNN",
+      "scenario": "nominal",
+      "seed": 7,
+      "layout": 30000,
+      "all_arrays_exact": true
+    },
+    {
+      "task": "push-v3",
+      "method": "Demonstration kNN",
+      "scenario": "pulse",
+      "seed": 7,
+      "layout": 30000,
+      "all_arrays_exact": true
+    },
+    {
+      "task": "pick-place-v3",
+      "method": "Clean repeat",
+      "scenario": "nominal",
+      "seed": 7,
+      "layout": 30000,
+      "all_arrays_exact": true
+    },
+    {
+      "task": "pick-place-v3",
+      "method": "Clean repeat",
+      "scenario": "pulse",
+      "seed": 7,
+      "layout": 30000,
+      "all_arrays_exact": true
+    },
+    {
+      "task": "pick-place-v3",
+      "method": "Gaussian recovery",
+      "scenario": "nominal",
+      "seed": 7,
+      "layout": 30000,
+      "all_arrays_exact": true
+    },
+    {
+      "task": "pick-place-v3",
+      "method": "Gaussian recovery",
+      "scenario": "pulse",
+      "seed": 7,
+      "layout": 30000,
+      "all_arrays_exact": true
+    },
+    {
+      "task": "pick-place-v3",
+      "method": "Frozen observations",
+      "scenario": "nominal",
+      "seed": 7,
+      "layout": 30000,
+      "all_arrays_exact": true
+    },
+    {
+      "task": "pick-place-v3",
+      "method": "Frozen observations",
+      "scenario": "pulse",
+      "seed": 7,
+      "layout": 30000,
+      "all_arrays_exact": true
+    },
+    {
+      "task": "pick-place-v3",
+      "method": "SCANA-R",
+      "scenario": "nominal",
+      "seed": 7,
+      "layout": 30000,
+      "all_arrays_exact": true
+    },
+    {
+      "task": "pick-place-v3",
+      "method": "SCANA-R",
+      "scenario": "pulse",
+      "seed": 7,
+      "layout": 30000,
+      "all_arrays_exact": true
+    },
+    {
+      "task": "pick-place-v3",
+      "method": "Demonstration kNN",
+      "scenario": "nominal",
+      "seed": 7,
+      "layout": 30000,
+      "all_arrays_exact": true
+    },
+    {
+      "task": "pick-place-v3",
+      "method": "Demonstration kNN",
+      "scenario": "pulse",
+      "seed": 7,
+      "layout": 30000,
+      "all_arrays_exact": true
+    },
+    {
+      "task": "door-open-v3",
+      "method": "Clean repeat",
+      "scenario": "nominal",
+      "seed": 7,
+      "layout": 30000,
+      "all_arrays_exact": true
+    },
+    {
+      "task": "door-open-v3",
+      "method": "Clean repeat",
+      "scenario": "pulse",
+      "seed": 7,
+      "layout": 30000,
+      "all_arrays_exact": true
+    },
+    {
+      "task": "door-open-v3",
+      "method": "Gaussian recovery",
+      "scenario": "nominal",
+      "seed": 7,
+      "layout": 30000,
+      "all_arrays_exact": true
+    },
+    {
+      "task": "door-open-v3",
+      "method": "Gaussian recovery",
+      "scenario": "pulse",
+      "seed": 7,
+      "layout": 30000,
+      "all_arrays_exact": true
+    },
+    {
+      "task": "door-open-v3",
+      "method": "Frozen observations",
+      "scenario": "nominal",
+      "seed": 7,
+      "layout": 30000,
+      "all_arrays_exact": true
+    },
+    {
+      "task": "door-open-v3",
+      "method": "Frozen observations",
+      "scenario": "pulse",
+      "seed": 7,
+      "layout": 30000,
+      "all_arrays_exact": true
+    },
+    {
+      "task": "door-open-v3",
+      "method": "SCANA-R",
+      "scenario": "nominal",
+      "seed": 7,
+      "layout": 30000,
+      "all_arrays_exact": true
+    },
+    {
+      "task": "door-open-v3",
+      "method": "SCANA-R",
+      "scenario": "pulse",
+      "seed": 7,
+      "layout": 30000,
+      "all_arrays_exact": true
+    },
+    {
+      "task": "door-open-v3",
+      "method": "Demonstration kNN",
+      "scenario": "nominal",
+      "seed": 7,
+      "layout": 30000,
+      "all_arrays_exact": true
+    },
+    {
+      "task": "door-open-v3",
+      "method": "Demonstration kNN",
+      "scenario": "pulse",
+      "seed": 7,
+      "layout": 30000,
+      "all_arrays_exact": true
+    },
+    {
+      "task": "drawer-open-v3",
+      "method": "Clean repeat",
+      "scenario": "nominal",
+      "seed": 7,
+      "layout": 30000,
+      "all_arrays_exact": true
+    },
+    {
+      "task": "drawer-open-v3",
+      "method": "Clean repeat",
+      "scenario": "pulse",
+      "seed": 7,
+      "layout": 30000,
+      "all_arrays_exact": true
+    },
+    {
+      "task": "drawer-open-v3",
+      "method": "Gaussian recovery",
+      "scenario": "nominal",
+      "seed": 7,
+      "layout": 30000,
+      "all_arrays_exact": true
+    },
+    {
+      "task": "drawer-open-v3",
+      "method": "Gaussian recovery",
+      "scenario": "pulse",
+      "seed": 7,
+      "layout": 30000,
+      "all_arrays_exact": true
+    },
+    {
+      "task": "drawer-open-v3",
+      "method": "Frozen observations",
+      "scenario": "nominal",
+      "seed": 7,
+      "layout": 30000,
+      "all_arrays_exact": true
+    },
+    {
+      "task": "drawer-open-v3",
+      "method": "Frozen observations",
+      "scenario": "pulse",
+      "seed": 7,
+      "layout": 30000,
+      "all_arrays_exact": true
+    },
+    {
+      "task": "drawer-open-v3",
+      "method": "SCANA-R",
+      "scenario": "nominal",
+      "seed": 7,
+      "layout": 30000,
+      "all_arrays_exact": true
+    },
+    {
+      "task": "drawer-open-v3",
+      "method": "SCANA-R",
+      "scenario": "pulse",
+      "seed": 7,
+      "layout": 30000,
+      "all_arrays_exact": true
+    },
+    {
+      "task": "drawer-open-v3",
+      "method": "Demonstration kNN",
+      "scenario": "nominal",
+      "seed": 7,
+      "layout": 30000,
+      "all_arrays_exact": true
+    },
+    {
+      "task": "drawer-open-v3",
+      "method": "Demonstration kNN",
+      "scenario": "pulse",
+      "seed": 7,
+      "layout": 30000,
+      "all_arrays_exact": true
+    },
+    {
+      "task": "button-press-v3",
+      "method": "Clean repeat",
+      "scenario": "nominal",
+      "seed": 7,
+      "layout": 30000,
+      "all_arrays_exact": true
+    },
+    {
+      "task": "button-press-v3",
+      "method": "Clean repeat",
+      "scenario": "pulse",
+      "seed": 7,
+      "layout": 30000,
+      "all_arrays_exact": true
+    },
+    {
+      "task": "button-press-v3",
+      "method": "Gaussian recovery",
+      "scenario": "nominal",
+      "seed": 7,
+      "layout": 30000,
+      "all_arrays_exact": true
+    },
+    {
+      "task": "button-press-v3",
+      "method": "Gaussian recovery",
+      "scenario": "pulse",
+      "seed": 7,
+      "layout": 30000,
+      "all_arrays_exact": true
+    },
+    {
+      "task": "button-press-v3",
+      "method": "Frozen observations",
+      "scenario": "nominal",
+      "seed": 7,
+      "layout": 30000,
+      "all_arrays_exact": true
+    },
+    {
+      "task": "button-press-v3",
+      "method": "Frozen observations",
+      "scenario": "pulse",
+      "seed": 7,
+      "layout": 30000,
+      "all_arrays_exact": true
+    },
+    {
+      "task": "button-press-v3",
+      "method": "SCANA-R",
+      "scenario": "nominal",
+      "seed": 7,
+      "layout": 30000,
+      "all_arrays_exact": true
+    },
+    {
+      "task": "button-press-v3",
+      "method": "SCANA-R",
+      "scenario": "pulse",
+      "seed": 7,
+      "layout": 30000,
+      "all_arrays_exact": true
+    },
+    {
+      "task": "button-press-v3",
+      "method": "Demonstration kNN",
+      "scenario": "nominal",
+      "seed": 7,
+      "layout": 30000,
+      "all_arrays_exact": true
+    },
+    {
+      "task": "button-press-v3",
+      "method": "Demonstration kNN",
+      "scenario": "pulse",
+      "seed": 7,
+      "layout": 30000,
+      "all_arrays_exact": true
+    }
+  ]
+}

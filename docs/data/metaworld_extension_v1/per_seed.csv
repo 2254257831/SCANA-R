@@ -1,0 +1,876 @@
+task,scenario,metric,method,seed,mean
+reach-v3,nominal,success,Clean repeat,7,0.85
+reach-v3,nominal,success,Clean repeat,11,0.9
+reach-v3,nominal,success,Clean repeat,23,0.95
+reach-v3,nominal,success,Clean repeat,31,0.95
+reach-v3,nominal,success,Clean repeat,47,0.9
+reach-v3,nominal,success,Gaussian recovery,7,0.8
+reach-v3,nominal,success,Gaussian recovery,11,0.9
+reach-v3,nominal,success,Gaussian recovery,23,0.95
+reach-v3,nominal,success,Gaussian recovery,31,0.85
+reach-v3,nominal,success,Gaussian recovery,47,0.85
+reach-v3,nominal,success,Frozen observations,7,0.8
+reach-v3,nominal,success,Frozen observations,11,0.9
+reach-v3,nominal,success,Frozen observations,23,0.9
+reach-v3,nominal,success,Frozen observations,31,0.85
+reach-v3,nominal,success,Frozen observations,47,0.8
+reach-v3,nominal,success,SCANA-R,7,0.8
+reach-v3,nominal,success,SCANA-R,11,0.9
+reach-v3,nominal,success,SCANA-R,23,0.9
+reach-v3,nominal,success,SCANA-R,31,0.85
+reach-v3,nominal,success,SCANA-R,47,0.8
+reach-v3,nominal,success,Demonstration kNN,7,0.4
+reach-v3,nominal,success,Demonstration kNN,11,0.45
+reach-v3,nominal,success,Demonstration kNN,23,0.35
+reach-v3,nominal,success,Demonstration kNN,31,0.4
+reach-v3,nominal,success,Demonstration kNN,47,0.4
+push-v3,nominal,success,Clean repeat,7,0.8
+push-v3,nominal,success,Clean repeat,11,0.95
+push-v3,nominal,success,Clean repeat,23,0.9
+push-v3,nominal,success,Clean repeat,31,0.9
+push-v3,nominal,success,Clean repeat,47,0.85
+push-v3,nominal,success,Gaussian recovery,7,0.85
+push-v3,nominal,success,Gaussian recovery,11,0.9
+push-v3,nominal,success,Gaussian recovery,23,0.85
+push-v3,nominal,success,Gaussian recovery,31,0.9
+push-v3,nominal,success,Gaussian recovery,47,0.7
+push-v3,nominal,success,Frozen observations,7,0.75
+push-v3,nominal,success,Frozen observations,11,0.85
+push-v3,nominal,success,Frozen observations,23,0.85
+push-v3,nominal,success,Frozen observations,31,1.0
+push-v3,nominal,success,Frozen observations,47,0.85
+push-v3,nominal,success,SCANA-R,7,0.8
+push-v3,nominal,success,SCANA-R,11,0.85
+push-v3,nominal,success,SCANA-R,23,0.9
+push-v3,nominal,success,SCANA-R,31,0.9
+push-v3,nominal,success,SCANA-R,47,0.8
+push-v3,nominal,success,Demonstration kNN,7,0.3
+push-v3,nominal,success,Demonstration kNN,11,0.25
+push-v3,nominal,success,Demonstration kNN,23,0.3
+push-v3,nominal,success,Demonstration kNN,31,0.35
+push-v3,nominal,success,Demonstration kNN,47,0.35
+pick-place-v3,nominal,success,Clean repeat,7,0.75
+pick-place-v3,nominal,success,Clean repeat,11,0.75
+pick-place-v3,nominal,success,Clean repeat,23,0.65
+pick-place-v3,nominal,success,Clean repeat,31,0.7
+pick-place-v3,nominal,success,Clean repeat,47,0.75
+pick-place-v3,nominal,success,Gaussian recovery,7,0.7
+pick-place-v3,nominal,success,Gaussian recovery,11,0.85
+pick-place-v3,nominal,success,Gaussian recovery,23,0.75
+pick-place-v3,nominal,success,Gaussian recovery,31,0.65
+pick-place-v3,nominal,success,Gaussian recovery,47,0.55
+pick-place-v3,nominal,success,Frozen observations,7,0.75
+pick-place-v3,nominal,success,Frozen observations,11,0.9
+pick-place-v3,nominal,success,Frozen observations,23,0.85
+pick-place-v3,nominal,success,Frozen observations,31,0.65
+pick-place-v3,nominal,success,Frozen observations,47,0.65
+pick-place-v3,nominal,success,SCANA-R,7,0.6
+pick-place-v3,nominal,success,SCANA-R,11,0.8
+pick-place-v3,nominal,success,SCANA-R,23,0.7
+pick-place-v3,nominal,success,SCANA-R,31,0.6
+pick-place-v3,nominal,success,SCANA-R,47,0.7
+pick-place-v3,nominal,success,Demonstration kNN,7,0.3
+pick-place-v3,nominal,success,Demonstration kNN,11,0.15
+pick-place-v3,nominal,success,Demonstration kNN,23,0.15
+pick-place-v3,nominal,success,Demonstration kNN,31,0.25
+pick-place-v3,nominal,success,Demonstration kNN,47,0.3
+door-open-v3,nominal,success,Clean repeat,7,1.0
+door-open-v3,nominal,success,Clean repeat,11,1.0
+door-open-v3,nominal,success,Clean repeat,23,1.0
+door-open-v3,nominal,success,Clean repeat,31,1.0
+door-open-v3,nominal,success,Clean repeat,47,1.0
+door-open-v3,nominal,success,Gaussian recovery,7,1.0
+door-open-v3,nominal,success,Gaussian recovery,11,1.0
+door-open-v3,nominal,success,Gaussian recovery,23,1.0
+door-open-v3,nominal,success,Gaussian recovery,31,1.0
+door-open-v3,nominal,success,Gaussian recovery,47,1.0
+door-open-v3,nominal,success,Frozen observations,7,1.0
+door-open-v3,nominal,success,Frozen observations,11,1.0
+door-open-v3,nominal,success,Frozen observations,23,1.0
+door-open-v3,nominal,success,Frozen observations,31,1.0
+door-open-v3,nominal,success,Frozen observations,47,1.0
+door-open-v3,nominal,success,SCANA-R,7,1.0
+door-open-v3,nominal,success,SCANA-R,11,1.0
+door-open-v3,nominal,success,SCANA-R,23,0.95
+door-open-v3,nominal,success,SCANA-R,31,1.0
+door-open-v3,nominal,success,SCANA-R,47,1.0
+door-open-v3,nominal,success,Demonstration kNN,7,1.0
+door-open-v3,nominal,success,Demonstration kNN,11,1.0
+door-open-v3,nominal,success,Demonstration kNN,23,1.0
+door-open-v3,nominal,success,Demonstration kNN,31,1.0
+door-open-v3,nominal,success,Demonstration kNN,47,1.0
+drawer-open-v3,nominal,success,Clean repeat,7,1.0
+drawer-open-v3,nominal,success,Clean repeat,11,1.0
+drawer-open-v3,nominal,success,Clean repeat,23,1.0
+drawer-open-v3,nominal,success,Clean repeat,31,1.0
+drawer-open-v3,nominal,success,Clean repeat,47,1.0
+drawer-open-v3,nominal,success,Gaussian recovery,7,1.0
+drawer-open-v3,nominal,success,Gaussian recovery,11,1.0
+drawer-open-v3,nominal,success,Gaussian recovery,23,1.0
+drawer-open-v3,nominal,success,Gaussian recovery,31,1.0
+drawer-open-v3,nominal,success,Gaussian recovery,47,1.0
+drawer-open-v3,nominal,success,Frozen observations,7,1.0
+drawer-open-v3,nominal,success,Frozen observations,11,1.0
+drawer-open-v3,nominal,success,Frozen observations,23,1.0
+drawer-open-v3,nominal,success,Frozen observations,31,1.0
+drawer-open-v3,nominal,success,Frozen observations,47,1.0
+drawer-open-v3,nominal,success,SCANA-R,7,1.0
+drawer-open-v3,nominal,success,SCANA-R,11,1.0
+drawer-open-v3,nominal,success,SCANA-R,23,1.0
+drawer-open-v3,nominal,success,SCANA-R,31,1.0
+drawer-open-v3,nominal,success,SCANA-R,47,1.0
+drawer-open-v3,nominal,success,Demonstration kNN,7,1.0
+drawer-open-v3,nominal,success,Demonstration kNN,11,1.0
+drawer-open-v3,nominal,success,Demonstration kNN,23,1.0
+drawer-open-v3,nominal,success,Demonstration kNN,31,1.0
+drawer-open-v3,nominal,success,Demonstration kNN,47,1.0
+button-press-v3,nominal,success,Clean repeat,7,1.0
+button-press-v3,nominal,success,Clean repeat,11,1.0
+button-press-v3,nominal,success,Clean repeat,23,1.0
+button-press-v3,nominal,success,Clean repeat,31,1.0
+button-press-v3,nominal,success,Clean repeat,47,1.0
+button-press-v3,nominal,success,Gaussian recovery,7,1.0
+button-press-v3,nominal,success,Gaussian recovery,11,1.0
+button-press-v3,nominal,success,Gaussian recovery,23,1.0
+button-press-v3,nominal,success,Gaussian recovery,31,1.0
+button-press-v3,nominal,success,Gaussian recovery,47,1.0
+button-press-v3,nominal,success,Frozen observations,7,1.0
+button-press-v3,nominal,success,Frozen observations,11,1.0
+button-press-v3,nominal,success,Frozen observations,23,1.0
+button-press-v3,nominal,success,Frozen observations,31,1.0
+button-press-v3,nominal,success,Frozen observations,47,1.0
+button-press-v3,nominal,success,SCANA-R,7,1.0
+button-press-v3,nominal,success,SCANA-R,11,1.0
+button-press-v3,nominal,success,SCANA-R,23,1.0
+button-press-v3,nominal,success,SCANA-R,31,1.0
+button-press-v3,nominal,success,SCANA-R,47,1.0
+button-press-v3,nominal,success,Demonstration kNN,7,1.0
+button-press-v3,nominal,success,Demonstration kNN,11,1.0
+button-press-v3,nominal,success,Demonstration kNN,23,1.0
+button-press-v3,nominal,success,Demonstration kNN,31,1.0
+button-press-v3,nominal,success,Demonstration kNN,47,1.0
+Macro average,nominal,success,Clean repeat,7,0.8999999999999998
+Macro average,nominal,success,Clean repeat,11,0.9333333333333333
+Macro average,nominal,success,Clean repeat,23,0.9166666666666667
+Macro average,nominal,success,Clean repeat,31,0.9249999999999998
+Macro average,nominal,success,Clean repeat,47,0.9166666666666666
+Macro average,nominal,success,Gaussian recovery,7,0.8916666666666666
+Macro average,nominal,success,Gaussian recovery,11,0.9416666666666668
+Macro average,nominal,success,Gaussian recovery,23,0.925
+Macro average,nominal,success,Gaussian recovery,31,0.9
+Macro average,nominal,success,Gaussian recovery,47,0.85
+Macro average,nominal,success,Frozen observations,7,0.8833333333333332
+Macro average,nominal,success,Frozen observations,11,0.9416666666666668
+Macro average,nominal,success,Frozen observations,23,0.9333333333333332
+Macro average,nominal,success,Frozen observations,31,0.9166666666666666
+Macro average,nominal,success,Frozen observations,47,0.8833333333333332
+Macro average,nominal,success,SCANA-R,7,0.8666666666666666
+Macro average,nominal,success,SCANA-R,11,0.925
+Macro average,nominal,success,SCANA-R,23,0.9083333333333332
+Macro average,nominal,success,SCANA-R,31,0.8916666666666666
+Macro average,nominal,success,SCANA-R,47,0.8833333333333334
+Macro average,nominal,success,Demonstration kNN,7,0.6666666666666665
+Macro average,nominal,success,Demonstration kNN,11,0.6416666666666665
+Macro average,nominal,success,Demonstration kNN,23,0.6333333333333332
+Macro average,nominal,success,Demonstration kNN,31,0.6666666666666666
+Macro average,nominal,success,Demonstration kNN,47,0.6749999999999999
+reach-v3,nominal,terminal_success,Clean repeat,7,0.65
+reach-v3,nominal,terminal_success,Clean repeat,11,0.75
+reach-v3,nominal,terminal_success,Clean repeat,23,0.7
+reach-v3,nominal,terminal_success,Clean repeat,31,0.75
+reach-v3,nominal,terminal_success,Clean repeat,47,0.8
+reach-v3,nominal,terminal_success,Gaussian recovery,7,0.55
+reach-v3,nominal,terminal_success,Gaussian recovery,11,0.75
+reach-v3,nominal,terminal_success,Gaussian recovery,23,0.85
+reach-v3,nominal,terminal_success,Gaussian recovery,31,0.85
+reach-v3,nominal,terminal_success,Gaussian recovery,47,0.75
+reach-v3,nominal,terminal_success,Frozen observations,7,0.65
+reach-v3,nominal,terminal_success,Frozen observations,11,0.85
+reach-v3,nominal,terminal_success,Frozen observations,23,0.8
+reach-v3,nominal,terminal_success,Frozen observations,31,0.85
+reach-v3,nominal,terminal_success,Frozen observations,47,0.7
+reach-v3,nominal,terminal_success,SCANA-R,7,0.7
+reach-v3,nominal,terminal_success,SCANA-R,11,0.85
+reach-v3,nominal,terminal_success,SCANA-R,23,0.85
+reach-v3,nominal,terminal_success,SCANA-R,31,0.65
+reach-v3,nominal,terminal_success,SCANA-R,47,0.7
+reach-v3,nominal,terminal_success,Demonstration kNN,7,0.35
+reach-v3,nominal,terminal_success,Demonstration kNN,11,0.4
+reach-v3,nominal,terminal_success,Demonstration kNN,23,0.35
+reach-v3,nominal,terminal_success,Demonstration kNN,31,0.35
+reach-v3,nominal,terminal_success,Demonstration kNN,47,0.4
+push-v3,nominal,terminal_success,Clean repeat,7,0.8
+push-v3,nominal,terminal_success,Clean repeat,11,0.95
+push-v3,nominal,terminal_success,Clean repeat,23,0.85
+push-v3,nominal,terminal_success,Clean repeat,31,0.9
+push-v3,nominal,terminal_success,Clean repeat,47,0.85
+push-v3,nominal,terminal_success,Gaussian recovery,7,0.85
+push-v3,nominal,terminal_success,Gaussian recovery,11,0.9
+push-v3,nominal,terminal_success,Gaussian recovery,23,0.85
+push-v3,nominal,terminal_success,Gaussian recovery,31,0.85
+push-v3,nominal,terminal_success,Gaussian recovery,47,0.6
+push-v3,nominal,terminal_success,Frozen observations,7,0.7
+push-v3,nominal,terminal_success,Frozen observations,11,0.85
+push-v3,nominal,terminal_success,Frozen observations,23,0.85
+push-v3,nominal,terminal_success,Frozen observations,31,0.95
+push-v3,nominal,terminal_success,Frozen observations,47,0.85
+push-v3,nominal,terminal_success,SCANA-R,7,0.8
+push-v3,nominal,terminal_success,SCANA-R,11,0.85
+push-v3,nominal,terminal_success,SCANA-R,23,0.9
+push-v3,nominal,terminal_success,SCANA-R,31,0.9
+push-v3,nominal,terminal_success,SCANA-R,47,0.75
+push-v3,nominal,terminal_success,Demonstration kNN,7,0.3
+push-v3,nominal,terminal_success,Demonstration kNN,11,0.2
+push-v3,nominal,terminal_success,Demonstration kNN,23,0.25
+push-v3,nominal,terminal_success,Demonstration kNN,31,0.35
+push-v3,nominal,terminal_success,Demonstration kNN,47,0.35
+pick-place-v3,nominal,terminal_success,Clean repeat,7,0.65
+pick-place-v3,nominal,terminal_success,Clean repeat,11,0.55
+pick-place-v3,nominal,terminal_success,Clean repeat,23,0.45
+pick-place-v3,nominal,terminal_success,Clean repeat,31,0.65
+pick-place-v3,nominal,terminal_success,Clean repeat,47,0.65
+pick-place-v3,nominal,terminal_success,Gaussian recovery,7,0.6
+pick-place-v3,nominal,terminal_success,Gaussian recovery,11,0.7
+pick-place-v3,nominal,terminal_success,Gaussian recovery,23,0.5
+pick-place-v3,nominal,terminal_success,Gaussian recovery,31,0.55
+pick-place-v3,nominal,terminal_success,Gaussian recovery,47,0.45
+pick-place-v3,nominal,terminal_success,Frozen observations,7,0.65
+pick-place-v3,nominal,terminal_success,Frozen observations,11,0.6
+pick-place-v3,nominal,terminal_success,Frozen observations,23,0.65
+pick-place-v3,nominal,terminal_success,Frozen observations,31,0.5
+pick-place-v3,nominal,terminal_success,Frozen observations,47,0.6
+pick-place-v3,nominal,terminal_success,SCANA-R,7,0.5
+pick-place-v3,nominal,terminal_success,SCANA-R,11,0.75
+pick-place-v3,nominal,terminal_success,SCANA-R,23,0.6
+pick-place-v3,nominal,terminal_success,SCANA-R,31,0.55
+pick-place-v3,nominal,terminal_success,SCANA-R,47,0.45
+pick-place-v3,nominal,terminal_success,Demonstration kNN,7,0.1
+pick-place-v3,nominal,terminal_success,Demonstration kNN,11,0.15
+pick-place-v3,nominal,terminal_success,Demonstration kNN,23,0.1
+pick-place-v3,nominal,terminal_success,Demonstration kNN,31,0.2
+pick-place-v3,nominal,terminal_success,Demonstration kNN,47,0.1
+door-open-v3,nominal,terminal_success,Clean repeat,7,0.9
+door-open-v3,nominal,terminal_success,Clean repeat,11,1.0
+door-open-v3,nominal,terminal_success,Clean repeat,23,1.0
+door-open-v3,nominal,terminal_success,Clean repeat,31,1.0
+door-open-v3,nominal,terminal_success,Clean repeat,47,0.95
+door-open-v3,nominal,terminal_success,Gaussian recovery,7,0.95
+door-open-v3,nominal,terminal_success,Gaussian recovery,11,1.0
+door-open-v3,nominal,terminal_success,Gaussian recovery,23,0.9
+door-open-v3,nominal,terminal_success,Gaussian recovery,31,1.0
+door-open-v3,nominal,terminal_success,Gaussian recovery,47,1.0
+door-open-v3,nominal,terminal_success,Frozen observations,7,0.95
+door-open-v3,nominal,terminal_success,Frozen observations,11,1.0
+door-open-v3,nominal,terminal_success,Frozen observations,23,0.95
+door-open-v3,nominal,terminal_success,Frozen observations,31,1.0
+door-open-v3,nominal,terminal_success,Frozen observations,47,0.9
+door-open-v3,nominal,terminal_success,SCANA-R,7,1.0
+door-open-v3,nominal,terminal_success,SCANA-R,11,1.0
+door-open-v3,nominal,terminal_success,SCANA-R,23,0.95
+door-open-v3,nominal,terminal_success,SCANA-R,31,1.0
+door-open-v3,nominal,terminal_success,SCANA-R,47,0.95
+door-open-v3,nominal,terminal_success,Demonstration kNN,7,1.0
+door-open-v3,nominal,terminal_success,Demonstration kNN,11,1.0
+door-open-v3,nominal,terminal_success,Demonstration kNN,23,0.95
+door-open-v3,nominal,terminal_success,Demonstration kNN,31,1.0
+door-open-v3,nominal,terminal_success,Demonstration kNN,47,1.0
+drawer-open-v3,nominal,terminal_success,Clean repeat,7,1.0
+drawer-open-v3,nominal,terminal_success,Clean repeat,11,0.75
+drawer-open-v3,nominal,terminal_success,Clean repeat,23,1.0
+drawer-open-v3,nominal,terminal_success,Clean repeat,31,1.0
+drawer-open-v3,nominal,terminal_success,Clean repeat,47,1.0
+drawer-open-v3,nominal,terminal_success,Gaussian recovery,7,1.0
+drawer-open-v3,nominal,terminal_success,Gaussian recovery,11,1.0
+drawer-open-v3,nominal,terminal_success,Gaussian recovery,23,1.0
+drawer-open-v3,nominal,terminal_success,Gaussian recovery,31,1.0
+drawer-open-v3,nominal,terminal_success,Gaussian recovery,47,1.0
+drawer-open-v3,nominal,terminal_success,Frozen observations,7,1.0
+drawer-open-v3,nominal,terminal_success,Frozen observations,11,1.0
+drawer-open-v3,nominal,terminal_success,Frozen observations,23,0.95
+drawer-open-v3,nominal,terminal_success,Frozen observations,31,1.0
+drawer-open-v3,nominal,terminal_success,Frozen observations,47,1.0
+drawer-open-v3,nominal,terminal_success,SCANA-R,7,1.0
+drawer-open-v3,nominal,terminal_success,SCANA-R,11,1.0
+drawer-open-v3,nominal,terminal_success,SCANA-R,23,0.95
+drawer-open-v3,nominal,terminal_success,SCANA-R,31,1.0
+drawer-open-v3,nominal,terminal_success,SCANA-R,47,1.0
+drawer-open-v3,nominal,terminal_success,Demonstration kNN,7,1.0
+drawer-open-v3,nominal,terminal_success,Demonstration kNN,11,1.0
+drawer-open-v3,nominal,terminal_success,Demonstration kNN,23,1.0
+drawer-open-v3,nominal,terminal_success,Demonstration kNN,31,1.0
+drawer-open-v3,nominal,terminal_success,Demonstration kNN,47,1.0
+button-press-v3,nominal,terminal_success,Clean repeat,7,1.0
+button-press-v3,nominal,terminal_success,Clean repeat,11,1.0
+button-press-v3,nominal,terminal_success,Clean repeat,23,1.0
+button-press-v3,nominal,terminal_success,Clean repeat,31,1.0
+button-press-v3,nominal,terminal_success,Clean repeat,47,1.0
+button-press-v3,nominal,terminal_success,Gaussian recovery,7,1.0
+button-press-v3,nominal,terminal_success,Gaussian recovery,11,1.0
+button-press-v3,nominal,terminal_success,Gaussian recovery,23,1.0
+button-press-v3,nominal,terminal_success,Gaussian recovery,31,1.0
+button-press-v3,nominal,terminal_success,Gaussian recovery,47,1.0
+button-press-v3,nominal,terminal_success,Frozen observations,7,1.0
+button-press-v3,nominal,terminal_success,Frozen observations,11,1.0
+button-press-v3,nominal,terminal_success,Frozen observations,23,1.0
+button-press-v3,nominal,terminal_success,Frozen observations,31,1.0
+button-press-v3,nominal,terminal_success,Frozen observations,47,1.0
+button-press-v3,nominal,terminal_success,SCANA-R,7,1.0
+button-press-v3,nominal,terminal_success,SCANA-R,11,1.0
+button-press-v3,nominal,terminal_success,SCANA-R,23,1.0
+button-press-v3,nominal,terminal_success,SCANA-R,31,1.0
+button-press-v3,nominal,terminal_success,SCANA-R,47,1.0
+button-press-v3,nominal,terminal_success,Demonstration kNN,7,1.0
+button-press-v3,nominal,terminal_success,Demonstration kNN,11,1.0
+button-press-v3,nominal,terminal_success,Demonstration kNN,23,1.0
+button-press-v3,nominal,terminal_success,Demonstration kNN,31,1.0
+button-press-v3,nominal,terminal_success,Demonstration kNN,47,1.0
+Macro average,nominal,terminal_success,Clean repeat,7,0.8333333333333333
+Macro average,nominal,terminal_success,Clean repeat,11,0.8333333333333334
+Macro average,nominal,terminal_success,Clean repeat,23,0.8333333333333334
+Macro average,nominal,terminal_success,Clean repeat,31,0.8833333333333334
+Macro average,nominal,terminal_success,Clean repeat,47,0.875
+Macro average,nominal,terminal_success,Gaussian recovery,7,0.825
+Macro average,nominal,terminal_success,Gaussian recovery,11,0.8916666666666666
+Macro average,nominal,terminal_success,Gaussian recovery,23,0.85
+Macro average,nominal,terminal_success,Gaussian recovery,31,0.875
+Macro average,nominal,terminal_success,Gaussian recovery,47,0.8
+Macro average,nominal,terminal_success,Frozen observations,7,0.825
+Macro average,nominal,terminal_success,Frozen observations,11,0.8833333333333334
+Macro average,nominal,terminal_success,Frozen observations,23,0.8666666666666666
+Macro average,nominal,terminal_success,Frozen observations,31,0.8833333333333332
+Macro average,nominal,terminal_success,Frozen observations,47,0.8416666666666666
+Macro average,nominal,terminal_success,SCANA-R,7,0.8333333333333334
+Macro average,nominal,terminal_success,SCANA-R,11,0.9083333333333334
+Macro average,nominal,terminal_success,SCANA-R,23,0.875
+Macro average,nominal,terminal_success,SCANA-R,31,0.85
+Macro average,nominal,terminal_success,SCANA-R,47,0.8083333333333333
+Macro average,nominal,terminal_success,Demonstration kNN,7,0.6249999999999999
+Macro average,nominal,terminal_success,Demonstration kNN,11,0.6249999999999999
+Macro average,nominal,terminal_success,Demonstration kNN,23,0.6083333333333332
+Macro average,nominal,terminal_success,Demonstration kNN,31,0.65
+Macro average,nominal,terminal_success,Demonstration kNN,47,0.6416666666666666
+reach-v3,pulse,success,Clean repeat,7,0.95
+reach-v3,pulse,success,Clean repeat,11,1.0
+reach-v3,pulse,success,Clean repeat,23,0.95
+reach-v3,pulse,success,Clean repeat,31,0.95
+reach-v3,pulse,success,Clean repeat,47,0.95
+reach-v3,pulse,success,Gaussian recovery,7,0.85
+reach-v3,pulse,success,Gaussian recovery,11,0.95
+reach-v3,pulse,success,Gaussian recovery,23,0.95
+reach-v3,pulse,success,Gaussian recovery,31,0.9
+reach-v3,pulse,success,Gaussian recovery,47,0.95
+reach-v3,pulse,success,Frozen observations,7,0.95
+reach-v3,pulse,success,Frozen observations,11,0.95
+reach-v3,pulse,success,Frozen observations,23,0.95
+reach-v3,pulse,success,Frozen observations,31,0.95
+reach-v3,pulse,success,Frozen observations,47,0.9
+reach-v3,pulse,success,SCANA-R,7,0.9
+reach-v3,pulse,success,SCANA-R,11,0.95
+reach-v3,pulse,success,SCANA-R,23,1.0
+reach-v3,pulse,success,SCANA-R,31,0.95
+reach-v3,pulse,success,SCANA-R,47,0.9
+reach-v3,pulse,success,Demonstration kNN,7,0.4
+reach-v3,pulse,success,Demonstration kNN,11,0.45
+reach-v3,pulse,success,Demonstration kNN,23,0.35
+reach-v3,pulse,success,Demonstration kNN,31,0.35
+reach-v3,pulse,success,Demonstration kNN,47,0.35
+push-v3,pulse,success,Clean repeat,7,0.85
+push-v3,pulse,success,Clean repeat,11,0.95
+push-v3,pulse,success,Clean repeat,23,0.9
+push-v3,pulse,success,Clean repeat,31,0.9
+push-v3,pulse,success,Clean repeat,47,0.85
+push-v3,pulse,success,Gaussian recovery,7,0.85
+push-v3,pulse,success,Gaussian recovery,11,0.9
+push-v3,pulse,success,Gaussian recovery,23,0.85
+push-v3,pulse,success,Gaussian recovery,31,0.9
+push-v3,pulse,success,Gaussian recovery,47,0.7
+push-v3,pulse,success,Frozen observations,7,0.75
+push-v3,pulse,success,Frozen observations,11,0.85
+push-v3,pulse,success,Frozen observations,23,0.85
+push-v3,pulse,success,Frozen observations,31,1.0
+push-v3,pulse,success,Frozen observations,47,0.85
+push-v3,pulse,success,SCANA-R,7,0.8
+push-v3,pulse,success,SCANA-R,11,0.85
+push-v3,pulse,success,SCANA-R,23,0.9
+push-v3,pulse,success,SCANA-R,31,0.9
+push-v3,pulse,success,SCANA-R,47,0.8
+push-v3,pulse,success,Demonstration kNN,7,0.3
+push-v3,pulse,success,Demonstration kNN,11,0.25
+push-v3,pulse,success,Demonstration kNN,23,0.3
+push-v3,pulse,success,Demonstration kNN,31,0.35
+push-v3,pulse,success,Demonstration kNN,47,0.4
+pick-place-v3,pulse,success,Clean repeat,7,0.75
+pick-place-v3,pulse,success,Clean repeat,11,0.75
+pick-place-v3,pulse,success,Clean repeat,23,0.65
+pick-place-v3,pulse,success,Clean repeat,31,0.7
+pick-place-v3,pulse,success,Clean repeat,47,0.8
+pick-place-v3,pulse,success,Gaussian recovery,7,0.75
+pick-place-v3,pulse,success,Gaussian recovery,11,0.85
+pick-place-v3,pulse,success,Gaussian recovery,23,0.75
+pick-place-v3,pulse,success,Gaussian recovery,31,0.65
+pick-place-v3,pulse,success,Gaussian recovery,47,0.55
+pick-place-v3,pulse,success,Frozen observations,7,0.75
+pick-place-v3,pulse,success,Frozen observations,11,0.9
+pick-place-v3,pulse,success,Frozen observations,23,0.85
+pick-place-v3,pulse,success,Frozen observations,31,0.65
+pick-place-v3,pulse,success,Frozen observations,47,0.65
+pick-place-v3,pulse,success,SCANA-R,7,0.6
+pick-place-v3,pulse,success,SCANA-R,11,0.8
+pick-place-v3,pulse,success,SCANA-R,23,0.7
+pick-place-v3,pulse,success,SCANA-R,31,0.6
+pick-place-v3,pulse,success,SCANA-R,47,0.7
+pick-place-v3,pulse,success,Demonstration kNN,7,0.3
+pick-place-v3,pulse,success,Demonstration kNN,11,0.15
+pick-place-v3,pulse,success,Demonstration kNN,23,0.15
+pick-place-v3,pulse,success,Demonstration kNN,31,0.25
+pick-place-v3,pulse,success,Demonstration kNN,47,0.3
+door-open-v3,pulse,success,Clean repeat,7,1.0
+door-open-v3,pulse,success,Clean repeat,11,1.0
+door-open-v3,pulse,success,Clean repeat,23,1.0
+door-open-v3,pulse,success,Clean repeat,31,1.0
+door-open-v3,pulse,success,Clean repeat,47,1.0
+door-open-v3,pulse,success,Gaussian recovery,7,1.0
+door-open-v3,pulse,success,Gaussian recovery,11,1.0
+door-open-v3,pulse,success,Gaussian recovery,23,1.0
+door-open-v3,pulse,success,Gaussian recovery,31,1.0
+door-open-v3,pulse,success,Gaussian recovery,47,1.0
+door-open-v3,pulse,success,Frozen observations,7,1.0
+door-open-v3,pulse,success,Frozen observations,11,1.0
+door-open-v3,pulse,success,Frozen observations,23,1.0
+door-open-v3,pulse,success,Frozen observations,31,1.0
+door-open-v3,pulse,success,Frozen observations,47,1.0
+door-open-v3,pulse,success,SCANA-R,7,1.0
+door-open-v3,pulse,success,SCANA-R,11,1.0
+door-open-v3,pulse,success,SCANA-R,23,0.95
+door-open-v3,pulse,success,SCANA-R,31,1.0
+door-open-v3,pulse,success,SCANA-R,47,1.0
+door-open-v3,pulse,success,Demonstration kNN,7,1.0
+door-open-v3,pulse,success,Demonstration kNN,11,1.0
+door-open-v3,pulse,success,Demonstration kNN,23,1.0
+door-open-v3,pulse,success,Demonstration kNN,31,1.0
+door-open-v3,pulse,success,Demonstration kNN,47,1.0
+drawer-open-v3,pulse,success,Clean repeat,7,1.0
+drawer-open-v3,pulse,success,Clean repeat,11,1.0
+drawer-open-v3,pulse,success,Clean repeat,23,1.0
+drawer-open-v3,pulse,success,Clean repeat,31,1.0
+drawer-open-v3,pulse,success,Clean repeat,47,1.0
+drawer-open-v3,pulse,success,Gaussian recovery,7,1.0
+drawer-open-v3,pulse,success,Gaussian recovery,11,1.0
+drawer-open-v3,pulse,success,Gaussian recovery,23,1.0
+drawer-open-v3,pulse,success,Gaussian recovery,31,1.0
+drawer-open-v3,pulse,success,Gaussian recovery,47,1.0
+drawer-open-v3,pulse,success,Frozen observations,7,1.0
+drawer-open-v3,pulse,success,Frozen observations,11,1.0
+drawer-open-v3,pulse,success,Frozen observations,23,1.0
+drawer-open-v3,pulse,success,Frozen observations,31,1.0
+drawer-open-v3,pulse,success,Frozen observations,47,1.0
+drawer-open-v3,pulse,success,SCANA-R,7,1.0
+drawer-open-v3,pulse,success,SCANA-R,11,1.0
+drawer-open-v3,pulse,success,SCANA-R,23,1.0
+drawer-open-v3,pulse,success,SCANA-R,31,1.0
+drawer-open-v3,pulse,success,SCANA-R,47,1.0
+drawer-open-v3,pulse,success,Demonstration kNN,7,1.0
+drawer-open-v3,pulse,success,Demonstration kNN,11,1.0
+drawer-open-v3,pulse,success,Demonstration kNN,23,1.0
+drawer-open-v3,pulse,success,Demonstration kNN,31,1.0
+drawer-open-v3,pulse,success,Demonstration kNN,47,1.0
+button-press-v3,pulse,success,Clean repeat,7,1.0
+button-press-v3,pulse,success,Clean repeat,11,1.0
+button-press-v3,pulse,success,Clean repeat,23,1.0
+button-press-v3,pulse,success,Clean repeat,31,1.0
+button-press-v3,pulse,success,Clean repeat,47,1.0
+button-press-v3,pulse,success,Gaussian recovery,7,1.0
+button-press-v3,pulse,success,Gaussian recovery,11,1.0
+button-press-v3,pulse,success,Gaussian recovery,23,1.0
+button-press-v3,pulse,success,Gaussian recovery,31,1.0
+button-press-v3,pulse,success,Gaussian recovery,47,1.0
+button-press-v3,pulse,success,Frozen observations,7,1.0
+button-press-v3,pulse,success,Frozen observations,11,1.0
+button-press-v3,pulse,success,Frozen observations,23,1.0
+button-press-v3,pulse,success,Frozen observations,31,1.0
+button-press-v3,pulse,success,Frozen observations,47,1.0
+button-press-v3,pulse,success,SCANA-R,7,1.0
+button-press-v3,pulse,success,SCANA-R,11,1.0
+button-press-v3,pulse,success,SCANA-R,23,1.0
+button-press-v3,pulse,success,SCANA-R,31,1.0
+button-press-v3,pulse,success,SCANA-R,47,1.0
+button-press-v3,pulse,success,Demonstration kNN,7,1.0
+button-press-v3,pulse,success,Demonstration kNN,11,1.0
+button-press-v3,pulse,success,Demonstration kNN,23,1.0
+button-press-v3,pulse,success,Demonstration kNN,31,1.0
+button-press-v3,pulse,success,Demonstration kNN,47,1.0
+Macro average,pulse,success,Clean repeat,7,0.925
+Macro average,pulse,success,Clean repeat,11,0.95
+Macro average,pulse,success,Clean repeat,23,0.9166666666666667
+Macro average,pulse,success,Clean repeat,31,0.9249999999999998
+Macro average,pulse,success,Clean repeat,47,0.9333333333333332
+Macro average,pulse,success,Gaussian recovery,7,0.9083333333333334
+Macro average,pulse,success,Gaussian recovery,11,0.95
+Macro average,pulse,success,Gaussian recovery,23,0.925
+Macro average,pulse,success,Gaussian recovery,31,0.9083333333333332
+Macro average,pulse,success,Gaussian recovery,47,0.8666666666666668
+Macro average,pulse,success,Frozen observations,7,0.9083333333333334
+Macro average,pulse,success,Frozen observations,11,0.95
+Macro average,pulse,success,Frozen observations,23,0.9416666666666667
+Macro average,pulse,success,Frozen observations,31,0.9333333333333333
+Macro average,pulse,success,Frozen observations,47,0.9
+Macro average,pulse,success,SCANA-R,7,0.8833333333333332
+Macro average,pulse,success,SCANA-R,11,0.9333333333333332
+Macro average,pulse,success,SCANA-R,23,0.925
+Macro average,pulse,success,SCANA-R,31,0.9083333333333332
+Macro average,pulse,success,SCANA-R,47,0.9
+Macro average,pulse,success,Demonstration kNN,7,0.6666666666666665
+Macro average,pulse,success,Demonstration kNN,11,0.6416666666666665
+Macro average,pulse,success,Demonstration kNN,23,0.6333333333333332
+Macro average,pulse,success,Demonstration kNN,31,0.6583333333333334
+Macro average,pulse,success,Demonstration kNN,47,0.6749999999999999
+reach-v3,pulse,terminal_success,Clean repeat,7,0.7
+reach-v3,pulse,terminal_success,Clean repeat,11,0.65
+reach-v3,pulse,terminal_success,Clean repeat,23,0.75
+reach-v3,pulse,terminal_success,Clean repeat,31,0.75
+reach-v3,pulse,terminal_success,Clean repeat,47,0.75
+reach-v3,pulse,terminal_success,Gaussian recovery,7,0.5
+reach-v3,pulse,terminal_success,Gaussian recovery,11,0.6
+reach-v3,pulse,terminal_success,Gaussian recovery,23,0.6
+reach-v3,pulse,terminal_success,Gaussian recovery,31,0.7
+reach-v3,pulse,terminal_success,Gaussian recovery,47,0.55
+reach-v3,pulse,terminal_success,Frozen observations,7,0.6
+reach-v3,pulse,terminal_success,Frozen observations,11,0.7
+reach-v3,pulse,terminal_success,Frozen observations,23,0.7
+reach-v3,pulse,terminal_success,Frozen observations,31,0.75
+reach-v3,pulse,terminal_success,Frozen observations,47,0.6
+reach-v3,pulse,terminal_success,SCANA-R,7,0.55
+reach-v3,pulse,terminal_success,SCANA-R,11,0.75
+reach-v3,pulse,terminal_success,SCANA-R,23,0.7
+reach-v3,pulse,terminal_success,SCANA-R,31,0.7
+reach-v3,pulse,terminal_success,SCANA-R,47,0.55
+reach-v3,pulse,terminal_success,Demonstration kNN,7,0.4
+reach-v3,pulse,terminal_success,Demonstration kNN,11,0.35
+reach-v3,pulse,terminal_success,Demonstration kNN,23,0.35
+reach-v3,pulse,terminal_success,Demonstration kNN,31,0.3
+reach-v3,pulse,terminal_success,Demonstration kNN,47,0.3
+push-v3,pulse,terminal_success,Clean repeat,7,0.85
+push-v3,pulse,terminal_success,Clean repeat,11,0.95
+push-v3,pulse,terminal_success,Clean repeat,23,0.7
+push-v3,pulse,terminal_success,Clean repeat,31,0.85
+push-v3,pulse,terminal_success,Clean repeat,47,0.8
+push-v3,pulse,terminal_success,Gaussian recovery,7,0.85
+push-v3,pulse,terminal_success,Gaussian recovery,11,0.9
+push-v3,pulse,terminal_success,Gaussian recovery,23,0.85
+push-v3,pulse,terminal_success,Gaussian recovery,31,0.9
+push-v3,pulse,terminal_success,Gaussian recovery,47,0.65
+push-v3,pulse,terminal_success,Frozen observations,7,0.75
+push-v3,pulse,terminal_success,Frozen observations,11,0.8
+push-v3,pulse,terminal_success,Frozen observations,23,0.65
+push-v3,pulse,terminal_success,Frozen observations,31,0.95
+push-v3,pulse,terminal_success,Frozen observations,47,0.8
+push-v3,pulse,terminal_success,SCANA-R,7,0.8
+push-v3,pulse,terminal_success,SCANA-R,11,0.85
+push-v3,pulse,terminal_success,SCANA-R,23,0.85
+push-v3,pulse,terminal_success,SCANA-R,31,0.9
+push-v3,pulse,terminal_success,SCANA-R,47,0.65
+push-v3,pulse,terminal_success,Demonstration kNN,7,0.3
+push-v3,pulse,terminal_success,Demonstration kNN,11,0.2
+push-v3,pulse,terminal_success,Demonstration kNN,23,0.25
+push-v3,pulse,terminal_success,Demonstration kNN,31,0.35
+push-v3,pulse,terminal_success,Demonstration kNN,47,0.35
+pick-place-v3,pulse,terminal_success,Clean repeat,7,0.65
+pick-place-v3,pulse,terminal_success,Clean repeat,11,0.6
+pick-place-v3,pulse,terminal_success,Clean repeat,23,0.45
+pick-place-v3,pulse,terminal_success,Clean repeat,31,0.65
+pick-place-v3,pulse,terminal_success,Clean repeat,47,0.7
+pick-place-v3,pulse,terminal_success,Gaussian recovery,7,0.65
+pick-place-v3,pulse,terminal_success,Gaussian recovery,11,0.7
+pick-place-v3,pulse,terminal_success,Gaussian recovery,23,0.5
+pick-place-v3,pulse,terminal_success,Gaussian recovery,31,0.5
+pick-place-v3,pulse,terminal_success,Gaussian recovery,47,0.5
+pick-place-v3,pulse,terminal_success,Frozen observations,7,0.7
+pick-place-v3,pulse,terminal_success,Frozen observations,11,0.55
+pick-place-v3,pulse,terminal_success,Frozen observations,23,0.65
+pick-place-v3,pulse,terminal_success,Frozen observations,31,0.5
+pick-place-v3,pulse,terminal_success,Frozen observations,47,0.55
+pick-place-v3,pulse,terminal_success,SCANA-R,7,0.5
+pick-place-v3,pulse,terminal_success,SCANA-R,11,0.7
+pick-place-v3,pulse,terminal_success,SCANA-R,23,0.6
+pick-place-v3,pulse,terminal_success,SCANA-R,31,0.55
+pick-place-v3,pulse,terminal_success,SCANA-R,47,0.45
+pick-place-v3,pulse,terminal_success,Demonstration kNN,7,0.1
+pick-place-v3,pulse,terminal_success,Demonstration kNN,11,0.15
+pick-place-v3,pulse,terminal_success,Demonstration kNN,23,0.1
+pick-place-v3,pulse,terminal_success,Demonstration kNN,31,0.2
+pick-place-v3,pulse,terminal_success,Demonstration kNN,47,0.15
+door-open-v3,pulse,terminal_success,Clean repeat,7,0.95
+door-open-v3,pulse,terminal_success,Clean repeat,11,1.0
+door-open-v3,pulse,terminal_success,Clean repeat,23,1.0
+door-open-v3,pulse,terminal_success,Clean repeat,31,1.0
+door-open-v3,pulse,terminal_success,Clean repeat,47,1.0
+door-open-v3,pulse,terminal_success,Gaussian recovery,7,1.0
+door-open-v3,pulse,terminal_success,Gaussian recovery,11,1.0
+door-open-v3,pulse,terminal_success,Gaussian recovery,23,0.95
+door-open-v3,pulse,terminal_success,Gaussian recovery,31,1.0
+door-open-v3,pulse,terminal_success,Gaussian recovery,47,0.95
+door-open-v3,pulse,terminal_success,Frozen observations,7,0.95
+door-open-v3,pulse,terminal_success,Frozen observations,11,1.0
+door-open-v3,pulse,terminal_success,Frozen observations,23,0.95
+door-open-v3,pulse,terminal_success,Frozen observations,31,1.0
+door-open-v3,pulse,terminal_success,Frozen observations,47,0.9
+door-open-v3,pulse,terminal_success,SCANA-R,7,1.0
+door-open-v3,pulse,terminal_success,SCANA-R,11,1.0
+door-open-v3,pulse,terminal_success,SCANA-R,23,0.95
+door-open-v3,pulse,terminal_success,SCANA-R,31,1.0
+door-open-v3,pulse,terminal_success,SCANA-R,47,0.95
+door-open-v3,pulse,terminal_success,Demonstration kNN,7,1.0
+door-open-v3,pulse,terminal_success,Demonstration kNN,11,1.0
+door-open-v3,pulse,terminal_success,Demonstration kNN,23,1.0
+door-open-v3,pulse,terminal_success,Demonstration kNN,31,1.0
+door-open-v3,pulse,terminal_success,Demonstration kNN,47,1.0
+drawer-open-v3,pulse,terminal_success,Clean repeat,7,1.0
+drawer-open-v3,pulse,terminal_success,Clean repeat,11,0.8
+drawer-open-v3,pulse,terminal_success,Clean repeat,23,1.0
+drawer-open-v3,pulse,terminal_success,Clean repeat,31,0.9
+drawer-open-v3,pulse,terminal_success,Clean repeat,47,1.0
+drawer-open-v3,pulse,terminal_success,Gaussian recovery,7,1.0
+drawer-open-v3,pulse,terminal_success,Gaussian recovery,11,1.0
+drawer-open-v3,pulse,terminal_success,Gaussian recovery,23,1.0
+drawer-open-v3,pulse,terminal_success,Gaussian recovery,31,1.0
+drawer-open-v3,pulse,terminal_success,Gaussian recovery,47,1.0
+drawer-open-v3,pulse,terminal_success,Frozen observations,7,1.0
+drawer-open-v3,pulse,terminal_success,Frozen observations,11,1.0
+drawer-open-v3,pulse,terminal_success,Frozen observations,23,0.95
+drawer-open-v3,pulse,terminal_success,Frozen observations,31,1.0
+drawer-open-v3,pulse,terminal_success,Frozen observations,47,1.0
+drawer-open-v3,pulse,terminal_success,SCANA-R,7,1.0
+drawer-open-v3,pulse,terminal_success,SCANA-R,11,1.0
+drawer-open-v3,pulse,terminal_success,SCANA-R,23,0.95
+drawer-open-v3,pulse,terminal_success,SCANA-R,31,1.0
+drawer-open-v3,pulse,terminal_success,SCANA-R,47,1.0
+drawer-open-v3,pulse,terminal_success,Demonstration kNN,7,1.0
+drawer-open-v3,pulse,terminal_success,Demonstration kNN,11,1.0
+drawer-open-v3,pulse,terminal_success,Demonstration kNN,23,1.0
+drawer-open-v3,pulse,terminal_success,Demonstration kNN,31,1.0
+drawer-open-v3,pulse,terminal_success,Demonstration kNN,47,1.0
+button-press-v3,pulse,terminal_success,Clean repeat,7,1.0
+button-press-v3,pulse,terminal_success,Clean repeat,11,1.0
+button-press-v3,pulse,terminal_success,Clean repeat,23,1.0
+button-press-v3,pulse,terminal_success,Clean repeat,31,1.0
+button-press-v3,pulse,terminal_success,Clean repeat,47,1.0
+button-press-v3,pulse,terminal_success,Gaussian recovery,7,1.0
+button-press-v3,pulse,terminal_success,Gaussian recovery,11,1.0
+button-press-v3,pulse,terminal_success,Gaussian recovery,23,1.0
+button-press-v3,pulse,terminal_success,Gaussian recovery,31,1.0
+button-press-v3,pulse,terminal_success,Gaussian recovery,47,1.0
+button-press-v3,pulse,terminal_success,Frozen observations,7,1.0
+button-press-v3,pulse,terminal_success,Frozen observations,11,1.0
+button-press-v3,pulse,terminal_success,Frozen observations,23,1.0
+button-press-v3,pulse,terminal_success,Frozen observations,31,1.0
+button-press-v3,pulse,terminal_success,Frozen observations,47,1.0
+button-press-v3,pulse,terminal_success,SCANA-R,7,1.0
+button-press-v3,pulse,terminal_success,SCANA-R,11,1.0
+button-press-v3,pulse,terminal_success,SCANA-R,23,1.0
+button-press-v3,pulse,terminal_success,SCANA-R,31,1.0
+button-press-v3,pulse,terminal_success,SCANA-R,47,1.0
+button-press-v3,pulse,terminal_success,Demonstration kNN,7,1.0
+button-press-v3,pulse,terminal_success,Demonstration kNN,11,1.0
+button-press-v3,pulse,terminal_success,Demonstration kNN,23,1.0
+button-press-v3,pulse,terminal_success,Demonstration kNN,31,1.0
+button-press-v3,pulse,terminal_success,Demonstration kNN,47,1.0
+Macro average,pulse,terminal_success,Clean repeat,7,0.8583333333333334
+Macro average,pulse,terminal_success,Clean repeat,11,0.8333333333333333
+Macro average,pulse,terminal_success,Clean repeat,23,0.8166666666666668
+Macro average,pulse,terminal_success,Clean repeat,31,0.8583333333333332
+Macro average,pulse,terminal_success,Clean repeat,47,0.875
+Macro average,pulse,terminal_success,Gaussian recovery,7,0.8333333333333334
+Macro average,pulse,terminal_success,Gaussian recovery,11,0.8666666666666668
+Macro average,pulse,terminal_success,Gaussian recovery,23,0.8166666666666668
+Macro average,pulse,terminal_success,Gaussian recovery,31,0.85
+Macro average,pulse,terminal_success,Gaussian recovery,47,0.775
+Macro average,pulse,terminal_success,Frozen observations,7,0.8333333333333333
+Macro average,pulse,terminal_success,Frozen observations,11,0.8416666666666668
+Macro average,pulse,terminal_success,Frozen observations,23,0.8166666666666668
+Macro average,pulse,terminal_success,Frozen observations,31,0.8666666666666666
+Macro average,pulse,terminal_success,Frozen observations,47,0.8083333333333332
+Macro average,pulse,terminal_success,SCANA-R,7,0.8083333333333333
+Macro average,pulse,terminal_success,SCANA-R,11,0.8833333333333334
+Macro average,pulse,terminal_success,SCANA-R,23,0.8416666666666666
+Macro average,pulse,terminal_success,SCANA-R,31,0.8583333333333334
+Macro average,pulse,terminal_success,SCANA-R,47,0.7666666666666667
+Macro average,pulse,terminal_success,Demonstration kNN,7,0.6333333333333332
+Macro average,pulse,terminal_success,Demonstration kNN,11,0.6166666666666665
+Macro average,pulse,terminal_success,Demonstration kNN,23,0.6166666666666666
+Macro average,pulse,terminal_success,Demonstration kNN,31,0.6416666666666666
+Macro average,pulse,terminal_success,Demonstration kNN,47,0.6333333333333332
+reach-v3,pulse,post_pulse_success,Clean repeat,7,0.8
+reach-v3,pulse,post_pulse_success,Clean repeat,11,0.85
+reach-v3,pulse,post_pulse_success,Clean repeat,23,0.85
+reach-v3,pulse,post_pulse_success,Clean repeat,31,0.8
+reach-v3,pulse,post_pulse_success,Clean repeat,47,0.8
+reach-v3,pulse,post_pulse_success,Gaussian recovery,7,0.65
+reach-v3,pulse,post_pulse_success,Gaussian recovery,11,0.65
+reach-v3,pulse,post_pulse_success,Gaussian recovery,23,0.65
+reach-v3,pulse,post_pulse_success,Gaussian recovery,31,0.7
+reach-v3,pulse,post_pulse_success,Gaussian recovery,47,0.65
+reach-v3,pulse,post_pulse_success,Frozen observations,7,0.75
+reach-v3,pulse,post_pulse_success,Frozen observations,11,0.8
+reach-v3,pulse,post_pulse_success,Frozen observations,23,0.75
+reach-v3,pulse,post_pulse_success,Frozen observations,31,0.8
+reach-v3,pulse,post_pulse_success,Frozen observations,47,0.7
+reach-v3,pulse,post_pulse_success,SCANA-R,7,0.7
+reach-v3,pulse,post_pulse_success,SCANA-R,11,0.8
+reach-v3,pulse,post_pulse_success,SCANA-R,23,0.75
+reach-v3,pulse,post_pulse_success,SCANA-R,31,0.75
+reach-v3,pulse,post_pulse_success,SCANA-R,47,0.65
+reach-v3,pulse,post_pulse_success,Demonstration kNN,7,0.4
+reach-v3,pulse,post_pulse_success,Demonstration kNN,11,0.35
+reach-v3,pulse,post_pulse_success,Demonstration kNN,23,0.35
+reach-v3,pulse,post_pulse_success,Demonstration kNN,31,0.3
+reach-v3,pulse,post_pulse_success,Demonstration kNN,47,0.35
+push-v3,pulse,post_pulse_success,Clean repeat,7,0.85
+push-v3,pulse,post_pulse_success,Clean repeat,11,0.95
+push-v3,pulse,post_pulse_success,Clean repeat,23,0.9
+push-v3,pulse,post_pulse_success,Clean repeat,31,0.9
+push-v3,pulse,post_pulse_success,Clean repeat,47,0.85
+push-v3,pulse,post_pulse_success,Gaussian recovery,7,0.85
+push-v3,pulse,post_pulse_success,Gaussian recovery,11,0.9
+push-v3,pulse,post_pulse_success,Gaussian recovery,23,0.85
+push-v3,pulse,post_pulse_success,Gaussian recovery,31,0.9
+push-v3,pulse,post_pulse_success,Gaussian recovery,47,0.7
+push-v3,pulse,post_pulse_success,Frozen observations,7,0.75
+push-v3,pulse,post_pulse_success,Frozen observations,11,0.85
+push-v3,pulse,post_pulse_success,Frozen observations,23,0.85
+push-v3,pulse,post_pulse_success,Frozen observations,31,1.0
+push-v3,pulse,post_pulse_success,Frozen observations,47,0.85
+push-v3,pulse,post_pulse_success,SCANA-R,7,0.8
+push-v3,pulse,post_pulse_success,SCANA-R,11,0.85
+push-v3,pulse,post_pulse_success,SCANA-R,23,0.9
+push-v3,pulse,post_pulse_success,SCANA-R,31,0.9
+push-v3,pulse,post_pulse_success,SCANA-R,47,0.8
+push-v3,pulse,post_pulse_success,Demonstration kNN,7,0.3
+push-v3,pulse,post_pulse_success,Demonstration kNN,11,0.25
+push-v3,pulse,post_pulse_success,Demonstration kNN,23,0.3
+push-v3,pulse,post_pulse_success,Demonstration kNN,31,0.35
+push-v3,pulse,post_pulse_success,Demonstration kNN,47,0.4
+pick-place-v3,pulse,post_pulse_success,Clean repeat,7,0.75
+pick-place-v3,pulse,post_pulse_success,Clean repeat,11,0.65
+pick-place-v3,pulse,post_pulse_success,Clean repeat,23,0.6
+pick-place-v3,pulse,post_pulse_success,Clean repeat,31,0.7
+pick-place-v3,pulse,post_pulse_success,Clean repeat,47,0.8
+pick-place-v3,pulse,post_pulse_success,Gaussian recovery,7,0.75
+pick-place-v3,pulse,post_pulse_success,Gaussian recovery,11,0.8
+pick-place-v3,pulse,post_pulse_success,Gaussian recovery,23,0.75
+pick-place-v3,pulse,post_pulse_success,Gaussian recovery,31,0.6
+pick-place-v3,pulse,post_pulse_success,Gaussian recovery,47,0.5
+pick-place-v3,pulse,post_pulse_success,Frozen observations,7,0.75
+pick-place-v3,pulse,post_pulse_success,Frozen observations,11,0.85
+pick-place-v3,pulse,post_pulse_success,Frozen observations,23,0.85
+pick-place-v3,pulse,post_pulse_success,Frozen observations,31,0.65
+pick-place-v3,pulse,post_pulse_success,Frozen observations,47,0.6
+pick-place-v3,pulse,post_pulse_success,SCANA-R,7,0.55
+pick-place-v3,pulse,post_pulse_success,SCANA-R,11,0.75
+pick-place-v3,pulse,post_pulse_success,SCANA-R,23,0.7
+pick-place-v3,pulse,post_pulse_success,SCANA-R,31,0.6
+pick-place-v3,pulse,post_pulse_success,SCANA-R,47,0.6
+pick-place-v3,pulse,post_pulse_success,Demonstration kNN,7,0.2
+pick-place-v3,pulse,post_pulse_success,Demonstration kNN,11,0.15
+pick-place-v3,pulse,post_pulse_success,Demonstration kNN,23,0.1
+pick-place-v3,pulse,post_pulse_success,Demonstration kNN,31,0.2
+pick-place-v3,pulse,post_pulse_success,Demonstration kNN,47,0.2
+door-open-v3,pulse,post_pulse_success,Clean repeat,7,1.0
+door-open-v3,pulse,post_pulse_success,Clean repeat,11,1.0
+door-open-v3,pulse,post_pulse_success,Clean repeat,23,1.0
+door-open-v3,pulse,post_pulse_success,Clean repeat,31,1.0
+door-open-v3,pulse,post_pulse_success,Clean repeat,47,1.0
+door-open-v3,pulse,post_pulse_success,Gaussian recovery,7,1.0
+door-open-v3,pulse,post_pulse_success,Gaussian recovery,11,1.0
+door-open-v3,pulse,post_pulse_success,Gaussian recovery,23,1.0
+door-open-v3,pulse,post_pulse_success,Gaussian recovery,31,1.0
+door-open-v3,pulse,post_pulse_success,Gaussian recovery,47,1.0
+door-open-v3,pulse,post_pulse_success,Frozen observations,7,1.0
+door-open-v3,pulse,post_pulse_success,Frozen observations,11,1.0
+door-open-v3,pulse,post_pulse_success,Frozen observations,23,1.0
+door-open-v3,pulse,post_pulse_success,Frozen observations,31,1.0
+door-open-v3,pulse,post_pulse_success,Frozen observations,47,1.0
+door-open-v3,pulse,post_pulse_success,SCANA-R,7,1.0
+door-open-v3,pulse,post_pulse_success,SCANA-R,11,1.0
+door-open-v3,pulse,post_pulse_success,SCANA-R,23,0.95
+door-open-v3,pulse,post_pulse_success,SCANA-R,31,1.0
+door-open-v3,pulse,post_pulse_success,SCANA-R,47,1.0
+door-open-v3,pulse,post_pulse_success,Demonstration kNN,7,1.0
+door-open-v3,pulse,post_pulse_success,Demonstration kNN,11,1.0
+door-open-v3,pulse,post_pulse_success,Demonstration kNN,23,1.0
+door-open-v3,pulse,post_pulse_success,Demonstration kNN,31,1.0
+door-open-v3,pulse,post_pulse_success,Demonstration kNN,47,1.0
+drawer-open-v3,pulse,post_pulse_success,Clean repeat,7,1.0
+drawer-open-v3,pulse,post_pulse_success,Clean repeat,11,1.0
+drawer-open-v3,pulse,post_pulse_success,Clean repeat,23,1.0
+drawer-open-v3,pulse,post_pulse_success,Clean repeat,31,1.0
+drawer-open-v3,pulse,post_pulse_success,Clean repeat,47,1.0
+drawer-open-v3,pulse,post_pulse_success,Gaussian recovery,7,1.0
+drawer-open-v3,pulse,post_pulse_success,Gaussian recovery,11,1.0
+drawer-open-v3,pulse,post_pulse_success,Gaussian recovery,23,1.0
+drawer-open-v3,pulse,post_pulse_success,Gaussian recovery,31,1.0
+drawer-open-v3,pulse,post_pulse_success,Gaussian recovery,47,1.0
+drawer-open-v3,pulse,post_pulse_success,Frozen observations,7,1.0
+drawer-open-v3,pulse,post_pulse_success,Frozen observations,11,1.0
+drawer-open-v3,pulse,post_pulse_success,Frozen observations,23,1.0
+drawer-open-v3,pulse,post_pulse_success,Frozen observations,31,1.0
+drawer-open-v3,pulse,post_pulse_success,Frozen observations,47,1.0
+drawer-open-v3,pulse,post_pulse_success,SCANA-R,7,1.0
+drawer-open-v3,pulse,post_pulse_success,SCANA-R,11,1.0
+drawer-open-v3,pulse,post_pulse_success,SCANA-R,23,1.0
+drawer-open-v3,pulse,post_pulse_success,SCANA-R,31,1.0
+drawer-open-v3,pulse,post_pulse_success,SCANA-R,47,1.0
+drawer-open-v3,pulse,post_pulse_success,Demonstration kNN,7,1.0
+drawer-open-v3,pulse,post_pulse_success,Demonstration kNN,11,1.0
+drawer-open-v3,pulse,post_pulse_success,Demonstration kNN,23,1.0
+drawer-open-v3,pulse,post_pulse_success,Demonstration kNN,31,1.0
+drawer-open-v3,pulse,post_pulse_success,Demonstration kNN,47,1.0
+button-press-v3,pulse,post_pulse_success,Clean repeat,7,1.0
+button-press-v3,pulse,post_pulse_success,Clean repeat,11,1.0
+button-press-v3,pulse,post_pulse_success,Clean repeat,23,1.0
+button-press-v3,pulse,post_pulse_success,Clean repeat,31,1.0
+button-press-v3,pulse,post_pulse_success,Clean repeat,47,1.0
+button-press-v3,pulse,post_pulse_success,Gaussian recovery,7,1.0
+button-press-v3,pulse,post_pulse_success,Gaussian recovery,11,1.0
+button-press-v3,pulse,post_pulse_success,Gaussian recovery,23,1.0
+button-press-v3,pulse,post_pulse_success,Gaussian recovery,31,1.0
+button-press-v3,pulse,post_pulse_success,Gaussian recovery,47,1.0
+button-press-v3,pulse,post_pulse_success,Frozen observations,7,1.0
+button-press-v3,pulse,post_pulse_success,Frozen observations,11,1.0
+button-press-v3,pulse,post_pulse_success,Frozen observations,23,1.0
+button-press-v3,pulse,post_pulse_success,Frozen observations,31,1.0
+button-press-v3,pulse,post_pulse_success,Frozen observations,47,1.0
+button-press-v3,pulse,post_pulse_success,SCANA-R,7,1.0
+button-press-v3,pulse,post_pulse_success,SCANA-R,11,1.0
+button-press-v3,pulse,post_pulse_success,SCANA-R,23,1.0
+button-press-v3,pulse,post_pulse_success,SCANA-R,31,1.0
+button-press-v3,pulse,post_pulse_success,SCANA-R,47,1.0
+button-press-v3,pulse,post_pulse_success,Demonstration kNN,7,1.0
+button-press-v3,pulse,post_pulse_success,Demonstration kNN,11,1.0
+button-press-v3,pulse,post_pulse_success,Demonstration kNN,23,1.0
+button-press-v3,pulse,post_pulse_success,Demonstration kNN,31,1.0
+button-press-v3,pulse,post_pulse_success,Demonstration kNN,47,1.0
+Macro average,pulse,post_pulse_success,Clean repeat,7,0.8999999999999998
+Macro average,pulse,post_pulse_success,Clean repeat,11,0.9083333333333334
+Macro average,pulse,post_pulse_success,Clean repeat,23,0.8916666666666666
+Macro average,pulse,post_pulse_success,Clean repeat,31,0.9
+Macro average,pulse,post_pulse_success,Clean repeat,47,0.9083333333333332
+Macro average,pulse,post_pulse_success,Gaussian recovery,7,0.875
+Macro average,pulse,post_pulse_success,Gaussian recovery,11,0.8916666666666666
+Macro average,pulse,post_pulse_success,Gaussian recovery,23,0.875
+Macro average,pulse,post_pulse_success,Gaussian recovery,31,0.8666666666666668
+Macro average,pulse,post_pulse_success,Gaussian recovery,47,0.8083333333333332
+Macro average,pulse,post_pulse_success,Frozen observations,7,0.875
+Macro average,pulse,post_pulse_success,Frozen observations,11,0.9166666666666666
+Macro average,pulse,post_pulse_success,Frozen observations,23,0.9083333333333332
+Macro average,pulse,post_pulse_success,Frozen observations,31,0.9083333333333334
+Macro average,pulse,post_pulse_success,Frozen observations,47,0.8583333333333332
+Macro average,pulse,post_pulse_success,SCANA-R,7,0.8416666666666666
+Macro average,pulse,post_pulse_success,SCANA-R,11,0.8999999999999998
+Macro average,pulse,post_pulse_success,SCANA-R,23,0.8833333333333334
+Macro average,pulse,post_pulse_success,SCANA-R,31,0.875
+Macro average,pulse,post_pulse_success,SCANA-R,47,0.8416666666666668
+Macro average,pulse,post_pulse_success,Demonstration kNN,7,0.6499999999999999
+Macro average,pulse,post_pulse_success,Demonstration kNN,11,0.6249999999999999
+Macro average,pulse,post_pulse_success,Demonstration kNN,23,0.6249999999999999
+Macro average,pulse,post_pulse_success,Demonstration kNN,31,0.6416666666666666
+Macro average,pulse,post_pulse_success,Demonstration kNN,47,0.6583333333333332

@@ -1,0 +1,199 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>MuJoCo extension across eight task types · SCANA-R</title><link rel="stylesheet" href="assets/style.css"><style>main{max-width:1100px;margin:40px auto;padding:0 24px}main h1{font-size:36px;margin-bottom:26px}main table{font-size:16px;margin:25px 0}main h2{margin-top:35px}li{margin-bottom:10px}main pre{background:#f3f7f8}main code{overflow-wrap:anywhere}</style></head><body><header class="topbar"><a href="index.html" class="wordmark">SCANA-R</a><nav><a href="index.html#reproduce">Back to project</a></nav></header><main><h1>MuJoCo extension across eight task types</h1>
+<p>This follow-up adds <strong>11,600 closed-loop executions</strong>: 5,600 executions of frozen
+ACT policies and 6,000 on six additional Meta-World tasks. It uses simulation
+only. It measures task-specific action-chunk policies and receding-horizon
+control, not language planning, visual VLA transfer or real-robot performance.</p>
+<p>The main new finding is limited transfer of the recovery benefit. On the six
+Meta-World tasks, SCANA-R reaches <strong>89.5%</strong> nominal macro success versus <strong>91.8%</strong>
+for Clean repeat. The paired difference is −2.33 percentage points, 95% interval
+[−5.00, 0.17]. New ACT layouts retain gains over Clean repeat, but deployment
+stress exposes substantial failures. Negative outcomes remain in all tables.</p>
+<p><a href="mujoco-gallery.html">Watch the six tasks and fixed-layout policy videos</a>.</p>
+<h2>Tasks and protocol</h2>
+<p>Meta-World 3.1.1 / MuJoCo 3.3.0 / Gymnasium 1.1.1: reach-v3, push-v3,
+pick-place-v3, door-open-v3, drawer-open-v3 and button-press-v3. Each task has
+its own policy. This is a <strong>custom imitation protocol</strong>, not an official MT10,
+ML10 or multi-task leaderboard result. Each episode lasts 250 steps (3.125 s),
+shorter than the common 500-step benchmark horizon. Official task descriptions
+and success functions are retained.</p>
+<p>For each task, take the first 40 terminal-success training references scanning
+seeds 10000–10999 and the first 10 development references scanning 20000–20999.
+The official expert stops xyz commands and retains its last gripper command
+after first success; this shared demonstration endpoint rule is <strong>never used
+by deployed policies</strong>. It was fixed before training and test access. All 321
+reference attempts are retained, including the 21 unsuccessful attempts.</p>
+<p>Input: 22 dimensions, current observation indices 0:18, goal 36:39 and t/250.
+The previous-frame block, future states, action-derived features and success
+signal are excluded. Output: 16 × 4 xyz/gripper commands, clipped to [-1,1];
+execute eight steps and reobserve. This is an official action bound, not a
+collision or dynamic-feasibility certificate.</p>
+<p>MLP: 22–256–256–64, LayerNorm/SiLU after hidden layers. AdamW 0.001, weight decay
+0.0001, batch 128, 1,200 updates, minimum clean-development MSE every 100 steps.
+Training-only mean/std normalization with std floor 1e-5. Each source episode
+produces 30 windows (H=16, stride=8): 1,200 train and 300 development windows.
+Each auxiliary policy fits 32 source episodes and predicts the eight excluded
+episodes; there are five folds.</p>
+<p>Recovery: six endpoints per source, an eight-step same-task pulse within phase
+radius eight, gripper channel 3 protected, coordinate bound 3σ, backtracking
+1/0.5/0.25/0, terminal-success acceptance. Gaussian uses AR(1) correlation 0.9.
+Select σ from {0.10,0.25} separately for each noise family using development
+policy seeds 7/11 and ten layouts; ties choose 0.10. Push selects 0.25; all
+other tasks select 0.10. These are Cartesian command amplitudes, not radians.</p>
+<p>The four MLP methods use 2,048 clean + 2,048 method draws with replacement,
+sharing clean indices, auxiliary quantiles, initialization and minibatches.
+Frozen observations uses SCANA-R labels/source times but original observations.
+The demonstration kNN policy uses 4,096 clean draws and a five-neighbor
+inverse-distance mean in train-standardized current-state space. It is not the
+historical residual kNN and does not have a matched MLP optimization cost.</p>
+<p>Freeze 120 final MLPs and 30 kNN libraries before evaluating five seeds
+(7,11,23,31,47) × 20 new layouts (30000–30019) × two conditions. The nominal
+primary outcome is ever-success. The pulse condition applies eight steps
+starting at 64, xyz RMS 0.25, cap 0.75, unchanged gripper; post-pulse success
+requires success at step 72 or later. Methods/seeds share each layout&#39;s noise.</p>
+<h2>All six-task results</h2>
+<p>Percent success; every cell has five policy seeds × 20 layouts.</p>
+<table>
+<thead>
+<tr>
+<th>Task</th>
+<th align="right">Clean</th>
+<th align="right">Gaussian</th>
+<th align="right">Frozen</th>
+<th align="right">SCANA-R</th>
+<th align="right">kNN</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Reach</td>
+<td align="right">91</td>
+<td align="right">87</td>
+<td align="right">85</td>
+<td align="right">85</td>
+<td align="right">40</td>
+</tr>
+<tr>
+<td>Push</td>
+<td align="right">88</td>
+<td align="right">84</td>
+<td align="right">86</td>
+<td align="right">85</td>
+<td align="right">31</td>
+</tr>
+<tr>
+<td>Pick and place</td>
+<td align="right">72</td>
+<td align="right">70</td>
+<td align="right">76</td>
+<td align="right">68</td>
+<td align="right">23</td>
+</tr>
+<tr>
+<td>Open door</td>
+<td align="right">100</td>
+<td align="right">100</td>
+<td align="right">100</td>
+<td align="right">99</td>
+<td align="right">100</td>
+</tr>
+<tr>
+<td>Open drawer</td>
+<td align="right">100</td>
+<td align="right">100</td>
+<td align="right">100</td>
+<td align="right">100</td>
+<td align="right">100</td>
+</tr>
+<tr>
+<td>Press button</td>
+<td align="right">100</td>
+<td align="right">100</td>
+<td align="right">100</td>
+<td align="right">100</td>
+<td align="right">100</td>
+</tr>
+<tr>
+<td>Macro mean</td>
+<td align="right">91.8</td>
+<td align="right">90.2</td>
+<td align="right">91.2</td>
+<td align="right">89.5</td>
+<td align="right">65.7</td>
+</tr>
+</tbody></table>
+<p>After the execution pulse, macro success is 90.2/86.3/89.3/86.8/64.0% in the same
+method order. SCANA-R minus Clean is −3.33 points, descriptive 95% interval
+[−7.00,−0.17]. This secondary interval is not corrected across all stress tests.
+No test-conditioned retuning, new checkpoint selection or endpoint switching
+was performed after these results were exposed.</p>
+<p>Paired bootstrap uses 5,000 samples of policy-seed and layout blocks. All
+methods use the same resampled indices; fixed-task macro means preserve these
+blocks across tasks. Six taskwise comparisons additionally report 99.1667%
+marginal intervals. The intervals condition on one fixed recovery bank per
+task/family/configuration and do not estimate bank recollection variability.</p>
+<h2>Frozen ACT deployment checks</h2>
+<p>Original MuJoCo 2.3.3 / dm-control 1.0.9; 40 existing checkpoints, no retraining.
+Twenty new layouts 94000–94019, five seeds, two tasks, four methods and seven
+conditions give 5,600 rollouts. Conditions are execute 1/4/8/16 steps per
+16-step prediction, early/late execution pulse, and current-observation noise.
+The pulse starts at 64/160, lasts eight steps, joint RMS 0.08 rad, cap 0.24 rad,
+and leaves grippers unchanged. Input noise is Gaussian sigma 0.01 rad for
+joints and 0.005 m for object xyz, leaving grippers/clock unchanged.</p>
+<p>At the nominal eight-step interval, SCANA-R succeeds on 93%/77% of Transfer
+Cube/Insertion rollouts versus Clean 62%/48%. Paired differences are +31/+29
+points, 95% intervals [16,48]/[6,50]. Comparisons with Gaussian are −1/+21
+points, intervals [−12,10]/[−1,44], both including zero.</p>
+<p>SCANA-R falls to 33%/15% when replanning every step. Late-pulse success is
+0–1% for all methods. With observation noise, SCANA-R Transfer Cube is 0%
+versus Gaussian 83%. These failures limit any general robustness claim;
+their causal explanation has not been established.</p>
+<h2>Evidence and reproduction</h2>
+<p>Compact evidence: <code>results/metaworld_extension_v1/</code> and
+<code>results/act_extension_v1/</code>. They contain every rollout, seed means, paired
+contrasts, fixed protocols and collection costs. Manuscript Figures 5–7 and
+Tables 10–12 are derived from these files. The new 11,600 executions are not
+11,600 independent policy training runs, and are not pooled with the original
+3,200 ACT records.</p>
+<p>Recompute success statistics without simulators or checkpoint files:</p>
+<pre><code class="language-bash">python scripts/summarize_extensions.py
+</code></pre>
+<p>Import the separate local evidence bundle, checking the archive and every entry:</p>
+<pre><code class="language-bash">python scripts/import_artifacts.py ../SCANA-R-MuJoCo-extension-v1.zip --manifest configs/mujoco_extension_bundle.json
+</code></pre>
+<p>Use a <strong>separate Python 3.10 environment</strong> for Meta-World, because its MuJoCo
+3.3.0 dependency conflicts with the pinned ACT environment:</p>
+<pre><code class="language-bash">python -m pip install -r requirements-metaworld.txt
+python experiments/metaworld_extension/audit.py
+python scripts/verify_extension_replay.py
+python scripts/render_extension_videos.py
+python scripts/plot_extension_results.py
+</code></pre>
+<p>On Windows, the adapter copies unmodified official assets to an ASCII temp
+path if needed for MuJoCo&#39;s file API. No package or physics source is modified.
+Rendered clips verify all 39 observed coordinates and step rewards against
+archived rollouts. Both reference and policy clips are 125 frames at 40 fps,
+3.125 seconds at real-time speed, without cuts or retouching.
+The additional replay check reloads all five methods at seed 7/layout 30000
+for six tasks and both conditions: 60 fresh policy executions match every
+saved input, raw observation, action, reward and success flag exactly. These
+are reproducibility checks, not 60 additional independent test samples.</p>
+<p>To regenerate from scratch, use a fresh repository copy without an imported
+<code>artifacts/metaworld_extension_v1</code> directory. Entry points deliberately cache
+completed work; a cached run must not be reported as new evidence:</p>
+<pre><code class="language-bash">python experiments/metaworld_extension/run.py prepare --workers 6
+python experiments/metaworld_extension/audit.py
+python experiments/metaworld_extension/run.py freeze
+python experiments/metaworld_extension/run.py evaluate --workers 8
+python experiments/metaworld_extension/analyze.py
+</code></pre>
+<p>Freeze refuses to overwrite an existing frozen protocol. The recorded test
+layouts are now public and can be reproduced, but are no longer unseen data
+for subsequent algorithm development. Regenerating ACT stress checks requires
+the original ACT bundle, its environment and
+<code>python experiments/scana_r/robustness_extension.py --workers 8</code>.</p>
+<p>Original scripts, seeds, failed attempts, weights, action/reward traces and
+entry hashes are kept in the separate bundle. Interpreter binaries and
+third-party package installations are excluded. Nothing has been uploaded.</p>
+<p>Sources: <a href="https://proceedings.mlr.press/v100/yu20a.html">Meta-World benchmark paper</a>,
+<a href="https://github.com/Farama-Foundation/Metaworld">official repository</a>,
+<a href="https://metaworld.farama.org/benchmark/task_descriptions/">task descriptions</a>.</p>
+</main><footer>SCANA-R · Local release documentation</footer></body></html>

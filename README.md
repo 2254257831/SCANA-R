@@ -13,7 +13,13 @@ repository accompanies the revised manuscript and preserves its original PPT
 figure organization. It is a **local release preparation**, with no GitHub remote
 or public release configured yet.
 
-## Main results
+## Expanded MuJoCo study
+
+The follow-up adds **11,600 executions**: 5,600 frozen ACT-policy deployment checks and 6,000 on six Meta-World tasks. Nominal Meta-World macro success is **89.5% SCANA-R vs 91.8% Clean repeat**, paired difference −2.33 points, 95% interval [−5.00, 0.17]. Broader testing does not establish a general advantage. All failures, six fixed-layout policy videos, acquisition costs and frozen protocols are retained.
+
+Read [the protocol and reproduction guide](docs/mujoco-extension.md) and [video gallery](docs/mujoco-gallery.html). Recompute all statistics with `python scripts/summarize_extensions.py`. Use a separate Python 3.10 environment with `requirements-metaworld.txt`; do not replace the ACT simulator dependency.
+
+## Original ACT results
 
 The frozen ACT/MuJoCo simulation evaluation uses five training seeds crossed with
 40 common layouts per task. Each entry is successes / 200 rollouts. Policies use
@@ -171,7 +177,7 @@ the Python experiments.
 
 ## Reproducibility limits and provenance
 
-This is a privileged-state simulation study of two bimanual ACT tasks. It is not
+This is a privileged-state simulation study of two bimanual ACT tasks and six separately trained Meta-World manipulation tasks, with distinct platform protocols. It is not
 a GR00T/VLA training release, a real-robot study, or evidence of collision safety
 outside the tested tasks. There is one fixed recovery bank per selected
 configuration, so bootstrap intervals are conditional on that bank. There is no

@@ -1,0 +1,961 @@
+task,scenario,metric,method,seed,mean
+transfer_cube,nominal,success,Clean repeat,7,0.45
+transfer_cube,nominal,success,Clean repeat,11,0.6
+transfer_cube,nominal,success,Clean repeat,23,0.55
+transfer_cube,nominal,success,Clean repeat,31,0.65
+transfer_cube,nominal,success,Clean repeat,47,0.85
+transfer_cube,nominal,success,Gaussian recovery,7,1.0
+transfer_cube,nominal,success,Gaussian recovery,11,0.95
+transfer_cube,nominal,success,Gaussian recovery,23,0.9
+transfer_cube,nominal,success,Gaussian recovery,31,1.0
+transfer_cube,nominal,success,Gaussian recovery,47,0.85
+transfer_cube,nominal,success,Frozen context,7,0.75
+transfer_cube,nominal,success,Frozen context,11,0.45
+transfer_cube,nominal,success,Frozen context,23,0.05
+transfer_cube,nominal,success,Frozen context,31,0.8
+transfer_cube,nominal,success,Frozen context,47,0.95
+transfer_cube,nominal,success,Calibrated recovery,7,0.85
+transfer_cube,nominal,success,Calibrated recovery,11,0.95
+transfer_cube,nominal,success,Calibrated recovery,23,0.9
+transfer_cube,nominal,success,Calibrated recovery,31,0.95
+transfer_cube,nominal,success,Calibrated recovery,47,1.0
+insertion,nominal,success,Clean repeat,7,0.25
+insertion,nominal,success,Clean repeat,11,0.4
+insertion,nominal,success,Clean repeat,23,0.65
+insertion,nominal,success,Clean repeat,31,0.65
+insertion,nominal,success,Clean repeat,47,0.45
+insertion,nominal,success,Gaussian recovery,7,0.75
+insertion,nominal,success,Gaussian recovery,11,0.6
+insertion,nominal,success,Gaussian recovery,23,0.5
+insertion,nominal,success,Gaussian recovery,31,0.65
+insertion,nominal,success,Gaussian recovery,47,0.3
+insertion,nominal,success,Frozen context,7,0.55
+insertion,nominal,success,Frozen context,11,0.45
+insertion,nominal,success,Frozen context,23,0.5
+insertion,nominal,success,Frozen context,31,0.6
+insertion,nominal,success,Frozen context,47,0.25
+insertion,nominal,success,Calibrated recovery,7,0.7
+insertion,nominal,success,Calibrated recovery,11,0.9
+insertion,nominal,success,Calibrated recovery,23,0.7
+insertion,nominal,success,Calibrated recovery,31,0.75
+insertion,nominal,success,Calibrated recovery,47,0.8
+Macro average,nominal,success,Clean repeat,7,0.35
+Macro average,nominal,success,Clean repeat,11,0.5
+Macro average,nominal,success,Clean repeat,23,0.6
+Macro average,nominal,success,Clean repeat,31,0.65
+Macro average,nominal,success,Clean repeat,47,0.65
+Macro average,nominal,success,Gaussian recovery,7,0.875
+Macro average,nominal,success,Gaussian recovery,11,0.775
+Macro average,nominal,success,Gaussian recovery,23,0.7
+Macro average,nominal,success,Gaussian recovery,31,0.825
+Macro average,nominal,success,Gaussian recovery,47,0.575
+Macro average,nominal,success,Frozen context,7,0.65
+Macro average,nominal,success,Frozen context,11,0.45
+Macro average,nominal,success,Frozen context,23,0.275
+Macro average,nominal,success,Frozen context,31,0.7
+Macro average,nominal,success,Frozen context,47,0.6
+Macro average,nominal,success,Calibrated recovery,7,0.775
+Macro average,nominal,success,Calibrated recovery,11,0.925
+Macro average,nominal,success,Calibrated recovery,23,0.8
+Macro average,nominal,success,Calibrated recovery,31,0.85
+Macro average,nominal,success,Calibrated recovery,47,0.9
+transfer_cube,nominal,terminal_success,Clean repeat,7,0.15
+transfer_cube,nominal,terminal_success,Clean repeat,11,0.6
+transfer_cube,nominal,terminal_success,Clean repeat,23,0.5
+transfer_cube,nominal,terminal_success,Clean repeat,31,0.5
+transfer_cube,nominal,terminal_success,Clean repeat,47,0.85
+transfer_cube,nominal,terminal_success,Gaussian recovery,7,1.0
+transfer_cube,nominal,terminal_success,Gaussian recovery,11,0.95
+transfer_cube,nominal,terminal_success,Gaussian recovery,23,0.75
+transfer_cube,nominal,terminal_success,Gaussian recovery,31,1.0
+transfer_cube,nominal,terminal_success,Gaussian recovery,47,0.8
+transfer_cube,nominal,terminal_success,Frozen context,7,0.65
+transfer_cube,nominal,terminal_success,Frozen context,11,0.45
+transfer_cube,nominal,terminal_success,Frozen context,23,0.05
+transfer_cube,nominal,terminal_success,Frozen context,31,0.5
+transfer_cube,nominal,terminal_success,Frozen context,47,0.95
+transfer_cube,nominal,terminal_success,Calibrated recovery,7,0.85
+transfer_cube,nominal,terminal_success,Calibrated recovery,11,0.95
+transfer_cube,nominal,terminal_success,Calibrated recovery,23,0.9
+transfer_cube,nominal,terminal_success,Calibrated recovery,31,0.95
+transfer_cube,nominal,terminal_success,Calibrated recovery,47,0.95
+insertion,nominal,terminal_success,Clean repeat,7,0.0
+insertion,nominal,terminal_success,Clean repeat,11,0.15
+insertion,nominal,terminal_success,Clean repeat,23,0.0
+insertion,nominal,terminal_success,Clean repeat,31,0.6
+insertion,nominal,terminal_success,Clean repeat,47,0.1
+insertion,nominal,terminal_success,Gaussian recovery,7,0.4
+insertion,nominal,terminal_success,Gaussian recovery,11,0.55
+insertion,nominal,terminal_success,Gaussian recovery,23,0.0
+insertion,nominal,terminal_success,Gaussian recovery,31,0.5
+insertion,nominal,terminal_success,Gaussian recovery,47,0.2
+insertion,nominal,terminal_success,Frozen context,7,0.1
+insertion,nominal,terminal_success,Frozen context,11,0.3
+insertion,nominal,terminal_success,Frozen context,23,0.0
+insertion,nominal,terminal_success,Frozen context,31,0.55
+insertion,nominal,terminal_success,Frozen context,47,0.15
+insertion,nominal,terminal_success,Calibrated recovery,7,0.65
+insertion,nominal,terminal_success,Calibrated recovery,11,0.9
+insertion,nominal,terminal_success,Calibrated recovery,23,0.55
+insertion,nominal,terminal_success,Calibrated recovery,31,0.75
+insertion,nominal,terminal_success,Calibrated recovery,47,0.75
+Macro average,nominal,terminal_success,Clean repeat,7,0.075
+Macro average,nominal,terminal_success,Clean repeat,11,0.375
+Macro average,nominal,terminal_success,Clean repeat,23,0.25
+Macro average,nominal,terminal_success,Clean repeat,31,0.55
+Macro average,nominal,terminal_success,Clean repeat,47,0.475
+Macro average,nominal,terminal_success,Gaussian recovery,7,0.7
+Macro average,nominal,terminal_success,Gaussian recovery,11,0.75
+Macro average,nominal,terminal_success,Gaussian recovery,23,0.375
+Macro average,nominal,terminal_success,Gaussian recovery,31,0.75
+Macro average,nominal,terminal_success,Gaussian recovery,47,0.5
+Macro average,nominal,terminal_success,Frozen context,7,0.375
+Macro average,nominal,terminal_success,Frozen context,11,0.375
+Macro average,nominal,terminal_success,Frozen context,23,0.025
+Macro average,nominal,terminal_success,Frozen context,31,0.525
+Macro average,nominal,terminal_success,Frozen context,47,0.55
+Macro average,nominal,terminal_success,Calibrated recovery,7,0.75
+Macro average,nominal,terminal_success,Calibrated recovery,11,0.925
+Macro average,nominal,terminal_success,Calibrated recovery,23,0.725
+Macro average,nominal,terminal_success,Calibrated recovery,31,0.85
+Macro average,nominal,terminal_success,Calibrated recovery,47,0.85
+transfer_cube,replan_1,success,Clean repeat,7,0.25
+transfer_cube,replan_1,success,Clean repeat,11,0.0
+transfer_cube,replan_1,success,Clean repeat,23,0.05
+transfer_cube,replan_1,success,Clean repeat,31,0.05
+transfer_cube,replan_1,success,Clean repeat,47,0.0
+transfer_cube,replan_1,success,Gaussian recovery,7,0.0
+transfer_cube,replan_1,success,Gaussian recovery,11,0.1
+transfer_cube,replan_1,success,Gaussian recovery,23,0.4
+transfer_cube,replan_1,success,Gaussian recovery,31,0.55
+transfer_cube,replan_1,success,Gaussian recovery,47,0.65
+transfer_cube,replan_1,success,Frozen context,7,0.25
+transfer_cube,replan_1,success,Frozen context,11,0.0
+transfer_cube,replan_1,success,Frozen context,23,0.05
+transfer_cube,replan_1,success,Frozen context,31,0.0
+transfer_cube,replan_1,success,Frozen context,47,0.0
+transfer_cube,replan_1,success,Calibrated recovery,7,0.35
+transfer_cube,replan_1,success,Calibrated recovery,11,0.0
+transfer_cube,replan_1,success,Calibrated recovery,23,0.6
+transfer_cube,replan_1,success,Calibrated recovery,31,0.2
+transfer_cube,replan_1,success,Calibrated recovery,47,0.5
+insertion,replan_1,success,Clean repeat,7,0.05
+insertion,replan_1,success,Clean repeat,11,0.0
+insertion,replan_1,success,Clean repeat,23,0.1
+insertion,replan_1,success,Clean repeat,31,0.0
+insertion,replan_1,success,Clean repeat,47,0.0
+insertion,replan_1,success,Gaussian recovery,7,0.05
+insertion,replan_1,success,Gaussian recovery,11,0.1
+insertion,replan_1,success,Gaussian recovery,23,0.25
+insertion,replan_1,success,Gaussian recovery,31,0.25
+insertion,replan_1,success,Gaussian recovery,47,0.0
+insertion,replan_1,success,Frozen context,7,0.0
+insertion,replan_1,success,Frozen context,11,0.0
+insertion,replan_1,success,Frozen context,23,0.1
+insertion,replan_1,success,Frozen context,31,0.0
+insertion,replan_1,success,Frozen context,47,0.0
+insertion,replan_1,success,Calibrated recovery,7,0.05
+insertion,replan_1,success,Calibrated recovery,11,0.3
+insertion,replan_1,success,Calibrated recovery,23,0.35
+insertion,replan_1,success,Calibrated recovery,31,0.05
+insertion,replan_1,success,Calibrated recovery,47,0.0
+Macro average,replan_1,success,Clean repeat,7,0.15
+Macro average,replan_1,success,Clean repeat,11,0.0
+Macro average,replan_1,success,Clean repeat,23,0.075
+Macro average,replan_1,success,Clean repeat,31,0.025
+Macro average,replan_1,success,Clean repeat,47,0.0
+Macro average,replan_1,success,Gaussian recovery,7,0.025
+Macro average,replan_1,success,Gaussian recovery,11,0.1
+Macro average,replan_1,success,Gaussian recovery,23,0.325
+Macro average,replan_1,success,Gaussian recovery,31,0.4
+Macro average,replan_1,success,Gaussian recovery,47,0.325
+Macro average,replan_1,success,Frozen context,7,0.125
+Macro average,replan_1,success,Frozen context,11,0.0
+Macro average,replan_1,success,Frozen context,23,0.075
+Macro average,replan_1,success,Frozen context,31,0.0
+Macro average,replan_1,success,Frozen context,47,0.0
+Macro average,replan_1,success,Calibrated recovery,7,0.2
+Macro average,replan_1,success,Calibrated recovery,11,0.15
+Macro average,replan_1,success,Calibrated recovery,23,0.475
+Macro average,replan_1,success,Calibrated recovery,31,0.125
+Macro average,replan_1,success,Calibrated recovery,47,0.25
+transfer_cube,replan_1,terminal_success,Clean repeat,7,0.1
+transfer_cube,replan_1,terminal_success,Clean repeat,11,0.0
+transfer_cube,replan_1,terminal_success,Clean repeat,23,0.05
+transfer_cube,replan_1,terminal_success,Clean repeat,31,0.0
+transfer_cube,replan_1,terminal_success,Clean repeat,47,0.0
+transfer_cube,replan_1,terminal_success,Gaussian recovery,7,0.0
+transfer_cube,replan_1,terminal_success,Gaussian recovery,11,0.1
+transfer_cube,replan_1,terminal_success,Gaussian recovery,23,0.4
+transfer_cube,replan_1,terminal_success,Gaussian recovery,31,0.55
+transfer_cube,replan_1,terminal_success,Gaussian recovery,47,0.65
+transfer_cube,replan_1,terminal_success,Frozen context,7,0.05
+transfer_cube,replan_1,terminal_success,Frozen context,11,0.0
+transfer_cube,replan_1,terminal_success,Frozen context,23,0.0
+transfer_cube,replan_1,terminal_success,Frozen context,31,0.0
+transfer_cube,replan_1,terminal_success,Frozen context,47,0.0
+transfer_cube,replan_1,terminal_success,Calibrated recovery,7,0.25
+transfer_cube,replan_1,terminal_success,Calibrated recovery,11,0.0
+transfer_cube,replan_1,terminal_success,Calibrated recovery,23,0.2
+transfer_cube,replan_1,terminal_success,Calibrated recovery,31,0.15
+transfer_cube,replan_1,terminal_success,Calibrated recovery,47,0.45
+insertion,replan_1,terminal_success,Clean repeat,7,0.05
+insertion,replan_1,terminal_success,Clean repeat,11,0.0
+insertion,replan_1,terminal_success,Clean repeat,23,0.1
+insertion,replan_1,terminal_success,Clean repeat,31,0.0
+insertion,replan_1,terminal_success,Clean repeat,47,0.0
+insertion,replan_1,terminal_success,Gaussian recovery,7,0.05
+insertion,replan_1,terminal_success,Gaussian recovery,11,0.1
+insertion,replan_1,terminal_success,Gaussian recovery,23,0.0
+insertion,replan_1,terminal_success,Gaussian recovery,31,0.25
+insertion,replan_1,terminal_success,Gaussian recovery,47,0.0
+insertion,replan_1,terminal_success,Frozen context,7,0.0
+insertion,replan_1,terminal_success,Frozen context,11,0.0
+insertion,replan_1,terminal_success,Frozen context,23,0.1
+insertion,replan_1,terminal_success,Frozen context,31,0.0
+insertion,replan_1,terminal_success,Frozen context,47,0.0
+insertion,replan_1,terminal_success,Calibrated recovery,7,0.05
+insertion,replan_1,terminal_success,Calibrated recovery,11,0.3
+insertion,replan_1,terminal_success,Calibrated recovery,23,0.3
+insertion,replan_1,terminal_success,Calibrated recovery,31,0.05
+insertion,replan_1,terminal_success,Calibrated recovery,47,0.0
+Macro average,replan_1,terminal_success,Clean repeat,7,0.075
+Macro average,replan_1,terminal_success,Clean repeat,11,0.0
+Macro average,replan_1,terminal_success,Clean repeat,23,0.075
+Macro average,replan_1,terminal_success,Clean repeat,31,0.0
+Macro average,replan_1,terminal_success,Clean repeat,47,0.0
+Macro average,replan_1,terminal_success,Gaussian recovery,7,0.025
+Macro average,replan_1,terminal_success,Gaussian recovery,11,0.1
+Macro average,replan_1,terminal_success,Gaussian recovery,23,0.2
+Macro average,replan_1,terminal_success,Gaussian recovery,31,0.4
+Macro average,replan_1,terminal_success,Gaussian recovery,47,0.325
+Macro average,replan_1,terminal_success,Frozen context,7,0.025
+Macro average,replan_1,terminal_success,Frozen context,11,0.0
+Macro average,replan_1,terminal_success,Frozen context,23,0.05
+Macro average,replan_1,terminal_success,Frozen context,31,0.0
+Macro average,replan_1,terminal_success,Frozen context,47,0.0
+Macro average,replan_1,terminal_success,Calibrated recovery,7,0.15
+Macro average,replan_1,terminal_success,Calibrated recovery,11,0.15
+Macro average,replan_1,terminal_success,Calibrated recovery,23,0.25
+Macro average,replan_1,terminal_success,Calibrated recovery,31,0.1
+Macro average,replan_1,terminal_success,Calibrated recovery,47,0.225
+transfer_cube,replan_4,success,Clean repeat,7,0.15
+transfer_cube,replan_4,success,Clean repeat,11,0.05
+transfer_cube,replan_4,success,Clean repeat,23,0.35
+transfer_cube,replan_4,success,Clean repeat,31,0.15
+transfer_cube,replan_4,success,Clean repeat,47,0.1
+transfer_cube,replan_4,success,Gaussian recovery,7,0.95
+transfer_cube,replan_4,success,Gaussian recovery,11,0.55
+transfer_cube,replan_4,success,Gaussian recovery,23,0.45
+transfer_cube,replan_4,success,Gaussian recovery,31,0.85
+transfer_cube,replan_4,success,Gaussian recovery,47,0.2
+transfer_cube,replan_4,success,Frozen context,7,0.15
+transfer_cube,replan_4,success,Frozen context,11,0.15
+transfer_cube,replan_4,success,Frozen context,23,0.4
+transfer_cube,replan_4,success,Frozen context,31,0.2
+transfer_cube,replan_4,success,Frozen context,47,0.05
+transfer_cube,replan_4,success,Calibrated recovery,7,0.05
+transfer_cube,replan_4,success,Calibrated recovery,11,0.5
+transfer_cube,replan_4,success,Calibrated recovery,23,0.8
+transfer_cube,replan_4,success,Calibrated recovery,31,0.9
+transfer_cube,replan_4,success,Calibrated recovery,47,1.0
+insertion,replan_4,success,Clean repeat,7,0.15
+insertion,replan_4,success,Clean repeat,11,0.25
+insertion,replan_4,success,Clean repeat,23,0.55
+insertion,replan_4,success,Clean repeat,31,0.25
+insertion,replan_4,success,Clean repeat,47,0.3
+insertion,replan_4,success,Gaussian recovery,7,0.6
+insertion,replan_4,success,Gaussian recovery,11,0.45
+insertion,replan_4,success,Gaussian recovery,23,0.4
+insertion,replan_4,success,Gaussian recovery,31,0.55
+insertion,replan_4,success,Gaussian recovery,47,0.25
+insertion,replan_4,success,Frozen context,7,0.15
+insertion,replan_4,success,Frozen context,11,0.05
+insertion,replan_4,success,Frozen context,23,0.4
+insertion,replan_4,success,Frozen context,31,0.45
+insertion,replan_4,success,Frozen context,47,0.1
+insertion,replan_4,success,Calibrated recovery,7,0.75
+insertion,replan_4,success,Calibrated recovery,11,0.75
+insertion,replan_4,success,Calibrated recovery,23,0.45
+insertion,replan_4,success,Calibrated recovery,31,0.4
+insertion,replan_4,success,Calibrated recovery,47,0.7
+Macro average,replan_4,success,Clean repeat,7,0.15
+Macro average,replan_4,success,Clean repeat,11,0.15
+Macro average,replan_4,success,Clean repeat,23,0.45
+Macro average,replan_4,success,Clean repeat,31,0.2
+Macro average,replan_4,success,Clean repeat,47,0.2
+Macro average,replan_4,success,Gaussian recovery,7,0.775
+Macro average,replan_4,success,Gaussian recovery,11,0.5
+Macro average,replan_4,success,Gaussian recovery,23,0.425
+Macro average,replan_4,success,Gaussian recovery,31,0.7
+Macro average,replan_4,success,Gaussian recovery,47,0.225
+Macro average,replan_4,success,Frozen context,7,0.15
+Macro average,replan_4,success,Frozen context,11,0.1
+Macro average,replan_4,success,Frozen context,23,0.4
+Macro average,replan_4,success,Frozen context,31,0.325
+Macro average,replan_4,success,Frozen context,47,0.075
+Macro average,replan_4,success,Calibrated recovery,7,0.4
+Macro average,replan_4,success,Calibrated recovery,11,0.625
+Macro average,replan_4,success,Calibrated recovery,23,0.625
+Macro average,replan_4,success,Calibrated recovery,31,0.65
+Macro average,replan_4,success,Calibrated recovery,47,0.85
+transfer_cube,replan_4,terminal_success,Clean repeat,7,0.15
+transfer_cube,replan_4,terminal_success,Clean repeat,11,0.0
+transfer_cube,replan_4,terminal_success,Clean repeat,23,0.35
+transfer_cube,replan_4,terminal_success,Clean repeat,31,0.15
+transfer_cube,replan_4,terminal_success,Clean repeat,47,0.05
+transfer_cube,replan_4,terminal_success,Gaussian recovery,7,0.95
+transfer_cube,replan_4,terminal_success,Gaussian recovery,11,0.5
+transfer_cube,replan_4,terminal_success,Gaussian recovery,23,0.45
+transfer_cube,replan_4,terminal_success,Gaussian recovery,31,0.85
+transfer_cube,replan_4,terminal_success,Gaussian recovery,47,0.2
+transfer_cube,replan_4,terminal_success,Frozen context,7,0.15
+transfer_cube,replan_4,terminal_success,Frozen context,11,0.1
+transfer_cube,replan_4,terminal_success,Frozen context,23,0.25
+transfer_cube,replan_4,terminal_success,Frozen context,31,0.2
+transfer_cube,replan_4,terminal_success,Frozen context,47,0.05
+transfer_cube,replan_4,terminal_success,Calibrated recovery,7,0.05
+transfer_cube,replan_4,terminal_success,Calibrated recovery,11,0.5
+transfer_cube,replan_4,terminal_success,Calibrated recovery,23,0.8
+transfer_cube,replan_4,terminal_success,Calibrated recovery,31,0.85
+transfer_cube,replan_4,terminal_success,Calibrated recovery,47,0.9
+insertion,replan_4,terminal_success,Clean repeat,7,0.15
+insertion,replan_4,terminal_success,Clean repeat,11,0.1
+insertion,replan_4,terminal_success,Clean repeat,23,0.45
+insertion,replan_4,terminal_success,Clean repeat,31,0.2
+insertion,replan_4,terminal_success,Clean repeat,47,0.05
+insertion,replan_4,terminal_success,Gaussian recovery,7,0.5
+insertion,replan_4,terminal_success,Gaussian recovery,11,0.15
+insertion,replan_4,terminal_success,Gaussian recovery,23,0.0
+insertion,replan_4,terminal_success,Gaussian recovery,31,0.5
+insertion,replan_4,terminal_success,Gaussian recovery,47,0.2
+insertion,replan_4,terminal_success,Frozen context,7,0.05
+insertion,replan_4,terminal_success,Frozen context,11,0.0
+insertion,replan_4,terminal_success,Frozen context,23,0.3
+insertion,replan_4,terminal_success,Frozen context,31,0.45
+insertion,replan_4,terminal_success,Frozen context,47,0.05
+insertion,replan_4,terminal_success,Calibrated recovery,7,0.65
+insertion,replan_4,terminal_success,Calibrated recovery,11,0.7
+insertion,replan_4,terminal_success,Calibrated recovery,23,0.4
+insertion,replan_4,terminal_success,Calibrated recovery,31,0.4
+insertion,replan_4,terminal_success,Calibrated recovery,47,0.55
+Macro average,replan_4,terminal_success,Clean repeat,7,0.15
+Macro average,replan_4,terminal_success,Clean repeat,11,0.05
+Macro average,replan_4,terminal_success,Clean repeat,23,0.4
+Macro average,replan_4,terminal_success,Clean repeat,31,0.175
+Macro average,replan_4,terminal_success,Clean repeat,47,0.05
+Macro average,replan_4,terminal_success,Gaussian recovery,7,0.725
+Macro average,replan_4,terminal_success,Gaussian recovery,11,0.325
+Macro average,replan_4,terminal_success,Gaussian recovery,23,0.225
+Macro average,replan_4,terminal_success,Gaussian recovery,31,0.675
+Macro average,replan_4,terminal_success,Gaussian recovery,47,0.2
+Macro average,replan_4,terminal_success,Frozen context,7,0.1
+Macro average,replan_4,terminal_success,Frozen context,11,0.05
+Macro average,replan_4,terminal_success,Frozen context,23,0.275
+Macro average,replan_4,terminal_success,Frozen context,31,0.325
+Macro average,replan_4,terminal_success,Frozen context,47,0.05
+Macro average,replan_4,terminal_success,Calibrated recovery,7,0.35
+Macro average,replan_4,terminal_success,Calibrated recovery,11,0.6
+Macro average,replan_4,terminal_success,Calibrated recovery,23,0.6
+Macro average,replan_4,terminal_success,Calibrated recovery,31,0.625
+Macro average,replan_4,terminal_success,Calibrated recovery,47,0.725
+transfer_cube,replan_16,success,Clean repeat,7,0.95
+transfer_cube,replan_16,success,Clean repeat,11,0.95
+transfer_cube,replan_16,success,Clean repeat,23,1.0
+transfer_cube,replan_16,success,Clean repeat,31,0.95
+transfer_cube,replan_16,success,Clean repeat,47,0.8
+transfer_cube,replan_16,success,Gaussian recovery,7,0.95
+transfer_cube,replan_16,success,Gaussian recovery,11,0.95
+transfer_cube,replan_16,success,Gaussian recovery,23,1.0
+transfer_cube,replan_16,success,Gaussian recovery,31,1.0
+transfer_cube,replan_16,success,Gaussian recovery,47,1.0
+transfer_cube,replan_16,success,Frozen context,7,0.95
+transfer_cube,replan_16,success,Frozen context,11,0.95
+transfer_cube,replan_16,success,Frozen context,23,0.95
+transfer_cube,replan_16,success,Frozen context,31,0.9
+transfer_cube,replan_16,success,Frozen context,47,0.95
+transfer_cube,replan_16,success,Calibrated recovery,7,0.95
+transfer_cube,replan_16,success,Calibrated recovery,11,0.95
+transfer_cube,replan_16,success,Calibrated recovery,23,0.85
+transfer_cube,replan_16,success,Calibrated recovery,31,0.95
+transfer_cube,replan_16,success,Calibrated recovery,47,0.95
+insertion,replan_16,success,Clean repeat,7,0.45
+insertion,replan_16,success,Clean repeat,11,0.65
+insertion,replan_16,success,Clean repeat,23,0.75
+insertion,replan_16,success,Clean repeat,31,0.8
+insertion,replan_16,success,Clean repeat,47,0.8
+insertion,replan_16,success,Gaussian recovery,7,0.65
+insertion,replan_16,success,Gaussian recovery,11,0.95
+insertion,replan_16,success,Gaussian recovery,23,0.75
+insertion,replan_16,success,Gaussian recovery,31,0.75
+insertion,replan_16,success,Gaussian recovery,47,0.65
+insertion,replan_16,success,Frozen context,7,0.85
+insertion,replan_16,success,Frozen context,11,0.75
+insertion,replan_16,success,Frozen context,23,0.75
+insertion,replan_16,success,Frozen context,31,0.7
+insertion,replan_16,success,Frozen context,47,0.8
+insertion,replan_16,success,Calibrated recovery,7,0.8
+insertion,replan_16,success,Calibrated recovery,11,0.95
+insertion,replan_16,success,Calibrated recovery,23,0.85
+insertion,replan_16,success,Calibrated recovery,31,0.75
+insertion,replan_16,success,Calibrated recovery,47,0.95
+Macro average,replan_16,success,Clean repeat,7,0.7
+Macro average,replan_16,success,Clean repeat,11,0.8
+Macro average,replan_16,success,Clean repeat,23,0.875
+Macro average,replan_16,success,Clean repeat,31,0.875
+Macro average,replan_16,success,Clean repeat,47,0.8
+Macro average,replan_16,success,Gaussian recovery,7,0.8
+Macro average,replan_16,success,Gaussian recovery,11,0.95
+Macro average,replan_16,success,Gaussian recovery,23,0.875
+Macro average,replan_16,success,Gaussian recovery,31,0.875
+Macro average,replan_16,success,Gaussian recovery,47,0.825
+Macro average,replan_16,success,Frozen context,7,0.9
+Macro average,replan_16,success,Frozen context,11,0.85
+Macro average,replan_16,success,Frozen context,23,0.85
+Macro average,replan_16,success,Frozen context,31,0.8
+Macro average,replan_16,success,Frozen context,47,0.875
+Macro average,replan_16,success,Calibrated recovery,7,0.875
+Macro average,replan_16,success,Calibrated recovery,11,0.95
+Macro average,replan_16,success,Calibrated recovery,23,0.85
+Macro average,replan_16,success,Calibrated recovery,31,0.85
+Macro average,replan_16,success,Calibrated recovery,47,0.95
+transfer_cube,replan_16,terminal_success,Clean repeat,7,0.95
+transfer_cube,replan_16,terminal_success,Clean repeat,11,0.95
+transfer_cube,replan_16,terminal_success,Clean repeat,23,1.0
+transfer_cube,replan_16,terminal_success,Clean repeat,31,0.95
+transfer_cube,replan_16,terminal_success,Clean repeat,47,0.8
+transfer_cube,replan_16,terminal_success,Gaussian recovery,7,0.95
+transfer_cube,replan_16,terminal_success,Gaussian recovery,11,0.95
+transfer_cube,replan_16,terminal_success,Gaussian recovery,23,1.0
+transfer_cube,replan_16,terminal_success,Gaussian recovery,31,1.0
+transfer_cube,replan_16,terminal_success,Gaussian recovery,47,1.0
+transfer_cube,replan_16,terminal_success,Frozen context,7,0.95
+transfer_cube,replan_16,terminal_success,Frozen context,11,0.95
+transfer_cube,replan_16,terminal_success,Frozen context,23,0.95
+transfer_cube,replan_16,terminal_success,Frozen context,31,0.9
+transfer_cube,replan_16,terminal_success,Frozen context,47,0.95
+transfer_cube,replan_16,terminal_success,Calibrated recovery,7,0.95
+transfer_cube,replan_16,terminal_success,Calibrated recovery,11,0.95
+transfer_cube,replan_16,terminal_success,Calibrated recovery,23,0.85
+transfer_cube,replan_16,terminal_success,Calibrated recovery,31,0.95
+transfer_cube,replan_16,terminal_success,Calibrated recovery,47,0.95
+insertion,replan_16,terminal_success,Clean repeat,7,0.05
+insertion,replan_16,terminal_success,Clean repeat,11,0.25
+insertion,replan_16,terminal_success,Clean repeat,23,0.25
+insertion,replan_16,terminal_success,Clean repeat,31,0.7
+insertion,replan_16,terminal_success,Clean repeat,47,0.55
+insertion,replan_16,terminal_success,Gaussian recovery,7,0.4
+insertion,replan_16,terminal_success,Gaussian recovery,11,0.9
+insertion,replan_16,terminal_success,Gaussian recovery,23,0.15
+insertion,replan_16,terminal_success,Gaussian recovery,31,0.7
+insertion,replan_16,terminal_success,Gaussian recovery,47,0.6
+insertion,replan_16,terminal_success,Frozen context,7,0.2
+insertion,replan_16,terminal_success,Frozen context,11,0.7
+insertion,replan_16,terminal_success,Frozen context,23,0.1
+insertion,replan_16,terminal_success,Frozen context,31,0.65
+insertion,replan_16,terminal_success,Frozen context,47,0.45
+insertion,replan_16,terminal_success,Calibrated recovery,7,0.7
+insertion,replan_16,terminal_success,Calibrated recovery,11,0.95
+insertion,replan_16,terminal_success,Calibrated recovery,23,0.85
+insertion,replan_16,terminal_success,Calibrated recovery,31,0.75
+insertion,replan_16,terminal_success,Calibrated recovery,47,0.9
+Macro average,replan_16,terminal_success,Clean repeat,7,0.5
+Macro average,replan_16,terminal_success,Clean repeat,11,0.6
+Macro average,replan_16,terminal_success,Clean repeat,23,0.625
+Macro average,replan_16,terminal_success,Clean repeat,31,0.825
+Macro average,replan_16,terminal_success,Clean repeat,47,0.675
+Macro average,replan_16,terminal_success,Gaussian recovery,7,0.675
+Macro average,replan_16,terminal_success,Gaussian recovery,11,0.925
+Macro average,replan_16,terminal_success,Gaussian recovery,23,0.575
+Macro average,replan_16,terminal_success,Gaussian recovery,31,0.85
+Macro average,replan_16,terminal_success,Gaussian recovery,47,0.8
+Macro average,replan_16,terminal_success,Frozen context,7,0.575
+Macro average,replan_16,terminal_success,Frozen context,11,0.825
+Macro average,replan_16,terminal_success,Frozen context,23,0.525
+Macro average,replan_16,terminal_success,Frozen context,31,0.775
+Macro average,replan_16,terminal_success,Frozen context,47,0.7
+Macro average,replan_16,terminal_success,Calibrated recovery,7,0.825
+Macro average,replan_16,terminal_success,Calibrated recovery,11,0.95
+Macro average,replan_16,terminal_success,Calibrated recovery,23,0.85
+Macro average,replan_16,terminal_success,Calibrated recovery,31,0.85
+Macro average,replan_16,terminal_success,Calibrated recovery,47,0.925
+transfer_cube,pulse_early,success,Clean repeat,7,0.15
+transfer_cube,pulse_early,success,Clean repeat,11,0.25
+transfer_cube,pulse_early,success,Clean repeat,23,0.2
+transfer_cube,pulse_early,success,Clean repeat,31,0.2
+transfer_cube,pulse_early,success,Clean repeat,47,0.2
+transfer_cube,pulse_early,success,Gaussian recovery,7,0.85
+transfer_cube,pulse_early,success,Gaussian recovery,11,0.8
+transfer_cube,pulse_early,success,Gaussian recovery,23,0.65
+transfer_cube,pulse_early,success,Gaussian recovery,31,0.9
+transfer_cube,pulse_early,success,Gaussian recovery,47,0.8
+transfer_cube,pulse_early,success,Frozen context,7,0.05
+transfer_cube,pulse_early,success,Frozen context,11,0.25
+transfer_cube,pulse_early,success,Frozen context,23,0.0
+transfer_cube,pulse_early,success,Frozen context,31,0.35
+transfer_cube,pulse_early,success,Frozen context,47,0.15
+transfer_cube,pulse_early,success,Calibrated recovery,7,0.45
+transfer_cube,pulse_early,success,Calibrated recovery,11,0.6
+transfer_cube,pulse_early,success,Calibrated recovery,23,0.35
+transfer_cube,pulse_early,success,Calibrated recovery,31,0.45
+transfer_cube,pulse_early,success,Calibrated recovery,47,0.5
+insertion,pulse_early,success,Clean repeat,7,0.2
+insertion,pulse_early,success,Clean repeat,11,0.4
+insertion,pulse_early,success,Clean repeat,23,0.7
+insertion,pulse_early,success,Clean repeat,31,0.65
+insertion,pulse_early,success,Clean repeat,47,0.6
+insertion,pulse_early,success,Gaussian recovery,7,0.7
+insertion,pulse_early,success,Gaussian recovery,11,0.6
+insertion,pulse_early,success,Gaussian recovery,23,0.55
+insertion,pulse_early,success,Gaussian recovery,31,0.65
+insertion,pulse_early,success,Gaussian recovery,47,0.3
+insertion,pulse_early,success,Frozen context,7,0.45
+insertion,pulse_early,success,Frozen context,11,0.2
+insertion,pulse_early,success,Frozen context,23,0.45
+insertion,pulse_early,success,Frozen context,31,0.55
+insertion,pulse_early,success,Frozen context,47,0.4
+insertion,pulse_early,success,Calibrated recovery,7,0.7
+insertion,pulse_early,success,Calibrated recovery,11,0.9
+insertion,pulse_early,success,Calibrated recovery,23,0.7
+insertion,pulse_early,success,Calibrated recovery,31,0.7
+insertion,pulse_early,success,Calibrated recovery,47,0.8
+Macro average,pulse_early,success,Clean repeat,7,0.175
+Macro average,pulse_early,success,Clean repeat,11,0.325
+Macro average,pulse_early,success,Clean repeat,23,0.45
+Macro average,pulse_early,success,Clean repeat,31,0.425
+Macro average,pulse_early,success,Clean repeat,47,0.4
+Macro average,pulse_early,success,Gaussian recovery,7,0.775
+Macro average,pulse_early,success,Gaussian recovery,11,0.7
+Macro average,pulse_early,success,Gaussian recovery,23,0.6
+Macro average,pulse_early,success,Gaussian recovery,31,0.775
+Macro average,pulse_early,success,Gaussian recovery,47,0.55
+Macro average,pulse_early,success,Frozen context,7,0.25
+Macro average,pulse_early,success,Frozen context,11,0.225
+Macro average,pulse_early,success,Frozen context,23,0.225
+Macro average,pulse_early,success,Frozen context,31,0.45
+Macro average,pulse_early,success,Frozen context,47,0.275
+Macro average,pulse_early,success,Calibrated recovery,7,0.575
+Macro average,pulse_early,success,Calibrated recovery,11,0.75
+Macro average,pulse_early,success,Calibrated recovery,23,0.525
+Macro average,pulse_early,success,Calibrated recovery,31,0.575
+Macro average,pulse_early,success,Calibrated recovery,47,0.65
+transfer_cube,pulse_early,terminal_success,Clean repeat,7,0.15
+transfer_cube,pulse_early,terminal_success,Clean repeat,11,0.25
+transfer_cube,pulse_early,terminal_success,Clean repeat,23,0.15
+transfer_cube,pulse_early,terminal_success,Clean repeat,31,0.15
+transfer_cube,pulse_early,terminal_success,Clean repeat,47,0.2
+transfer_cube,pulse_early,terminal_success,Gaussian recovery,7,0.85
+transfer_cube,pulse_early,terminal_success,Gaussian recovery,11,0.8
+transfer_cube,pulse_early,terminal_success,Gaussian recovery,23,0.55
+transfer_cube,pulse_early,terminal_success,Gaussian recovery,31,0.9
+transfer_cube,pulse_early,terminal_success,Gaussian recovery,47,0.8
+transfer_cube,pulse_early,terminal_success,Frozen context,7,0.0
+transfer_cube,pulse_early,terminal_success,Frozen context,11,0.25
+transfer_cube,pulse_early,terminal_success,Frozen context,23,0.0
+transfer_cube,pulse_early,terminal_success,Frozen context,31,0.25
+transfer_cube,pulse_early,terminal_success,Frozen context,47,0.15
+transfer_cube,pulse_early,terminal_success,Calibrated recovery,7,0.45
+transfer_cube,pulse_early,terminal_success,Calibrated recovery,11,0.6
+transfer_cube,pulse_early,terminal_success,Calibrated recovery,23,0.3
+transfer_cube,pulse_early,terminal_success,Calibrated recovery,31,0.4
+transfer_cube,pulse_early,terminal_success,Calibrated recovery,47,0.5
+insertion,pulse_early,terminal_success,Clean repeat,7,0.0
+insertion,pulse_early,terminal_success,Clean repeat,11,0.1
+insertion,pulse_early,terminal_success,Clean repeat,23,0.05
+insertion,pulse_early,terminal_success,Clean repeat,31,0.5
+insertion,pulse_early,terminal_success,Clean repeat,47,0.35
+insertion,pulse_early,terminal_success,Gaussian recovery,7,0.3
+insertion,pulse_early,terminal_success,Gaussian recovery,11,0.55
+insertion,pulse_early,terminal_success,Gaussian recovery,23,0.0
+insertion,pulse_early,terminal_success,Gaussian recovery,31,0.55
+insertion,pulse_early,terminal_success,Gaussian recovery,47,0.1
+insertion,pulse_early,terminal_success,Frozen context,7,0.0
+insertion,pulse_early,terminal_success,Frozen context,11,0.1
+insertion,pulse_early,terminal_success,Frozen context,23,0.0
+insertion,pulse_early,terminal_success,Frozen context,31,0.5
+insertion,pulse_early,terminal_success,Frozen context,47,0.15
+insertion,pulse_early,terminal_success,Calibrated recovery,7,0.6
+insertion,pulse_early,terminal_success,Calibrated recovery,11,0.9
+insertion,pulse_early,terminal_success,Calibrated recovery,23,0.6
+insertion,pulse_early,terminal_success,Calibrated recovery,31,0.65
+insertion,pulse_early,terminal_success,Calibrated recovery,47,0.75
+Macro average,pulse_early,terminal_success,Clean repeat,7,0.075
+Macro average,pulse_early,terminal_success,Clean repeat,11,0.175
+Macro average,pulse_early,terminal_success,Clean repeat,23,0.1
+Macro average,pulse_early,terminal_success,Clean repeat,31,0.325
+Macro average,pulse_early,terminal_success,Clean repeat,47,0.275
+Macro average,pulse_early,terminal_success,Gaussian recovery,7,0.575
+Macro average,pulse_early,terminal_success,Gaussian recovery,11,0.675
+Macro average,pulse_early,terminal_success,Gaussian recovery,23,0.275
+Macro average,pulse_early,terminal_success,Gaussian recovery,31,0.725
+Macro average,pulse_early,terminal_success,Gaussian recovery,47,0.45
+Macro average,pulse_early,terminal_success,Frozen context,7,0.0
+Macro average,pulse_early,terminal_success,Frozen context,11,0.175
+Macro average,pulse_early,terminal_success,Frozen context,23,0.0
+Macro average,pulse_early,terminal_success,Frozen context,31,0.375
+Macro average,pulse_early,terminal_success,Frozen context,47,0.15
+Macro average,pulse_early,terminal_success,Calibrated recovery,7,0.525
+Macro average,pulse_early,terminal_success,Calibrated recovery,11,0.75
+Macro average,pulse_early,terminal_success,Calibrated recovery,23,0.45
+Macro average,pulse_early,terminal_success,Calibrated recovery,31,0.525
+Macro average,pulse_early,terminal_success,Calibrated recovery,47,0.625
+transfer_cube,pulse_early,post_pulse_success,Clean repeat,7,0.15
+transfer_cube,pulse_early,post_pulse_success,Clean repeat,11,0.25
+transfer_cube,pulse_early,post_pulse_success,Clean repeat,23,0.2
+transfer_cube,pulse_early,post_pulse_success,Clean repeat,31,0.2
+transfer_cube,pulse_early,post_pulse_success,Clean repeat,47,0.2
+transfer_cube,pulse_early,post_pulse_success,Gaussian recovery,7,0.85
+transfer_cube,pulse_early,post_pulse_success,Gaussian recovery,11,0.8
+transfer_cube,pulse_early,post_pulse_success,Gaussian recovery,23,0.65
+transfer_cube,pulse_early,post_pulse_success,Gaussian recovery,31,0.9
+transfer_cube,pulse_early,post_pulse_success,Gaussian recovery,47,0.8
+transfer_cube,pulse_early,post_pulse_success,Frozen context,7,0.05
+transfer_cube,pulse_early,post_pulse_success,Frozen context,11,0.25
+transfer_cube,pulse_early,post_pulse_success,Frozen context,23,0.0
+transfer_cube,pulse_early,post_pulse_success,Frozen context,31,0.35
+transfer_cube,pulse_early,post_pulse_success,Frozen context,47,0.15
+transfer_cube,pulse_early,post_pulse_success,Calibrated recovery,7,0.45
+transfer_cube,pulse_early,post_pulse_success,Calibrated recovery,11,0.6
+transfer_cube,pulse_early,post_pulse_success,Calibrated recovery,23,0.35
+transfer_cube,pulse_early,post_pulse_success,Calibrated recovery,31,0.45
+transfer_cube,pulse_early,post_pulse_success,Calibrated recovery,47,0.5
+insertion,pulse_early,post_pulse_success,Clean repeat,7,0.2
+insertion,pulse_early,post_pulse_success,Clean repeat,11,0.4
+insertion,pulse_early,post_pulse_success,Clean repeat,23,0.7
+insertion,pulse_early,post_pulse_success,Clean repeat,31,0.65
+insertion,pulse_early,post_pulse_success,Clean repeat,47,0.6
+insertion,pulse_early,post_pulse_success,Gaussian recovery,7,0.7
+insertion,pulse_early,post_pulse_success,Gaussian recovery,11,0.6
+insertion,pulse_early,post_pulse_success,Gaussian recovery,23,0.55
+insertion,pulse_early,post_pulse_success,Gaussian recovery,31,0.65
+insertion,pulse_early,post_pulse_success,Gaussian recovery,47,0.3
+insertion,pulse_early,post_pulse_success,Frozen context,7,0.45
+insertion,pulse_early,post_pulse_success,Frozen context,11,0.2
+insertion,pulse_early,post_pulse_success,Frozen context,23,0.45
+insertion,pulse_early,post_pulse_success,Frozen context,31,0.55
+insertion,pulse_early,post_pulse_success,Frozen context,47,0.4
+insertion,pulse_early,post_pulse_success,Calibrated recovery,7,0.7
+insertion,pulse_early,post_pulse_success,Calibrated recovery,11,0.9
+insertion,pulse_early,post_pulse_success,Calibrated recovery,23,0.7
+insertion,pulse_early,post_pulse_success,Calibrated recovery,31,0.7
+insertion,pulse_early,post_pulse_success,Calibrated recovery,47,0.8
+Macro average,pulse_early,post_pulse_success,Clean repeat,7,0.175
+Macro average,pulse_early,post_pulse_success,Clean repeat,11,0.325
+Macro average,pulse_early,post_pulse_success,Clean repeat,23,0.45
+Macro average,pulse_early,post_pulse_success,Clean repeat,31,0.425
+Macro average,pulse_early,post_pulse_success,Clean repeat,47,0.4
+Macro average,pulse_early,post_pulse_success,Gaussian recovery,7,0.775
+Macro average,pulse_early,post_pulse_success,Gaussian recovery,11,0.7
+Macro average,pulse_early,post_pulse_success,Gaussian recovery,23,0.6
+Macro average,pulse_early,post_pulse_success,Gaussian recovery,31,0.775
+Macro average,pulse_early,post_pulse_success,Gaussian recovery,47,0.55
+Macro average,pulse_early,post_pulse_success,Frozen context,7,0.25
+Macro average,pulse_early,post_pulse_success,Frozen context,11,0.225
+Macro average,pulse_early,post_pulse_success,Frozen context,23,0.225
+Macro average,pulse_early,post_pulse_success,Frozen context,31,0.45
+Macro average,pulse_early,post_pulse_success,Frozen context,47,0.275
+Macro average,pulse_early,post_pulse_success,Calibrated recovery,7,0.575
+Macro average,pulse_early,post_pulse_success,Calibrated recovery,11,0.75
+Macro average,pulse_early,post_pulse_success,Calibrated recovery,23,0.525
+Macro average,pulse_early,post_pulse_success,Calibrated recovery,31,0.575
+Macro average,pulse_early,post_pulse_success,Calibrated recovery,47,0.65
+transfer_cube,pulse_late,success,Clean repeat,7,0.0
+transfer_cube,pulse_late,success,Clean repeat,11,0.0
+transfer_cube,pulse_late,success,Clean repeat,23,0.05
+transfer_cube,pulse_late,success,Clean repeat,31,0.0
+transfer_cube,pulse_late,success,Clean repeat,47,0.0
+transfer_cube,pulse_late,success,Gaussian recovery,7,0.05
+transfer_cube,pulse_late,success,Gaussian recovery,11,0.0
+transfer_cube,pulse_late,success,Gaussian recovery,23,0.0
+transfer_cube,pulse_late,success,Gaussian recovery,31,0.0
+transfer_cube,pulse_late,success,Gaussian recovery,47,0.0
+transfer_cube,pulse_late,success,Frozen context,7,0.0
+transfer_cube,pulse_late,success,Frozen context,11,0.0
+transfer_cube,pulse_late,success,Frozen context,23,0.0
+transfer_cube,pulse_late,success,Frozen context,31,0.0
+transfer_cube,pulse_late,success,Frozen context,47,0.0
+transfer_cube,pulse_late,success,Calibrated recovery,7,0.0
+transfer_cube,pulse_late,success,Calibrated recovery,11,0.0
+transfer_cube,pulse_late,success,Calibrated recovery,23,0.0
+transfer_cube,pulse_late,success,Calibrated recovery,31,0.0
+transfer_cube,pulse_late,success,Calibrated recovery,47,0.0
+insertion,pulse_late,success,Clean repeat,7,0.0
+insertion,pulse_late,success,Clean repeat,11,0.0
+insertion,pulse_late,success,Clean repeat,23,0.0
+insertion,pulse_late,success,Clean repeat,31,0.0
+insertion,pulse_late,success,Clean repeat,47,0.0
+insertion,pulse_late,success,Gaussian recovery,7,0.0
+insertion,pulse_late,success,Gaussian recovery,11,0.0
+insertion,pulse_late,success,Gaussian recovery,23,0.0
+insertion,pulse_late,success,Gaussian recovery,31,0.05
+insertion,pulse_late,success,Gaussian recovery,47,0.0
+insertion,pulse_late,success,Frozen context,7,0.0
+insertion,pulse_late,success,Frozen context,11,0.0
+insertion,pulse_late,success,Frozen context,23,0.0
+insertion,pulse_late,success,Frozen context,31,0.0
+insertion,pulse_late,success,Frozen context,47,0.0
+insertion,pulse_late,success,Calibrated recovery,7,0.0
+insertion,pulse_late,success,Calibrated recovery,11,0.0
+insertion,pulse_late,success,Calibrated recovery,23,0.0
+insertion,pulse_late,success,Calibrated recovery,31,0.05
+insertion,pulse_late,success,Calibrated recovery,47,0.0
+Macro average,pulse_late,success,Clean repeat,7,0.0
+Macro average,pulse_late,success,Clean repeat,11,0.0
+Macro average,pulse_late,success,Clean repeat,23,0.025
+Macro average,pulse_late,success,Clean repeat,31,0.0
+Macro average,pulse_late,success,Clean repeat,47,0.0
+Macro average,pulse_late,success,Gaussian recovery,7,0.025
+Macro average,pulse_late,success,Gaussian recovery,11,0.0
+Macro average,pulse_late,success,Gaussian recovery,23,0.0
+Macro average,pulse_late,success,Gaussian recovery,31,0.025
+Macro average,pulse_late,success,Gaussian recovery,47,0.0
+Macro average,pulse_late,success,Frozen context,7,0.0
+Macro average,pulse_late,success,Frozen context,11,0.0
+Macro average,pulse_late,success,Frozen context,23,0.0
+Macro average,pulse_late,success,Frozen context,31,0.0
+Macro average,pulse_late,success,Frozen context,47,0.0
+Macro average,pulse_late,success,Calibrated recovery,7,0.0
+Macro average,pulse_late,success,Calibrated recovery,11,0.0
+Macro average,pulse_late,success,Calibrated recovery,23,0.0
+Macro average,pulse_late,success,Calibrated recovery,31,0.025
+Macro average,pulse_late,success,Calibrated recovery,47,0.0
+transfer_cube,pulse_late,terminal_success,Clean repeat,7,0.0
+transfer_cube,pulse_late,terminal_success,Clean repeat,11,0.0
+transfer_cube,pulse_late,terminal_success,Clean repeat,23,0.0
+transfer_cube,pulse_late,terminal_success,Clean repeat,31,0.0
+transfer_cube,pulse_late,terminal_success,Clean repeat,47,0.0
+transfer_cube,pulse_late,terminal_success,Gaussian recovery,7,0.0
+transfer_cube,pulse_late,terminal_success,Gaussian recovery,11,0.0
+transfer_cube,pulse_late,terminal_success,Gaussian recovery,23,0.0
+transfer_cube,pulse_late,terminal_success,Gaussian recovery,31,0.0
+transfer_cube,pulse_late,terminal_success,Gaussian recovery,47,0.0
+transfer_cube,pulse_late,terminal_success,Frozen context,7,0.0
+transfer_cube,pulse_late,terminal_success,Frozen context,11,0.0
+transfer_cube,pulse_late,terminal_success,Frozen context,23,0.0
+transfer_cube,pulse_late,terminal_success,Frozen context,31,0.0
+transfer_cube,pulse_late,terminal_success,Frozen context,47,0.0
+transfer_cube,pulse_late,terminal_success,Calibrated recovery,7,0.0
+transfer_cube,pulse_late,terminal_success,Calibrated recovery,11,0.0
+transfer_cube,pulse_late,terminal_success,Calibrated recovery,23,0.0
+transfer_cube,pulse_late,terminal_success,Calibrated recovery,31,0.0
+transfer_cube,pulse_late,terminal_success,Calibrated recovery,47,0.0
+insertion,pulse_late,terminal_success,Clean repeat,7,0.0
+insertion,pulse_late,terminal_success,Clean repeat,11,0.0
+insertion,pulse_late,terminal_success,Clean repeat,23,0.0
+insertion,pulse_late,terminal_success,Clean repeat,31,0.0
+insertion,pulse_late,terminal_success,Clean repeat,47,0.0
+insertion,pulse_late,terminal_success,Gaussian recovery,7,0.0
+insertion,pulse_late,terminal_success,Gaussian recovery,11,0.0
+insertion,pulse_late,terminal_success,Gaussian recovery,23,0.0
+insertion,pulse_late,terminal_success,Gaussian recovery,31,0.05
+insertion,pulse_late,terminal_success,Gaussian recovery,47,0.0
+insertion,pulse_late,terminal_success,Frozen context,7,0.0
+insertion,pulse_late,terminal_success,Frozen context,11,0.0
+insertion,pulse_late,terminal_success,Frozen context,23,0.0
+insertion,pulse_late,terminal_success,Frozen context,31,0.0
+insertion,pulse_late,terminal_success,Frozen context,47,0.0
+insertion,pulse_late,terminal_success,Calibrated recovery,7,0.0
+insertion,pulse_late,terminal_success,Calibrated recovery,11,0.0
+insertion,pulse_late,terminal_success,Calibrated recovery,23,0.0
+insertion,pulse_late,terminal_success,Calibrated recovery,31,0.05
+insertion,pulse_late,terminal_success,Calibrated recovery,47,0.0
+Macro average,pulse_late,terminal_success,Clean repeat,7,0.0
+Macro average,pulse_late,terminal_success,Clean repeat,11,0.0
+Macro average,pulse_late,terminal_success,Clean repeat,23,0.0
+Macro average,pulse_late,terminal_success,Clean repeat,31,0.0
+Macro average,pulse_late,terminal_success,Clean repeat,47,0.0
+Macro average,pulse_late,terminal_success,Gaussian recovery,7,0.0
+Macro average,pulse_late,terminal_success,Gaussian recovery,11,0.0
+Macro average,pulse_late,terminal_success,Gaussian recovery,23,0.0
+Macro average,pulse_late,terminal_success,Gaussian recovery,31,0.025
+Macro average,pulse_late,terminal_success,Gaussian recovery,47,0.0
+Macro average,pulse_late,terminal_success,Frozen context,7,0.0
+Macro average,pulse_late,terminal_success,Frozen context,11,0.0
+Macro average,pulse_late,terminal_success,Frozen context,23,0.0
+Macro average,pulse_late,terminal_success,Frozen context,31,0.0
+Macro average,pulse_late,terminal_success,Frozen context,47,0.0
+Macro average,pulse_late,terminal_success,Calibrated recovery,7,0.0
+Macro average,pulse_late,terminal_success,Calibrated recovery,11,0.0
+Macro average,pulse_late,terminal_success,Calibrated recovery,23,0.0
+Macro average,pulse_late,terminal_success,Calibrated recovery,31,0.025
+Macro average,pulse_late,terminal_success,Calibrated recovery,47,0.0
+transfer_cube,pulse_late,post_pulse_success,Clean repeat,7,0.0
+transfer_cube,pulse_late,post_pulse_success,Clean repeat,11,0.0
+transfer_cube,pulse_late,post_pulse_success,Clean repeat,23,0.05
+transfer_cube,pulse_late,post_pulse_success,Clean repeat,31,0.0
+transfer_cube,pulse_late,post_pulse_success,Clean repeat,47,0.0
+transfer_cube,pulse_late,post_pulse_success,Gaussian recovery,7,0.05
+transfer_cube,pulse_late,post_pulse_success,Gaussian recovery,11,0.0
+transfer_cube,pulse_late,post_pulse_success,Gaussian recovery,23,0.0
+transfer_cube,pulse_late,post_pulse_success,Gaussian recovery,31,0.0
+transfer_cube,pulse_late,post_pulse_success,Gaussian recovery,47,0.0
+transfer_cube,pulse_late,post_pulse_success,Frozen context,7,0.0
+transfer_cube,pulse_late,post_pulse_success,Frozen context,11,0.0
+transfer_cube,pulse_late,post_pulse_success,Frozen context,23,0.0
+transfer_cube,pulse_late,post_pulse_success,Frozen context,31,0.0
+transfer_cube,pulse_late,post_pulse_success,Frozen context,47,0.0
+transfer_cube,pulse_late,post_pulse_success,Calibrated recovery,7,0.0
+transfer_cube,pulse_late,post_pulse_success,Calibrated recovery,11,0.0
+transfer_cube,pulse_late,post_pulse_success,Calibrated recovery,23,0.0
+transfer_cube,pulse_late,post_pulse_success,Calibrated recovery,31,0.0
+transfer_cube,pulse_late,post_pulse_success,Calibrated recovery,47,0.0
+insertion,pulse_late,post_pulse_success,Clean repeat,7,0.0
+insertion,pulse_late,post_pulse_success,Clean repeat,11,0.0
+insertion,pulse_late,post_pulse_success,Clean repeat,23,0.0
+insertion,pulse_late,post_pulse_success,Clean repeat,31,0.0
+insertion,pulse_late,post_pulse_success,Clean repeat,47,0.0
+insertion,pulse_late,post_pulse_success,Gaussian recovery,7,0.0
+insertion,pulse_late,post_pulse_success,Gaussian recovery,11,0.0
+insertion,pulse_late,post_pulse_success,Gaussian recovery,23,0.0
+insertion,pulse_late,post_pulse_success,Gaussian recovery,31,0.05
+insertion,pulse_late,post_pulse_success,Gaussian recovery,47,0.0
+insertion,pulse_late,post_pulse_success,Frozen context,7,0.0
+insertion,pulse_late,post_pulse_success,Frozen context,11,0.0
+insertion,pulse_late,post_pulse_success,Frozen context,23,0.0
+insertion,pulse_late,post_pulse_success,Frozen context,31,0.0
+insertion,pulse_late,post_pulse_success,Frozen context,47,0.0
+insertion,pulse_late,post_pulse_success,Calibrated recovery,7,0.0
+insertion,pulse_late,post_pulse_success,Calibrated recovery,11,0.0
+insertion,pulse_late,post_pulse_success,Calibrated recovery,23,0.0
+insertion,pulse_late,post_pulse_success,Calibrated recovery,31,0.05
+insertion,pulse_late,post_pulse_success,Calibrated recovery,47,0.0
+Macro average,pulse_late,post_pulse_success,Clean repeat,7,0.0
+Macro average,pulse_late,post_pulse_success,Clean repeat,11,0.0
+Macro average,pulse_late,post_pulse_success,Clean repeat,23,0.025
+Macro average,pulse_late,post_pulse_success,Clean repeat,31,0.0
+Macro average,pulse_late,post_pulse_success,Clean repeat,47,0.0
+Macro average,pulse_late,post_pulse_success,Gaussian recovery,7,0.025
+Macro average,pulse_late,post_pulse_success,Gaussian recovery,11,0.0
+Macro average,pulse_late,post_pulse_success,Gaussian recovery,23,0.0
+Macro average,pulse_late,post_pulse_success,Gaussian recovery,31,0.025
+Macro average,pulse_late,post_pulse_success,Gaussian recovery,47,0.0
+Macro average,pulse_late,post_pulse_success,Frozen context,7,0.0
+Macro average,pulse_late,post_pulse_success,Frozen context,11,0.0
+Macro average,pulse_late,post_pulse_success,Frozen context,23,0.0
+Macro average,pulse_late,post_pulse_success,Frozen context,31,0.0
+Macro average,pulse_late,post_pulse_success,Frozen context,47,0.0
+Macro average,pulse_late,post_pulse_success,Calibrated recovery,7,0.0
+Macro average,pulse_late,post_pulse_success,Calibrated recovery,11,0.0
+Macro average,pulse_late,post_pulse_success,Calibrated recovery,23,0.0
+Macro average,pulse_late,post_pulse_success,Calibrated recovery,31,0.025
+Macro average,pulse_late,post_pulse_success,Calibrated recovery,47,0.0
+transfer_cube,observation_noise,success,Clean repeat,7,0.0
+transfer_cube,observation_noise,success,Clean repeat,11,0.0
+transfer_cube,observation_noise,success,Clean repeat,23,0.0
+transfer_cube,observation_noise,success,Clean repeat,31,0.0
+transfer_cube,observation_noise,success,Clean repeat,47,0.0
+transfer_cube,observation_noise,success,Gaussian recovery,7,0.9
+transfer_cube,observation_noise,success,Gaussian recovery,11,0.9
+transfer_cube,observation_noise,success,Gaussian recovery,23,0.9
+transfer_cube,observation_noise,success,Gaussian recovery,31,0.65
+transfer_cube,observation_noise,success,Gaussian recovery,47,0.8
+transfer_cube,observation_noise,success,Frozen context,7,0.0
+transfer_cube,observation_noise,success,Frozen context,11,0.0
+transfer_cube,observation_noise,success,Frozen context,23,0.0
+transfer_cube,observation_noise,success,Frozen context,31,0.0
+transfer_cube,observation_noise,success,Frozen context,47,0.0
+transfer_cube,observation_noise,success,Calibrated recovery,7,0.0
+transfer_cube,observation_noise,success,Calibrated recovery,11,0.0
+transfer_cube,observation_noise,success,Calibrated recovery,23,0.0
+transfer_cube,observation_noise,success,Calibrated recovery,31,0.0
+transfer_cube,observation_noise,success,Calibrated recovery,47,0.0
+insertion,observation_noise,success,Clean repeat,7,0.2
+insertion,observation_noise,success,Clean repeat,11,0.2
+insertion,observation_noise,success,Clean repeat,23,0.25
+insertion,observation_noise,success,Clean repeat,31,0.45
+insertion,observation_noise,success,Clean repeat,47,0.25
+insertion,observation_noise,success,Gaussian recovery,7,0.6
+insertion,observation_noise,success,Gaussian recovery,11,0.25
+insertion,observation_noise,success,Gaussian recovery,23,0.3
+insertion,observation_noise,success,Gaussian recovery,31,0.3
+insertion,observation_noise,success,Gaussian recovery,47,0.25
+insertion,observation_noise,success,Frozen context,7,0.25
+insertion,observation_noise,success,Frozen context,11,0.25
+insertion,observation_noise,success,Frozen context,23,0.35
+insertion,observation_noise,success,Frozen context,31,0.5
+insertion,observation_noise,success,Frozen context,47,0.1
+insertion,observation_noise,success,Calibrated recovery,7,0.45
+insertion,observation_noise,success,Calibrated recovery,11,0.7
+insertion,observation_noise,success,Calibrated recovery,23,0.55
+insertion,observation_noise,success,Calibrated recovery,31,0.7
+insertion,observation_noise,success,Calibrated recovery,47,0.75
+Macro average,observation_noise,success,Clean repeat,7,0.1
+Macro average,observation_noise,success,Clean repeat,11,0.1
+Macro average,observation_noise,success,Clean repeat,23,0.125
+Macro average,observation_noise,success,Clean repeat,31,0.225
+Macro average,observation_noise,success,Clean repeat,47,0.125
+Macro average,observation_noise,success,Gaussian recovery,7,0.75
+Macro average,observation_noise,success,Gaussian recovery,11,0.575
+Macro average,observation_noise,success,Gaussian recovery,23,0.6
+Macro average,observation_noise,success,Gaussian recovery,31,0.475
+Macro average,observation_noise,success,Gaussian recovery,47,0.525
+Macro average,observation_noise,success,Frozen context,7,0.125
+Macro average,observation_noise,success,Frozen context,11,0.125
+Macro average,observation_noise,success,Frozen context,23,0.175
+Macro average,observation_noise,success,Frozen context,31,0.25
+Macro average,observation_noise,success,Frozen context,47,0.05
+Macro average,observation_noise,success,Calibrated recovery,7,0.225
+Macro average,observation_noise,success,Calibrated recovery,11,0.35
+Macro average,observation_noise,success,Calibrated recovery,23,0.275
+Macro average,observation_noise,success,Calibrated recovery,31,0.35
+Macro average,observation_noise,success,Calibrated recovery,47,0.375
+transfer_cube,observation_noise,terminal_success,Clean repeat,7,0.0
+transfer_cube,observation_noise,terminal_success,Clean repeat,11,0.0
+transfer_cube,observation_noise,terminal_success,Clean repeat,23,0.0
+transfer_cube,observation_noise,terminal_success,Clean repeat,31,0.0
+transfer_cube,observation_noise,terminal_success,Clean repeat,47,0.0
+transfer_cube,observation_noise,terminal_success,Gaussian recovery,7,0.9
+transfer_cube,observation_noise,terminal_success,Gaussian recovery,11,0.9
+transfer_cube,observation_noise,terminal_success,Gaussian recovery,23,0.9
+transfer_cube,observation_noise,terminal_success,Gaussian recovery,31,0.65
+transfer_cube,observation_noise,terminal_success,Gaussian recovery,47,0.8
+transfer_cube,observation_noise,terminal_success,Frozen context,7,0.0
+transfer_cube,observation_noise,terminal_success,Frozen context,11,0.0
+transfer_cube,observation_noise,terminal_success,Frozen context,23,0.0
+transfer_cube,observation_noise,terminal_success,Frozen context,31,0.0
+transfer_cube,observation_noise,terminal_success,Frozen context,47,0.0
+transfer_cube,observation_noise,terminal_success,Calibrated recovery,7,0.0
+transfer_cube,observation_noise,terminal_success,Calibrated recovery,11,0.0
+transfer_cube,observation_noise,terminal_success,Calibrated recovery,23,0.0
+transfer_cube,observation_noise,terminal_success,Calibrated recovery,31,0.0
+transfer_cube,observation_noise,terminal_success,Calibrated recovery,47,0.0
+insertion,observation_noise,terminal_success,Clean repeat,7,0.1
+insertion,observation_noise,terminal_success,Clean repeat,11,0.15
+insertion,observation_noise,terminal_success,Clean repeat,23,0.1
+insertion,observation_noise,terminal_success,Clean repeat,31,0.15
+insertion,observation_noise,terminal_success,Clean repeat,47,0.05
+insertion,observation_noise,terminal_success,Gaussian recovery,7,0.2
+insertion,observation_noise,terminal_success,Gaussian recovery,11,0.0
+insertion,observation_noise,terminal_success,Gaussian recovery,23,0.0
+insertion,observation_noise,terminal_success,Gaussian recovery,31,0.1
+insertion,observation_noise,terminal_success,Gaussian recovery,47,0.1
+insertion,observation_noise,terminal_success,Frozen context,7,0.05
+insertion,observation_noise,terminal_success,Frozen context,11,0.1
+insertion,observation_noise,terminal_success,Frozen context,23,0.05
+insertion,observation_noise,terminal_success,Frozen context,31,0.25
+insertion,observation_noise,terminal_success,Frozen context,47,0.0
+insertion,observation_noise,terminal_success,Calibrated recovery,7,0.35
+insertion,observation_noise,terminal_success,Calibrated recovery,11,0.45
+insertion,observation_noise,terminal_success,Calibrated recovery,23,0.1
+insertion,observation_noise,terminal_success,Calibrated recovery,31,0.45
+insertion,observation_noise,terminal_success,Calibrated recovery,47,0.45
+Macro average,observation_noise,terminal_success,Clean repeat,7,0.05
+Macro average,observation_noise,terminal_success,Clean repeat,11,0.075
+Macro average,observation_noise,terminal_success,Clean repeat,23,0.05
+Macro average,observation_noise,terminal_success,Clean repeat,31,0.075
+Macro average,observation_noise,terminal_success,Clean repeat,47,0.025
+Macro average,observation_noise,terminal_success,Gaussian recovery,7,0.55
+Macro average,observation_noise,terminal_success,Gaussian recovery,11,0.45
+Macro average,observation_noise,terminal_success,Gaussian recovery,23,0.45
+Macro average,observation_noise,terminal_success,Gaussian recovery,31,0.375
+Macro average,observation_noise,terminal_success,Gaussian recovery,47,0.45
+Macro average,observation_noise,terminal_success,Frozen context,7,0.025
+Macro average,observation_noise,terminal_success,Frozen context,11,0.05
+Macro average,observation_noise,terminal_success,Frozen context,23,0.025
+Macro average,observation_noise,terminal_success,Frozen context,31,0.125
+Macro average,observation_noise,terminal_success,Frozen context,47,0.0
+Macro average,observation_noise,terminal_success,Calibrated recovery,7,0.175
+Macro average,observation_noise,terminal_success,Calibrated recovery,11,0.225
+Macro average,observation_noise,terminal_success,Calibrated recovery,23,0.05
+Macro average,observation_noise,terminal_success,Calibrated recovery,31,0.225
+Macro average,observation_noise,terminal_success,Calibrated recovery,47,0.225

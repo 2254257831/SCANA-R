@@ -1,0 +1,9 @@
+{
+  "filename": "SCANA-R-MuJoCo-extension-v1.zip",
+  "sha256": "d84416917777ee365d821565a7277f2d36086c86c37d9656634d0efe7f011fdc",
+  "bytes": 998359349,
+  "files": 31148,
+  "smoke_files": [],
+  "scope": "11,600 actual simulated rollouts plus source attempts, calibration, recovery attempts and final Meta-World models. ACT policy weights are in the separate original bundle. No runtime binaries or external package assets.",
+  "uploaded": false
+}

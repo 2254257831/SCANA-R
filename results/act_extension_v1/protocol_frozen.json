@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "tasks": [
+    "transfer_cube",
+    "insertion"
+  ],
+  "methods": [
+    "Clean repeat",
+    "Gaussian recovery",
+    "Frozen context",
+    "Calibrated recovery"
+  ],
+  "training_seeds": [
+    7,
+    11,
+    23,
+    31,
+    47
+  ],
+  "layouts": [
+    94000,
+    94001,
+    94002,
+    94003,
+    94004,
+    94005,
+    94006,
+    94007,
+    94008,
+    94009,
+    94010,
+    94011,
+    94012,
+    94013,
+    94014,
+    94015,
+    94016,
+    94017,
+    94018,
+    94019
+  ],
+  "scenarios": [
+    "nominal",
+    "replan_1",
+    "replan_4",
+    "replan_16",
+    "pulse_early",
+    "pulse_late",
+    "observation_noise"
+  ],
+  "horizon": 400,
+  "purpose": "External execution stress tests and receding-horizon action replanning; not high-level language planning.",
+  "pulse": "8 steps; starts at step 64 or 160; joint RMS 0.08 rad, cap 0.24 rad, grippers unchanged; shared across methods and seeds on each layout.",
+  "observation_noise": "Independent Gaussian sigma 0.01 rad for joint input and 0.005 m for object xyz; grippers/clock unchanged; current input only.",
+  "primary": "All records reported. For pulses, post-pulse success is the recovery endpoint. Ever/terminal successes also reported.",
+  "source_checkpoint": "Existing frozen policies; no fitting, selection or fine-tuning on the new layouts.",
+  "script_sha256": "14caa048beee5d94989cc254049af5ed7474ee9c8333a949f1d411805b2000f6",
+  "frozen_utc": "2026-09-22T08:46:51.830198+00:00"
+}

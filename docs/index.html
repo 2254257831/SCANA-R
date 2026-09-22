@@ -19,6 +19,7 @@
       <a class="button" href="assets/scana-r-source.zip" download><span aria-hidden="true">&lt;/&gt;</span> Code</a>
       <a class="button" href="protocol.html"><span aria-hidden="true">≡</span> Protocol</a>
       <a class="button" href="data/per_episode.csv" download><span aria-hidden="true">↓</span> Data</a>
+      <a class="button" href="mujoco-gallery.html">MuJoCo extension</a>
       <a class="button" href="#rollouts"><span aria-hidden="true">▶</span> Videos</a>
     </div>
   </header>
@@ -36,8 +37,8 @@
   <section class="abstract band" id="abstract"><div class="reading-width">
     <h2>Abstract</h2>
     <p>Successful demonstrations sparsely cover the states encountered after a policy deviates from its reference trajectory. SCANA-R uses source-episode cross-fitting to estimate policy errors, samples short action perturbations from the same task and nearby phase, and executes them in simulation. The reference action sequence then resumes; a recovery branch is accepted only when its terminal state satisfies the task’s success criterion. Recovery supervision pairs newly observed states with actions that were actually executed.</p>
-    <p>At a matched final training budget, task success improves from <strong>67% to 92%</strong> on Transfer Cube and from <strong>43% to 67%</strong> on Insertion relative to repeating clean demonstrations. Compared with Gaussian recovery, calibration provides a supported gain on Insertion, while the Transfer Cube comparison is inconclusive. The evaluation uses current privileged state in two ACT simulation tasks.</p>
-    <details class="translation"><summary>中文概览</summary><p lang="zh-CN">SCANA-R 从源回合交叉拟合误差中校准短时动作扰动，在仿真中执行扰动并恢复参考动作，以末态任务成功验收分支。恢复标签对应实际观测与实际执行的动作。在相同最终训练预算下，方块传递成功率由 67% 提升至 92%，插入任务由 43% 提升至 67%。相较高斯恢复，校准扰动在插入任务上具有区间支持的收益，方块传递上的差异尚不确定。当前证据来自特权状态仿真策略。</p></details>
+    <p>At a matched final training budget, task success improves from <strong>67% to 92%</strong> on Transfer Cube and from <strong>43% to 67%</strong> on Insertion relative to repeating clean demonstrations. Compared with Gaussian recovery, calibration provides a supported gain on Insertion, while the Transfer Cube comparison is inconclusive. These are the original two ACT task results. A six-task Meta-World follow-up finds 89.5% macro success for SCANA-R versus 91.8% for Clean repeat; the broader study does not establish a general recovery advantage. <a href="mujoco-gallery.html">Explore all 11,600 new executions and six-task videos.</a></p>
+    <details class="translation"><summary>中文概览</summary><p lang="zh-CN">SCANA-R 从源回合交叉拟合误差中校准短时动作扰动，在仿真中执行扰动并恢复参考动作，以末态任务成功验收分支。恢复标签对应实际观测与实际执行的动作。在相同最终训练预算下，方块传递成功率由 67% 提升至 92%，插入任务由 43% 提升至 67%。相较高斯恢复，校准扰动在插入任务上具有区间支持的收益，方块传递上的差异尚不确定。新增六项 Meta-World 操作中，SCANA-R 与原始重复宏平均为 89.5% 和 91.8%，未显示整体改进；新增双臂扰动测试也暴露鲁棒性不足。全部证据均来自特权状态仿真策略。</p></details>
   </div></section>
 
   <section class="section wide-wrap" id="method">
@@ -49,7 +50,7 @@
     </figure>
     <div class="method-steps">
       <article><h3><span>1.</span> Calibrate</h3><p>Five auxiliary policies predict chunks for held-out source episodes. The error bank preserves task and temporal phase.</p></article>
-      <article><h3><span>2.</span> Execute &amp; verify</h3><p>A bounded eight-step pulse perturbs the joints while protecting the grippers. Failed branches retry with a smaller pulse.</p></article>
+      <article><h3><span>2.</span> Execute &amp; verify</h3><p>A bounded eight-step pulse perturbs the action channels while protecting the grippers. Failed branches retry with a smaller pulse.</p></article>
       <article><h3><span>3.</span> Learn recovery</h3><p>After the pulse, pair actual observations with executed reference actions. Mix original and recovery records equally.</p></article>
     </div>
     <div class="figure-details">
@@ -82,7 +83,8 @@
   </div></section>
 
   <section class="section reading-width results" id="results">
-    <h2>Quantitative results</h2>
+    <h2>Original ACT results</h2>
+    <p><a href="mujoco-gallery.html#results">New: six-task results and ACT deployment stress tests ↗</a></p>
     <p class="section-intro">Five training seeds × 40 common layouts per task.<br>Matched initialization, batch streams and final training budgets.</p>
     <div class="table-scroll"><table><caption>Task success · successes / 200 rollouts</caption><thead><tr><th scope="col">Method</th><th scope="col">Transfer Cube</th><th scope="col">Insertion</th></tr></thead><tbody><tr><th scope="row">Clean repeat</th><td>134 / 200 <strong>67.0%</strong></td><td>86 / 200 <strong>43.0%</strong></td></tr><tr><th scope="row">Gaussian recovery</th><td>175 / 200 <strong>87.5%</strong></td><td>90 / 200 <strong>45.0%</strong></td></tr><tr><th scope="row">Frozen observations</th><td>117 / 200 <strong>58.5%</strong></td><td>87 / 200 <strong>43.5%</strong></td></tr><tr class="ours"><th scope="row">SCANA-R</th><td>184 / 200 <strong>92.0%</strong></td><td>134 / 200 <strong>67.0%</strong></td></tr></tbody></table></div>
     <p class="table-note">Evaluation success uses maximum episode reward = 4; collection acceptance requires terminal reward = 4. In the CSV, “Calibrated recovery” denotes SCANA-R and “Frozen context” denotes frozen observations.</p>

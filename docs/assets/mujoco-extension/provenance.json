@@ -1,0 +1,354 @@
+{
+  "policy_selection": "Always training seed7, layout30000 in every task, regardless of outcome.",
+  "reference_selection": "Lowest accepted training reference seed; task illustration only, not learned-policy performance.",
+  "clips": [
+    {
+      "task": "reach-v3",
+      "kind": "reference",
+      "layout": 10001,
+      "training_seed": null,
+      "source": "artifacts/metaworld_extension_v1/references/reach-v3/train/10001.npz",
+      "source_sha256": "89f131b8ac2eaaf23013b502b396f2f3318cb2b116558187b7870619d4bf41a9",
+      "video": "reach-v3-reference.mp4",
+      "video_sha256": "f7fae3b50b45f0b244779a3d9c2263daf0e21d0e320da9d9800031717340fcc4",
+      "state_max_error": 0.0,
+      "rewards_identical": true,
+      "success": 1,
+      "terminal_success": 1,
+      "fps": 40.0,
+      "frames": 125,
+      "seconds": 3.125,
+      "poster_step": 45,
+      "camera": {
+        "lookat": [
+          0,
+          0.6,
+          0.13
+        ],
+        "distance": 1.2,
+        "azimuth": 180,
+        "elevation": -25
+      },
+      "presentation": "Full trajectory, real-time speed, no cuts, no physics changes; offscreen framebuffer/camera only."
+    },
+    {
+      "task": "reach-v3",
+      "kind": "policy",
+      "layout": 30000,
+      "training_seed": 7,
+      "source": "artifacts/metaworld_extension_v1/test/rollouts/reach-v3/7/SCANA-R/nominal/30000.npz",
+      "source_sha256": "d8c7ceaab61236e5643f4ba203c196fa4b018ea624c8ab941d609f131f89530a",
+      "video": "reach-v3-policy.mp4",
+      "video_sha256": "aa3565829bc1d293664e81d63baa6e15455c564c7dd9144059831cb7e2e4feb3",
+      "state_max_error": 0.0,
+      "rewards_identical": true,
+      "success": 0,
+      "terminal_success": 0,
+      "fps": 40.0,
+      "frames": 125,
+      "seconds": 3.125,
+      "poster_step": 249,
+      "camera": {
+        "lookat": [
+          0,
+          0.6,
+          0.13
+        ],
+        "distance": 1.2,
+        "azimuth": 180,
+        "elevation": -25
+      },
+      "presentation": "Full trajectory, real-time speed, no cuts, no physics changes; offscreen framebuffer/camera only."
+    },
+    {
+      "task": "push-v3",
+      "kind": "reference",
+      "layout": 10000,
+      "training_seed": null,
+      "source": "artifacts/metaworld_extension_v1/references/push-v3/train/10000.npz",
+      "source_sha256": "9c78d337d5855dc2a75cc570308ef14ae456cbbe1aa426b88cc211e84547f71e",
+      "video": "push-v3-reference.mp4",
+      "video_sha256": "8071d53155fb54231f4624c630fcbf3ad4997e0d2d75d29d0847a4cdacbd5648",
+      "state_max_error": 0.0,
+      "rewards_identical": true,
+      "success": 1,
+      "terminal_success": 1,
+      "fps": 40.0,
+      "frames": 125,
+      "seconds": 3.125,
+      "poster_step": 58,
+      "camera": {
+        "lookat": [
+          0,
+          0.6,
+          0.13
+        ],
+        "distance": 1.2,
+        "azimuth": 180,
+        "elevation": -25
+      },
+      "presentation": "Full trajectory, real-time speed, no cuts, no physics changes; offscreen framebuffer/camera only."
+    },
+    {
+      "task": "push-v3",
+      "kind": "policy",
+      "layout": 30000,
+      "training_seed": 7,
+      "source": "artifacts/metaworld_extension_v1/test/rollouts/push-v3/7/SCANA-R/nominal/30000.npz",
+      "source_sha256": "bf08b3ba665478b952005231fceba1cc3edc081346706c0b3c58bd0c2a6a9075",
+      "video": "push-v3-policy.mp4",
+      "video_sha256": "d2da39263b49989724b7126c3b28b12a18e02edb25b73e36f871e363fa669ed4",
+      "state_max_error": 0.0,
+      "rewards_identical": true,
+      "success": 1,
+      "terminal_success": 1,
+      "fps": 40.0,
+      "frames": 125,
+      "seconds": 3.125,
+      "poster_step": 61,
+      "camera": {
+        "lookat": [
+          0,
+          0.6,
+          0.13
+        ],
+        "distance": 1.2,
+        "azimuth": 180,
+        "elevation": -25
+      },
+      "presentation": "Full trajectory, real-time speed, no cuts, no physics changes; offscreen framebuffer/camera only."
+    },
+    {
+      "task": "pick-place-v3",
+      "kind": "reference",
+      "layout": 10000,
+      "training_seed": null,
+      "source": "artifacts/metaworld_extension_v1/references/pick-place-v3/train/10000.npz",
+      "source_sha256": "8561e94ce5efee33d71c629d00699febc289b3d73268767cfdf3385ec20dde38",
+      "video": "pick-place-v3-reference.mp4",
+      "video_sha256": "89cb4d840d9398771ff2705a116c2e5689311988a426d8192077bf00b9c27d62",
+      "state_max_error": 0.0,
+      "rewards_identical": true,
+      "success": 1,
+      "terminal_success": 1,
+      "fps": 40.0,
+      "frames": 125,
+      "seconds": 3.125,
+      "poster_step": 58,
+      "camera": {
+        "lookat": [
+          0,
+          0.6,
+          0.13
+        ],
+        "distance": 1.2,
+        "azimuth": 180,
+        "elevation": -25
+      },
+      "presentation": "Full trajectory, real-time speed, no cuts, no physics changes; offscreen framebuffer/camera only."
+    },
+    {
+      "task": "pick-place-v3",
+      "kind": "policy",
+      "layout": 30000,
+      "training_seed": 7,
+      "source": "artifacts/metaworld_extension_v1/test/rollouts/pick-place-v3/7/SCANA-R/nominal/30000.npz",
+      "source_sha256": "a2467eaefe7b036ed010986172e2ebd4a3a6b9b0a2fa524e6ea70da5490c8cac",
+      "video": "pick-place-v3-policy.mp4",
+      "video_sha256": "69c95b7a68b87ae3cb5371075c40aced0c8ff0c1816bb937ec9c92448141fe8c",
+      "state_max_error": 0.0,
+      "rewards_identical": true,
+      "success": 1,
+      "terminal_success": 1,
+      "fps": 40.0,
+      "frames": 125,
+      "seconds": 3.125,
+      "poster_step": 62,
+      "camera": {
+        "lookat": [
+          0,
+          0.6,
+          0.13
+        ],
+        "distance": 1.2,
+        "azimuth": 180,
+        "elevation": -25
+      },
+      "presentation": "Full trajectory, real-time speed, no cuts, no physics changes; offscreen framebuffer/camera only."
+    },
+    {
+      "task": "door-open-v3",
+      "kind": "reference",
+      "layout": 10000,
+      "training_seed": null,
+      "source": "artifacts/metaworld_extension_v1/references/door-open-v3/train/10000.npz",
+      "source_sha256": "f4011b541008e8947512ed25223ef2259fca9d1cee583069c9fae8fdb5ca3424",
+      "video": "door-open-v3-reference.mp4",
+      "video_sha256": "5429f30a438fdc14bfc1edfcdd5b2cd643a6ba67f790e35f181607962567c5bc",
+      "state_max_error": 0.0,
+      "rewards_identical": true,
+      "success": 1,
+      "terminal_success": 1,
+      "fps": 40.0,
+      "frames": 125,
+      "seconds": 3.125,
+      "poster_step": 81,
+      "camera": {
+        "lookat": [
+          0,
+          0.6,
+          0.13
+        ],
+        "distance": 1.2,
+        "azimuth": 180,
+        "elevation": -25
+      },
+      "presentation": "Full trajectory, real-time speed, no cuts, no physics changes; offscreen framebuffer/camera only."
+    },
+    {
+      "task": "door-open-v3",
+      "kind": "policy",
+      "layout": 30000,
+      "training_seed": 7,
+      "source": "artifacts/metaworld_extension_v1/test/rollouts/door-open-v3/7/SCANA-R/nominal/30000.npz",
+      "source_sha256": "43ae0175b7bb1ccf06aa60b61e1e39663b8ad05f9f29ea3d25d021a82d3aa201",
+      "video": "door-open-v3-policy.mp4",
+      "video_sha256": "936eeeee5b9fd12fb7d00d282c7e0bbc1be9bd92f61b168f36f3576ebbd0fd84",
+      "state_max_error": 0.0,
+      "rewards_identical": true,
+      "success": 1,
+      "terminal_success": 1,
+      "fps": 40.0,
+      "frames": 125,
+      "seconds": 3.125,
+      "poster_step": 114,
+      "camera": {
+        "lookat": [
+          0,
+          0.6,
+          0.13
+        ],
+        "distance": 1.2,
+        "azimuth": 180,
+        "elevation": -25
+      },
+      "presentation": "Full trajectory, real-time speed, no cuts, no physics changes; offscreen framebuffer/camera only."
+    },
+    {
+      "task": "drawer-open-v3",
+      "kind": "reference",
+      "layout": 10000,
+      "training_seed": null,
+      "source": "artifacts/metaworld_extension_v1/references/drawer-open-v3/train/10000.npz",
+      "source_sha256": "1834e9fdbcf2427a97d73b6b4623d656e112cb3cd7c817f57da7c608602a8bec",
+      "video": "drawer-open-v3-reference.mp4",
+      "video_sha256": "fa53c06baf8336af3ce359dcc421a3929c65fde54b9f77821cf6ff4c48f8cd9e",
+      "state_max_error": 0.0,
+      "rewards_identical": true,
+      "success": 1,
+      "terminal_success": 1,
+      "fps": 40.0,
+      "frames": 125,
+      "seconds": 3.125,
+      "poster_step": 96,
+      "camera": {
+        "lookat": [
+          0,
+          0.6,
+          0.13
+        ],
+        "distance": 1.2,
+        "azimuth": 180,
+        "elevation": -25
+      },
+      "presentation": "Full trajectory, real-time speed, no cuts, no physics changes; offscreen framebuffer/camera only."
+    },
+    {
+      "task": "drawer-open-v3",
+      "kind": "policy",
+      "layout": 30000,
+      "training_seed": 7,
+      "source": "artifacts/metaworld_extension_v1/test/rollouts/drawer-open-v3/7/SCANA-R/nominal/30000.npz",
+      "source_sha256": "95a141e51915133531bc825071f6cabbdf8e591a9b98180e8272c1db0011ce2f",
+      "video": "drawer-open-v3-policy.mp4",
+      "video_sha256": "22ae70e0649b6ea78593ed08f2e86e7b7250ecd52a849960ee200d538e9633ef",
+      "state_max_error": 0.0,
+      "rewards_identical": true,
+      "success": 1,
+      "terminal_success": 1,
+      "fps": 40.0,
+      "frames": 125,
+      "seconds": 3.125,
+      "poster_step": 94,
+      "camera": {
+        "lookat": [
+          0,
+          0.6,
+          0.13
+        ],
+        "distance": 1.2,
+        "azimuth": 180,
+        "elevation": -25
+      },
+      "presentation": "Full trajectory, real-time speed, no cuts, no physics changes; offscreen framebuffer/camera only."
+    },
+    {
+      "task": "button-press-v3",
+      "kind": "reference",
+      "layout": 10000,
+      "training_seed": null,
+      "source": "artifacts/metaworld_extension_v1/references/button-press-v3/train/10000.npz",
+      "source_sha256": "e95260c85a6361bec22963a62fe7defd458cdac6e34b0d06df823b81ec60847a",
+      "video": "button-press-v3-reference.mp4",
+      "video_sha256": "ae564326ac5f9210f7851f09dbc4b66f69e45b4650edfcfa3a2e58cfe94d3ca1",
+      "state_max_error": 0.0,
+      "rewards_identical": true,
+      "success": 1,
+      "terminal_success": 1,
+      "fps": 40.0,
+      "frames": 125,
+      "seconds": 3.125,
+      "poster_step": 67,
+      "camera": {
+        "lookat": [
+          0,
+          0.6,
+          0.13
+        ],
+        "distance": 1.2,
+        "azimuth": 180,
+        "elevation": -25
+      },
+      "presentation": "Full trajectory, real-time speed, no cuts, no physics changes; offscreen framebuffer/camera only."
+    },
+    {
+      "task": "button-press-v3",
+      "kind": "policy",
+      "layout": 30000,
+      "training_seed": 7,
+      "source": "artifacts/metaworld_extension_v1/test/rollouts/button-press-v3/7/SCANA-R/nominal/30000.npz",
+      "source_sha256": "01234e3f0e96ff8586d84d4edfb72fdb29d37bfd24fd3c547c9fcc67939d8bd2",
+      "video": "button-press-v3-policy.mp4",
+      "video_sha256": "930b58621a52529d373542afb2691879518f08f562606e6bc3c1f8203ea46865",
+      "state_max_error": 0.0,
+      "rewards_identical": true,
+      "success": 1,
+      "terminal_success": 1,
+      "fps": 40.0,
+      "frames": 125,
+      "seconds": 3.125,
+      "poster_step": 66,
+      "camera": {
+        "lookat": [
+          0,
+          0.6,
+          0.13
+        ],
+        "distance": 1.2,
+        "azimuth": 180,
+        "elevation": -25
+      },
+      "presentation": "Full trajectory, real-time speed, no cuts, no physics changes; offscreen framebuffer/camera only."
+    }
+  ]
+}

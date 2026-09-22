@@ -1,0 +1,11 @@
+{
+  "accepted_branches": 5760,
+  "recorded_attempts": 6595,
+  "source_attempts": 321,
+  "current_input_contract": true,
+  "train_development_episode_disjoint": true,
+  "executed_labels_equal_export": true,
+  "terminal_success_acceptance": true,
+  "gripper_preserved": true,
+  "attempted_trajectory_hashes_match": true
+}

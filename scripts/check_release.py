@@ -42,7 +42,18 @@ def main():
         video=ROOT/'docs/assets/videos'/item['video']
         expected=item.get('video_sha256',item.get('sha256'))
         assert hashlib.sha256(video.read_bytes()).hexdigest()==expected,f'Video hash mismatch: {video.name}'
+    extension=json.loads((ROOT/'docs/assets/mujoco-extension/provenance.json').read_text(encoding='utf-8'))
+    for item in extension['clips']:
+        video=ROOT/'docs/assets/mujoco-extension'/item['video']
+        assert hashlib.sha256(video.read_bytes()).hexdigest()==item['video_sha256'],video.name
+        assert item['state_max_error']==0 and item['rewards_identical']
+    frozen=json.loads((ROOT/'results/metaworld_extension_v1/protocol_frozen.json').read_text(encoding='utf-8'))
+    for name,expected in frozen['code_sha256'].items():
+        assert hashlib.sha256((ROOT/'experiments/metaworld_extension'/name).read_bytes()).hexdigest()==expected,name
+    act=json.loads((ROOT/'results/act_extension_v1/protocol_frozen.json').read_text(encoding='utf-8'))
+    assert hashlib.sha256((ROOT/'experiments/scana_r/robustness_extension.py').read_bytes()).hexdigest()==act['script_sha256']
     info=dict(python_files=len(pyfiles),html_pages=len(pages),local_links_verified=refs,provenance_files=len(rows),video_hashes_verified=len(media['clips'])+len(media['compositions']),static_checks_passed=True,browser_visual_qa='Not performed: local file navigation blocked by browser security policy')
+    info.update(extension_video_hashes_verified=len(extension['clips']),frozen_extension_scripts_unchanged=True)
     print(json.dumps(info,indent=2))
     return info
 

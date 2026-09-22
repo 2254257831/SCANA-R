@@ -1,5 +1,5 @@
 # Preserve exact bytes for the source and evidence SHA-256 manifests across OSes.
-* -text
+* -text whitespace=cr-at-eol
 *.png binary
 *.pptx binary
 *.zip binary

@@ -1,5 +1,7 @@
 # Evidence and reproducibility scope
 
+The expanded eight-task simulation study adds 11,600 records in `results/act_extension_v1/` and `results/metaworld_extension_v1/`. Six-task macro performance does not improve over Clean repeat. See [the extension protocol](mujoco-extension.md) and [all-task gallery](mujoco-gallery.html); the original results below are retained as a separate study.
+
 The checked-in `results/independent_test/per_episode.csv` has 3,200 unique records:
 eight methods × two tasks × five training seeds × 40 common layouts. The four
 matched current methods account for 1,600 records. Recompute rather than round

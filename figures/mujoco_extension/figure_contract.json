@@ -1,0 +1,10 @@
+{
+  "backend": "Python matplotlib",
+  "font": "Times New Roman",
+  "width_inches": 7.2,
+  "figure5": "Six official simulator task scenes from accepted reference episodes; no learned-policy success claim.",
+  "figure6": "Task-specific nominal and post-pulse performance; fixed 0-100% scale; 5 policy seeds x20 layouts.",
+  "figure7": "Frozen ACT-policy sensitivity to action replanning interval, contact timing and current-observation noise.",
+  "statistics": "Means shown. Per-seed variability and paired intervals in companion CSV/tables; no iid window inference.",
+  "image_integrity": "Simulator camera only; no object edits, selective retouching or generated imagery."
+}

@@ -3,6 +3,7 @@
 | Component | Source | Included material | License |
 |---|---|---|---|
 | ACT simulator | https://github.com/tonyzhaozh/act/tree/742c753c0d4a5d87076c8f69e5628c79a8cc5488 | Six Python/license files and the assets directory | MIT; original notice retained |
+| Meta-World 3.1.1 | https://github.com/Farama-Foundation/Metaworld | Installed dependency and resulting simulation renderings; package code/assets are not vendored | MIT; notice in `third_party/metaworld/LICENSE` |
 | MuJoCo, dm-control and other dependencies | Declared package registries | Installed by the user; binaries are not vendored | Respective upstream licenses |
 | Academic project page / Nerfies | See `docs/template-references.md` | Design references only; implementation written for this project | No template source redistributed |
 

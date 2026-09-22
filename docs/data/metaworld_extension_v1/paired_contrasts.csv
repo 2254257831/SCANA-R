@@ -1,0 +1,141 @@
+task,scenario,metric,reference,difference,paired_low,paired_high,task_family_low,task_family_high
+reach-v3,nominal,success,Clean repeat,-0.06,-0.16,0.0,-0.2,0.0
+reach-v3,nominal,success,Gaussian recovery,-0.02,-0.11,0.07,-0.18,0.12
+reach-v3,nominal,success,Frozen observations,0.0,0.0,0.0,0.0,0.0
+reach-v3,nominal,success,Demonstration kNN,0.45,0.24,0.66,0.18,0.71
+push-v3,nominal,success,Clean repeat,-0.03,-0.13,0.06,-0.18170833333333333,0.09
+push-v3,nominal,success,Gaussian recovery,0.01,-0.09,0.13,-0.13,0.19
+push-v3,nominal,success,Frozen observations,-0.01,-0.1,0.07,-0.14,0.11
+push-v3,nominal,success,Demonstration kNN,0.54,0.36,0.72,0.3,0.79
+pick-place-v3,nominal,success,Clean repeat,-0.04,-0.17,0.08,-0.22,0.13
+pick-place-v3,nominal,success,Gaussian recovery,-0.02,-0.14,0.1,-0.19,0.16
+pick-place-v3,nominal,success,Frozen observations,-0.08,-0.2,0.01,-0.25,0.05
+pick-place-v3,nominal,success,Demonstration kNN,0.45,0.25,0.65,0.19,0.72
+door-open-v3,nominal,success,Clean repeat,-0.01,-0.06,0.0,-0.09,0.0
+door-open-v3,nominal,success,Gaussian recovery,-0.01,-0.06,0.0,-0.09,0.0
+door-open-v3,nominal,success,Frozen observations,-0.01,-0.06,0.0,-0.09,0.0
+door-open-v3,nominal,success,Demonstration kNN,-0.01,-0.06,0.0,-0.09,0.0
+drawer-open-v3,nominal,success,Clean repeat,0.0,0.0,0.0,0.0,0.0
+drawer-open-v3,nominal,success,Gaussian recovery,0.0,0.0,0.0,0.0,0.0
+drawer-open-v3,nominal,success,Frozen observations,0.0,0.0,0.0,0.0,0.0
+drawer-open-v3,nominal,success,Demonstration kNN,0.0,0.0,0.0,0.0,0.0
+button-press-v3,nominal,success,Clean repeat,0.0,0.0,0.0,0.0,0.0
+button-press-v3,nominal,success,Gaussian recovery,0.0,0.0,0.0,0.0,0.0
+button-press-v3,nominal,success,Frozen observations,0.0,0.0,0.0,0.0,0.0
+button-press-v3,nominal,success,Demonstration kNN,0.0,0.0,0.0,0.0,0.0
+Macro average,nominal,success,Clean repeat,-0.02333333333333333,-0.05000000000000001,0.0016666666666666696,-0.06361805555555555,0.01333333333333333
+Macro average,nominal,success,Gaussian recovery,-0.006666666666666666,-0.03333333333333333,0.025,-0.04333333333333334,0.038618055555555975
+Macro average,nominal,success,Frozen observations,-0.016666666666666666,-0.035,6.661338147750939e-18,-0.04333333333333333,0.008333333333333342
+Macro average,nominal,success,Demonstration kNN,0.2383333333333333,0.17000000000000004,0.3066666666666667,0.14833333333333334,0.33
+reach-v3,nominal,terminal_success,Clean repeat,0.02,-0.1,0.15,-0.14,0.21
+reach-v3,nominal,terminal_success,Gaussian recovery,0.0,-0.14,0.14,-0.19,0.19
+reach-v3,nominal,terminal_success,Frozen observations,-0.02,-0.15,0.1,-0.21,0.15
+reach-v3,nominal,terminal_success,Demonstration kNN,0.38,0.12,0.62,0.04,0.69
+push-v3,nominal,terminal_success,Clean repeat,-0.03,-0.13,0.06,-0.19,0.11
+push-v3,nominal,terminal_success,Gaussian recovery,0.03,-0.07,0.15024999999999636,-0.11,0.21
+push-v3,nominal,terminal_success,Frozen observations,0.0,-0.09,0.09,-0.13,0.14
+push-v3,nominal,terminal_success,Demonstration kNN,0.55,0.36,0.74,0.3,0.8
+pick-place-v3,nominal,terminal_success,Clean repeat,-0.02,-0.22,0.19,-0.29,0.28
+pick-place-v3,nominal,terminal_success,Gaussian recovery,0.01,-0.14,0.15,-0.19,0.21
+pick-place-v3,nominal,terminal_success,Frozen observations,-0.03,-0.18,0.11,-0.24,0.16
+pick-place-v3,nominal,terminal_success,Demonstration kNN,0.44,0.25,0.62,0.18829166666666666,0.6817083333333358
+door-open-v3,nominal,terminal_success,Clean repeat,0.01,-0.06,0.09,-0.09,0.14
+door-open-v3,nominal,terminal_success,Gaussian recovery,0.01,-0.05,0.09,-0.08,0.15
+door-open-v3,nominal,terminal_success,Frozen observations,0.02,0.0,0.08,0.0,0.12
+door-open-v3,nominal,terminal_success,Demonstration kNN,-0.01,-0.06,0.04,-0.09170833333333334,0.06
+drawer-open-v3,nominal,terminal_success,Clean repeat,0.04,-0.04,0.17,-0.07170833333333335,0.24
+drawer-open-v3,nominal,terminal_success,Gaussian recovery,-0.01,-0.06,0.0,-0.08,0.0
+drawer-open-v3,nominal,terminal_success,Frozen observations,0.0,-0.04,0.04,-0.08,0.08
+drawer-open-v3,nominal,terminal_success,Demonstration kNN,-0.01,-0.06,0.0,-0.08,0.0
+button-press-v3,nominal,terminal_success,Clean repeat,0.0,0.0,0.0,0.0,0.0
+button-press-v3,nominal,terminal_success,Gaussian recovery,0.0,0.0,0.0,0.0,0.0
+button-press-v3,nominal,terminal_success,Frozen observations,0.0,0.0,0.0,0.0,0.0
+button-press-v3,nominal,terminal_success,Demonstration kNN,0.0,0.0,0.0,0.0,0.0
+Macro average,nominal,terminal_success,Clean repeat,0.0033333333333333283,-0.04833333333333334,0.056666666666666664,-0.06833333333333334,0.07666666666666665
+Macro average,nominal,terminal_success,Gaussian recovery,0.006666666666666661,-0.025000000000000012,0.03999999999999999,-0.036951388888888895,0.05166666666666666
+Macro average,nominal,terminal_success,Frozen observations,-0.005000000000000001,-0.04166666666666666,0.031666666666666676,-0.05333333333333334,0.04861805555555597
+Macro average,nominal,terminal_success,Demonstration kNN,0.225,0.14666666666666667,0.30166666666666664,0.1180486111111111,0.325
+reach-v3,pulse,success,Clean repeat,-0.02,-0.09,0.04,-0.13,0.06
+reach-v3,pulse,success,Gaussian recovery,0.02,-0.06,0.1,-0.1,0.15
+reach-v3,pulse,success,Frozen observations,0.0,-0.05,0.05,-0.08170833333333334,0.08
+reach-v3,pulse,success,Demonstration kNN,0.56,0.35,0.76,0.29,0.8217083333333357
+push-v3,pulse,success,Clean repeat,-0.04,-0.14,0.04,-0.19,0.08
+push-v3,pulse,success,Gaussian recovery,0.01,-0.09,0.13,-0.13,0.19
+push-v3,pulse,success,Frozen observations,-0.01,-0.1,0.07,-0.14,0.11
+push-v3,pulse,success,Demonstration kNN,0.53,0.34,0.72,0.28,0.79
+pick-place-v3,pulse,success,Clean repeat,-0.05,-0.18,0.07,-0.24,0.12
+pick-place-v3,pulse,success,Gaussian recovery,-0.03,-0.16,0.1,-0.22,0.15170833333333575
+pick-place-v3,pulse,success,Frozen observations,-0.08,-0.2,0.01,-0.25,0.05
+pick-place-v3,pulse,success,Demonstration kNN,0.45,0.25,0.65,0.19,0.72
+door-open-v3,pulse,success,Clean repeat,-0.01,-0.06,0.0,-0.09,0.0
+door-open-v3,pulse,success,Gaussian recovery,-0.01,-0.06,0.0,-0.09,0.0
+door-open-v3,pulse,success,Frozen observations,-0.01,-0.06,0.0,-0.09,0.0
+door-open-v3,pulse,success,Demonstration kNN,-0.01,-0.06,0.0,-0.09,0.0
+drawer-open-v3,pulse,success,Clean repeat,0.0,0.0,0.0,0.0,0.0
+drawer-open-v3,pulse,success,Gaussian recovery,0.0,0.0,0.0,0.0,0.0
+drawer-open-v3,pulse,success,Frozen observations,0.0,0.0,0.0,0.0,0.0
+drawer-open-v3,pulse,success,Demonstration kNN,0.0,0.0,0.0,0.0,0.0
+button-press-v3,pulse,success,Clean repeat,0.0,0.0,0.0,0.0,0.0
+button-press-v3,pulse,success,Gaussian recovery,0.0,0.0,0.0,0.0,0.0
+button-press-v3,pulse,success,Frozen observations,0.0,0.0,0.0,0.0,0.0
+button-press-v3,pulse,success,Demonstration kNN,0.0,0.0,0.0,0.0,0.0
+Macro average,pulse,success,Clean repeat,-0.019999999999999997,-0.04833333333333333,0.006666666666666665,-0.06166666666666666,0.01666666666666666
+Macro average,pulse,success,Gaussian recovery,-0.0016666666666666642,-0.02666666666666667,0.03000000000000001,-0.03666666666666666,0.04333333333333335
+Macro average,pulse,success,Frozen observations,-0.016666666666666663,-0.034999999999999996,0.0016666666666666752,-0.04333333333333333,0.01166666666666668
+Macro average,pulse,success,Demonstration kNN,0.255,0.18662499999999999,0.325,0.16166666666666668,0.3436180555555561
+reach-v3,pulse,terminal_success,Clean repeat,-0.07,-0.21,0.05,-0.29,0.11
+reach-v3,pulse,terminal_success,Gaussian recovery,0.06,-0.07,0.2,-0.13,0.26
+reach-v3,pulse,terminal_success,Frozen observations,-0.02,-0.13,0.08,-0.18,0.13
+reach-v3,pulse,terminal_success,Demonstration kNN,0.31,0.04,0.56,-0.05,0.6417083333333358
+push-v3,pulse,terminal_success,Clean repeat,-0.02,-0.15,0.11,-0.21170833333333333,0.18
+push-v3,pulse,terminal_success,Gaussian recovery,-0.02,-0.13,0.1,-0.17170833333333335,0.16
+push-v3,pulse,terminal_success,Frozen observations,0.02,-0.12,0.16,-0.17170833333333335,0.21
+push-v3,pulse,terminal_success,Demonstration kNN,0.52,0.3,0.73,0.21,0.79
+pick-place-v3,pulse,terminal_success,Clean repeat,-0.05,-0.25,0.14024999999999638,-0.33,0.22
+pick-place-v3,pulse,terminal_success,Gaussian recovery,-0.01,-0.17,0.14,-0.23,0.2
+pick-place-v3,pulse,terminal_success,Frozen observations,-0.03,-0.19,0.11,-0.26,0.17
+pick-place-v3,pulse,terminal_success,Demonstration kNN,0.42,0.23,0.6002499999999963,0.16,0.6717083333333358
+door-open-v3,pulse,terminal_success,Clean repeat,-0.01,-0.07,0.04,-0.1,0.07
+door-open-v3,pulse,terminal_success,Gaussian recovery,0.0,-0.04,0.04,-0.08,0.08
+door-open-v3,pulse,terminal_success,Frozen observations,0.02,0.0,0.08,0.0,0.12
+door-open-v3,pulse,terminal_success,Demonstration kNN,-0.02,-0.08,0.0,-0.1,0.0
+drawer-open-v3,pulse,terminal_success,Clean repeat,0.05,-0.03,0.16,-0.06,0.22
+drawer-open-v3,pulse,terminal_success,Gaussian recovery,-0.01,-0.06,0.0,-0.08,0.0
+drawer-open-v3,pulse,terminal_success,Frozen observations,0.0,-0.04,0.04,-0.06,0.06341666666667152
+drawer-open-v3,pulse,terminal_success,Demonstration kNN,-0.01,-0.06,0.0,-0.08,0.0
+button-press-v3,pulse,terminal_success,Clean repeat,0.0,0.0,0.0,0.0,0.0
+button-press-v3,pulse,terminal_success,Gaussian recovery,0.0,0.0,0.0,0.0,0.0
+button-press-v3,pulse,terminal_success,Frozen observations,0.0,0.0,0.0,0.0,0.0
+button-press-v3,pulse,terminal_success,Demonstration kNN,0.0,0.0,0.0,0.0,0.0
+Macro average,pulse,terminal_success,Clean repeat,-0.01666666666666667,-0.07500000000000002,0.039999999999999994,-0.09666666666666666,0.05695138888888931
+Macro average,pulse,terminal_success,Gaussian recovery,0.003333333333333329,-0.030000000000000016,0.039999999999999994,-0.043333333333333356,0.05333333333333333
+Macro average,pulse,terminal_success,Frozen observations,-0.0016666666666666663,-0.040000000000000015,0.03666666666666667,-0.056666666666666664,0.05361805555555596
+Macro average,pulse,terminal_success,Demonstration kNN,0.2033333333333333,0.12495833333333334,0.28,0.09804861111111111,0.30999999999999994
+reach-v3,pulse,post_pulse_success,Clean repeat,-0.09,-0.2,0.0,-0.25170833333333337,0.03
+reach-v3,pulse,post_pulse_success,Gaussian recovery,0.07,-0.01,0.19,-0.04,0.25
+reach-v3,pulse,post_pulse_success,Frozen observations,-0.03,-0.13,0.05024999999999637,-0.17,0.09
+reach-v3,pulse,post_pulse_success,Demonstration kNN,0.38,0.1,0.6302499999999963,0.02,0.71
+push-v3,pulse,post_pulse_success,Clean repeat,-0.04,-0.14,0.04,-0.19,0.08
+push-v3,pulse,post_pulse_success,Gaussian recovery,0.01,-0.09,0.13,-0.13,0.19
+push-v3,pulse,post_pulse_success,Frozen observations,-0.01,-0.1,0.07,-0.14,0.11
+push-v3,pulse,post_pulse_success,Demonstration kNN,0.53,0.34,0.72,0.28,0.79
+pick-place-v3,pulse,post_pulse_success,Clean repeat,-0.06,-0.23,0.1,-0.29,0.16
+pick-place-v3,pulse,post_pulse_success,Gaussian recovery,-0.04,-0.17,0.08,-0.23170833333333335,0.13
+pick-place-v3,pulse,post_pulse_success,Frozen observations,-0.1,-0.22,-0.02,-0.27,0.0
+pick-place-v3,pulse,post_pulse_success,Demonstration kNN,0.47,0.29,0.66,0.23,0.72
+door-open-v3,pulse,post_pulse_success,Clean repeat,-0.01,-0.06,0.0,-0.09,0.0
+door-open-v3,pulse,post_pulse_success,Gaussian recovery,-0.01,-0.06,0.0,-0.09,0.0
+door-open-v3,pulse,post_pulse_success,Frozen observations,-0.01,-0.06,0.0,-0.09,0.0
+door-open-v3,pulse,post_pulse_success,Demonstration kNN,-0.01,-0.06,0.0,-0.09,0.0
+drawer-open-v3,pulse,post_pulse_success,Clean repeat,0.0,0.0,0.0,0.0,0.0
+drawer-open-v3,pulse,post_pulse_success,Gaussian recovery,0.0,0.0,0.0,0.0,0.0
+drawer-open-v3,pulse,post_pulse_success,Frozen observations,0.0,0.0,0.0,0.0,0.0
+drawer-open-v3,pulse,post_pulse_success,Demonstration kNN,0.0,0.0,0.0,0.0,0.0
+button-press-v3,pulse,post_pulse_success,Clean repeat,0.0,0.0,0.0,0.0,0.0
+button-press-v3,pulse,post_pulse_success,Gaussian recovery,0.0,0.0,0.0,0.0,0.0
+button-press-v3,pulse,post_pulse_success,Frozen observations,0.0,0.0,0.0,0.0,0.0
+button-press-v3,pulse,post_pulse_success,Demonstration kNN,0.0,0.0,0.0,0.0,0.0
+Macro average,pulse,post_pulse_success,Clean repeat,-0.03333333333333333,-0.07,-0.0016666666666666674,-0.08666666666666666,0.009999999999999998
+Macro average,pulse,post_pulse_success,Gaussian recovery,0.005,-0.025000000000000005,0.036666666666666674,-0.04,0.05
+Macro average,pulse,post_pulse_success,Frozen observations,-0.025,-0.05,-0.003333333333333325,-0.05833333333333333,0.00666666666666667
+Macro average,pulse,post_pulse_success,Demonstration kNN,0.22833333333333333,0.1466666666666667,0.30666666666666664,0.11971527777777777,0.33166666666666667

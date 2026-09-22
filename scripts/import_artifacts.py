@@ -14,8 +14,9 @@ def checked_path(root,name):
 def main():
     ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('archive',type=Path)
     ap.add_argument('--destination',type=Path,default=ROOT/'artifacts')
+    ap.add_argument('--manifest',type=Path,default=ROOT/'configs/artifact_bundle.json')
     ap.add_argument('--profile',choices=['smoke','all'],default='all');args=ap.parse_args()
-    expected=json.loads((ROOT/'configs/artifact_bundle.json').read_text(encoding='utf-8'))
+    expected=json.loads(args.manifest.read_text(encoding='utf-8'))
     h=hashlib.sha256()
     with args.archive.open('rb') as f:
         for block in iter(lambda:f.read(1024*1024),b''):h.update(block)

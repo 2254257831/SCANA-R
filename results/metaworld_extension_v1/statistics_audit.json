@@ -1,0 +1,8 @@
+{
+  "unique_rollouts": 6000,
+  "complete_grid": true,
+  "duplicate_rows": 0,
+  "bootstrap_replicates": 5000,
+  "bootstrap_seed": 20260922,
+  "note": "Resample policy seeds and layout seeds as paired blocks; macro averages condition on the fixed task set and recovery banks. Per-task family interval alpha=.05/number of tasks. Stress scenarios are descriptive secondary analyses, not all multiplicity-adjusted confirmatory claims."
+}
