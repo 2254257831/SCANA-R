@@ -1,0 +1,31 @@
+{
+  "evidence": {
+    "branches": 24000,
+    "windows": 95310,
+    "attempts": 34193,
+    "identity_fallbacks": 1944,
+    "alignment": "All exported observations and labels equal their accepted rollout slices; failed earlier attempts and terminal acceptance checked.",
+    "protocol_sha256": "5e4f8dbcb3a76a2de47d6f960e13bd977f2889f82eb08205997aab869da07aa5"
+  },
+  "metaworld_evidence": {
+    "branches": 8640,
+    "windows": 34176,
+    "attempts": 9650,
+    "identity_fallbacks": 192,
+    "alignment": "All exported observations and labels equal their accepted rollout slices; failed earlier attempts and terminal acceptance checked.",
+    "protocol_sha256": "49fe154a771cea308c14da00b5f31134fcc0ce8a254f150fbf5e0805154bdadd"
+  },
+  "evidence/replication_per_episode.csv": {
+    "episodes": 4200,
+    "hash_and_success_match": true
+  },
+  "evidence/failure_interventions.csv": {
+    "episodes": 3600,
+    "hash_and_success_match": true
+  },
+  "metaworld_evidence/per_episode.csv": {
+    "episodes": 3240,
+    "hash_and_success_match": true
+  },
+  "seconds": 100.27763019999838
+}

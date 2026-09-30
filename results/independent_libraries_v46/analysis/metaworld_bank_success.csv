@@ -1,0 +1,55 @@
+task,bank,method,success
+reach-v3,101,Clean repeat,0.9666666666666667
+reach-v3,211,Clean repeat,0.9166666666666666
+reach-v3,307,Clean repeat,0.9333333333333333
+reach-v3,101,Gaussian recovery,0.9166666666666666
+reach-v3,211,Gaussian recovery,0.8833333333333333
+reach-v3,307,Gaussian recovery,0.95
+reach-v3,101,SCANA-R,0.9333333333333333
+reach-v3,211,SCANA-R,0.9
+reach-v3,307,SCANA-R,0.9333333333333333
+push-v3,101,Clean repeat,0.8833333333333333
+push-v3,211,Clean repeat,0.9833333333333333
+push-v3,307,Clean repeat,0.9
+push-v3,101,Gaussian recovery,0.9666666666666667
+push-v3,211,Gaussian recovery,0.7
+push-v3,307,Gaussian recovery,0.8
+push-v3,101,SCANA-R,0.9666666666666667
+push-v3,211,SCANA-R,0.7833333333333333
+push-v3,307,SCANA-R,0.8
+pick-place-v3,101,Clean repeat,0.75
+pick-place-v3,211,Clean repeat,0.8333333333333334
+pick-place-v3,307,Clean repeat,0.7166666666666667
+pick-place-v3,101,Gaussian recovery,0.65
+pick-place-v3,211,Gaussian recovery,0.6
+pick-place-v3,307,Gaussian recovery,0.7
+pick-place-v3,101,SCANA-R,0.6333333333333333
+pick-place-v3,211,SCANA-R,0.6333333333333333
+pick-place-v3,307,SCANA-R,0.65
+door-open-v3,101,Clean repeat,1.0
+door-open-v3,211,Clean repeat,0.9
+door-open-v3,307,Clean repeat,0.9833333333333333
+door-open-v3,101,Gaussian recovery,0.9833333333333333
+door-open-v3,211,Gaussian recovery,0.9833333333333333
+door-open-v3,307,Gaussian recovery,0.9833333333333333
+door-open-v3,101,SCANA-R,0.9833333333333333
+door-open-v3,211,SCANA-R,0.9833333333333333
+door-open-v3,307,SCANA-R,0.9833333333333333
+drawer-open-v3,101,Clean repeat,1.0
+drawer-open-v3,211,Clean repeat,1.0
+drawer-open-v3,307,Clean repeat,1.0
+drawer-open-v3,101,Gaussian recovery,1.0
+drawer-open-v3,211,Gaussian recovery,1.0
+drawer-open-v3,307,Gaussian recovery,1.0
+drawer-open-v3,101,SCANA-R,1.0
+drawer-open-v3,211,SCANA-R,1.0
+drawer-open-v3,307,SCANA-R,1.0
+button-press-v3,101,Clean repeat,1.0
+button-press-v3,211,Clean repeat,1.0
+button-press-v3,307,Clean repeat,1.0
+button-press-v3,101,Gaussian recovery,1.0
+button-press-v3,211,Gaussian recovery,1.0
+button-press-v3,307,Gaussian recovery,1.0
+button-press-v3,101,SCANA-R,1.0
+button-press-v3,211,SCANA-R,1.0
+button-press-v3,307,SCANA-R,1.0

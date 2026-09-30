@@ -1,0 +1,71 @@
+task,bank,method,success
+transfer_cube,101,Clean repeat,0.6666666666666666
+transfer_cube,211,Clean repeat,0.7166666666666667
+transfer_cube,307,Clean repeat,0.6166666666666667
+transfer_cube,401,Clean repeat,0.5833333333333334
+transfer_cube,503,Clean repeat,0.5833333333333334
+transfer_cube,101,SCANA-R,0.9
+transfer_cube,211,SCANA-R,0.8833333333333333
+transfer_cube,307,SCANA-R,0.8666666666666667
+transfer_cube,401,SCANA-R,0.9
+transfer_cube,503,SCANA-R,0.9333333333333333
+transfer_cube,101,Gaussian recovery,0.8166666666666667
+transfer_cube,211,Gaussian recovery,0.8333333333333334
+transfer_cube,307,Gaussian recovery,0.7666666666666667
+transfer_cube,401,Gaussian recovery,0.8333333333333334
+transfer_cube,503,Gaussian recovery,0.8333333333333334
+transfer_cube,101,No cross-fitting,0.9
+transfer_cube,211,No cross-fitting,0.9333333333333333
+transfer_cube,307,No cross-fitting,0.8
+transfer_cube,401,No cross-fitting,0.9
+transfer_cube,503,No cross-fitting,0.8833333333333333
+transfer_cube,101,Global-time errors,0.85
+transfer_cube,211,Global-time errors,0.9
+transfer_cube,307,Global-time errors,0.7833333333333333
+transfer_cube,401,Global-time errors,0.85
+transfer_cube,503,Global-time errors,0.8166666666666667
+transfer_cube,101,No intermediate backtracking,0.9
+transfer_cube,211,No intermediate backtracking,0.8833333333333333
+transfer_cube,307,No intermediate backtracking,0.8666666666666667
+transfer_cube,401,No intermediate backtracking,0.9166666666666666
+transfer_cube,503,No intermediate backtracking,0.9333333333333333
+transfer_cube,101,Gaussian CPU budget,0.95
+transfer_cube,211,Gaussian CPU budget,0.8
+transfer_cube,307,Gaussian CPU budget,0.9666666666666667
+transfer_cube,401,Gaussian CPU budget,0.9666666666666667
+transfer_cube,503,Gaussian CPU budget,0.95
+insertion,101,Clean repeat,0.23333333333333334
+insertion,211,Clean repeat,0.35
+insertion,307,Clean repeat,0.26666666666666666
+insertion,401,Clean repeat,0.31666666666666665
+insertion,503,Clean repeat,0.3333333333333333
+insertion,101,SCANA-R,0.4666666666666667
+insertion,211,SCANA-R,0.5
+insertion,307,SCANA-R,0.5666666666666667
+insertion,401,SCANA-R,0.5
+insertion,503,SCANA-R,0.45
+insertion,101,Gaussian recovery,0.4166666666666667
+insertion,211,Gaussian recovery,0.43333333333333335
+insertion,307,Gaussian recovery,0.4166666666666667
+insertion,401,Gaussian recovery,0.35
+insertion,503,Gaussian recovery,0.31666666666666665
+insertion,101,No cross-fitting,0.43333333333333335
+insertion,211,No cross-fitting,0.6333333333333333
+insertion,307,No cross-fitting,0.6666666666666666
+insertion,401,No cross-fitting,0.6166666666666667
+insertion,503,No cross-fitting,0.5333333333333333
+insertion,101,Global-time errors,0.48333333333333334
+insertion,211,Global-time errors,0.43333333333333335
+insertion,307,Global-time errors,0.4666666666666667
+insertion,401,Global-time errors,0.6166666666666667
+insertion,503,Global-time errors,0.36666666666666664
+insertion,101,No intermediate backtracking,0.26666666666666666
+insertion,211,No intermediate backtracking,0.38333333333333336
+insertion,307,No intermediate backtracking,0.35
+insertion,401,No intermediate backtracking,0.31666666666666665
+insertion,503,No intermediate backtracking,0.31666666666666665
+insertion,101,Gaussian CPU budget,0.55
+insertion,211,Gaussian CPU budget,0.6
+insertion,307,Gaussian CPU budget,0.6166666666666667
+insertion,401,Gaussian CPU budget,0.35
+insertion,503,Gaussian CPU budget,0.6166666666666667

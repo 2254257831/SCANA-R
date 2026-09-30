@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SCANA-R v46: protocols for independent recovery libraries, compute-matched comparisons, and failure interventions.">
+  <title>Independent-library study | SCANA-R</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<main id="main" class="section reading-width">
+  <p><a href="index.html#independent-libraries">← SCANA-R project page</a></p>
+  <h1>Independent libraries, costs, and failure interventions</h1>
+  <p>This v46 study adds 11,040 evaluation episodes. Methods, library and policy seeds, and new layout IDs were fixed before these tests. Historical failures motivated the diagnostic hypotheses; this was not an independently preregistered mechanism study.</p>
+  <div class="table-scroll"><table>
+    <caption>Evaluation design</caption>
+    <thead><tr><th scope="col">Study</th><th scope="col">Design</th><th scope="col">Episodes</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">ACT libraries, costs, and components</th><td>2 tasks × 5 libraries × 3 policies × 20 layouts × 7 methods</td><td>4,200</td></tr>
+      <tr><th scope="row">Meta-World libraries</th><td>6 tasks × 3 libraries × 3 policies × 20 layouts × 3 methods</td><td>3,240</td></tr>
+      <tr><th scope="row">Frozen-policy interventions</th><td>2 tasks × 5 policies × 20 layouts × 2 methods × 9 conditions</td><td>3,600</td></tr>
+    </tbody>
+  </table></div>
+  <p>Source demonstrations remain fixed: 40 training and 10 development episodes per task. Library-level intervals therefore account for recovery collection and policy fitting, but not changes in the original demonstration sample.</p>
+
+  <h2>Results and downloadable records</h2>
+  <p>SCANA-R achieves 89.7% transfer and 49.7% insertion success; standard Gaussian recovery achieves 81.7% and 38.7%. The adjusted intervals do not establish a calibration advantage. Gaussian collection with longer policy training at matched total active CPU cost achieves 92.7% and 54.7%. Six-task Meta-World macro success is 89.9% for SCANA-R, 89.5% for Gaussian recovery, and 93.1% for original repetition.</p>
+  <p><a href="assets/v46/manuscript.pdf">Complete v46 manuscript</a> · <a href="assets/v46/data-and-protocols.zip" download>Compact outcomes, analysis, and protocols</a> · <a href="assets/scana-r-source.zip" download>Source package</a></p>
+  <p>The compact records do not contain all trajectory arrays, checkpoints, or source demonstrations. The full evidence manifest inventories those files; it does not provide a public download endpoint. The compact release alone cannot reproduce raw trajectory verification or all collection-cost measurements.</p>
+
+  <h2>Rerunning the experiments</h2>
+  <p>Use the repository installation instructions and first import the original ACT and Meta-World source demonstrations and checkpoints. ACT uses MuJoCo 2.3.3; Meta-World requires a separate environment with MuJoCo 3.3.0.</p>
+  <div class="code-block"><pre><code># From the repository root, in the ACT environment (including pandas)
+python experiments/independent_libraries_v46/experiment_v46.py all --workers 8
+python experiments/independent_libraries_v46/analyze_experiments.py
+
+# In the separate Meta-World environment
+python experiments/independent_libraries_v46/metaworld_replicate.py --workers 6
+python experiments/independent_libraries_v46/analyze_metaworld.py</code></pre></div>
+  <p>Default output is <code>artifacts/independent_libraries_v46</code>. Set <code>SCANA_V46_OUTPUT</code> to a fresh directory for a separate replication. ACT inputs use <code>SCANA_ARTIFACTS</code>; Meta-World reads the existing <code>artifacts/metaworld_extension_v1</code> source collection. On Windows, <code>SCANA_ASSET_CACHE</code> and <code>SCANA_MW_ASSET_CACHE</code> select writable ASCII-path caches for simulator assets.</p>
+  <p>Do not run into the frozen original evidence directory. Portable scripts adapt path bootstrapping; their hashes intentionally differ from the executed machine-local scripts. <code>portability_manifest.json</code> records both versions. The exported scripts were syntax-checked, but the complete reported study was not independently repeated after export.</p>
+  <p>All experiments use state observations in simulation. The results do not establish that calibration is necessary or superior at matched total CPU cost. Report every method and task, including failures.</p>
+  <p><a href="protocol.html">Original ACT protocol</a> · <a href="mujoco-gallery.html">Earlier MuJoCo extension and videos</a></p>
+</main>
+</body>
+</html>

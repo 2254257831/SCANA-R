@@ -1,0 +1,78 @@
+{
+  "primary_family": "two tasks, SCANA-R vs Gaussian recovery",
+  "bootstrap": 10000,
+  "dimensions": [
+    5,
+    3,
+    20
+  ],
+  "sampling": "resample banks, resample policy seeds within each selected bank, resample common layouts",
+  "source_episodes_fixed": true,
+  "test_layouts_disjoint_from_prior": [
+    92000,
+    92039,
+    94000,
+    94019
+  ],
+  "diagnostic_layouts": [
+    96000,
+    96001,
+    96002,
+    96003,
+    96004,
+    96005,
+    96006,
+    96007,
+    96008,
+    96009,
+    96010,
+    96011,
+    96012,
+    96013,
+    96014,
+    96015,
+    96016,
+    96017,
+    96018,
+    96019
+  ],
+  "replication_layouts": [
+    97000,
+    97001,
+    97002,
+    97003,
+    97004,
+    97005,
+    97006,
+    97007,
+    97008,
+    97009,
+    97010,
+    97011,
+    97012,
+    97013,
+    97014,
+    97015,
+    97016,
+    97017,
+    97018,
+    97019
+  ],
+  "independently_fitted_libraries": 10,
+  "policy_fits": 210,
+  "test_episodes": 4200,
+  "diagnostic_episodes": 3600,
+  "cpu_budget_ratios": [
+    {
+      "task": "transfer_cube",
+      "mean_ratio": 1.00207686262828,
+      "max_ratio": 1.013364828743706
+    },
+    {
+      "task": "insertion",
+      "mean_ratio": 1.0033081449420125,
+      "max_ratio": 1.0154126743558787
+    }
+  ],
+  "protocol_sha256": "5e4f8dbcb3a76a2de47d6f960e13bd977f2889f82eb08205997aab869da07aa5"
+}

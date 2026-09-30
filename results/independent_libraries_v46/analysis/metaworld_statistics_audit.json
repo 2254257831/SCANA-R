@@ -1,0 +1,12 @@
+{
+  "episodes": 3240,
+  "libraries": 18,
+  "auxiliary_models": 90,
+  "final_policies": 162,
+  "bootstrap": 10000,
+  "sampling": "Task-specific library and within-library seed resampling, common layouts within each task; macro mean over six fixed tasks.",
+  "primary_macro_comparisons": 2,
+  "macro_family_interval": 97.5,
+  "taskwise_family_interval": 99.1666667,
+  "source_demonstrations_fixed": true
+}

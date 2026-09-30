@@ -18,7 +18,7 @@
     <div class="actions" aria-label="Project resources">
       <a class="button" href="assets/scana-r-source.zip" download><span aria-hidden="true">&lt;/&gt;</span> Code</a>
       <a class="button" href="protocol.html"><span aria-hidden="true">≡</span> Protocol</a>
-      <a class="button" href="data/per_episode.csv" download><span aria-hidden="true">↓</span> Data</a>
+      <a class="button" href="assets/v46/data-and-protocols.zip" download title="v46 compact outcomes, analysis, and protocols; full trajectories are separately inventoried"><span aria-hidden="true">↓</span> Data</a>
       <a class="button" href="mujoco-gallery.html">MuJoCo extension</a>
       <a class="button" href="#rollouts"><span aria-hidden="true">▶</span> Videos</a>
     </div>
@@ -37,9 +37,17 @@
   <section class="abstract band" id="abstract"><div class="reading-width">
     <h2>Abstract</h2>
     <p>Successful demonstrations sparsely cover the states encountered after a policy deviates from its reference trajectory. SCANA-R uses source-episode cross-fitting to estimate policy errors, samples short action perturbations from the same task and nearby phase, and executes them in simulation. The reference action sequence then resumes; a recovery branch is accepted only when its terminal state satisfies the task’s success criterion. Recovery supervision pairs newly observed states with actions that were actually executed.</p>
-    <p>At a matched final training budget, task success improves from <strong>67% to 92%</strong> on Transfer Cube and from <strong>43% to 67%</strong> on Insertion relative to repeating clean demonstrations. Compared with Gaussian recovery, calibration provides a supported gain on Insertion, while the Transfer Cube comparison is inconclusive. These are the original two ACT task results. A six-task Meta-World follow-up finds 89.5% macro success for SCANA-R versus 91.8% for Clean repeat; the broader study does not establish a general recovery advantage. <a href="mujoco-gallery.html">Explore all 11,600 new executions and six-task videos.</a></p>
-    <details class="translation"><summary>中文概览</summary><p lang="zh-CN">SCANA-R 从源回合交叉拟合误差中校准短时动作扰动，在仿真中执行扰动并恢复参考动作，以末态任务成功验收分支。恢复标签对应实际观测与实际执行的动作。在相同最终训练预算下，方块传递成功率由 67% 提升至 92%，插入任务由 43% 提升至 67%。相较高斯恢复，校准扰动在插入任务上具有区间支持的收益，方块传递上的差异尚不确定。新增六项 Meta-World 操作中，SCANA-R 与原始重复宏平均为 89.5% 和 91.8%，未显示整体改进；新增双臂扰动测试也暴露鲁棒性不足。全部证据均来自特权状态仿真策略。</p></details>
+    <p>The current independent-library study adds 11,040 evaluations. SCANA-R reaches 89.7% transfer and 49.7% insertion success, compared with 81.7%/38.7% for Gaussian recovery. At the same total active CPU budget, Gaussian collection with longer policy training reaches 92.7%/54.7%. Six-task repeated-library macro success is 89.9% SCANA-R, 89.5% Gaussian, and 93.1% original repetition. Recovery collection helps the tested bimanual policies; calibration is not established as necessary or superior at matched compute. <a href="#independent-libraries">See library-level results and failure interventions.</a></p>
+    <details class="translation"><summary>中文概览</summary><p lang="zh-CN">新增11,040回合评价包含独立恢复库、完整CPU成本及失败机制干预。SCANA-R双臂成功率89.7%/49.7%，同成本高斯92.7%/54.7%；六项单臂宏平均89.9%，原数据重复93.1%。恢复采集对所测双臂策略有益，但没有确立误差校准的必要性或同成本优势。全部为状态输入仿真，既有视频仍来自早期固定策略，未将它们冒充新增重复的录像。</p></details>
   </div></section>
+
+  <section class="section wide-wrap" id="independent-libraries">
+    <h2>Independent libraries, costs, and failure mechanisms</h2>
+    <p>Five new libraries per ACT task and three per Meta-World task separate collection variability from policy fitting. Source demonstrations stay fixed. The calibration advantage over standard Gaussian recovery is inconclusive under the two-task adjusted intervals; the compute-matched Gaussian control has higher point means on both tasks.</p>
+    <figure><img src="assets/v46/library-success.png" style="width:100%;height:auto" alt="Success across five independently rebuilt ACT libraries for seven methods"><figcaption>Each library average combines three policies and 20 new layouts. Full intervals and costs are in the v46 manuscript.</figcaption></figure>
+    <figure><img src="assets/v46/failure-interventions.png" style="width:100%;height:auto" alt="Channel-noise and action-replanning interventions on frozen policies"><figcaption>New-layout interventions with frozen original policies. A low-support joint is sufficient for the transfer noise failure; fixed temporal ensembling restores much of the single-step replanning loss.</figcaption></figure>
+    <p><a href="assets/v46/manuscript.pdf">Read the current complete v46 manuscript</a> · <a href="v46-study.html">Protocols and rerun instructions</a></p>
+  </section>
 
   <section class="section wide-wrap" id="method">
     <h2>Method</h2>

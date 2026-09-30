@@ -3,6 +3,26 @@
 本仓库对应当前修订论文《成功示范驱动的动作噪声校准与仿真恢复学习》。
 现在是本地开源准备版，已整理代码、复现实验入口、证据和项目主页，尚未上传 GitHub。
 
+## Independent-library and cost study (v46)
+
+The current manuscript adds **11,040 evaluation episodes**. Five independently rebuilt
+libraries per bimanual task yield **89.7% / 49.7% SCANA-R**, **81.7% / 38.7% Gaussian
+recovery**, and **92.7% / 54.7% Gaussian at matched total active CPU cost**.
+Three-library repeats on six Meta-World tasks yield macro success **89.9% SCANA-R,
+89.5% Gaussian, and 93.1% original repetition**. Recovery collection helps the tested
+bimanual policies, but calibration is not established as necessary or superior at
+matched compute. Intervals resample libraries, within-library policies and shared
+layouts; original source demonstrations remain fixed.
+
+Channel interventions locate the transfer noise failure at a narrowly represented
+joint input. A fixed temporal ensemble recovers much of the success lost under
+single-step replanning. These deployment diagnostics use frozen original libraries.
+
+See [rerun instructions](experiments/independent_libraries_v46/README.md),
+[recorded results](results/independent_libraries_v46), and the new figures on the
+[local project page](docs/index.html#independent-libraries). The studies below remain
+historical evidence and are not pooled with this repetition.
+
 ## 新增 MuJoCo 八任务扩展
 
 本次完成 11,600 次执行：冻结 ACT 策略的 5,600 次部署测试，以及六项 Meta-World 操作的 6,000 次测试。覆盖到达、推移、抓放、开门、开抽屉、按按钮和原双臂交接、插入。六任务常规宏平均为 SCANA-R 89.5%、原始重复 91.8%，未证明整体提升；双臂新布局仍有收益，但末段扰动和观测噪声下有明显失败。

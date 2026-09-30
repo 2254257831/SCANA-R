@@ -1,0 +1,25 @@
+task,method,treatment,control,difference,low,high
+insertion,Calibrated recovery,noise_supported,observation_noise,0.0,0.0,0.0
+insertion,Calibrated recovery,noise_joints,nominal,0.01,-0.12,0.14
+insertion,Calibrated recovery,noise_objects,nominal,-0.18,-0.35,0.01
+insertion,Calibrated recovery,noise_low_support,nominal,0.0,0.0,0.0
+insertion,Calibrated recovery,replan_1_ensemble,replan_1,0.44,0.2,0.66
+insertion,Calibrated recovery,replan_1,nominal,-0.42,-0.62,-0.20975000000000363
+insertion,Gaussian recovery,noise_supported,observation_noise,0.0,0.0,0.0
+insertion,Gaussian recovery,noise_joints,nominal,0.05,-0.06,0.18
+insertion,Gaussian recovery,noise_objects,nominal,0.06,-0.08,0.21
+insertion,Gaussian recovery,noise_low_support,nominal,0.0,0.0,0.0
+insertion,Gaussian recovery,replan_1_ensemble,replan_1,0.15,-0.02,0.32
+insertion,Gaussian recovery,replan_1,nominal,-0.2,-0.36,-0.05
+transfer_cube,Calibrated recovery,noise_supported,observation_noise,0.65,0.47,0.82
+transfer_cube,Calibrated recovery,noise_joints,nominal,-0.9,-1.0,-0.76
+transfer_cube,Calibrated recovery,noise_objects,nominal,-0.01,-0.08,0.04
+transfer_cube,Calibrated recovery,noise_low_support,nominal,-0.9,-1.0,-0.76
+transfer_cube,Calibrated recovery,replan_1_ensemble,replan_1,0.64,0.43,0.83
+transfer_cube,Calibrated recovery,replan_1,nominal,-0.63,-0.84,-0.4
+transfer_cube,Gaussian recovery,noise_supported,observation_noise,0.03,-0.1,0.14
+transfer_cube,Gaussian recovery,noise_joints,nominal,-0.05,-0.15,0.03
+transfer_cube,Gaussian recovery,noise_objects,nominal,0.01,-0.03,0.08
+transfer_cube,Gaussian recovery,noise_low_support,nominal,-0.01,-0.09,0.07
+transfer_cube,Gaussian recovery,replan_1_ensemble,replan_1,0.23,-0.19,0.68
+transfer_cube,Gaussian recovery,replan_1,nominal,-0.5,-0.8,-0.22

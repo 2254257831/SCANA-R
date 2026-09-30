@@ -1,0 +1,58 @@
+{
+  "tasks": [
+    "reach-v3",
+    "push-v3",
+    "pick-place-v3",
+    "door-open-v3",
+    "drawer-open-v3",
+    "button-press-v3"
+  ],
+  "banks": [
+    101,
+    211,
+    307
+  ],
+  "policy_seeds": [
+    17,
+    29,
+    43
+  ],
+  "methods": [
+    "Clean repeat",
+    "Gaussian recovery",
+    "SCANA-R"
+  ],
+  "test_layouts": [
+    98000,
+    98001,
+    98002,
+    98003,
+    98004,
+    98005,
+    98006,
+    98007,
+    98008,
+    98009,
+    98010,
+    98011,
+    98012,
+    98013,
+    98014,
+    98015,
+    98016,
+    98017,
+    98018,
+    98019
+  ],
+  "sources": "Same original 40 terminal-success training and 10 development sources per task; no original-data resampling.",
+  "randomization": "Independently permuted episode folds, auxiliary initializations, pulse RNG and endpoint draws per bank; policy streams paired across methods.",
+  "collection": "6 branches/source; 8-step pulse; terminal success acceptance; scales1,.5,.25,0; four actual-observation windows/branch; protected gripper.",
+  "amplitude": "Use original development-selected task/family amplitudes without retuning.",
+  "fit": "Original 22-256-256-64 policy; 1200 AdamW updates; 2048+2048 draws; minimum clean development MSE every100 updates.",
+  "evaluation": "250 steps; chunk16, execute8; official ever-success. 6 fixed tasks x3 libraries x3 policy seeds x20 new layouts x3 methods =3240 episodes.",
+  "primary": "Macro-average SCANA-R minus Gaussian and Clean repeat, conditional on six tasks; paired hierarchical library/seed/shared-layout bootstrap; taskwise all reported.",
+  "limitation": "Only three independent library replicates per task, conditional on original sources; no claim of demonstration-population uncertainty.",
+  "script_sha256": "96dcd774bd799f732a532bb8c516c2208cb3f0de6d6266fa94ded590fa734322",
+  "adapter_sha256": "4ff5cfe5c2a5f9bdee3dfa04e149ba7ac94fa6b3b8c4fa8b7d655f587d12aa7a",
+  "frozen_utc": "2026-09-29T08:07:37.076790+00:00"
+}

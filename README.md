@@ -13,6 +13,26 @@ repository accompanies the revised manuscript and preserves its original PPT
 figure organization. It is a **local release preparation**, with no GitHub remote
 or public release configured yet.
 
+## Independent-library and cost study (v46)
+
+The current manuscript adds **11,040 evaluation episodes**. Five independently rebuilt
+libraries per bimanual task yield **89.7% / 49.7% SCANA-R**, **81.7% / 38.7% Gaussian
+recovery**, and **92.7% / 54.7% Gaussian at matched total active CPU cost**.
+Three-library repeats on six Meta-World tasks yield macro success **89.9% SCANA-R,
+89.5% Gaussian, and 93.1% original repetition**. Recovery collection helps the tested
+bimanual policies, but calibration is not established as necessary or superior at
+matched compute. Intervals resample libraries, within-library policies and shared
+layouts; original source demonstrations remain fixed.
+
+Channel interventions locate the transfer noise failure at a narrowly represented
+joint input. A fixed temporal ensemble recovers much of the success lost under
+single-step replanning. These deployment diagnostics use frozen original libraries.
+
+See [rerun instructions](experiments/independent_libraries_v46/README.md),
+[recorded results](results/independent_libraries_v46), and the new figures on the
+[local project page](docs/index.html#independent-libraries). The studies below remain
+historical evidence and are not pooled with this repetition.
+
 ## Expanded MuJoCo study
 
 The follow-up adds **11,600 executions**: 5,600 frozen ACT-policy deployment checks and 6,000 on six Meta-World tasks. Nominal Meta-World macro success is **89.5% SCANA-R vs 91.8% Clean repeat**, paired difference −2.33 points, 95% interval [−5.00, 0.17]. Broader testing does not establish a general advantage. All failures, six fixed-layout policy videos, acquisition costs and frozen protocols are retained.

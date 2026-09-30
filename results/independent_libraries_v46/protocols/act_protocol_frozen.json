@@ -1,0 +1,118 @@
+{
+  "version": 1,
+  "frozen_utc": "2026-09-29T07:42:40.490713+00:00",
+  "tasks": [
+    "transfer_cube",
+    "insertion"
+  ],
+  "banks": [
+    101,
+    211,
+    307,
+    401,
+    503
+  ],
+  "policy_seeds": [
+    17,
+    29,
+    43
+  ],
+  "methods": [
+    "Clean repeat",
+    "SCANA-R",
+    "Gaussian recovery",
+    "No cross-fitting",
+    "Global-time errors",
+    "No intermediate backtracking",
+    "Gaussian CPU budget"
+  ],
+  "test_layouts": [
+    97000,
+    97001,
+    97002,
+    97003,
+    97004,
+    97005,
+    97006,
+    97007,
+    97008,
+    97009,
+    97010,
+    97011,
+    97012,
+    97013,
+    97014,
+    97015,
+    97016,
+    97017,
+    97018,
+    97019
+  ],
+  "source_episodes": "same original 40 training and 10 development episodes; no new source demonstrations",
+  "library_randomization": "independent fold assignment, auxiliary initializations, pulse RNG and endpoint draws for each bank",
+  "training": "1200 updates per auxiliary/final policy; 2048 original +2048 method rows with replacement; min clean development MSE every 100 updates; all random streams paired by bank/seed",
+  "amplitude": {
+    "transfer_cube": 0.03,
+    "insertion": 0.08
+  },
+  "branches_per_source": 12,
+  "ablations": {
+    "No cross-fitting": "one all-training-episode auxiliary model, same 1200 updates",
+    "Global-time errors": "sample any error chunk in the same task, remove temporal neighborhood only",
+    "No intermediate backtracking": "try scales [1,0] instead of [1,.5,.25,0]; identity retains source coverage"
+  },
+  "compute_control": "Gaussian CPU budget receives the SCANA-R total active CPU time (five auxiliary fits + collection simulation + one final fit), less its own Gaussian collection time, as its final-training allowance; minimum 1200 updates and ceiling 30000; any overrun/unused budget reported; no auxiliary work charged twice per method/seed",
+  "primary": "SCANA-R minus Gaussian recovery at nominal cadence, separately on two tasks; all results reported; paired bank, within-bank seed, shared-layout bootstrap 95% and two-task 97.5% intervals",
+  "diagnostics": {
+    "frozen_methods": [
+      "Calibrated recovery",
+      "Gaussian recovery"
+    ],
+    "seeds": [
+      7,
+      11,
+      23,
+      31,
+      47
+    ],
+    "layouts": [
+      96000,
+      96001,
+      96002,
+      96003,
+      96004,
+      96005,
+      96006,
+      96007,
+      96008,
+      96009,
+      96010,
+      96011,
+      96012,
+      96013,
+      96014,
+      96015,
+      96016,
+      96017,
+      96018,
+      96019
+    ],
+    "conditions": [
+      "nominal",
+      "observation_noise",
+      "noise_joints",
+      "noise_objects",
+      "noise_low_support",
+      "noise_supported",
+      "replan_1",
+      "replan_1_ensemble",
+      "replan_16"
+    ],
+    "low_support": "input channels with test noise standard deviation greater than original-training standard deviation; mask fixed from checkpoint before test",
+    "ensemble": "predict every step, average all available predictions of the present action over the last 16 chunks with weights exp(-age/4); no tuning",
+    "metrics": "episode and terminal success, each ordinal reward threshold reached, action first differences, clean-vs-noisy prediction discrepancy at identical states",
+    "interpretation": "retrospectively motivated mechanisms tested on new layouts; channel interventions identify sensitivity, not universally proven causes"
+  },
+  "scope": "state-input simulation; independent libraries conditional on same source demos; no claims about images, semantic task planning or real robots",
+  "script_sha256": "ace9f961055172e49d75dafce77c3aba0c451c55370ea1be0252ed47876a220c"
+}
