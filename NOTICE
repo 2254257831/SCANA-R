@@ -8,6 +8,6 @@ The ACT simulator subset in third_party/act is Copyright (c) 2023 Tony Z. Zhao,
 licensed under MIT. Its original notice is retained in third_party/act/LICENSE.
 SCANA-R does not relicense this third-party code or its assets.
 
-Website layout inspiration: Academic Project Page Template by Eliahu Horwitz
+Website layout inspiration: Academic Project Page Template
 and the Nerfies project page. No template source, fonts, media, analytics code,
 or third-party logos are redistributed. See docs/template-references.md.

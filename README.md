@@ -11,9 +11,12 @@ executes those perturbations in a resettable simulator, and trains on verified
 recovery observations paired with actions that were actually executed. This
 repository accompanies the revised manuscript and preserves its original PPT
 figure organization. Code, compact evaluation records, and the project website
-are publicly available at [https://github.com/2254257831/SCANA-R](https://github.com/2254257831/SCANA-R). The large trajectory and checkpoint
+are available in this repository. The large trajectory and checkpoint
 archives remain separately inventoried and are not included in this repository.
-The manuscript PDF is not publicly released at the author’s request.
+The manuscript PDF is not publicly released. Contributor names, affiliations,
+and contact details are omitted from this review version. The hosting account
+remains visible in GitHub and Pages URLs. Earlier Git history is retained and
+may contain identifying metadata; this repository is not fully anonymous.
 
 ## Independent-library and cost study (v46)
 
@@ -186,7 +189,7 @@ python -m http.server 8000 --bind 127.0.0.1 --directory docs
 ```
 
 Then visit `http://127.0.0.1:8000/`. All page assets use relative URLs, with no
-build step, analytics or external font dependencies. The public site is hosted at [https://2254257831.github.io/SCANA-R/](https://2254257831.github.io/SCANA-R/)
+build step, analytics or external font dependencies. The [public project page](https://2254257831.github.io/SCANA-R/) is hosted
 using GitHub Pages `main` / `docs`. Pages builds run when the publishing branch
 changes. See [release status](docs/release-checklist.md) for remaining materials.
 
@@ -209,13 +212,13 @@ related to [DART](https://berkeleyautomation.github.io/DART/).
 `provenance/source_files.json` maps every copied source to its original project
 path and hashes. Portable adapters change paths/imports and correct an inaccurate
 cross-fit checkpoint comment; the core recovery functions are byte-identical.
-See [the migration note](docs/migration.md). No authors, affiliations, publication
-venue, DOI or formal BibTeX record are invented; these will be filled when the
-publication metadata is finalized.
+See [the migration note](docs/migration.md). This review version contains no
+author list or correspondence address. A publication venue, DOI, and formal
+BibTeX record are not assigned.
 
 ## License
 
-Original project code and website: **Apache-2.0**, selected by the project owner.
+Original project code and website: **Apache-2.0**.
 ACT subset: **MIT**, with its notice retained. See [LICENSE](LICENSE), [NOTICE](NOTICE)
 and [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). The license does not grant
 rights to excluded private data or third-party datasets and models.

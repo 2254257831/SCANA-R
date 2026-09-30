@@ -465,8 +465,9 @@
     "source": "code/configs/scana_single_arm.json",
     "destination": "legacy/configs/scana_single_arm.json",
     "source_sha256": "8f7b584ba22af572e05f0283c2e150da4d1c09d87bf31b2ba3242cb1645f13c2",
-    "release_sha256": "8f7b584ba22af572e05f0283c2e150da4d1c09d87bf31b2ba3242cb1645f13c2",
-    "modified": false
+    "release_sha256": "c41769048d9a99f77be1183ae654f22e20596c3149df6ef2abf78b6f8db312fb",
+    "modified": true,
+    "modification_note": "Local drive paths replaced with repository-relative paths for the review release; historical algorithm parameters retained."
   },
   {
     "source": "revision_work/scana_algorithm_redesign_v36_20260919/independent_test/per_episode.csv",

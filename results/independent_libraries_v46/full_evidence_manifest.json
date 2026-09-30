@@ -1,5 +1,5 @@
 {
-  "project_root": "E:\\研究相关\\3.5单臂仿真数据加噪",
+  "project_root": ".",
   "files": [
     {
       "path": "revision_work/neurocomputing_repair_v46_20260929/evidence/completion_all.json",
@@ -224488,5 +224488,6 @@
     }
   ],
   "total_files": 44897,
-  "total_bytes": 2343077463
+  "total_bytes": 2343077463,
+  "path_note": "Paths are relative to the separately archived research workspace, not to this source repository. The original absolute drive prefix is omitted; file paths, byte counts, and SHA-256 records are unchanged."
 }

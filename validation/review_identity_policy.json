@@ -1,0 +1,10 @@
+{
+  "scope": "Current files, downloadable archives, and new commit identities",
+  "retained_history_through": "9da028a2d3782267dae416d890e66ecb514dda21",
+  "history_policy": "Earlier commits are retained unchanged by explicit request; they may contain identifying metadata.",
+  "new_commit_name": "Anonymous Contributors",
+  "new_commit_email": "anonymous@example.invalid",
+  "hosting_policy": "The existing hosting account and repository address are retained and remain visible.",
+  "full_anonymity": false,
+  "upstream_attribution": "Required third-party copyright and license notices are retained."
+}

@@ -1,30 +1,31 @@
-# Public release status and remaining materials
+# Release scope
 
-The repository and project page were published on 2026-09-30 with the project
-owner's authorization. No journal submission has been made.
-
-- Repository: [https://github.com/2254257831/SCANA-R](https://github.com/2254257831/SCANA-R)
-- Project page: [https://2254257831.github.io/SCANA-R/](https://2254257831.github.io/SCANA-R/)
-- Website source: branch `main`, folder `/docs`; GitHub Pages builds are enabled.
-- Code license: Apache-2.0; bundled ACT material retains its MIT license.
-- Source tests, evidence checks, and the first Pages deployment passed online.
-
-## Available now
+## Available materials
 
 Code, experiment entry points, compact per-episode outcomes, protocols, analysis,
-provenance inventories, and simulation videos are included. The manuscript PDF
-is not publicly released at the author’s request.
-The scientific results and failure cases are retained. The manuscript link update
-uses a new copy and preserves the v46 source package.
+provenance inventories, and simulation videos are included. Scientific results
+and failure cases are retained. The manuscript PDF is not publicly released.
 
-## Still pending
+- [Project page](index.html)
+- [Source package](assets/scana-r-source.zip)
+- [Protocols and compact results](assets/v46/data-and-protocols.zip)
+- Code: Apache-2.0; bundled ACT material retains its MIT license.
 
-1. Author names, affiliations, corresponding-author details, and author-confirmed
-   declarations. The GitHub registration email is not a designated correspondence address.
-2. A public, hash-matched release of the large trajectory and checkpoint archives,
-   after checking redistribution rights. An inventory is not a downloadable archive.
-3. A persistent scholarly record or DOI and final journal-specific compliance checks.
+## Review version
 
-Keep `artifacts/`, `outputs/`, credentials, caches, and environments out of Git.
-The checked-in source ZIP is a convenience copy of code and compact materials;
-it does not include the separately inventoried raw experiment archives.
+The website and repository omit project contributor names, affiliations, and
+contact information. New commits use a neutral identity; earlier Git history is
+retained and may contain identifying metadata. Required third-party
+copyright notices identify upstream contributors, not the manuscript authors.
+
+The GitHub and Pages addresses still expose the hosting account. Removing
+personal details from the current content does not make the retained history
+or these addresses fully anonymous.
+
+## Data availability
+
+Large trajectory and checkpoint archives remain separately inventoried and do
+not yet have a public download URL. An inventory is not a downloadable archive.
+The checked-in source ZIP contains code and compact materials, not those raw
+experiment archives. Keep `artifacts/`, `outputs/`, credentials, caches, local
+identity backups, and environments out of Git.

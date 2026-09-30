@@ -21,4 +21,12 @@ Update documentation with `npm run build:docs`, check JavaScript syntax and loca
 links, then run `python scripts/package_source.py` and
 `python scripts/check_release.py`. Manually preview desktop and mobile layouts.
 
-This local preparation has no issue tracker or remote repository configured yet.
+This review version omits project contributor identities. Use the local Git
+identity `Anonymous Contributors <anonymous@example.invalid>` for public
+new commits. Earlier history is retained, as recorded in
+`validation/review_identity_policy.json`. Do not add personal email addresses, affiliations, manuscript files,
+or user-profile paths to code, documentation, assets, or downloadable archives.
+Run `python scripts/check_anonymity.py --history` before publishing. This check
+covers current files and commits after the retained baseline; it does not make
+earlier history or the visible hosting account anonymous. Third-party copyright
+notices must remain intact.

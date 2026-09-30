@@ -3,7 +3,7 @@
 Inspected on 2026-09-21:
 
 1. [Academic Project Page Template](https://github.com/eliahuhorwitz/Academic-project-page-template)
-   by Eliahu Horwitz: paper title, resources, teaser, abstract, results and citation
+   supplies examples of paper title, resources, teaser, abstract, results and citation
    organization; responsive static HTML. Its source is CC BY-SA 4.0.
 2. [Nerfies project page source](https://github.com/nerfies/nerfies.github.io)
    and [live page](https://nerfies.github.io/): generous whitespace, centered paper
@@ -11,14 +11,13 @@ Inspected on 2026-09-21:
    an ICCV 2021 project; it is a design reference, not a claim about SCANA-R's venue.
 
 The SCANA-R HTML/CSS/JS is independently implemented and uses these common
-academic-page patterns. No third-party page source, media, author information,
+academic-page patterns. No third-party page source, media, researcher profiles,
 logos, analytics or external fonts are copied. References are acknowledged in
-the homepage footer. The original figures are the author's approved PPT exports.
+this document. The method figures retain their original PPT organization.
 
 ## 2026-09-22 video-first revision
 
-Following the author's preference for a classic CVPR project page, the local
-revision uses a white background, centered paper title, compact dark resource
+The page uses a white background, centered paper title, compact dark resource
 buttons, prominent native video, and restrained teal links. It removes the
 previous navigation/status banner and oversized separate acronym. The first
 scientific visual is now a two-task simulation video, followed by abstract,

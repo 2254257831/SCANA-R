@@ -27,3 +27,11 @@ Changes to imports/paths are release maintenance, not new experimental results.
 See `validation/release_validation.json` for the checks actually performed in
 this release. Passing a replay check on the same host is not a fresh-machine
 reproduction or an additional independent test.
+
+Review-release metadata maintenance removes the machine-specific drive prefix
+from `full_evidence_manifest.json`. Inventory paths, sizes, and SHA-256 records
+are unchanged and remain relative to the separately archived research workspace.
+The historical `legacy/configs/scana_single_arm.json` uses repository-relative
+data and output paths; its original source hash is retained and its release hash
+is updated in the provenance inventory. Historical algorithm parameters and all
+current experiment scripts are unchanged.
