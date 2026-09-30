@@ -1,26 +1,30 @@
-# Transition from local preparation to a public release
+# Public release status and remaining materials
 
-No step in this document has published the repository. The local Git repository
-has no remote. Its source and evidence bundle are prepared separately.
+The repository and project page were published on 2026-09-30 with the project
+owner's authorization. No journal submission has been made.
 
-Before a later user-authorized upload:
+- Repository: [https://github.com/2254257831/SCANA-R](https://github.com/2254257831/SCANA-R)
+- Project page: [https://2254257831.github.io/SCANA-R/](https://2254257831.github.io/SCANA-R/)
+- Website source: branch `main`, folder `/docs`; GitHub Pages builds are enabled.
+- Code license: Apache-2.0; bundled ACT material retains its MIT license.
+- Source tests, evidence checks, and the first Pages deployment passed online.
 
-1. Supply the actual GitHub username, repository name, authors/affiliations and
-   public manuscript record. The registration email alone does not identify a
-   GitHub username. Do not fabricate formal BibTeX metadata.
-2. Review the local commit author email before pushing history. The project owner
-   provided an email for this dedicated account; a verified GitHub
-   noreply address can replace it if desired. No email is placed on the homepage.
-3. Keep `artifacts/`, `outputs/`, caches and environments out of Git. Distribute the
-   hash-matched large artifact zip as a separate release asset or data repository;
-   then document the actual download URL in the README and homepage.
-4. Review the Apache-2.0 LICENSE and third-party ACT MIT notice already included.
-5. After explicit upload authorization, create/configure the chosen repository
-   and use GitHub Pages from branch `main`, folder `/docs`. This project contains
-   no automated deployment job that could publish unexpectedly.
-6. Verify the official Pages URL and all resources. Replace the local homepage
-   hyperlink at the end of the Chinese abstract with that verified HTTPS URL in
-   a new manuscript copy; align the English manuscript and submission materials.
+## Available now
 
-The paper's temporary file link is intentionally only useful on this computer.
-It must not be used as the final published project URL.
+Code, experiment entry points, compact per-episode outcomes, protocols, analysis,
+provenance inventories, and simulation videos are included. The manuscript PDF
+is not publicly released at the author’s request.
+The scientific results and failure cases are retained. The manuscript link update
+uses a new copy and preserves the v46 source package.
+
+## Still pending
+
+1. Author names, affiliations, corresponding-author details, and author-confirmed
+   declarations. The GitHub registration email is not a designated correspondence address.
+2. A public, hash-matched release of the large trajectory and checkpoint archives,
+   after checking redistribution rights. An inventory is not a downloadable archive.
+3. A persistent scholarly record or DOI and final journal-specific compliance checks.
+
+Keep `artifacts/`, `outputs/`, credentials, caches, and environments out of Git.
+The checked-in source ZIP is a convenience copy of code and compact materials;
+it does not include the separately inventoried raw experiment archives.

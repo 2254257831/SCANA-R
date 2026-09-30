@@ -16,7 +16,7 @@
     <h1><span class="project-name">SCANA-R:</span> Success Demonstration Based Action Noise Calibration and Simulation Recovery Learning</h1>
     <p class="paper-context">Research manuscript <span aria-hidden="true">·</span> State-based robot learning in simulation</p>
     <div class="actions" aria-label="Project resources">
-      <a class="button" href="assets/scana-r-source.zip" download><span aria-hidden="true">&lt;/&gt;</span> Code</a>
+      <a class="button" href="https://github.com/2254257831/SCANA-R"><span aria-hidden="true">&lt;/&gt;</span> Code</a>
       <a class="button" href="protocol.html"><span aria-hidden="true">≡</span> Protocol</a>
       <a class="button" href="assets/v46/data-and-protocols.zip" download title="v46 compact outcomes, analysis, and protocols; full trajectories are separately inventoried"><span aria-hidden="true">↓</span> Data</a>
       <a class="button" href="mujoco-gallery.html">MuJoCo extension</a>
@@ -44,9 +44,9 @@
   <section class="section wide-wrap" id="independent-libraries">
     <h2>Independent libraries, costs, and failure mechanisms</h2>
     <p>Five new libraries per ACT task and three per Meta-World task separate collection variability from policy fitting. Source demonstrations stay fixed. The calibration advantage over standard Gaussian recovery is inconclusive under the two-task adjusted intervals; the compute-matched Gaussian control has higher point means on both tasks.</p>
-    <figure><img src="assets/v46/library-success.png" style="width:100%;height:auto" alt="Success across five independently rebuilt ACT libraries for seven methods"><figcaption>Each library average combines three policies and 20 new layouts. Full intervals and costs are in the v46 manuscript.</figcaption></figure>
+    <figure><img src="assets/v46/library-success.png" style="width:100%;height:auto" alt="Success across five independently rebuilt ACT libraries for seven methods"><figcaption>Each library average combines three policies and 20 new layouts. Full intervals and costs are in the downloadable analysis records.</figcaption></figure>
     <figure><img src="assets/v46/failure-interventions.png" style="width:100%;height:auto" alt="Channel-noise and action-replanning interventions on frozen policies"><figcaption>New-layout interventions with frozen original policies. A low-support joint is sufficient for the transfer noise failure; fixed temporal ensembling restores much of the single-step replanning loss.</figcaption></figure>
-    <p><a href="assets/v46/manuscript.pdf">Read the current complete v46 manuscript</a> · <a href="v46-study.html">Protocols and rerun instructions</a></p>
+    <p><a href="v46-study.html">Protocols and rerun instructions</a></p>
   </section>
 
   <section class="section wide-wrap" id="method">
@@ -109,7 +109,7 @@ python -m pip install -e . --no-deps
 python -m unittest discover -s tests -v
 python scripts/summarize.py</code></pre><span class="copy-status" role="status" aria-live="polite"></span></div>
     <div class="resource-links"><a href="assets/scana-r-source.zip" download>Source package ↗</a><a href="protocol.html">Experiment protocol ↗</a><a href="videos.html">Render the videos ↗</a></div>
-    <p class="small availability">Code: Apache-2.0; ACT simulator assets: MIT. The trajectory and checkpoint bundle is prepared locally as <code>SCANA-R-artifacts-v1.zip</code>. This page is a local release preview; the paper, author list, official repository and public artifact URL will be added when finalized.</p>
+    <p class="small availability">Code: Apache-2.0; ACT simulator assets: MIT. The trajectory and checkpoint bundle is prepared locally as <code>SCANA-R-artifacts-v1.zip</code>. Code and compact results are available in the <a href="https://github.com/2254257831/SCANA-R">public repository</a>. The manuscript PDF is not publicly released; author information is pending. Full trajectory and checkpoint archives do not yet have a public download URL.</p>
   </div></section>
 </main>
 <footer><p>SCANA-R · Research code and simulation evidence</p><p>Page design references: <a href="https://github.com/eliahuhorwitz/Academic-project-page-template">Academic Project Page Template</a> and <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>. Independently implemented; project figures retain their original PPT design.</p><a href="#main">Back to top ↑</a></footer>

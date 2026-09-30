@@ -4,14 +4,16 @@
 
 成功示范驱动的动作噪声校准与仿真恢复学习
 
-[Project page](docs/index.html) · [中文说明](README.zh-CN.md) · [Protocol](docs/protocol.md) · [Evidence scope](docs/evidence.md) · [License](LICENSE)
+[Project page](https://2254257831.github.io/SCANA-R/) · [Local preview](docs/index.html) · [中文说明](README.zh-CN.md) · [Protocol](docs/protocol.md) · [Evidence scope](docs/evidence.md) · [License](LICENSE)
 
 SCANA-R calibrates short action perturbations from out-of-episode policy errors,
 executes those perturbations in a resettable simulator, and trains on verified
 recovery observations paired with actions that were actually executed. This
 repository accompanies the revised manuscript and preserves its original PPT
-figure organization. It is a **local release preparation**, with no GitHub remote
-or public release configured yet.
+figure organization. Code, compact evaluation records, and the project website
+are publicly available at [https://github.com/2254257831/SCANA-R](https://github.com/2254257831/SCANA-R). The large trajectory and checkpoint
+archives remain separately inventoried and are not included in this repository.
+The manuscript PDF is not publicly released at the author’s request.
 
 ## Independent-library and cost study (v46)
 
@@ -184,10 +186,9 @@ python -m http.server 8000 --bind 127.0.0.1 --directory docs
 ```
 
 Then visit `http://127.0.0.1:8000/`. All page assets use relative URLs, with no
-build step, analytics or external font dependencies. The page is prepared for
-GitHub Pages `main` / `docs`; no deployment workflow is activated. See
-[the local release checklist](docs/release-checklist.md) for the later transition
-from a local link to an official project URL.
+build step, analytics or external font dependencies. The public site is hosted at [https://2254257831.github.io/SCANA-R/](https://2254257831.github.io/SCANA-R/)
+using GitHub Pages `main` / `docs`. Pages builds run when the publishing branch
+changes. See [release status](docs/release-checklist.md) for remaining materials.
 
 Optional maintenance: after changing documentation Markdown, run `npm install`
 and `npm run build:docs` to rebuild the included HTML pages. Regenerate the
@@ -199,8 +200,9 @@ the Python experiments.
 
 This is a privileged-state simulation study of two bimanual ACT tasks and six separately trained Meta-World manipulation tasks, with distinct platform protocols. It is not
 a GR00T/VLA training release, a real-robot study, or evidence of collision safety
-outside the tested tasks. There is one fixed recovery bank per selected
-configuration, so bootstrap intervals are conditional on that bank. There is no
+outside the tested tasks. The original ACT comparison used one fixed recovery
+bank per selected configuration. The v46 study independently rebuilds recovery
+libraries, but its intervals remain conditional on fixed source demonstrations. There is no
 same-acquisition-budget DART reproduction. The recovery-collection idea is
 related to [DART](https://berkeleyautomation.github.io/DART/).
 

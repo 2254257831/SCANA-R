@@ -2,7 +2,7 @@
 from pathlib import Path
 from html.parser import HTMLParser
 from urllib.parse import urlsplit, unquote
-import ast,hashlib,json
+import ast,hashlib,json,zipfile
 ROOT=Path(__file__).resolve().parents[1]
 
 class Page(HTMLParser):
@@ -15,6 +15,11 @@ class Page(HTMLParser):
         if tag=='img' and not a.get('alt'):self.missing_alt+=1
 
 def main():
+    assert not (ROOT/'docs/assets/v46/manuscript.pdf').exists(),'Manuscript PDF must remain private'
+    with zipfile.ZipFile(ROOT/'docs/assets/scana-r-source.zip') as archive:
+        for name in archive.namelist():
+            if name.lower().endswith(('.pdf','.docx')):
+                assert name.startswith('SCANA-R/figures/') and name.lower().endswith('.pdf'),f'Unapproved manuscript in source download: {name}'
     pyfiles=[]
     for folder in ['src','scripts','experiments','tests','legacy']:
         for p in (ROOT/folder).rglob('*.py'):
