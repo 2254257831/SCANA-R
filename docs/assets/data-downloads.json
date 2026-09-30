@@ -1,0 +1,30 @@
+[
+  {
+    "filename": "SCANA-R-artifacts-v1.zip",
+    "sha256": "6f5b31ab754d5b52fdf5bb6aab7550352c9a46d6626ea145da5b059637928ea5",
+    "bytes": 828785256,
+    "files": 16783,
+    "public_url": "https://github.com/2254257831/SCANA-R/releases/download/reproducibility-v1/SCANA-R-artifacts-v1.zip"
+  },
+  {
+    "filename": "SCANA-R-MuJoCo-extension-v1.zip",
+    "sha256": "d84416917777ee365d821565a7277f2d36086c86c37d9656634d0efe7f011fdc",
+    "bytes": 998359349,
+    "files": 31148,
+    "public_url": "https://github.com/2254257831/SCANA-R/releases/download/reproducibility-v1/SCANA-R-MuJoCo-extension-v1.zip"
+  },
+  {
+    "filename": "SCANA-R-independent-ACT-v1.zip",
+    "sha256": "b765b1c09f9f6f6941aa6726a9189d2f43773b89ce4ec7f62b08d3b6cb6a67bb",
+    "bytes": 1960481553,
+    "files": 32455,
+    "public_url": "https://github.com/2254257831/SCANA-R/releases/download/reproducibility-v1/SCANA-R-independent-ACT-v1.zip"
+  },
+  {
+    "filename": "SCANA-R-independent-MetaWorld-v1.zip",
+    "sha256": "8b025359d16abcae845697165c185ea1884f74f041d9569c2780b23c24b1b4f8",
+    "bytes": 280716419,
+    "files": 12442,
+    "public_url": "https://github.com/2254257831/SCANA-R/releases/download/reproducibility-v1/SCANA-R-independent-MetaWorld-v1.zip"
+  }
+]

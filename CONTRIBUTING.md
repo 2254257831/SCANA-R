@@ -2,7 +2,7 @@
 
 Use Python 3.10 and run `python -m unittest discover -s tests -v` before changing
 the algorithm or metrics. Recompute the checked-in evaluation table with
-`python scripts/summarize.py`; existing evidence must never be silently replaced
+`python scripts/reproduce.py`; existing evidence must never be silently replaced
 by a different protocol or newly tuned method.
 
 For algorithm changes, use a new artifact directory and record the changed

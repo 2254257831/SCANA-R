@@ -4,7 +4,7 @@ import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 const {marked}=await import(process.env.SCANA_MARKED_MODULE || 'marked');
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
-for(const name of ['protocol','evidence','migration','template-references','release-checklist','videos','mujoco-extension']) {
+for(const name of ['protocol','evidence','migration','template-references','release-checklist','videos','mujoco-extension','study-protocol','reproduction','current-videos']) {
   const markdown=await fs.readFile(path.join(root,'docs',name+'.md'),'utf8');
   const title=markdown.split('\n')[0].replace(/^# /,'');
   const body=marked.parse(markdown).replaceAll(/href="([^":]+)\.md"/g,'href="$1.html"');
@@ -13,4 +13,4 @@ for(const name of ['protocol','evidence','migration','template-references','rele
 }
 const index=path.join(root,'docs/index.html');
 await fs.writeFile(index,(await fs.readFile(index,'utf8')).replaceAll('href="protocol.md"','href="protocol.html"').replaceAll('href="evidence.md"','href="evidence.html"'));
-console.log('Built seven documentation pages.');
+console.log('Built ten documentation pages.');

@@ -42,3 +42,6 @@ footer{padding:33px 28px 29px;text-align:center;font-size:12px;line-height:1.65;
 @media(max-width:420px){h1{font-size:27px}.hero{padding-left:17px;padding-right:17px}.paper-context{font-size:12px}.button{padding:6px 13px}.section-nav{gap:18px}.takeaway{font-size:19px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 @media print{.actions,.section-nav,.copy{display:none}.hero{padding-top:0}.band{background:white}.film{max-height:300px}details{break-inside:avoid}a{color:inherit}.figure-details details:not([open]){display:none}}
+
+/* Current study additions retain the original paper-page layout. */
+.historical{margin-bottom:35px}.historical>summary{padding:18px 0;border-top:1px solid var(--line)}#results>figure{margin:32px 0}#results figcaption{font-size:14px;color:var(--muted);margin:12px 0 24px}.media-section .film[width="1080"]{max-width:900px;margin:auto}

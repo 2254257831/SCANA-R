@@ -1,5 +1,7 @@
 # Simulation videos: provenance and reproduction
 
+> These are earlier, deliberately selected fixed-library contrasts. The homepage now prioritizes [current-study videos](current-videos.md), selected by fixed library/seed/layout IDs without conditioning on success.
+
 The homepage embeds real MuJoCo renderings of archived evaluation trajectories.
 They are not generated illustrations, newly collected results, or real-robot footage.
 The policies use current privileged simulator state; the RGB renderings are for
@@ -54,7 +56,7 @@ From the repository root, after importing the **full** frozen artifact bundle:
 
 ```bash
 python -m pip install -r requirements-video.txt
-python scripts/import_artifacts.py ../SCANA-R-artifacts-v1.zip
+python scripts/download_artifacts.py --bundle original --import
 python scripts/render_project_videos.py
 ```
 

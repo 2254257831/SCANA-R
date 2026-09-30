@@ -1,10 +1,10 @@
 # SCANA-R
 
-**Success Demonstration Based Action Noise Calibration and Simulation Recovery Learning**
+**SCANA-R: Action noise calibration and simulation recovery learning from successful demonstrations**
 
 成功示范驱动的动作噪声校准与仿真恢复学习
 
-[Project page](https://2254257831.github.io/SCANA-R/) · [Local preview](docs/index.html) · [中文说明](README.zh-CN.md) · [Protocol](docs/protocol.md) · [Evidence scope](docs/evidence.md) · [License](LICENSE)
+[Project page](https://2254257831.github.io/SCANA-R/) · [Local preview](docs/index.html) · [中文说明](README.zh-CN.md) · [Protocol](docs/study-protocol.md) · [Evidence scope](docs/evidence.md) · [License](LICENSE)
 
 SCANA-R calibrates short action perturbations from out-of-episode policy errors,
 executes those perturbations in a resettable simulator, and trains on verified
@@ -12,7 +12,7 @@ recovery observations paired with actions that were actually executed. This
 repository accompanies the revised manuscript and preserves its original PPT
 figure organization. Code, compact evaluation records, and the project website
 are available in this repository. The large trajectory and checkpoint
-archives remain separately inventoried and are not included in this repository.
+archives are available as [GitHub Release assets](https://github.com/2254257831/SCANA-R/releases/tag/reproducibility-v1), outside the Git tree. See [download and verification instructions](docs/reproduction.md).
 The manuscript PDF is not publicly released. Contributor names, affiliations,
 and contact details are omitted from this review version. The hosting account
 remains visible in GitHub and Pages URLs. Earlier Git history is retained and
@@ -33,18 +33,20 @@ Channel interventions locate the transfer noise failure at a narrowly represente
 joint input. A fixed temporal ensemble recovers much of the success lost under
 single-step replanning. These deployment diagnostics use frozen original libraries.
 
+The current manuscript maps method diagrams to Figures 1–4, independent libraries to Figure 5 / Tables 5–7, the earlier extension to Figures 6–8 / Tables 8–10, and failure interventions to Figure 9.
+
 See [rerun instructions](experiments/independent_libraries_v46/README.md),
 [recorded results](results/independent_libraries_v46), and the new figures on the
 [local project page](docs/index.html#independent-libraries). The studies below remain
 historical evidence and are not pooled with this repetition.
 
-## Expanded MuJoCo study
+## Earlier fixed-library MuJoCo extension
 
 The follow-up adds **11,600 executions**: 5,600 frozen ACT-policy deployment checks and 6,000 on six Meta-World tasks. Nominal Meta-World macro success is **89.5% SCANA-R vs 91.8% Clean repeat**, paired difference −2.33 points, 95% interval [−5.00, 0.17]. Broader testing does not establish a general advantage. All failures, six fixed-layout policy videos, acquisition costs and frozen protocols are retained.
 
 Read [the protocol and reproduction guide](docs/mujoco-extension.md) and [video gallery](docs/mujoco-gallery.html). Recompute all statistics with `python scripts/summarize_extensions.py`. Use a separate Python 3.10 environment with `requirements-metaworld.txt`; do not replace the ACT simulator dependency.
 
-## Original ACT results
+## Earlier original ACT results
 
 The frozen ACT/MuJoCo simulation evaluation uses five training seeds crossed with
 40 common layouts per task. Each entry is successes / 200 rollouts. Policies use
@@ -112,35 +114,35 @@ This lightweight path needs only NumPy and pandas; it does not need the simulato
 raw trajectories or a GPU.
 
 ```bash
-python scripts/summarize.py
+python -m pip install -r requirements-statistics.txt
+python scripts/reproduce.py
 ```
 
-It validates the complete seed/layout grid and writes recomputed summaries and
-paired bootstrap contrasts to `outputs/recomputed/`. It never overwrites the
+It first validates and recomputes the current 11,040-record library/cost/intervention study, comparing nine analysis tables with the frozen results. It then processes the earlier 3,200 ACT and 11,600 extension records separately. Outputs go to `outputs/recomputed-current/`, `outputs/recomputed/` and `outputs/recomputed-extensions/`. Use `--current-only` for the current study. It never overwrites the
 checked-in evidence. This is reanalysis of existing rollouts, not a new test.
 
 ## Import the separate evidence bundle
 
-The preparation directory contains a sibling archive
-`../SCANA-R-artifacts-v1.zip`. It contains recorded simulation demonstrations,
+The [evidence release](https://github.com/2254257831/SCANA-R/releases/tag/reproducibility-v1) supplies four archives (about 4.1 GB compressed in total). `python scripts/download_artifacts.py --bundle all --import` downloads, hash-verifies and imports all of them. For the original ACT archive alone, use `--bundle original`.
+
+The original `SCANA-R-artifacts-v1.zip` archive contains recorded simulation demonstrations,
 cross-fit models, calibration errors, recovery attempts, final policies and
 rollouts. It excludes interpreter binaries and private real-robot data. Large
 files are deliberately outside Git; the expected archive and entry hashes are
 recorded in `configs/artifact_bundle.json`.
 
 ```bash
-python scripts/import_artifacts.py ../SCANA-R-artifacts-v1.zip
+python scripts/download_artifacts.py --bundle original --import
 python scripts/run_scana_r.py replay-check
 python scripts/run_scana_r.py audit
 ```
 
-For a minimal exact replay check, add `--profile smoke` to the import command;
+For a minimal replay check, run `python scripts/import_artifacts.py artifacts/downloads/SCANA-R-artifacts-v1.zip --profile smoke` after download;
 the full audit requires the default full import. Only load the trusted,
 hash-verified checkpoint bundle: its PyTorch checkpoints contain Python objects.
-No remote download link exists yet. Future users need the matching release asset
-or can regenerate the four current methods below.
+Public archive links, byte counts and SHA-256 hashes are in `configs/*bundle.json`. See [reproduction.md](docs/reproduction.md) for current-study archives, raw-data analysis and replay.
 
-## Regenerate the four current methods
+## Regenerate the four methods in the earlier ACT comparison
 
 Use an empty, separate artifact directory so cached historical results cannot
 be confused with new computation. Each command reuses completed artifacts in
@@ -173,13 +175,10 @@ equal in collection cost to simply repeating clean data.
 ## Project website
 
 The project page follows the classic computer-vision paper layout: a centered
-title and resource links, a large two-task video teaser, abstract, original PPT
-method figures, synchronized baseline comparisons, and quantitative results.
-The checked-in H.264 videos play locally and need no external service. They
-replay selected archived simulation trajectories; all four source clips have
-zero joint-state replay error and identical rewards. Selection is disclosed
-explicitly and does not replace aggregate evaluation. See
-[video provenance and rendering](docs/videos.md) for the exact source records,
+title and resource links, a current failure-intervention teaser, abstract, original PPT
+method figures with v47 vector labels (SVG display and PDF downloads), synchronized baseline comparisons, and quantitative results.
+The current six H.264 comparisons replay 20 archived source clips, all with zero state error and identical rewards. They cover independent libraries, compute-matched Gaussian recovery and channel/replanning interventions. Fixed IDs are chosen independently of outcomes; failures and baseline wins remain visible. Earlier selected contrasts are labeled separately. Selection never replaces aggregate evaluation. See
+[current video provenance and rendering](docs/current-videos.md) for the exact source records,
 optional dependencies and reproduction commands.
 
 Open `docs/index.html` directly, or preview using a loopback-only server:

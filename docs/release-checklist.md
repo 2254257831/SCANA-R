@@ -24,8 +24,7 @@ or these addresses fully anonymous.
 
 ## Data availability
 
-Large trajectory and checkpoint archives remain separately inventoried and do
-not yet have a public download URL. An inventory is not a downloadable archive.
+Four large trajectory and checkpoint archives are available through the [evidence release](https://github.com/2254257831/SCANA-R/releases/tag/reproducibility-v1). [Download instructions and checksums](reproduction.md) cover the original, extension and current independent-library studies.
 The checked-in source ZIP contains code and compact materials, not those raw
 experiment archives. Keep `artifacts/`, `outputs/`, credentials, caches, local
 identity backups, and environments out of Git.

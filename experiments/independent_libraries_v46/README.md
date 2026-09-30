@@ -42,9 +42,7 @@ Portable scripts were syntax-checked; the full reported experiment was run
 using the archived original scripts, not independently repeated after export.
 
 Recorded CSVs, protocols and analysis are in
-`results/independent_libraries_v46`. Full arrays and checkpoints remain in the
-local paths in `full_evidence_manifest.json`; the compact CSV directory alone
-does not suffice for recomputing collection costs or verifying raw trajectories.
+`results/independent_libraries_v46`. `python scripts/reproduce.py --current-only` recomputes all current success/interval tables and recorded cost aggregates directly from compact CSVs. Full arrays and checkpoints are available through the [evidence release](https://github.com/2254257831/SCANA-R/releases/tag/reproducibility-v1). Run `python scripts/download_artifacts.py --bundle all --import` to import the archives. Raw metadata permit independent cost reconstruction; raw trajectories support replay verification.
 
 The results do not establish that calibration is necessary or superior at the
 same total active CPU cost. Report all methods and tasks, including failures.

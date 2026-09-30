@@ -6,7 +6,7 @@
 - [项目主页](https://2254257831.github.io/SCANA-R/)
 - [本地预览](docs/index.html)
 
-论文全文PDF暂不公开。大型原始轨迹、检查点和环境不在此Git仓库中；完整清单不等于这些数据已经公开。
+论文全文PDF暂不公开。原始仿真轨迹和检查点通过 [GitHub Release](https://github.com/2254257831/SCANA-R/releases/tag/reproducibility-v1) 的四个归档提供，合计约4.1 GB；不放入Git文件树。每个归档和内部文件均有SHA-256校验，解释器环境不随包分发。
 本审阅版本的页面和文件省略项目作者姓名、单位和联系方式。既有Git历史按要求保留，仍可能含身份元数据；GitHub及Pages网址也显示托管账号，因此不能视为完全匿名的审稿入口。
 
 ## Independent-library and cost study (v46)
@@ -29,11 +29,11 @@ See [rerun instructions](experiments/independent_libraries_v46/README.md),
 [local project page](docs/index.html#independent-libraries). The studies below remain
 historical evidence and are not pooled with this repetition.
 
-## 新增 MuJoCo 八任务扩展
+## 早期固定恢复库 MuJoCo 八任务扩展
 
 本次完成 11,600 次执行：冻结 ACT 策略的 5,600 次部署测试，以及六项 Meta-World 操作的 6,000 次测试。覆盖到达、推移、抓放、开门、开抽屉、按按钮和原双臂交接、插入。六任务常规宏平均为 SCANA-R 89.5%、原始重复 91.8%，未证明整体提升；双臂新布局仍有收益，但末段扰动和观测噪声下有明显失败。
 
-论文新增图5—7及表10—12，原四张PPT方法图保留。查看[视频与结果](docs/mujoco-gallery.html)、[完整协议](docs/mujoco-extension.md)。运行 `python scripts/summarize_extensions.py` 可仅凭仓库CSV重算全部扩展统计。Meta-World须使用独立Python环境与 `requirements-metaworld.txt`，不能覆盖ACT的MuJoCo版本。所有新素材都是仿真，动作重规划不等于语言任务规划。
+当前v47中，这批早期扩展对应图6—8及表8—10；独立库对应图5及表5—7，失败干预对应图9，原四张PPT方法图保留。查看[视频与结果](docs/mujoco-gallery.html)、[完整协议](docs/mujoco-extension.md)。运行 `python scripts/summarize_extensions.py` 可仅凭仓库CSV重算全部扩展统计。Meta-World须使用独立Python环境与 `requirements-metaworld.txt`，不能覆盖ACT的MuJoCo版本。所有新素材都是仿真，动作重规划不等于语言任务规划。
 
 ## 当前方法
 
@@ -49,8 +49,8 @@ historical evidence and are not pooled with this repetition.
 
 1. 使用 Python 3.10，按照英文 [README](README.md) 安装依赖。
 2. `python -m unittest discover -s tests -v`：验证算法契约和证据一致性。
-3. `python scripts/summarize.py`：直接从仓库的 3,200 条记录重算成功率和配对区间。
-4. `python scripts/import_artifacts.py ../SCANA-R-artifacts-v1.zip`：导入仓库外的独立证据包。
+3. 先运行 `python -m pip install -r requirements-statistics.txt`，再运行 `python scripts/reproduce.py`：先重算最新11,040条，再分别重算早期3,200和11,600条记录；不混合批次成功率。
+4. `python scripts/download_artifacts.py --bundle all --import`：下载、逐文件校验并导入四个公开仿真归档。
 5. `python scripts/run_scana_r.py replay-check`：用记录权重重新运行一条轨迹，逐元素比对。
 6. `python scripts/run_scana_r.py audit`：检查恢复窗口与实际观测、执行动作、末态奖励一致。
 
@@ -66,10 +66,9 @@ python -m http.server 8000 --bind 127.0.0.1 --directory docs
 ```
 
 主页采用经典 CVPR 项目页常见的白底、居中题名、资源按钮、大幅视频、摘要、方法与结果结构。
-首屏直接展示双任务仿真视频；下方两段同步双画面对比同一种子与布局的 Clean repeat 和 SCANA-R。
-四段原始回放均逐步核验状态与奖励，状态最大误差为零。视频为特意选取的示例，不替代汇总成功率。
+首屏展示当前时间集成干预，后续展示同库、同种子、同布局的四方法对比，另有关节噪声干预。六组对比的20段源回放逐步核验状态和奖励，最大状态误差为零。固定最小编号选例，不按成功结果筛选，保留失败和基线胜出的案例。早期特意选取的视频单列为历史示例。
 视频含本地 MP4、真实帧封面、原生播放控件和减少动态效果支持，无外部视频服务依赖。
-渲染脚本、依赖与选例规则见 [视频说明](docs/videos.md)。四幅方法图沿用已认可的 PPT 视觉。
+渲染脚本、依赖与选例规则见 [视频说明](docs/videos.md)。四幅方法图沿用已认可的PPT组织，采用v47字号调整后的矢量SVG展示和PDF下载。当前英文标题与v47完全一致。
 项目不是已接收的 CVPR 论文，页面未使用会议录用标识。
 
 本仓库使用 Apache-2.0；ACT 源码和资产沿用其原 MIT 许可。第三方版权署名依法保留，

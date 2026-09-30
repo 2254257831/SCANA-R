@@ -19,7 +19,8 @@ def main():
     with zipfile.ZipFile(ROOT/'docs/assets/scana-r-source.zip') as archive:
         for name in archive.namelist():
             if name.lower().endswith(('.pdf','.docx')):
-                assert name.startswith('SCANA-R/figures/') and name.lower().endswith('.pdf'),f'Unapproved manuscript in source download: {name}'
+                web_figures={f'SCANA-R/docs/assets/figures/figure-{n}.pdf' for n in [1,2,3,4,5,9]}
+                assert name.lower().endswith('.pdf') and (name.startswith('SCANA-R/figures/') or name in web_figures),f'Unapproved manuscript in source download: {name}'
     pyfiles=[]
     for folder in ['src','scripts','experiments','tests','legacy']:
         for p in (ROOT/folder).rglob('*.py'):
@@ -57,7 +58,22 @@ def main():
         assert hashlib.sha256((ROOT/'experiments/metaworld_extension'/name).read_bytes()).hexdigest()==expected,name
     act=json.loads((ROOT/'results/act_extension_v1/protocol_frozen.json').read_text(encoding='utf-8'))
     assert hashlib.sha256((ROOT/'experiments/scana_r/robustness_extension.py').read_bytes()).hexdigest()==act['script_sha256']
-    info=dict(python_files=len(pyfiles),html_pages=len(pages),local_links_verified=refs,provenance_files=len(rows),video_hashes_verified=len(media['clips'])+len(media['compositions']),static_checks_passed=True,browser_visual_qa='Not performed: local file navigation blocked by browser security policy')
+    current=json.loads((ROOT/'docs/assets/current-videos/provenance.json').read_text())
+    assert len(current['clips'])==20 and len(current['compositions'])==6
+    for item in current['clips']+current['compositions']:
+        path=ROOT/'docs/assets/current-videos'/item['video']
+        assert hashlib.sha256(path.read_bytes()).hexdigest()==item.get('video_sha256',item.get('sha256'))
+        if 'state_max_error' in item:assert item['state_max_error']==0 and item['rewards_identical']
+    figures=json.loads((ROOT/'docs/assets/figures/manifest.json').read_text())
+    assert {f['figure'] for f in figures}=={1,2,3,4,5,9}
+    for fig in figures:
+        assert fig['pages']==1 and not fig['metadata'].get('/Author')
+        for kind in ['pdf','svg']:assert hashlib.sha256((ROOT/'docs/assets/figures'/fig[kind]).read_bytes()).hexdigest()==fig[kind+'_sha256']
+    home=(ROOT/'docs/index.html').read_text(encoding='utf-8')
+    assert 'id="results"' in home and home.index('id="results"')<home.index('id="original-results"')
+    assert 'href="study-protocol.html"' in home and 'python scripts/reproduce.py' in home
+    assert 'Nothing has been uploaded' not in (ROOT/'docs/mujoco-extension.html').read_text()
+    info=dict(python_files=len(pyfiles),html_pages=len(pages),local_links_verified=refs,provenance_files=len(rows),video_hashes_verified=len(media['clips'])+len(media['compositions']),current_video_hashes_verified=26,vector_figure_pairs_verified=6,static_checks_passed=True,browser_visual_qa='See separate release verification; static checks do not assert browser rendering.')
     info.update(extension_video_hashes_verified=len(extension['clips']),frozen_extension_scripts_unchanged=True)
     print(json.dumps(info,indent=2))
     return info

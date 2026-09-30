@@ -12,7 +12,7 @@
 <main id="main" class="section reading-width">
   <p><a href="index.html#independent-libraries">← SCANA-R project page</a></p>
   <h1>Independent libraries, costs, and failure interventions</h1>
-  <p>This v46 study adds 11,040 evaluation episodes. Methods, library and policy seeds, and new layout IDs were fixed before these tests. Historical failures motivated the diagnostic hypotheses; this was not an independently preregistered mechanism study.</p>
+  <p>This current study, archived under v46 and used unchanged in v47, adds 11,040 evaluation episodes. Methods, library and policy seeds, and new layout IDs were fixed before these tests. Historical failures motivated the diagnostic hypotheses; this was not an independently preregistered mechanism study.</p>
   <div class="table-scroll"><table>
     <caption>Evaluation design</caption>
     <thead><tr><th scope="col">Study</th><th scope="col">Design</th><th scope="col">Episodes</th></tr></thead>
@@ -27,9 +27,10 @@
   <h2>Results and downloadable records</h2>
   <p>SCANA-R achieves 89.7% transfer and 49.7% insertion success; standard Gaussian recovery achieves 81.7% and 38.7%. The adjusted intervals do not establish a calibration advantage. Gaussian collection with longer policy training at matched total active CPU cost achieves 92.7% and 54.7%. Six-task Meta-World macro success is 89.9% for SCANA-R, 89.5% for Gaussian recovery, and 93.1% for original repetition.</p>
   <p><a href="assets/v46/data-and-protocols.zip" download>Compact outcomes, analysis, and protocols</a> · <a href="assets/scana-r-source.zip" download>Source package</a></p>
-  <p>The manuscript PDF is not publicly released. The compact records do not contain all trajectory arrays, checkpoints, or source demonstrations. The full evidence manifest inventories those files; it does not provide a public download endpoint. The compact release alone cannot reproduce raw trajectory verification or all collection-cost measurements.</p>
+  <p>The manuscript PDF is not publicly released. The compact records do not contain all trajectory arrays, checkpoints, or source demonstrations. Four <a href="reproduction.html">downloadable evidence archives</a> now supply the underlying arrays and checkpoints. The repository-only statistics command recomputes all current success, interval and cost summary tables; the archives additionally support raw trajectory and per-fit metadata verification.</p>
 
-  <h2>Rerunning the experiments</h2>
+  <h2>Recompute all current statistics without archives</h2><pre><code>python -m pip install -r requirements-statistics.txt
+python scripts/reproduce.py --current-only</code></pre><p><a href="study-protocol.html">Current protocol and v47 figure/table map</a> · <a href="current-videos.html">Current replay videos</a> · <a href="reproduction.html">Full data downloads</a></p><h2>Rerunning the experiments</h2>
   <p>Use the repository installation instructions and first import the original ACT and Meta-World source demonstrations and checkpoints. ACT uses MuJoCo 2.3.3; Meta-World requires a separate environment with MuJoCo 3.3.0.</p>
   <div class="code-block"><pre><code># From the repository root, in the ACT environment (including pandas)
 python experiments/independent_libraries_v46/experiment_v46.py all --workers 8

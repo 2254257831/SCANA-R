@@ -1,4 +1,7 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Simulation videos: provenance and reproduction · SCANA-R</title><link rel="stylesheet" href="assets/style.css"><style>main{max-width:1100px;margin:40px auto;padding:0 24px}main h1{font-size:36px;margin-bottom:26px}main table{font-size:16px;margin:25px 0}main h2{margin-top:35px}li{margin-bottom:10px}main pre{background:#f3f7f8}main code{overflow-wrap:anywhere}</style></head><body><header class="topbar"><a href="index.html" class="wordmark">SCANA-R</a><nav><a href="index.html#reproduce">Back to project</a></nav></header><main><h1>Simulation videos: provenance and reproduction</h1>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Simulation videos: provenance and reproduction · SCANA-R</title><link rel="stylesheet" href="assets/style.css"><style>main{max-width:1100px;margin:40px auto;padding:0 24px}main h1{font-size:36px;margin-bottom:26px}main table{font-size:16px;margin:25px 0}main h2{margin-top:35px}li{margin-bottom:10px}main pre{background:#f3f7f8}main code{overflow-wrap:anywhere}</style></head><body><header class="topbar"><a href="index.html" class="wordmark">SCANA-R</a><nav><a href="index.html#reproduce">Back to project</a></nav></header><main><h1>Simulation videos: provenance and reproduction</h1>
+<blockquote>
+<p>These are earlier, deliberately selected fixed-library contrasts. The homepage now prioritizes <a href="current-videos.html">current-study videos</a>, selected by fixed library/seed/layout IDs without conditioning on success.</p>
+</blockquote>
 <p>The homepage embeds real MuJoCo renderings of archived evaluation trajectories.
 They are not generated illustrations, newly collected results, or real-robot footage.
 The policies use current privileged simulator state; the RGB renderings are for
@@ -64,7 +67,7 @@ rollout hashes, selected layouts, replay checks and video hashes.</p>
 <h2>Render again</h2>
 <p>From the repository root, after importing the <strong>full</strong> frozen artifact bundle:</p>
 <pre><code class="language-bash">python -m pip install -r requirements-video.txt
-python scripts/import_artifacts.py ../SCANA-R-artifacts-v1.zip
+python scripts/download_artifacts.py --bundle original --import
 python scripts/render_project_videos.py
 </code></pre>
 <p>The default output directory is <code>docs/assets/videos</code>. To keep the checked-in

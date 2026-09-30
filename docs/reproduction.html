@@ -1,0 +1,59 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Reproduce the reported evidence · SCANA-R</title><link rel="stylesheet" href="assets/style.css"><style>main{max-width:1100px;margin:40px auto;padding:0 24px}main h1{font-size:36px;margin-bottom:26px}main table{font-size:16px;margin:25px 0}main h2{margin-top:35px}li{margin-bottom:10px}main pre{background:#f3f7f8}main code{overflow-wrap:anywhere}</style></head><body><header class="topbar"><a href="index.html" class="wordmark">SCANA-R</a><nav><a href="index.html#reproduce">Back to project</a></nav></header><main><h1>Reproduce the reported evidence</h1>
+<h2>Statistics from a fresh clone</h2>
+<p>Only Python 3.10, NumPy and pandas are needed. No simulator, GPU, checkpoint download or original machine directory is required.</p>
+<pre><code class="language-bash">python -m pip install -r requirements-statistics.txt
+python scripts/reproduce.py
+</code></pre>
+<p>The command first recomputes all <strong>11,040 current-study</strong> evaluation records, including library-level success rates, paired intervals, bank means, cost summaries and failure interventions. Nine generated tables are compared with the recorded analysis at 1e-12 tolerance. It then processes the earlier 3,200 ACT and 11,600 extension records. The 25,840 records remain separate studies; no combined success rate is calculated. CPU costs are reaggregated from recorded per-fit measurements, not measured by timing the statistics command.</p>
+<p>For the current study alone:</p>
+<pre><code class="language-bash">python scripts/reproduce.py --current-only
+</code></pre>
+<p>Outputs go to <code>outputs/recomputed-current</code>, <code>outputs/recomputed</code> and <code>outputs/recomputed-extensions</code>. The checked-in evidence is never overwritten. CI runs this same default statistics command. This verifies analysis reproducibility; it does not claim fresh collection or policy training.</p>
+<h2>Full trajectories and checkpoints</h2>
+<p><a href="https://github.com/2254257831/SCANA-R/releases/tag/reproducibility-v1">Download the four evidence archives from the GitHub release</a>. They contain demonstrations, recovery attempts (including failures), calibration arrays, policy weights and recorded trajectories. They are outside the Git tree to keep clones small. Each ZIP has a per-file SHA-256 manifest; matching archive hashes and byte counts are in <code>configs/*bundle.json</code> and the <a href="assets/data-downloads.json">web download manifest</a>.</p>
+<table>
+<thead>
+<tr>
+<th>Archive</th>
+<th>Scope</th>
+<th align="right">Approximate download</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>SCANA-R-artifacts-v1.zip</td>
+<td>Original ACT sources, policies and diagnostics</td>
+<td align="right">829 MB</td>
+</tr>
+<tr>
+<td>SCANA-R-MuJoCo-extension-v1.zip</td>
+<td>Earlier ACT stress and six-task Meta-World study</td>
+<td align="right">998 MB</td>
+</tr>
+<tr>
+<td>SCANA-R-independent-ACT-v1.zip</td>
+<td>Current ACT libraries, costs, components and interventions</td>
+<td align="right">1.96 GB</td>
+</tr>
+<tr>
+<td>SCANA-R-independent-MetaWorld-v1.zip</td>
+<td>Current Meta-World library repetitions</td>
+<td align="right">281 MB</td>
+</tr>
+</tbody></table>
+<p>Download, hash-verify and import (about 4.1 GB compressed; allow additional disk space for extraction):</p>
+<pre><code class="language-bash">python scripts/download_artifacts.py --bundle all --import
+</code></pre>
+<p>Choose <code>--bundle original</code>, <code>extension</code>, <code>current-act</code> or <code>current-metaworld</code> for one archive. Without <code>--import</code>, the command only downloads and verifies the ZIP. The importer refuses unsafe paths and refuses to overwrite locally changed files. Simulator dependencies are installed separately; no interpreter binaries, real-robot private data or manuscript PDF are distributed.</p>
+<h2>Raw-data analysis and replay</h2>
+<p>After importing, the original frozen analysis can independently reconstruct the current cost table from per-library/per-policy metadata and read the noise masks from arrays:</p>
+<pre><code class="language-bash">python experiments/independent_libraries_v46/analyze_experiments.py
+python experiments/independent_libraries_v46/analyze_metaworld.py
+</code></pre>
+<p>For the ACT video replay, use Python 3.10 with <code>requirements-simulation.txt</code> (MuJoCo <strong>2.3.3</strong>, dm-control <strong>1.0.9</strong>) and <code>requirements-video.txt</code>, then:</p>
+<pre><code class="language-bash">python -m pip install -e . --no-deps
+python scripts/render_current_videos.py
+</code></pre>
+<p>The renderer checks every pre-action state or clean current input and every reward against the archived record. Meta-World requires a <strong>separate</strong> environment with <code>requirements-metaworld.txt</code> (MuJoCo <strong>3.3.0</strong>). Do not upgrade the ACT environment in place.</p>
+<p>Fresh collection/training commands are in <a href="https://github.com/2254257831/SCANA-R/tree/main/experiments/independent_libraries_v46">the current experiment guide</a>. Use a fresh output directory and a new protocol for new scientific tests. Existing public test layouts are no longer unseen data for method development. Portable exported training scripts have not themselves been used for a complete independent repetition after export; replay and statistical checks are narrower guarantees.</p>
+<p>The current manuscript text predates this raw-evidence release. The availability change adds downloads; it changes no experiment, result or algorithm. The full manuscript remains private.</p>
+</main><footer>SCANA-R · Release documentation</footer></body></html>

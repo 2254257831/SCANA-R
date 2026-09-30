@@ -1,5 +1,5 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>MuJoCo extension across eight task types · SCANA-R</title><link rel="stylesheet" href="assets/style.css"><style>main{max-width:1100px;margin:40px auto;padding:0 24px}main h1{font-size:36px;margin-bottom:26px}main table{font-size:16px;margin:25px 0}main h2{margin-top:35px}li{margin-bottom:10px}main pre{background:#f3f7f8}main code{overflow-wrap:anywhere}</style></head><body><header class="topbar"><a href="index.html" class="wordmark">SCANA-R</a><nav><a href="index.html#reproduce">Back to project</a></nav></header><main><h1>MuJoCo extension across eight task types</h1>
-<p>This follow-up adds <strong>11,600 closed-loop executions</strong>: 5,600 executions of frozen
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Earlier MuJoCo extension across eight task types · SCANA-R</title><link rel="stylesheet" href="assets/style.css"><style>main{max-width:1100px;margin:40px auto;padding:0 24px}main h1{font-size:36px;margin-bottom:26px}main table{font-size:16px;margin:25px 0}main h2{margin-top:35px}li{margin-bottom:10px}main pre{background:#f3f7f8}main code{overflow-wrap:anywhere}</style></head><body><header class="topbar"><a href="index.html" class="wordmark">SCANA-R</a><nav><a href="index.html#reproduce">Back to project</a></nav></header><main><h1>Earlier MuJoCo extension across eight task types</h1>
+<p>This earlier fixed-library study contains <strong>11,600 closed-loop executions</strong>: 5,600 executions of frozen
 ACT policies and 6,000 on six additional Meta-World tasks. It uses simulation
 only. It measures task-specific action-chunk policies and receding-horizon
 control, not language planning, visual VLA transfer or real-robot performance.</p>
@@ -145,19 +145,19 @@ points, intervals [−12,10]/[−1,44], both including zero.</p>
 <p>SCANA-R falls to 33%/15% when replanning every step. Late-pulse success is
 0–1% for all methods. With observation noise, SCANA-R Transfer Cube is 0%
 versus Gaussian 83%. These failures limit any general robustness claim;
-their causal explanation has not been established.</p>
+the subsequent <a href="study-protocol.html">current study</a> tests these failures on new layouts. Joint-channel interventions identify a low-support transfer joint as sufficient for the noise collapse; temporal ensembling restores much of the one-step-replanning loss. These findings concern the tested policies and do not establish a universal failure mechanism.</p>
 <h2>Evidence and reproduction</h2>
 <p>Compact evidence: <code>results/metaworld_extension_v1/</code> and
 <code>results/act_extension_v1/</code>. They contain every rollout, seed means, paired
-contrasts, fixed protocols and collection costs. Manuscript Figures 5–7 and
-Tables 10–12 are derived from these files. The new 11,600 executions are not
+contrasts, fixed protocols and collection costs. Current v47 manuscript Figures 6–8 and
+Tables 8–10 are derived from these files. The new 11,600 executions are not
 11,600 independent policy training runs, and are not pooled with the original
 3,200 ACT records.</p>
 <p>Recompute success statistics without simulators or checkpoint files:</p>
 <pre><code class="language-bash">python scripts/summarize_extensions.py
 </code></pre>
-<p>Import the separate local evidence bundle, checking the archive and every entry:</p>
-<pre><code class="language-bash">python scripts/import_artifacts.py ../SCANA-R-MuJoCo-extension-v1.zip --manifest configs/mujoco_extension_bundle.json
+<p>Download with <code>python scripts/download_artifacts.py --bundle extension</code>, then import the separate evidence bundle, checking the archive and every entry:</p>
+<pre><code class="language-bash">python scripts/import_artifacts.py artifacts/downloads/SCANA-R-MuJoCo-extension-v1.zip --manifest configs/mujoco_extension_bundle.json
 </code></pre>
 <p>Use a <strong>separate Python 3.10 environment</strong> for Meta-World, because its MuJoCo
 3.3.0 dependency conflicts with the pinned ACT environment:</p>
@@ -192,7 +192,7 @@ the original ACT bundle, its environment and
 <code>python experiments/scana_r/robustness_extension.py --workers 8</code>.</p>
 <p>Original scripts, seeds, failed attempts, weights, action/reward traces and
 entry hashes are kept in the separate bundle. Interpreter binaries and
-third-party package installations are excluded. Nothing has been uploaded.</p>
+third-party package installations are excluded. Code, compact results and videos are public. Full simulation trajectories and checkpoints are distributed in the <a href="https://github.com/2254257831/SCANA-R/releases/tag/reproducibility-v1">evidence release</a>; see <a href="reproduction.html">download and verification instructions</a>. The manuscript PDF remains private.</p>
 <p>Sources: <a href="https://proceedings.mlr.press/v100/yu20a.html">Meta-World benchmark paper</a>,
 <a href="https://github.com/Farama-Foundation/Metaworld">official repository</a>,
 <a href="https://metaworld.farama.org/benchmark/task_descriptions/">task descriptions</a>.</p>

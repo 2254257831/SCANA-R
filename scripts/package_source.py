@@ -11,6 +11,7 @@ with zipfile.ZipFile(target,'w',compression=zipfile.ZIP_DEFLATED,compresslevel=9
         if p.suffix in {'.pyc','.log','.tmp'}:continue
         # Manuscript files are excluded from public distribution.
         # Figure PDFs are exported plots, not the manuscript.
-        if p.suffix.lower() in {'.pdf','.docx'} and rel.parts[0]!='figures':continue
+        web_figures={f'docs/assets/figures/figure-{n}.pdf' for n in [1,2,3,4,5,9]}
+        if p.suffix.lower() in {'.pdf','.docx'} and not (p.suffix.lower()=='.pdf' and (rel.parts[0]=='figures' or rel.as_posix() in web_figures)):continue
         z.write(p,'SCANA-R/'+rel.as_posix())
 print(f'{target.name}: {target.stat().st_size:,} bytes')

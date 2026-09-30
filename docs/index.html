@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="SCANA-R: calibrating action perturbations and learning from verified recovery trajectories. Watch simulation rollouts, explore the method and reproduce the evidence.">
   <meta name="theme-color" content="#ffffff">
-  <title>SCANA-R | Simulation Recovery Learning</title>
+  <title>SCANA-R: Action noise calibration and simulation recovery learning from successful demonstrations</title>
   <link rel="stylesheet" href="assets/style.css">
   <script src="assets/site.js" defer></script>
 </head>
@@ -13,23 +13,23 @@
 <a class="skip" href="#main">Skip to content</a>
 <main id="main">
   <header class="hero">
-    <h1><span class="project-name">SCANA-R:</span> Success Demonstration Based Action Noise Calibration and Simulation Recovery Learning</h1>
+    <h1><span class="project-name">SCANA-R:</span> Action noise calibration and simulation recovery learning from successful demonstrations</h1>
     <p class="paper-context">Research manuscript <span aria-hidden="true">·</span> State-based robot learning in simulation</p>
     <div class="actions" aria-label="Project resources">
       <a class="button" href="https://github.com/2254257831/SCANA-R"><span aria-hidden="true">&lt;/&gt;</span> Code</a>
-      <a class="button" href="protocol.html"><span aria-hidden="true">≡</span> Protocol</a>
-      <a class="button" href="assets/v46/data-and-protocols.zip" download title="v46 compact outcomes, analysis, and protocols; full trajectories are separately inventoried"><span aria-hidden="true">↓</span> Data</a>
-      <a class="button" href="mujoco-gallery.html">MuJoCo extension</a>
+      <a class="button" href="study-protocol.html"><span aria-hidden="true">≡</span> Protocol</a>
+      <a class="button" href="reproduction.html" title="Compact statistics plus raw simulation trajectories and checkpoints"><span aria-hidden="true">↓</span> Data</a>
+      <a class="button" href="current-videos.html">Current study videos</a>
       <a class="button" href="#rollouts"><span aria-hidden="true">▶</span> Videos</a>
     </div>
   </header>
 
   <figure class="teaser wide-wrap">
-    <video id="teaser-video" class="film" width="1456" height="544" controls muted loop playsinline preload="metadata" data-autoplay poster="assets/videos/teaser-poster.jpg" aria-label="SCANA-R simulation rollouts: Transfer Cube and Insertion" aria-describedby="teaser-caption">
-      <source src="assets/videos/teaser.mp4" type="video/mp4">
-      Your browser cannot play this video. <a href="assets/videos/teaser.mp4">Open the MP4.</a>
+    <video id="teaser-video" class="film" width="1620" height="420" controls muted loop playsinline preload="metadata" style="aspect-ratio:1620/420" data-autoplay poster="assets/current-videos/transfer_cube-replanning-poster.jpg" aria-label="Current transfer intervention: execute eight steps, replan every step, and temporal ensemble" aria-describedby="teaser-caption">
+      <source src="assets/current-videos/transfer_cube-replanning.mp4" type="video/mp4">
+      Your browser cannot play this video. <a href="assets/current-videos/transfer_cube-replanning.mp4">Open the MP4.</a>
     </video>
-    <figcaption id="teaser-caption"><p class="takeaway">Learn recovery from states the robot actually visits.</p><p>SCANA-R calibrates short action perturbations, verifies recovery in simulation, and trains on the resulting observations and executed actions.</p><p class="media-note">Selected simulation examples · 1× speed · muted, looping video <a href="assets/videos/teaser.mp4">Open MP4 ↗</a></p></figcaption>
+    <figcaption id="teaser-caption"><p class="takeaway">Learn recovery from states the robot actually visits.</p><p>Current-study transfer intervention: eight-step execution, one-step replanning, and one-step replanning with temporal ensembling. Policy seed 7, layout 96000; fixed before inspecting video outcomes.</p><p class="media-note">Recorded simulation replay · 1× speed · muted, looping video <a href="assets/current-videos/transfer_cube-replanning.mp4">Open MP4 ↗</a></p></figcaption>
   </figure>
 
   <nav class="section-nav" aria-label="Page sections"><a href="#abstract">Abstract</a><a href="#method">Method</a><a href="#rollouts">Rollouts</a><a href="#results">Results</a><a href="#reproduce">Reproduce</a></nav>
@@ -38,14 +38,15 @@
     <h2>Abstract</h2>
     <p>Successful demonstrations sparsely cover the states encountered after a policy deviates from its reference trajectory. SCANA-R uses source-episode cross-fitting to estimate policy errors, samples short action perturbations from the same task and nearby phase, and executes them in simulation. The reference action sequence then resumes; a recovery branch is accepted only when its terminal state satisfies the task’s success criterion. Recovery supervision pairs newly observed states with actions that were actually executed.</p>
     <p>The current independent-library study adds 11,040 evaluations. SCANA-R reaches 89.7% transfer and 49.7% insertion success, compared with 81.7%/38.7% for Gaussian recovery. At the same total active CPU budget, Gaussian collection with longer policy training reaches 92.7%/54.7%. Six-task repeated-library macro success is 89.9% SCANA-R, 89.5% Gaussian, and 93.1% original repetition. Recovery collection helps the tested bimanual policies; calibration is not established as necessary or superior at matched compute. <a href="#independent-libraries">See library-level results and failure interventions.</a></p>
-    <details class="translation"><summary>中文概览</summary><p lang="zh-CN">新增11,040回合评价包含独立恢复库、完整CPU成本及失败机制干预。SCANA-R双臂成功率89.7%/49.7%，同成本高斯92.7%/54.7%；六项单臂宏平均89.9%，原数据重复93.1%。恢复采集对所测双臂策略有益，但没有确立误差校准的必要性或同成本优势。全部为状态输入仿真，既有视频仍来自早期固定策略，未将它们冒充新增重复的录像。</p></details>
+    <details class="translation"><summary>中文概览</summary><p lang="zh-CN">新增11,040回合评价包含独立恢复库、完整CPU成本及失败机制干预。SCANA-R双臂成功率89.7%/49.7%，同成本高斯92.7%/54.7%；六项单臂宏平均89.9%，原数据重复93.1%。恢复采集对所测双臂策略有益，但没有确立误差校准的必要性或同成本优势。全部为状态输入仿真，新视频对应独立恢复库、同成本高斯和失败干预，固定最小编号选例，保留成功与失败。</p></details>
   </div></section>
 
-  <section class="section wide-wrap" id="independent-libraries">
-    <h2>Independent libraries, costs, and failure mechanisms</h2>
+  <section class="section wide-wrap" id="results">
+    <span id="independent-libraries"></span><h2>Current results: independent libraries and total cost</h2>
     <p>Five new libraries per ACT task and three per Meta-World task separate collection variability from policy fitting. Source demonstrations stay fixed. The calibration advantage over standard Gaussian recovery is inconclusive under the two-task adjusted intervals; the compute-matched Gaussian control has higher point means on both tasks.</p>
-    <figure><img src="assets/v46/library-success.png" style="width:100%;height:auto" alt="Success across five independently rebuilt ACT libraries for seven methods"><figcaption>Each library average combines three policies and 20 new layouts. Full intervals and costs are in the downloadable analysis records.</figcaption></figure>
-    <figure><img src="assets/v46/failure-interventions.png" style="width:100%;height:auto" alt="Channel-noise and action-replanning interventions on frozen policies"><figcaption>New-layout interventions with frozen original policies. A low-support joint is sufficient for the transfer noise failure; fixed temporal ensembling restores much of the single-step replanning loss.</figcaption></figure>
+    <div class="table-scroll"><table><caption>Current library repetition · success (%) · v47 Tables 5–7</caption><thead><tr><th>Method</th><th>Transfer</th><th>Insertion</th><th>Six-task macro</th></tr></thead><tbody><tr><th>Clean repeat</th><td>63.3</td><td>30.0</td><td>93.1</td></tr><tr><th>Gaussian recovery</th><td>81.7</td><td>38.7</td><td>89.5</td></tr><tr><th>SCANA-R</th><td>89.7</td><td>49.7</td><td>89.9</td></tr><tr><th>Gaussian, matched total CPU</th><td>92.7</td><td>54.7</td><td>Not evaluated</td></tr></tbody></table></div><p class="table-note">Calibration superiority is not established by the adjusted comparisons. Source demonstrations remain fixed; library repeats add collection variability, not new source-data populations.</p>
+    <figure><img src="assets/figures/figure-5.svg" style="width:100%;height:auto" alt="Success across five independently rebuilt ACT libraries for seven methods"><figcaption>Figure 5 · Each library combines three policies and 20 new layouts. <a href="assets/figures/figure-5.pdf" download>Vector PDF</a> · <a href="v46-study.html">Full intervals and costs</a>.</figcaption></figure>
+    <figure><img src="assets/figures/figure-9.svg" style="width:100%;height:auto" alt="Channel-noise and action-replanning interventions on frozen policies"><figcaption>Figure 9 · New-layout interventions with frozen original policies. Low-support joint noise is sufficient for the transfer failure; temporal ensembling recovers much of the one-step-replanning loss. <a href="assets/figures/figure-9.pdf" download>Vector PDF</a>.</figcaption></figure>
     <p><a href="v46-study.html">Protocols and rerun instructions</a></p>
   </section>
 
@@ -53,8 +54,8 @@
     <h2>Method</h2>
     <p class="section-intro">Calibrate the perturbation. Execute the recovery. Keep the observation and action together.</p>
     <figure class="overview">
-      <a href="assets/figure1.png" target="_blank" rel="noopener" aria-label="View the full-resolution SCANA-R method figure"><img src="assets/figure1.png" width="2661" height="1331" loading="lazy" alt="Three-stage SCANA-R framework: same-task source organization, cross-fitted error calibration and simulator-verified recovery collection."></a>
-      <figcaption>Short perturbations expose recovery states. Accepted branches provide the observations and executed actions used for policy learning.</figcaption>
+      <a href="assets/figures/figure-1.pdf" target="_blank" rel="noopener" aria-label="View the full-resolution SCANA-R method figure"><img src="assets/figures/figure-1.svg" width="2661" height="1331" loading="lazy" alt="Three-stage SCANA-R framework: same-task source organization, cross-fitted error calibration and simulator-verified recovery collection."></a>
+      <figcaption>Figure 1 · Same-task error calibration, simulator-verified recovery, and supervision from actual observations and executed actions. <a href="assets/figures/figure-1.pdf" download>Download vector PDF</a>. Figures 2–4 below also open as vector PDFs.</figcaption>
     </figure>
     <div class="method-steps">
       <article><h3><span>1.</span> Calibrate</h3><p>Five auxiliary policies predict chunks for held-out source episodes. The error bank preserves task and temporal phase.</p></article>
@@ -62,14 +63,26 @@
       <article><h3><span>3.</span> Learn recovery</h3><p>After the pulse, pair actual observations with executed reference actions. Mix original and recovery records equally.</p></article>
     </div>
     <div class="figure-details">
-      <details><summary>Source episodes and recovery records · Figure 2</summary><a href="assets/figure2.png" target="_blank" rel="noopener"><img loading="lazy" src="assets/figure2.png" width="2661" height="1331" alt="Source episode splitting, the recovery record contract and traceable branch identities."></a></details>
-      <details><summary>Cross-fitted error calibration · Figure 3</summary><a href="assets/figure3.png" target="_blank" rel="noopener"><img loading="lazy" src="assets/figure3.png" width="2661" height="1331" alt="Cross-fitted policies and same-task, phase-local error sampling for short perturbations."></a></details>
-      <details><summary>Bounded perturbation and recovery export · Figure 4</summary><a href="assets/figure4.png" target="_blank" rel="noopener"><img loading="lazy" src="assets/figure4.png" width="2661" height="1331" alt="Pulse scaling, amplitude bounds, simulator replay, terminal success acceptance and recovery record export."></a></details>
+      <details><summary>Source episodes and recovery records · Figure 2</summary><a href="assets/figures/figure-2.pdf" target="_blank" rel="noopener"><img loading="lazy" src="assets/figures/figure-2.svg" width="2661" height="1331" alt="Source episode splitting, the recovery record contract and traceable branch identities."></a></details>
+      <details><summary>Cross-fitted error calibration · Figure 3</summary><a href="assets/figures/figure-3.pdf" target="_blank" rel="noopener"><img loading="lazy" src="assets/figures/figure-3.svg" width="2661" height="1331" alt="Cross-fitted policies and same-task, phase-local error sampling for short perturbations."></a></details>
+      <details><summary>Bounded perturbation and recovery export · Figure 4</summary><a href="assets/figures/figure-4.pdf" target="_blank" rel="noopener"><img loading="lazy" src="assets/figures/figure-4.svg" width="2661" height="1331" alt="Pulse scaling, amplitude bounds, simulator replay, terminal success acceptance and recovery record export."></a></details>
     </div>
   </section>
 
-  <section class="section media-section band" id="rollouts"><div class="wide-wrap">
-    <h2>Simulation rollouts</h2>
+<section class="section media-section band" id="rollouts"><div class="wide-wrap"><h2>Current-study simulation replays</h2><p class="section-intro">Independent-library and matched-cost comparisons. Same bank 101, policy seed 17 and layout 97000; all four methods shown without outcome-based selection.</p><figure class="comparison"><h3>Transfer Cube: four methods</h3><video class="film" width="1080" height="840" style="aspect-ratio:1080/840" controls muted loop playsinline preload="none" poster="assets/current-videos/transfer_cube-libraries-poster.jpg" aria-label="Transfer Cube: four methods"><source src="assets/current-videos/transfer_cube-libraries.mp4" type="video/mp4"><a href="assets/current-videos/transfer_cube-libraries.mp4">Open MP4</a></video><figcaption>All four succeed in this fixed example. Aggregate rates differ across the complete evaluation grid. <a href="assets/current-videos/transfer_cube-libraries.mp4">Open MP4 ↗</a></figcaption></figure><figure class="comparison"><h3>Insertion: four methods</h3><video class="film" width="1080" height="840" style="aspect-ratio:1080/840" controls muted loop playsinline preload="none" poster="assets/current-videos/insertion-libraries-poster.jpg" aria-label="Insertion: four methods"><source src="assets/current-videos/insertion-libraries.mp4" type="video/mp4"><a href="assets/current-videos/insertion-libraries.mp4">Open MP4</a></video><figcaption>Clean repeat and Gaussian succeed; SCANA-R and the compute-matched Gaussian fail in this example. These outcomes are retained. <a href="assets/current-videos/insertion-libraries.mp4">Open MP4 ↗</a></figcaption></figure><p class="selection-note">Every one of the 400 pre-action states and rewards matches the archived trajectory. Full-length playback at 1× speed. The six videos also include joint-noise and temporal-ensemble interventions. <a href="current-videos.html">All current videos, outcomes and provenance ↗</a> · <a href="#original-rollouts">Earlier selected examples</a></p></div></section>
+  <section class="section reading-width results" id="original-results">
+    <h2>Earlier fixed-library ACT results</h2>
+    <p><a href="mujoco-gallery.html#results">Earlier extension: six-task results and ACT deployment stress tests ↗</a></p>
+    <p class="section-intro">Five training seeds × 40 common layouts per task.<br>Matched initialization, batch streams and final training budgets.</p>
+    <div class="table-scroll"><table><caption>Task success · successes / 200 rollouts</caption><thead><tr><th scope="col">Method</th><th scope="col">Transfer Cube</th><th scope="col">Insertion</th></tr></thead><tbody><tr><th scope="row">Clean repeat</th><td>134 / 200 <strong>67.0%</strong></td><td>86 / 200 <strong>43.0%</strong></td></tr><tr><th scope="row">Gaussian recovery</th><td>175 / 200 <strong>87.5%</strong></td><td>90 / 200 <strong>45.0%</strong></td></tr><tr><th scope="row">Frozen observations</th><td>117 / 200 <strong>58.5%</strong></td><td>87 / 200 <strong>43.5%</strong></td></tr><tr class="ours"><th scope="row">SCANA-R</th><td>184 / 200 <strong>92.0%</strong></td><td>134 / 200 <strong>67.0%</strong></td></tr></tbody></table></div>
+    <p class="table-note">Evaluation success uses maximum episode reward = 4; collection acceptance requires terminal reward = 4. In the CSV, “Calibrated recovery” denotes SCANA-R and “Frozen context” denotes frozen observations.</p>
+    <p>SCANA-R gains <strong>25 and 24 percentage points</strong> over Clean repeat; paired 95% intervals are [7.5, 42.5] and [12.5, 36.0]. Against Gaussian recovery, the gain is 4.5 points on Transfer Cube [−5.0, 16.0] and 22 points on Insertion [5.0, 40.5]. The calibration benefit is task-dependent.</p>
+    <p class="small">Intervals jointly resample paired seeds and layouts. Five policy fits are not 200 independent training runs; the recovery bank is fixed across seeds. <a href="data/summary.csv" download>Summary CSV</a> · <a href="data/paired_contrasts.csv" download>Paired comparisons</a></p>
+    <details class="evidence-details"><summary>Evaluation scope and historical diagnostics</summary><p>The complete CSV includes four historical label-only controls, for 3,200 rollouts in total. Their original checkpoints and sampling streams are retained; they diagnose earlier versions and are not single-component ablations. Recovery collection has additional simulator and auxiliary-training costs. There is no same-collection-budget DART reproduction. The experiments do not establish visual VLA/GR00T transfer, real-robot performance or general collision safety. <a href="evidence.html">Full evidence scope.</a></p></details>
+  </section>
+
+<details class="historical wide-wrap"><summary>Earlier selected videos · fixed libraries and layouts 92000/92001</summary>  <section class="section media-section band" id="original-rollouts"><div class="wide-wrap">
+    <h2>Earlier fixed-library examples</h2>
     <p class="section-intro">Same training seed. Same initial layout. Synchronized, uncut playback.</p>
     <figure class="comparison">
       <h3>Transfer Cube</h3>
@@ -90,26 +103,14 @@
     <p class="selection-note">These are illustrative contrasts, selected as the lowest layout for seed 7 where SCANA-R succeeds and Clean repeat fails in each task. They are not a random sample. Videos replay archived actions at real-time speed; all 400 joint-state observations and step rewards per rollout match the saved records. Aggregate evaluation is reported below. <a href="videos.html">Video provenance and rendering ↗</a></p>
   </div></section>
 
-  <section class="section reading-width results" id="results">
-    <h2>Original ACT results</h2>
-    <p><a href="mujoco-gallery.html#results">New: six-task results and ACT deployment stress tests ↗</a></p>
-    <p class="section-intro">Five training seeds × 40 common layouts per task.<br>Matched initialization, batch streams and final training budgets.</p>
-    <div class="table-scroll"><table><caption>Task success · successes / 200 rollouts</caption><thead><tr><th scope="col">Method</th><th scope="col">Transfer Cube</th><th scope="col">Insertion</th></tr></thead><tbody><tr><th scope="row">Clean repeat</th><td>134 / 200 <strong>67.0%</strong></td><td>86 / 200 <strong>43.0%</strong></td></tr><tr><th scope="row">Gaussian recovery</th><td>175 / 200 <strong>87.5%</strong></td><td>90 / 200 <strong>45.0%</strong></td></tr><tr><th scope="row">Frozen observations</th><td>117 / 200 <strong>58.5%</strong></td><td>87 / 200 <strong>43.5%</strong></td></tr><tr class="ours"><th scope="row">SCANA-R</th><td>184 / 200 <strong>92.0%</strong></td><td>134 / 200 <strong>67.0%</strong></td></tr></tbody></table></div>
-    <p class="table-note">Evaluation success uses maximum episode reward = 4; collection acceptance requires terminal reward = 4. In the CSV, “Calibrated recovery” denotes SCANA-R and “Frozen context” denotes frozen observations.</p>
-    <p>SCANA-R gains <strong>25 and 24 percentage points</strong> over Clean repeat; paired 95% intervals are [7.5, 42.5] and [12.5, 36.0]. Against Gaussian recovery, the gain is 4.5 points on Transfer Cube [−5.0, 16.0] and 22 points on Insertion [5.0, 40.5]. The calibration benefit is task-dependent.</p>
-    <p class="small">Intervals jointly resample paired seeds and layouts. Five policy fits are not 200 independent training runs; the recovery bank is fixed across seeds. <a href="data/summary.csv" download>Summary CSV</a> · <a href="data/paired_contrasts.csv" download>Paired comparisons</a></p>
-    <details class="evidence-details"><summary>Evaluation scope and historical diagnostics</summary><p>The complete CSV includes four historical label-only controls, for 3,200 rollouts in total. Their original checkpoints and sampling streams are retained; they diagnose earlier versions and are not single-component ablations. Recovery collection has additional simulator and auxiliary-training costs. There is no same-collection-budget DART reproduction. The experiments do not establish visual VLA/GR00T transfer, real-robot performance or general collision safety. <a href="evidence.html">Full evidence scope.</a></p></details>
-  </section>
-
+</details>
   <section class="section band" id="reproduce"><div class="reading-width">
     <h2>Code &amp; reproduction</h2>
     <p>Start by recomputing the reported statistics from the included evaluation records. Simulator replay and video rendering use the separate, hash-verified trajectory bundle.</p>
-    <div class="code-block"><div><span>Python 3.10 · From the repository root</span><button type="button" class="copy" data-copy="quickstart">Copy</button></div><pre id="quickstart"><code>python -m pip install -r requirements-simulation.txt
-python -m pip install -e . --no-deps
-python -m unittest discover -s tests -v
-python scripts/summarize.py</code></pre><span class="copy-status" role="status" aria-live="polite"></span></div>
-    <div class="resource-links"><a href="assets/scana-r-source.zip" download>Source package ↗</a><a href="protocol.html">Experiment protocol ↗</a><a href="videos.html">Render the videos ↗</a></div>
-    <p class="small availability">Code: Apache-2.0; ACT simulator assets: MIT. The trajectory and checkpoint bundle is prepared locally as <code>SCANA-R-artifacts-v1.zip</code>. Code and compact results are available in the <a href="https://github.com/2254257831/SCANA-R">public repository</a>. The manuscript PDF is not publicly released. Full trajectory and checkpoint archives do not yet have a public download URL.</p>
+    <div class="code-block"><div><span>Python 3.10 · From the repository root</span><button type="button" class="copy" data-copy="quickstart">Copy</button></div><pre id="quickstart"><code>python -m pip install -r requirements-statistics.txt
+python scripts/reproduce.py</code></pre><span class="copy-status" role="status" aria-live="polite"></span></div>
+    <div class="resource-links"><a href="assets/scana-r-source.zip" download>Source package ↗</a><a href="study-protocol.html">Experiment protocol ↗</a><a href="reproduction.html">Data downloads and replay ↗</a></div>
+    <p class="small availability">Code: Apache-2.0; ACT simulator assets: MIT. Compact statistics are included in the repository. Four <a href="https://github.com/2254257831/SCANA-R/releases/tag/reproducibility-v1">hash-verified evidence archives</a> provide recorded trajectories, recovery attempts and checkpoints outside the Git tree. <a href="reproduction.html">Download and import instructions</a>. The manuscript PDF remains private.</p>
   </div></section>
 </main>
 <footer><p>SCANA-R · Research code and simulation evidence</p><p><a href="template-references.html">Page design references</a> · Independently implemented.</p><a href="#main">Back to top ↑</a></footer>

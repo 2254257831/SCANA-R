@@ -1,0 +1,85 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Current study protocol · SCANA-R</title><link rel="stylesheet" href="assets/style.css"><style>main{max-width:1100px;margin:40px auto;padding:0 24px}main h1{font-size:36px;margin-bottom:26px}main table{font-size:16px;margin:25px 0}main h2{margin-top:35px}li{margin-bottom:10px}main pre{background:#f3f7f8}main code{overflow-wrap:anywhere}</style></head><body><header class="topbar"><a href="index.html" class="wordmark">SCANA-R</a><nav><a href="index.html#reproduce">Back to project</a></nav></header><main><h1>Current study protocol</h1>
+<p>The current manuscript is <strong>SCANA-R: Action noise calibration and simulation recovery learning from successful demonstrations</strong> (v47). Its current evidence is the independent-library, cost and intervention study first archived under <code>v46</code>. The directory name records the experiment version; v47 did not run a different experiment.</p>
+<h2>Keep the three studies separate</h2>
+<table>
+<thead>
+<tr>
+<th>Study</th>
+<th align="right">Evaluation records</th>
+<th>Libraries and policies</th>
+<th>Test layouts</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Current ACT libraries, cost and components</td>
+<td align="right">4,200</td>
+<td>5 libraries/task × 3 policies × 7 methods × 2 tasks</td>
+<td>97000–97019</td>
+</tr>
+<tr>
+<td>Current Meta-World libraries</td>
+<td align="right">3,240</td>
+<td>3 libraries/task × 3 policies × 3 methods × 6 tasks</td>
+<td>98000–98019</td>
+</tr>
+<tr>
+<td>Current ACT failure interventions</td>
+<td align="right">3,600</td>
+<td>5 frozen original policies × 2 methods × 9 conditions × 2 tasks</td>
+<td>96000–96019</td>
+</tr>
+<tr>
+<td>Earlier original ACT study</td>
+<td align="right">3,200</td>
+<td>5 policies × 8 methods × 2 tasks; fixed recovery libraries</td>
+<td>92000–92039</td>
+</tr>
+<tr>
+<td>Earlier extension</td>
+<td align="right">11,600</td>
+<td>ACT stress 5,600; Meta-World 6,000; fixed recovery libraries</td>
+<td>ACT 94000–94019; Meta-World 30000–30019</td>
+</tr>
+</tbody></table>
+<p>The default <a href="index.html#results">results section</a> reports the first three rows (11,040 evaluations). The 92%/67% ACT result belongs to the earlier fixed-library study. Results are never pooled across these batches. An evaluation episode is not an independent policy fit.</p>
+<h2>Algorithm and observations</h2>
+<p>Source episodes are split before window extraction: 40 training and 10 development successes per task. Five auxiliary policies fit 32 source episodes each; the eight excluded episodes supply out-of-episode errors. Auxiliary checkpoint selection uses fitting-fold MSE; final policy selection uses clean development MSE. The original source demonstrations remain fixed in the library repetition.</p>
+<p>SCANA-R samples an eight-step error pulse from the same task and temporal neighborhood (radius eight), scales its RMS, caps coordinates at three times that scale and protects gripper channels. Every retry resets the original simulator state and reuses the pulse at scales 1, 0.5, 0.25, 0. Acceptance requires <strong>terminal</strong> task success. Training pairs the observations actually visited after the pulse with the executed reference-tail actions. Final training mixes 2,048 original and 2,048 method records sampled with replacement (1:1).</p>
+<p>ACT inputs are current joint state, current object position and time; predictions contain 16 actions, with eight executed before reobserving. Twelve candidate endpoints are drawn per training source. Transfer/insertion pulse scales are 0.03/0.08 rad. ACT uses MuJoCo 2.3.3 / dm-control 1.0.9. Meta-World uses a separate MuJoCo 3.3.0 environment, a 22-dimensional current input, 16 × 4 action chunks, six endpoints, and the original development-selected task/family scales. Neither platform uses future states, images or language in this study.</p>
+<h2>Comparisons and uncertainty</h2>
+<p>ACT compares Clean repeat, Gaussian recovery, SCANA-R, no cross-fitting, global-time errors, no intermediate backtracking, and Gaussian recovery with longer training at matched total active CPU cost. Cost includes auxiliary fitting, recovery simulation and final fitting; stopping at development checkpoints can leave budget differences, reported in the recorded cost tables.</p>
+<p>ACT library IDs are 101, 211, 307, 401 and 503; final-policy seeds are 17, 29 and 43. Meta-World repeats three libraries per task. The exact grids and configurations are in the two frozen JSON protocols in the <a href="assets/v46/data-and-protocols.zip">compact download</a>.</p>
+<p>The library analyses use 10,000 paired bootstrap replicates: libraries, policy seeds within selected libraries, and shared layouts. ACT primary comparisons report two-task adjusted 97.5% marginal intervals. Meta-World reports two-comparison macro intervals and six-task adjusted intervals. Source-demonstration population variation is not estimated. The failure analysis uses 5,000 paired policy/layout replicates with frozen original policies.</p>
+<h2>Failure interventions</h2>
+<p>Nine deployment conditions separate current-observation noise by channel and change replanning cadence. In transfer, noise on the narrowly supported joint 0 is sufficient to cause the observed failure; removing that channel raises SCANA-R success to 65% in this diagnostic. A fixed temporal ensemble uses predictions from the latest 16 chunks, weighted by exp(−age/4). It restores much of the one-step-replanning loss and is a <strong>deployment variant</strong>, not an extra component of the collection algorithm. These findings are confined to the tested policies and perturbations; reduced mean action-step RMS does not support a generic command-jitter explanation.</p>
+<h2>Manuscript map and reproduction</h2>
+<table>
+<thead>
+<tr>
+<th>Evidence</th>
+<th>v47 figures/tables</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Method</td>
+<td>Figures 1–4</td>
+</tr>
+<tr>
+<td>Independent ACT libraries and total cost</td>
+<td>Figure 5; Tables 5–6</td>
+</tr>
+<tr>
+<td>Independent Meta-World libraries</td>
+<td>Table 7</td>
+</tr>
+<tr>
+<td>Earlier eight-task extension</td>
+<td>Figures 6–8; Tables 8–10</td>
+</tr>
+<tr>
+<td>Current failure interventions</td>
+<td>Figure 9</td>
+</tr>
+</tbody></table>
+<p><a href="reproduction.html">Recompute statistics and download raw evidence</a> · <a href="current-videos.html">Current videos</a> · <a href="protocol.html">Earlier original ACT protocol</a> · <a href="mujoco-extension.html">Earlier extension protocol</a></p>
+</main><footer>SCANA-R · Release documentation</footer></body></html>

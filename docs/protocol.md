@@ -1,5 +1,7 @@
 # Frozen simulation protocol
 
+> Earlier original ACT study with fixed recovery libraries. For the default current protocol, independent libraries, total cost and new intervention layouts, see [Current study protocol](study-protocol.md).
+
 | Item | Value |
 |---|---|
 | Tasks | ACT Transfer Cube and Insertion; bimanual simulation |

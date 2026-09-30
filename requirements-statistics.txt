@@ -1,0 +1,3 @@
+# Compact-data statistics only; simulator and Torch are not needed.
+numpy>=1.24,<3
+pandas>=2.0,<3

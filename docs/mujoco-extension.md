@@ -1,6 +1,6 @@
-# MuJoCo extension across eight task types
+# Earlier MuJoCo extension across eight task types
 
-This follow-up adds **11,600 closed-loop executions**: 5,600 executions of frozen
+This earlier fixed-library study contains **11,600 closed-loop executions**: 5,600 executions of frozen
 ACT policies and 6,000 on six additional Meta-World tasks. It uses simulation
 only. It measures task-specific action-chunk policies and receding-horizon
 control, not language planning, visual VLA transfer or real-robot performance.
@@ -106,14 +106,14 @@ points, intervals [−12,10]/[−1,44], both including zero.
 SCANA-R falls to 33%/15% when replanning every step. Late-pulse success is
 0–1% for all methods. With observation noise, SCANA-R Transfer Cube is 0%
 versus Gaussian 83%. These failures limit any general robustness claim;
-their causal explanation has not been established.
+the subsequent [current study](study-protocol.md) tests these failures on new layouts. Joint-channel interventions identify a low-support transfer joint as sufficient for the noise collapse; temporal ensembling restores much of the one-step-replanning loss. These findings concern the tested policies and do not establish a universal failure mechanism.
 
 ## Evidence and reproduction
 
 Compact evidence: `results/metaworld_extension_v1/` and
 `results/act_extension_v1/`. They contain every rollout, seed means, paired
-contrasts, fixed protocols and collection costs. Manuscript Figures 5–7 and
-Tables 10–12 are derived from these files. The new 11,600 executions are not
+contrasts, fixed protocols and collection costs. Current v47 manuscript Figures 6–8 and
+Tables 8–10 are derived from these files. The new 11,600 executions are not
 11,600 independent policy training runs, and are not pooled with the original
 3,200 ACT records.
 
@@ -123,10 +123,10 @@ Recompute success statistics without simulators or checkpoint files:
 python scripts/summarize_extensions.py
 ```
 
-Import the separate local evidence bundle, checking the archive and every entry:
+Download with `python scripts/download_artifacts.py --bundle extension`, then import the separate evidence bundle, checking the archive and every entry:
 
 ```bash
-python scripts/import_artifacts.py ../SCANA-R-MuJoCo-extension-v1.zip --manifest configs/mujoco_extension_bundle.json
+python scripts/import_artifacts.py artifacts/downloads/SCANA-R-MuJoCo-extension-v1.zip --manifest configs/mujoco_extension_bundle.json
 ```
 
 Use a **separate Python 3.10 environment** for Meta-World, because its MuJoCo
@@ -170,7 +170,7 @@ the original ACT bundle, its environment and
 
 Original scripts, seeds, failed attempts, weights, action/reward traces and
 entry hashes are kept in the separate bundle. Interpreter binaries and
-third-party package installations are excluded. Nothing has been uploaded.
+third-party package installations are excluded. Code, compact results and videos are public. Full simulation trajectories and checkpoints are distributed in the [evidence release](https://github.com/2254257831/SCANA-R/releases/tag/reproducibility-v1); see [download and verification instructions](reproduction.md). The manuscript PDF remains private.
 
 Sources: [Meta-World benchmark paper](https://proceedings.mlr.press/v100/yu20a.html),
 [official repository](https://github.com/Farama-Foundation/Metaworld),

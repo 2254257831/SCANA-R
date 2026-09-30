@@ -1,0 +1,84 @@
+[
+  {
+    "figure": 1,
+    "manuscript_version": "v47",
+    "source_file": "Figure_1.pdf",
+    "pdf": "figure-1.pdf",
+    "pdf_sha256": "013aaf48aa34eaaa930f061865b9a3d07c3672de9a9177829eeab0f87a9ddca4",
+    "svg": "figure-1.svg",
+    "svg_sha256": "244e733eada66bbaae8c00abb9f66b2d69dbbc8c60b5c5cbad0ea6813fab744f",
+    "pages": 1,
+    "metadata": {
+      "/Producer": "pypdf"
+    }
+  },
+  {
+    "figure": 2,
+    "manuscript_version": "v47",
+    "source_file": "Figure_2.pdf",
+    "pdf": "figure-2.pdf",
+    "pdf_sha256": "a50465f6a38c11e2bdaa6979d6ad8fcb5fe03e49e949f4603186c393e5b6550f",
+    "svg": "figure-2.svg",
+    "svg_sha256": "151300997489b7a67053fb9057388d130c5d20730246dc1df240997cdd8c639a",
+    "pages": 1,
+    "metadata": {
+      "/Producer": "pypdf"
+    }
+  },
+  {
+    "figure": 3,
+    "manuscript_version": "v47",
+    "source_file": "Figure_3.pdf",
+    "pdf": "figure-3.pdf",
+    "pdf_sha256": "b1622e093f496ac40d94d712cd55e19fe1cc8b64db951244032e4f831e1cc24e",
+    "svg": "figure-3.svg",
+    "svg_sha256": "0548063267c64e3a4c91ea83effe7913376acf2b66d3f41386f06829deee96ba",
+    "pages": 1,
+    "metadata": {
+      "/Producer": "pypdf"
+    }
+  },
+  {
+    "figure": 4,
+    "manuscript_version": "v47",
+    "source_file": "Figure_4.pdf",
+    "pdf": "figure-4.pdf",
+    "pdf_sha256": "7e17c36c92c619a76b6cb932412550f47381ac216ca25ceb774f1ad8412bb170",
+    "svg": "figure-4.svg",
+    "svg_sha256": "9de136437f61b7e22e5e4f3d9c68ae151b9b8caf181cd259f5324395b539073c",
+    "pages": 1,
+    "metadata": {
+      "/Producer": "pypdf"
+    }
+  },
+  {
+    "figure": 5,
+    "manuscript_version": "v47",
+    "source_file": "Figure_replication.pdf",
+    "pdf": "figure-5.pdf",
+    "pdf_sha256": "3fa477d4f73dc6618d32a9145a5a089879abeab59695de6df2760272734c0813",
+    "svg": "figure-5.svg",
+    "svg_sha256": "d529c2200b52c577a79a41763f1ba7f7b9c7d70d4f856d3db1f4f37909cd893d",
+    "pages": 1,
+    "metadata": {
+      "/Creator": "Matplotlib v3.10.3, https://matplotlib.org",
+      "/Producer": "Matplotlib pdf backend v3.10.3",
+      "/CreationDate": "D:20260929165159+08'00'"
+    }
+  },
+  {
+    "figure": 9,
+    "manuscript_version": "v47",
+    "source_file": "Figure_failure.pdf",
+    "pdf": "figure-9.pdf",
+    "pdf_sha256": "8ce86d4043cd4d908f11d220ca33c932f0bcc954f4e3ffac0c2d8faef0514ba0",
+    "svg": "figure-9.svg",
+    "svg_sha256": "1b0685cc9a9bf1697d86dcdd40ebb561671d183da0db3fa6c14410a1fa46d4bd",
+    "pages": 1,
+    "metadata": {
+      "/Creator": "Matplotlib v3.10.3, https://matplotlib.org",
+      "/Producer": "Matplotlib pdf backend v3.10.3",
+      "/CreationDate": "D:20260929162124+08'00'"
+    }
+  }
+]
