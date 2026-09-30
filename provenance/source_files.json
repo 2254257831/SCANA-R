@@ -105,39 +105,44 @@
     "modified": false
   },
   {
-    "source": "投稿/图表/SCANA_R_Figures1-4_OriginalPPT_v38_20260921/Figure1.png",
+    "source": "submission/figures/SCANA_R_Figures1-4_OriginalPPT_v38_20260921/Figure1.png",
     "destination": "docs/assets/figure1.png",
     "source_sha256": "ef504d583a5c4717d7c9e8d4773835ca185e8620a4a2b0aa0eae33f35df74870",
     "release_sha256": "ef504d583a5c4717d7c9e8d4773835ca185e8620a4a2b0aa0eae33f35df74870",
-    "modified": false
+    "modified": false,
+    "source_path_kind": "English provenance alias; original archive filename retained locally"
   },
   {
-    "source": "投稿/图表/SCANA_R_Figures1-4_OriginalPPT_v38_20260921/Figure2.png",
+    "source": "submission/figures/SCANA_R_Figures1-4_OriginalPPT_v38_20260921/Figure2.png",
     "destination": "docs/assets/figure2.png",
     "source_sha256": "dd8e51d91a1b59a98e8b21ebf7c2e0f68b1f61a2df6874d01ff8f8b51aae6436",
     "release_sha256": "dd8e51d91a1b59a98e8b21ebf7c2e0f68b1f61a2df6874d01ff8f8b51aae6436",
-    "modified": false
+    "modified": false,
+    "source_path_kind": "English provenance alias; original archive filename retained locally"
   },
   {
-    "source": "投稿/图表/SCANA_R_Figures1-4_OriginalPPT_v38_20260921/Figure3.png",
+    "source": "submission/figures/SCANA_R_Figures1-4_OriginalPPT_v38_20260921/Figure3.png",
     "destination": "docs/assets/figure3.png",
     "source_sha256": "eed244bfcb52ba17f2c66e28d32fb02978dea2e1fd15e7916697918f763eff74",
     "release_sha256": "eed244bfcb52ba17f2c66e28d32fb02978dea2e1fd15e7916697918f763eff74",
-    "modified": false
+    "modified": false,
+    "source_path_kind": "English provenance alias; original archive filename retained locally"
   },
   {
-    "source": "投稿/图表/SCANA_R_Figures1-4_OriginalPPT_v38_20260921/Figure4.png",
+    "source": "submission/figures/SCANA_R_Figures1-4_OriginalPPT_v38_20260921/Figure4.png",
     "destination": "docs/assets/figure4.png",
     "source_sha256": "ece8af5fa68c586c64f3f36e01186bcdc6441a1eca48ab55924a649125a1f925",
     "release_sha256": "ece8af5fa68c586c64f3f36e01186bcdc6441a1eca48ab55924a649125a1f925",
-    "modified": false
+    "modified": false,
+    "source_path_kind": "English provenance alias; original archive filename retained locally"
   },
   {
-    "source": "投稿/图表/SCANA_R_Figures1-4_OriginalPPT_v38_20260921/SCANA_R_四图_原PPT局部适配_TimesNewRoman_v38_20260921.pptx",
+    "source": "submission/figures/SCANA_R_Figures1-4_OriginalPPT_v38_20260921/scana-r-method-figures-v38.pptx",
     "destination": "figures/scana-r-method-figures.pptx",
     "source_sha256": "c7991a9a83a6ae0921c6f3fdf664c5ddcb6303c20a4a32d92a688551a8d597ee",
     "release_sha256": "c7991a9a83a6ae0921c6f3fdf664c5ddcb6303c20a4a32d92a688551a8d597ee",
-    "modified": false
+    "modified": false,
+    "source_path_kind": "English provenance alias; original archive filename retained locally"
   },
   {
     "source": "revision_work/full_repair_v35_20260918/simulation/act/constants.py",

@@ -1,17 +1,43 @@
-"""Create a downloadable source zip from tracked, non-generated inputs."""
+"""Build a local source ZIP from reviewed files, never from a recursive directory scan."""
 from pathlib import Path
+import argparse
+import json
 import zipfile
-ROOT=Path(__file__).resolve().parents[1]
-EXCLUDE={'.git','artifacts','outputs','build','dist','node_modules','__pycache__'}
-target=ROOT/'docs/assets/scana-r-source.zip'
-with zipfile.ZipFile(target,'w',compression=zipfile.ZIP_DEFLATED,compresslevel=9) as z:
-    for p in sorted(ROOT.rglob('*')):
-        rel=p.relative_to(ROOT)
-        if not p.is_file() or p==target or any(x in EXCLUDE or x.endswith('.egg-info') for x in rel.parts):continue
-        if p.suffix in {'.pyc','.log','.tmp'}:continue
-        # Manuscript files are excluded from public distribution.
-        # Figure PDFs are exported plots, not the manuscript.
-        web_figures={f'docs/assets/figures/figure-{n}.pdf' for n in [1,2,3,4,5,9]}
-        if p.suffix.lower() in {'.pdf','.docx'} and not (p.suffix.lower()=='.pdf' and (rel.parts[0]=='figures' or rel.as_posix() in web_figures)):continue
-        z.write(p,'SCANA-R/'+rel.as_posix())
-print(f'{target.name}: {target.stat().st_size:,} bytes')
+from release_files import INVENTORY, check_inventory, release_names
+
+ROOT = Path(__file__).resolve().parents[1]
+
+
+def package(root, target):
+    names = check_inventory(root)
+    if target.resolve() in {(root / n).resolve() for n in names}:
+        raise ValueError('The output must not overwrite a release input')
+    target.parent.mkdir(parents=True, exist_ok=True)
+    with zipfile.ZipFile(target, 'w', compression=zipfile.ZIP_DEFLATED, compresslevel=9) as archive:
+        for name in names:
+            info = zipfile.ZipInfo('SCANA-R/' + name, date_time=(2026, 1, 1, 0, 0, 0))
+            info.compress_type = zipfile.ZIP_DEFLATED
+            info.external_attr = 0o100644 << 16
+            archive.writestr(info, (root / name).read_bytes(), compresslevel=9)
+    return target
+
+
+def main():
+    ap = argparse.ArgumentParser(description=__doc__)
+    ap.add_argument('--refresh-inventory', action='store_true',
+                    help='After staging intended changes, record the reviewed Git file list')
+    ap.add_argument('--output', type=Path, default=ROOT / 'outputs/scana-r-source.zip')
+    args = ap.parse_args()
+    if args.refresh_inventory:
+        if not (ROOT / '.git').exists():
+            raise ValueError('Inventory updates require a Git checkout')
+        names = sorted(set(release_names(ROOT) + [INVENTORY]))
+        (ROOT / INVENTORY).write_text(json.dumps({'files': names}, indent=2) + '\n', encoding='utf-8')
+        print(f'Recorded {len(names)} source paths. Stage the updated inventory before packaging.')
+        return
+    target = package(ROOT, args.output)
+    print(f'{target.name}: {target.stat().st_size:,} bytes')
+
+
+if __name__ == '__main__':
+    main()

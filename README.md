@@ -2,9 +2,7 @@
 
 **SCANA-R: Action noise calibration and simulation recovery learning from successful demonstrations**
 
-成功示范驱动的动作噪声校准与仿真恢复学习
-
-[Project page](https://2254257831.github.io/SCANA-R/) · [Local preview](docs/index.html) · [中文说明](README.zh-CN.md) · [Protocol](docs/study-protocol.md) · [Evidence scope](docs/evidence.md) · [License](LICENSE)
+[Project page](https://2254257831.github.io/SCANA-R/) · [Local preview](docs/index.html) · [Protocol](docs/study-protocol.md) · [Evidence scope](docs/evidence.md) · [License](LICENSE)
 
 SCANA-R calibrates short action perturbations from out-of-episode policy errors,
 executes those perturbations in a resettable simulator, and trains on verified
@@ -37,7 +35,7 @@ The current manuscript maps method diagrams to Figures 1–4, independent librar
 
 See [rerun instructions](experiments/independent_libraries_v46/README.md),
 [recorded results](results/independent_libraries_v46), and the new figures on the
-[local project page](docs/index.html#independent-libraries). The studies below remain
+[current results](https://2254257831.github.io/SCANA-R/#results). The studies below remain
 historical evidence and are not pooled with this repetition.
 
 ## Earlier fixed-library MuJoCo extension
@@ -193,9 +191,12 @@ using GitHub Pages `main` / `docs`. Pages builds run when the publishing branch
 changes. See [release status](docs/release-checklist.md) for remaining materials.
 
 Optional maintenance: after changing documentation Markdown, run `npm install`
-and `npm run build:docs` to rebuild the included HTML pages. Regenerate the
-homepage's downloadable source package with `python scripts/package_source.py`.
-Neither command uploads anything. Node is not required to view the site or run
+and `npm run build:docs` to rebuild the included HTML pages. The source download links to the current GitHub branch archive; no duplicate ZIP is stored in Git.
+For a local export, run `python scripts/package_source.py` (writes `outputs/scana-r-source.zip`).
+After staging intended file additions or removals, refresh and stage `validation/source_inventory.json`
+with `python scripts/package_source.py --refresh-inventory`. The packager exports only this reviewed
+file list; it never includes untracked files, local environments or output directories.
+These maintenance commands do not upload anything. Node is not required to view the site or run
 the Python experiments.
 
 ## Reproducibility limits and provenance
@@ -208,8 +209,7 @@ libraries, but its intervals remain conditional on fixed source demonstrations. 
 same-acquisition-budget DART reproduction. The recovery-collection idea is
 related to [DART](https://berkeleyautomation.github.io/DART/).
 
-`provenance/source_files.json` maps every copied source to its original project
-path and hashes. Portable adapters change paths/imports and correct an inaccurate
+`provenance/source_files.json` maps copied inputs to original project paths (or explicitly marked English source aliases) and hashes. Portable adapters change paths/imports and correct an inaccurate
 cross-fit checkpoint comment; the core recovery functions are byte-identical.
 See [the migration note](docs/migration.md). This review version contains no
 author list or correspondence address. A publication venue, DOI, and formal

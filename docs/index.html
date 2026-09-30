@@ -38,7 +38,6 @@
     <h2>Abstract</h2>
     <p>Successful demonstrations sparsely cover the states encountered after a policy deviates from its reference trajectory. SCANA-R uses source-episode cross-fitting to estimate policy errors, samples short action perturbations from the same task and nearby phase, and executes them in simulation. The reference action sequence then resumes; a recovery branch is accepted only when its terminal state satisfies the task’s success criterion. Recovery supervision pairs newly observed states with actions that were actually executed.</p>
     <p>The current independent-library study adds 11,040 evaluations. SCANA-R reaches 89.7% transfer and 49.7% insertion success, compared with 81.7%/38.7% for Gaussian recovery. At the same total active CPU budget, Gaussian collection with longer policy training reaches 92.7%/54.7%. Six-task repeated-library macro success is 89.9% SCANA-R, 89.5% Gaussian, and 93.1% original repetition. Recovery collection helps the tested bimanual policies; calibration is not established as necessary or superior at matched compute. <a href="#independent-libraries">See library-level results and failure interventions.</a></p>
-    <details class="translation"><summary>中文概览</summary><p lang="zh-CN">新增11,040回合评价包含独立恢复库、完整CPU成本及失败机制干预。SCANA-R双臂成功率89.7%/49.7%，同成本高斯92.7%/54.7%；六项单臂宏平均89.9%，原数据重复93.1%。恢复采集对所测双臂策略有益，但没有确立误差校准的必要性或同成本优势。全部为状态输入仿真，新视频对应独立恢复库、同成本高斯和失败干预，固定最小编号选例，保留成功与失败。</p></details>
   </div></section>
 
   <section class="section wide-wrap" id="results">
@@ -109,7 +108,7 @@
     <p>Start by recomputing the reported statistics from the included evaluation records. Simulator replay and video rendering use the separate, hash-verified trajectory bundle.</p>
     <div class="code-block"><div><span>Python 3.10 · From the repository root</span><button type="button" class="copy" data-copy="quickstart">Copy</button></div><pre id="quickstart"><code>python -m pip install -r requirements-statistics.txt
 python scripts/reproduce.py</code></pre><span class="copy-status" role="status" aria-live="polite"></span></div>
-    <div class="resource-links"><a href="assets/scana-r-source.zip" download>Source package ↗</a><a href="study-protocol.html">Experiment protocol ↗</a><a href="reproduction.html">Data downloads and replay ↗</a></div>
+    <div class="resource-links"><a href="https://github.com/2254257831/SCANA-R/archive/refs/heads/main.zip" download>Source package ↗</a><a href="study-protocol.html">Experiment protocol ↗</a><a href="reproduction.html">Data downloads and replay ↗</a></div>
     <p class="small availability">Code: Apache-2.0; ACT simulator assets: MIT. Compact statistics are included in the repository. Four <a href="https://github.com/2254257831/SCANA-R/releases/tag/reproducibility-v1">hash-verified evidence archives</a> provide recorded trajectories, recovery attempts and checkpoints outside the Git tree. <a href="reproduction.html">Download and import instructions</a>. The manuscript PDF remains private.</p>
   </div></section>
 </main>

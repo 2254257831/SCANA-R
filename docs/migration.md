@@ -35,3 +35,5 @@ The historical `legacy/configs/scana_single_arm.json` uses repository-relative
 data and output paths; its original source hash is retained and its release hash
 is updated in the provenance inventory. Historical algorithm parameters and all
 current experiment scripts are unchanged.
+
+Figure-source paths in `provenance/source_files.json` use explicitly marked English aliases for local archive names. Source and release hashes are unchanged; the aliases are provenance identifiers, not downloadable filesystem paths.

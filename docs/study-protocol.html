@@ -1,7 +1,7 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Current study protocol · SCANA-R</title><link rel="stylesheet" href="assets/style.css"><style>main{max-width:1100px;margin:40px auto;padding:0 24px}main h1{font-size:36px;margin-bottom:26px}main table{font-size:16px;margin:25px 0}main h2{margin-top:35px}li{margin-bottom:10px}main pre{background:#f3f7f8}main code{overflow-wrap:anywhere}</style></head><body><header class="topbar"><a href="index.html" class="wordmark">SCANA-R</a><nav><a href="index.html#reproduce">Back to project</a></nav></header><main><h1>Current study protocol</h1>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Current study protocol · SCANA-R</title><link rel="stylesheet" href="assets/style.css"><style>main{max-width:1100px;margin:40px auto;padding:0 24px}main h1{font-size:36px;margin-bottom:26px}main table{font-size:16px;margin:25px 0}main h2{margin-top:35px}li{margin-bottom:10px}main pre{background:#f3f7f8}main code{overflow-wrap:anywhere}</style><script defer src="assets/site.js"></script></head><body><header class="topbar"><a href="index.html" class="wordmark">SCANA-R</a><nav><a href="index.html#reproduce">Back to project</a></nav></header><main><h1>Current study protocol</h1>
 <p>The current manuscript is <strong>SCANA-R: Action noise calibration and simulation recovery learning from successful demonstrations</strong> (v47). Its current evidence is the independent-library, cost and intervention study first archived under <code>v46</code>. The directory name records the experiment version; v47 did not run a different experiment.</p>
 <h2>Keep the three studies separate</h2>
-<table>
+<div class="table-scroll" role="region" aria-label="Scrollable data table" tabindex="0"><table>
 <thead>
 <tr>
 <th>Study</th>
@@ -40,7 +40,7 @@
 <td>ACT stress 5,600; Meta-World 6,000; fixed recovery libraries</td>
 <td>ACT 94000–94019; Meta-World 30000–30019</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p>The default <a href="index.html#results">results section</a> reports the first three rows (11,040 evaluations). The 92%/67% ACT result belongs to the earlier fixed-library study. Results are never pooled across these batches. An evaluation episode is not an independent policy fit.</p>
 <h2>Algorithm and observations</h2>
 <p>Source episodes are split before window extraction: 40 training and 10 development successes per task. Five auxiliary policies fit 32 source episodes each; the eight excluded episodes supply out-of-episode errors. Auxiliary checkpoint selection uses fitting-fold MSE; final policy selection uses clean development MSE. The original source demonstrations remain fixed in the library repetition.</p>
@@ -53,7 +53,7 @@
 <h2>Failure interventions</h2>
 <p>Nine deployment conditions separate current-observation noise by channel and change replanning cadence. In transfer, noise on the narrowly supported joint 0 is sufficient to cause the observed failure; removing that channel raises SCANA-R success to 65% in this diagnostic. A fixed temporal ensemble uses predictions from the latest 16 chunks, weighted by exp(−age/4). It restores much of the one-step-replanning loss and is a <strong>deployment variant</strong>, not an extra component of the collection algorithm. These findings are confined to the tested policies and perturbations; reduced mean action-step RMS does not support a generic command-jitter explanation.</p>
 <h2>Manuscript map and reproduction</h2>
-<table>
+<div class="table-scroll" role="region" aria-label="Scrollable data table" tabindex="0"><table>
 <thead>
 <tr>
 <th>Evidence</th>
@@ -80,6 +80,6 @@
 <td>Current failure interventions</td>
 <td>Figure 9</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p><a href="reproduction.html">Recompute statistics and download raw evidence</a> · <a href="current-videos.html">Current videos</a> · <a href="protocol.html">Earlier original ACT protocol</a> · <a href="mujoco-extension.html">Earlier extension protocol</a></p>
 </main><footer>SCANA-R · Release documentation</footer></body></html>
