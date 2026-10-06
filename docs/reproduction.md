@@ -1,5 +1,7 @@
 # Reproduce the reported evidence
 
+The latest **LIBERO-Spatial ten-task extension (2,400 test episodes)** is available in the [reviewer package, raw archives and protocol](libero-spatial.md). The older studies below are separate batches.
+
 ## Statistics from a fresh clone
 
 Only Python 3.10, NumPy and pandas are needed. No simulator, GPU, checkpoint download or original machine directory is required.
@@ -9,7 +11,7 @@ python -m pip install -r requirements-statistics.txt
 python scripts/reproduce.py
 ```
 
-The command first recomputes all **11,040 current-study** evaluation records, including library-level success rates, paired intervals, bank means, cost summaries and failure interventions. Nine generated tables are compared with the recorded analysis at 1e-12 tolerance. It then processes the earlier 3,200 ACT and 11,600 extension records. The 25,840 records remain separate studies; no combined success rate is calculated. CPU costs are reaggregated from recorded per-fit measurements, not measured by timing the statistics command.
+The command first checks **2,400 LIBERO-Spatial** episodes, then recomputes all **11,040 ACT/Meta-World study** evaluation records, including library-level success rates, paired intervals, bank means, cost summaries and failure interventions. Nine generated tables are compared with the recorded analysis at 1e-12 tolerance. It then processes the earlier 3,200 ACT and 11,600 extension records. The 28,240 records remain separate studies; no combined success rate is calculated. CPU costs are reaggregated from recorded per-fit measurements, not measured by timing the statistics command.
 
 For the current study alone:
 
@@ -17,7 +19,7 @@ For the current study alone:
 python scripts/reproduce.py --current-only
 ```
 
-Outputs go to `outputs/recomputed-current`, `outputs/recomputed` and `outputs/recomputed-extensions`. The checked-in evidence is never overwritten. CI runs this same default statistics command. This verifies analysis reproducibility; it does not claim fresh collection or policy training.
+Outputs go to `outputs/recomputed-libero`, `outputs/recomputed-current`, `outputs/recomputed` and `outputs/recomputed-extensions`. The checked-in evidence is never overwritten. CI runs this same default statistics command. This verifies analysis reproducibility; it does not claim fresh collection or policy training.
 
 ## Full trajectories and checkpoints
 
@@ -58,4 +60,4 @@ The renderer checks every pre-action state or clean current input and every rewa
 
 Fresh collection/training commands are in [the current experiment guide](https://github.com/2254257831/SCANA-R/tree/main/experiments/independent_libraries_v46). Use a fresh output directory and a new protocol for new scientific tests. Existing public test layouts are no longer unseen data for method development. Portable exported training scripts have not themselves been used for a complete independent repetition after export; replay and statistical checks are narrower guarantees.
 
-The current manuscript text predates this raw-evidence release. The availability change adds downloads; it changes no experiment, result or algorithm. The full manuscript remains private.
+The manuscript availability statement now includes the released simulation evidence. The availability change adds downloads; it changes no experiment, result or algorithm. The full manuscript remains private.

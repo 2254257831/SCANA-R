@@ -26,7 +26,7 @@ def main():
         with zipfile.ZipFile(args.archive) as archive:
             for name in archive.namelist():
                 if name.lower().endswith(('.pdf','.docx')):
-                    web_figures={f'SCANA-R/docs/assets/figures/figure-{n}.pdf' for n in [1,2,3,4,5,9]}
+                    web_figures={f'SCANA-R/docs/assets/figures/figure-{n}.pdf' for n in [1,2,3,4,5,9,10,11]}
                     assert name.lower().endswith('.pdf') and (name.startswith('SCANA-R/figures/') or name in web_figures),f'Unapproved manuscript in source download: {name}'
     pyfiles=[]
     for folder in ['src','scripts','experiments','tests','legacy']:
@@ -72,7 +72,7 @@ def main():
         assert hashlib.sha256(path.read_bytes()).hexdigest()==item.get('video_sha256',item.get('sha256'))
         if 'state_max_error' in item:assert item['state_max_error']==0 and item['rewards_identical']
     figures=json.loads((ROOT/'docs/assets/figures/manifest.json').read_text())
-    assert {f['figure'] for f in figures}=={1,2,3,4,5,9}
+    assert {f['figure'] for f in figures}=={1,2,3,4,5,9,10,11}
     for fig in figures:
         assert fig['pages']==1 and not fig['metadata'].get('/Author')
         for kind in ['pdf','svg']:assert hashlib.sha256((ROOT/'docs/assets/figures'/fig[kind]).read_bytes()).hexdigest()==fig[kind+'_sha256']
@@ -95,7 +95,7 @@ def main():
             assert target.is_relative_to(ROOT.resolve()) and target.exists(),f'Missing Markdown link {link} in {name}'
             if u.fragment and target in pages:assert unquote(u.fragment) in pages[target].ids,f'Missing anchor {link} in {name}'
             markdown_links+=1
-    info=dict(inventory_files=len(inventory),markdown_links_verified=markdown_links,python_files=len(pyfiles),html_pages=len(pages),local_links_verified=refs,provenance_files=len(rows),video_hashes_verified=len(media['clips'])+len(media['compositions']),current_video_hashes_verified=26,vector_figure_pairs_verified=6,static_checks_passed=True,browser_visual_qa='See separate release verification; static checks do not assert browser rendering.')
+    info=dict(inventory_files=len(inventory),markdown_links_verified=markdown_links,python_files=len(pyfiles),html_pages=len(pages),local_links_verified=refs,provenance_files=len(rows),video_hashes_verified=len(media['clips'])+len(media['compositions']),current_video_hashes_verified=26,vector_figure_pairs_verified=8,static_checks_passed=True,browser_visual_qa='See separate release verification; static checks do not assert browser rendering.')
     info.update(extension_video_hashes_verified=len(extension['clips']),frozen_extension_scripts_unchanged=True)
     print(json.dumps(info,indent=2))
     return info

@@ -1,0 +1,38 @@
+[
+  {
+    "library": "lib101_gaussian",
+    "verified_rows": 4555,
+    "assertions": "executed reference-tail actions, actual returned pre-action sensor observations, accepted terminal success",
+    "sensor_note": "robosuite sensors may sample before the last physics integration substep; not equated to raw final simulator qpos"
+  },
+  {
+    "library": "lib101_scana_r",
+    "verified_rows": 4527,
+    "assertions": "executed reference-tail actions, actual returned pre-action sensor observations, accepted terminal success",
+    "sensor_note": "robosuite sensors may sample before the last physics integration substep; not equated to raw final simulator qpos"
+  },
+  {
+    "library": "lib202_gaussian",
+    "verified_rows": 4535,
+    "assertions": "executed reference-tail actions, actual returned pre-action sensor observations, accepted terminal success",
+    "sensor_note": "robosuite sensors may sample before the last physics integration substep; not equated to raw final simulator qpos"
+  },
+  {
+    "library": "lib202_scana_r",
+    "verified_rows": 4531,
+    "assertions": "executed reference-tail actions, actual returned pre-action sensor observations, accepted terminal success",
+    "sensor_note": "robosuite sensors may sample before the last physics integration substep; not equated to raw final simulator qpos"
+  },
+  {
+    "library": "lib303_gaussian",
+    "verified_rows": 4535,
+    "assertions": "executed reference-tail actions, actual returned pre-action sensor observations, accepted terminal success",
+    "sensor_note": "robosuite sensors may sample before the last physics integration substep; not equated to raw final simulator qpos"
+  },
+  {
+    "library": "lib303_scana_r",
+    "verified_rows": 4527,
+    "assertions": "executed reference-tail actions, actual returned pre-action sensor observations, accepted terminal success",
+    "sensor_note": "robosuite sensors may sample before the last physics integration substep; not equated to raw final simulator qpos"
+  }
+]

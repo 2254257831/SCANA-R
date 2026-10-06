@@ -6,7 +6,7 @@ import subprocess
 INVENTORY = 'validation/source_inventory.json'
 EXCLUDED = {'.git', '.venv', 'venv', 'artifacts', 'outputs', 'build', 'dist',
             'node_modules', '__pycache__'}
-WEB_PDFS = {f'docs/assets/figures/figure-{n}.pdf' for n in (1, 2, 3, 4, 5, 9)}
+WEB_PDFS = {f'docs/assets/figures/figure-{n}.pdf' for n in (1, 2, 3, 4, 5, 9, 10, 11)}
 
 
 def validate_path(root, name):

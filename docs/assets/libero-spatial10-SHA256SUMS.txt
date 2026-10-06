@@ -1,0 +1,8 @@
+9eb5df5a51626b5d6934a2f7e0defddc2283a7a64895ef120af7dd049a59a6ff  SCANA-R-LIBERO-Spatial-review-v1.zip
+4e6e70b8610e0719d47955ca80ae4817e8f3fb8c0215b2ed2d7bcded19cae06a  SCANA-R-LIBERO-Spatial-evaluation-models-v1.zip
+f80b0f3bf383bb6a7eaac86c39360765ca7e7deebdeb77dd38301193b7d4551d  SCANA-R-LIBERO-Spatial-recovery-lib101-gaussian-v1.zip
+7f573a47d472d601fede93d969c2ddec6f3a5537039a28a3abe2dbdb820a9f5c  SCANA-R-LIBERO-Spatial-recovery-lib101-scana-r-v1.zip
+1ea8a30affda2699badf5c9958b091690818e78eb1a1e19e4b6678b7758e31e1  SCANA-R-LIBERO-Spatial-recovery-lib202-gaussian-v1.zip
+25fa8a2c71383747011e572248a824b95d112a6bbf3a9118e1c64b09c68de27e  SCANA-R-LIBERO-Spatial-recovery-lib202-scana-r-v1.zip
+00bdfba8ec905c258dde522e945ae952d1511e3ff1a181852b283e6fb930541e  SCANA-R-LIBERO-Spatial-recovery-lib303-gaussian-v1.zip
+a65c5c09e8e8230788fd3680a7527127557cb4ea4fabc13336dde7bd7c7570fa  SCANA-R-LIBERO-Spatial-recovery-lib303-scana-r-v1.zip

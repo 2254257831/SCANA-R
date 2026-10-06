@@ -1,0 +1,5 @@
+method,name,successes,episodes,mean,sd,repeat1,repeat2,repeat3
+clean_repeat,Clean repeat,458,600,76.33333333333333,4.163331998932265,75.0,81.0,73.0
+gaussian_recovery,Gaussian recovery,424,600,70.66666666666667,4.536885862938733,66.5,75.5,70.0
+scana_r,SCANA-R,434,600,72.33333333333333,4.481443219916251,70.0,77.5,69.5
+gaussian_same_total_cost,"Gaussian, total cost",422,600,70.33333333333333,3.547299442298794,66.5,71.0,73.5

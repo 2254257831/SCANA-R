@@ -1,0 +1,137 @@
+{
+  "commit": "f13aa24a3da8c43c7225569f28c562979fa0e35a",
+  "task_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "files": [
+    {
+      "type": "file",
+      "oid": "14a6c94a96c2daad4348295c06e228608a236fdb",
+      "size": 508779600,
+      "lfs": {
+        "oid": "ff6f26121653c77280eb40a38773a74141c11a8509f3466058cb56dd2cc60ead",
+        "size": 508779600,
+        "pointerSize": 134
+      },
+      "xetHash": "948534695d76384cb1c135644e760fbf509fabc065b34a7bbe0176a2d5e5add1",
+      "path": "libero_spatial/pick_up_the_black_bowl_between_the_plate_and_the_ramekin_and_place_it_on_the_plate_demo.hdf5"
+    },
+    {
+      "type": "file",
+      "oid": "6fb94eb44f649aacf4dad2e0ee3734404684ec70",
+      "size": 589630943,
+      "lfs": {
+        "oid": "75ede0cf5fbfc925093671b55032ad80f1b1f1cf35442ec6c663460d37d3e0b3",
+        "size": 589630943,
+        "pointerSize": 134
+      },
+      "xetHash": "4747428065db39255db43b500f4c1470b16d1f7f180592b5e5b2f396f1530ede",
+      "path": "libero_spatial/pick_up_the_black_bowl_from_table_center_and_place_it_on_the_plate_demo.hdf5"
+    },
+    {
+      "type": "file",
+      "oid": "ce6d89257f7ea3a0c4df8a2b1f262f03ae1f62cd",
+      "size": 748271833,
+      "lfs": {
+        "oid": "7ff1ee60447875c152d8c7819f499d23dbc0eb4d4bf045225d5d87a2cdad99bd",
+        "size": 748271833,
+        "pointerSize": 134
+      },
+      "xetHash": "28882ec5294c80eca94089a5afd300de68cf68480b813852712d27b9e70dcd71",
+      "path": "libero_spatial/pick_up_the_black_bowl_in_the_top_drawer_of_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5"
+    },
+    {
+      "type": "file",
+      "oid": "f63a2431b62bcf3477dc23c6d7f256b924d055a6",
+      "size": 632345992,
+      "lfs": {
+        "oid": "9d0b5435b313a8c0d7336b429b5f0f578be6f2a9f5f8a6dd67459ef388f3c74c",
+        "size": 632345992,
+        "pointerSize": 134
+      },
+      "xetHash": "27d9a2dcdc3ae93d5c051ba1e05ef30106832eaa0395c67324fa1ed4c8860ca2",
+      "path": "libero_spatial/pick_up_the_black_bowl_next_to_the_cookie_box_and_place_it_on_the_plate_demo.hdf5"
+    },
+    {
+      "type": "file",
+      "oid": "6055f8241b3274ebf863703eb9a5b06d26b36ad8",
+      "size": 597677074,
+      "lfs": {
+        "oid": "3961cb7126eaca47d0f5be29eb297bb62e7591e3c86172c9587c0bf670112f84",
+        "size": 597677074,
+        "pointerSize": 134
+      },
+      "xetHash": "fc875f3a5b6e3305f51e0e6c1c25f046cd02d51fdbff10832d4734faef3f1550",
+      "path": "libero_spatial/pick_up_the_black_bowl_next_to_the_plate_and_place_it_on_the_plate_demo.hdf5"
+    },
+    {
+      "type": "file",
+      "oid": "29ebcae5902994d4c7b671cd6dbeceba299e940b",
+      "size": 671583385,
+      "lfs": {
+        "oid": "bf1090dd4826eacb49eb052f17d04798e2a1eb2f74f8d024bc3b9c5d234c25f9",
+        "size": 671583385,
+        "pointerSize": 134
+      },
+      "xetHash": "4150fe7e57b46e5069511a9f24568f898874c7fbbd381724291ebca117c56165",
+      "path": "libero_spatial/pick_up_the_black_bowl_next_to_the_ramekin_and_place_it_on_the_plate_demo.hdf5"
+    },
+    {
+      "type": "file",
+      "oid": "3ab1cc109894c72246818115acea959a4ece1971",
+      "size": 507189857,
+      "lfs": {
+        "oid": "0c053db7317e584632549bddb963bee8a237661b4bd29f0581a245f715e8eb72",
+        "size": 507189857,
+        "pointerSize": 134
+      },
+      "xetHash": "47fb7bfebb5e6532675179b0120830cea60647a54fa060556ab322393fdae56b",
+      "path": "libero_spatial/pick_up_the_black_bowl_on_the_cookie_box_and_place_it_on_the_plate_demo.hdf5"
+    },
+    {
+      "type": "file",
+      "oid": "ea346c93912784efbf215d21b7b78ad1ac87d14b",
+      "size": 581087722,
+      "lfs": {
+        "oid": "d9b2da7399a88bea39024c8ef97713a20734e9b765e14b3399e2755890c828b7",
+        "size": 581087722,
+        "pointerSize": 134
+      },
+      "xetHash": "21b27b2a8650be6b049d93136037739ec141f5231175710f18d5371c6b901ccd",
+      "path": "libero_spatial/pick_up_the_black_bowl_on_the_ramekin_and_place_it_on_the_plate_demo.hdf5"
+    },
+    {
+      "type": "file",
+      "oid": "0d784868236b3c17783ab771bfbd877a79fc4e56",
+      "size": 711715594,
+      "lfs": {
+        "oid": "1fcb3990cf9fd6185f56531cc9f6dec0a77a59bfa0c7f39dff95b7e43cf6aeaa",
+        "size": 711715594,
+        "pointerSize": 134
+      },
+      "xetHash": "70e2801699a029cc8c6758ab01a0135ffbac1d506c5ec87c711dad0793c4d43b",
+      "path": "libero_spatial/pick_up_the_black_bowl_on_the_stove_and_place_it_on_the_plate_demo.hdf5"
+    },
+    {
+      "type": "file",
+      "oid": "f5b00ed5bef1ccea5057440c5444b079acb401ce",
+      "size": 688768764,
+      "lfs": {
+        "oid": "4d503d447028f437211880bea4ee1a7f6732113ea8560181fcca163251864794",
+        "size": 688768764,
+        "pointerSize": 134
+      },
+      "xetHash": "73cc3caae6a409a04233c61a44cc31ca24a57687ceb51ea4ea037303fd123a08",
+      "path": "libero_spatial/pick_up_the_black_bowl_on_the_wooden_cabinet_and_place_it_on_the_plate_demo.hdf5"
+    }
+  ]
+}

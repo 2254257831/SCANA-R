@@ -1,0 +1,4 @@
+library_seed,clean_repeat,gaussian_recovery,scana_r,gaussian_same_total_cost
+101,0.75,0.665,0.7,0.665
+202,0.81,0.755,0.775,0.71
+303,0.73,0.7,0.695,0.735

@@ -1,0 +1,18 @@
+{
+  "pilot": ".\\revision_work\\libero_local_v1_20261002",
+  "pilot_protocol_sha256": "c3b984504fe5a6edd9175643008270b8e38b14787981521bd021aae2aee22dcb",
+  "reused": "read-only official source and existing Python environment; copy of three verified datasets",
+  "not_reused": "models, recovery libraries, test outcomes, token vocabulary or source caches",
+  "source_hashes": {
+    "runtime.py": "3c784c2ab56f958189bea8d45bda963dc99e5d89ba03616ce77080c3da8c33dc",
+    "learner.py": "9fb1cdbea5bcb3eeeaec5740ba9dcc8f4fa38c891e5cc3b0b3fdfa5dee6f5dbb",
+    "calibrate.py": "1c2be13bbf98505ad7777892d9056e789856cdc56e7d61e5f3aa0eadea908f0e",
+    "collect_recovery.py": "8024e1b099b73cd344ff626fbb0b5458f209b7d5db00ca8136f8d875f3ec407f",
+    "recovery_probe.py": "fbdfa1a0eb5c10c0b233d89fc285f4f285732ffd6a27fb7c04237a8f04495dea",
+    "preflight.py": "240676d12a226cb8d5cbd2617b8d52d4614f1c2aaefefa0283da4adce127ceb3",
+    "prepare_policy_data.py": "e94efedc1f6944c4071fe1a1ec8a0ee046484a5e17c3c0b1d5992fa7d5e05082",
+    "verify_observations.py": "1ba5b74a3029940cff9d458dcd27a7a92d1b3a0f471c0c58d330d9f59f52d9b2",
+    "audit_completed.py": "d2318697f101615ccaf5c094dd3ca49bc4301b6f7f34e0be30ad24624c43239e",
+    "download_data.py": "3ff909cc9e9a79da3290ab5efa9664fabd93750df1efbcf0d53aaec68786e3fb"
+  }
+}

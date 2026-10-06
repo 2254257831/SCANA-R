@@ -1,0 +1,8 @@
+{
+  "SCANA_collection_seconds": 6496.072960999998,
+  "Gaussian_collection_seconds": 6887.226094199999,
+  "calibration_seconds": 660.1767552000001,
+  "SCANA_training_seconds": 744.9117500000029,
+  "Gaussian_training_budget_seconds": 1013.9353720000017,
+  "cost_unit": "serial active wall seconds; excludes common setup and evaluation; not GPU-seconds or energy"
+}

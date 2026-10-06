@@ -137,11 +137,11 @@
     "source_path_kind": "English provenance alias; original archive filename retained locally"
   },
   {
-    "source": "submission/figures/SCANA_R_Figures1-4_OriginalPPT_v38_20260921/scana-r-method-figures-v38.pptx",
+    "source": "submission/figures/method-figures-v55.pptx",
     "destination": "figures/scana-r-method-figures.pptx",
-    "source_sha256": "c7991a9a83a6ae0921c6f3fdf664c5ddcb6303c20a4a32d92a688551a8d597ee",
-    "release_sha256": "c7991a9a83a6ae0921c6f3fdf664c5ddcb6303c20a4a32d92a688551a8d597ee",
-    "modified": false,
+    "source_sha256": "3160fc034db9613b85ea342cf0f0d308dcd95bc1a86f864d32e7b9553c087956",
+    "release_sha256": "43b264309315ac4a37600a2a9006c6f79b523511d3b0cee023c7f531be2cb411",
+    "modified": true,
     "source_path_kind": "English provenance alias; original archive filename retained locally"
   },
   {

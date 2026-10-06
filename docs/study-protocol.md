@@ -1,6 +1,6 @@
 # Current study protocol
 
-The current manuscript is **SCANA-R: Action noise calibration and simulation recovery learning from successful demonstrations** (v47). Its current evidence is the independent-library, cost and intervention study first archived under `v46`. The directory name records the experiment version; v47 did not run a different experiment.
+The manuscript now also includes the [LIBERO-Spatial ten-task protocol and reviewer access](libero-spatial.md). The details below describe the independent-library ACT/Meta-World and intervention study archived under `v46`. These batches remain separate from the 2,400 Spatial episodes.
 
 ## Keep the three studies separate
 

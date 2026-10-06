@@ -1,0 +1,71 @@
+{
+  "completed_at": "2026-10-04 12:37:30",
+  "all_twelve_initial_fields_exact": true,
+  "first_rgb_pixels_saved": true,
+  "original_reference_rgb_reproduced": true,
+  "checked": [
+    {
+      "model": "clean_repeat_lib101_seed7",
+      "initial_rgb_sha256": "c7d347dd73d9574f20145d67d2ccef028701612a2ac46f04a803b62fc0dfd4f7",
+      "trace_sha256": "a5ac96b255a560d60031d642f2c2f49f8db94ff25887f994a808093bf0ae0d78"
+    },
+    {
+      "model": "gaussian_recovery_lib101_seed7",
+      "initial_rgb_sha256": "c7d347dd73d9574f20145d67d2ccef028701612a2ac46f04a803b62fc0dfd4f7",
+      "trace_sha256": "8c711457ba8f0889b02d1c5ea5b4f26fb5986958ad26b801fec62791b837b0b2"
+    },
+    {
+      "model": "scana_r_lib101_seed7",
+      "initial_rgb_sha256": "c7d347dd73d9574f20145d67d2ccef028701612a2ac46f04a803b62fc0dfd4f7",
+      "trace_sha256": "f6a3a64b9c3cae499e16a0b30e853dfa8e12eb12ca1d1ac910ba1848548cc23e"
+    },
+    {
+      "model": "gaussian_same_total_cost_lib101_seed7",
+      "initial_rgb_sha256": "c7d347dd73d9574f20145d67d2ccef028701612a2ac46f04a803b62fc0dfd4f7",
+      "trace_sha256": "ca2ddb683ecb50a34384f54c19b34d7aad15398e3b059168dece5ed30a6920c6"
+    },
+    {
+      "model": "clean_repeat_lib202_seed11",
+      "initial_rgb_sha256": "c7d347dd73d9574f20145d67d2ccef028701612a2ac46f04a803b62fc0dfd4f7",
+      "trace_sha256": "756fdff7d59d97c8fe732467ff89409a05c86e4be503770bc3a2f92a0d3e0a4e"
+    },
+    {
+      "model": "gaussian_recovery_lib202_seed11",
+      "initial_rgb_sha256": "c7d347dd73d9574f20145d67d2ccef028701612a2ac46f04a803b62fc0dfd4f7",
+      "trace_sha256": "8127928f2ce5fc4f8ba5975a2a710cf55360d7e78a217c7671a2611c95527e61"
+    },
+    {
+      "model": "scana_r_lib202_seed11",
+      "initial_rgb_sha256": "c7d347dd73d9574f20145d67d2ccef028701612a2ac46f04a803b62fc0dfd4f7",
+      "trace_sha256": "ac9f8aa56a0ca4b97ba38ea506547e5ccf502bcc7794099240205c2dd65e0b7b"
+    },
+    {
+      "model": "gaussian_same_total_cost_lib202_seed11",
+      "initial_rgb_sha256": "c7d347dd73d9574f20145d67d2ccef028701612a2ac46f04a803b62fc0dfd4f7",
+      "trace_sha256": "eec7b74fa28454bcff95ea066f38eb94e0e1fc3259e5c07ee04013025c02fceb"
+    },
+    {
+      "model": "clean_repeat_lib303_seed23",
+      "initial_rgb_sha256": "c7d347dd73d9574f20145d67d2ccef028701612a2ac46f04a803b62fc0dfd4f7",
+      "trace_sha256": "34abc034bd46ebe30d686bc674e19aa9d71b7df411590e38627ae0216500ae7b"
+    },
+    {
+      "model": "gaussian_recovery_lib303_seed23",
+      "initial_rgb_sha256": "c7d347dd73d9574f20145d67d2ccef028701612a2ac46f04a803b62fc0dfd4f7",
+      "trace_sha256": "b16bd33c427a29e3a4e3c5df0c8537e6ff36a0c49923c772e8611dfddbc94f37"
+    },
+    {
+      "model": "scana_r_lib303_seed23",
+      "initial_rgb_sha256": "c7d347dd73d9574f20145d67d2ccef028701612a2ac46f04a803b62fc0dfd4f7",
+      "trace_sha256": "95d78edd47dd706392a6e2e0145ceb99e51ef736968049b7f3cb2ba72954b11a"
+    },
+    {
+      "model": "gaussian_same_total_cost_lib303_seed23",
+      "initial_rgb_sha256": "c7d347dd73d9574f20145d67d2ccef028701612a2ac46f04a803b62fc0dfd4f7",
+      "trace_sha256": "60f808255f38682892f10092001638b698221244a2049b66ceaaef4f22e91d37"
+    }
+  ],
+  "adopted_into_formal_records": true,
+  "rule": "All twelve once; no outcome-based selection.",
+  "adopted_at": "2026-10-04 12:38:54"
+}

@@ -1,0 +1,1202 @@
+[
+  {
+    "library_seed": 101,
+    "policy_seed": 7,
+    "task": 0,
+    "method": "clean_repeat",
+    "init_state": 0,
+    "success": true,
+    "steps": 78,
+    "video": "evaluation/clean_repeat_lib101_seed7/test_task0_init0.mp4"
+  },
+  {
+    "library_seed": 101,
+    "policy_seed": 7,
+    "task": 0,
+    "method": "gaussian_recovery",
+    "init_state": 0,
+    "success": true,
+    "steps": 81,
+    "video": "evaluation/gaussian_recovery_lib101_seed7/test_task0_init0.mp4"
+  },
+  {
+    "library_seed": 101,
+    "policy_seed": 7,
+    "task": 0,
+    "method": "scana_r",
+    "init_state": 0,
+    "success": true,
+    "steps": 75,
+    "video": "evaluation/scana_r_lib101_seed7/test_task0_init0.mp4"
+  },
+  {
+    "library_seed": 101,
+    "policy_seed": 7,
+    "task": 0,
+    "method": "gaussian_same_total_cost",
+    "init_state": 0,
+    "success": true,
+    "steps": 84,
+    "video": "evaluation/gaussian_same_total_cost_lib101_seed7/test_task0_init0.mp4"
+  },
+  {
+    "library_seed": 101,
+    "policy_seed": 7,
+    "task": 1,
+    "method": "clean_repeat",
+    "init_state": 0,
+    "success": false,
+    "steps": 600,
+    "video": "evaluation/clean_repeat_lib101_seed7/test_task1_init0.mp4"
+  },
+  {
+    "library_seed": 101,
+    "policy_seed": 7,
+    "task": 1,
+    "method": "gaussian_recovery",
+    "init_state": 0,
+    "success": true,
+    "steps": 125,
+    "video": "evaluation/gaussian_recovery_lib101_seed7/test_task1_init0.mp4"
+  },
+  {
+    "library_seed": 101,
+    "policy_seed": 7,
+    "task": 1,
+    "method": "scana_r",
+    "init_state": 0,
+    "success": true,
+    "steps": 131,
+    "video": "evaluation/scana_r_lib101_seed7/test_task1_init0.mp4"
+  },
+  {
+    "library_seed": 101,
+    "policy_seed": 7,
+    "task": 1,
+    "method": "gaussian_same_total_cost",
+    "init_state": 0,
+    "success": true,
+    "steps": 116,
+    "video": "evaluation/gaussian_same_total_cost_lib101_seed7/test_task1_init0.mp4"
+  },
+  {
+    "library_seed": 101,
+    "policy_seed": 7,
+    "task": 2,
+    "method": "clean_repeat",
+    "init_state": 0,
+    "success": true,
+    "steps": 93,
+    "video": "evaluation/clean_repeat_lib101_seed7/test_task2_init0.mp4"
+  },
+  {
+    "library_seed": 101,
+    "policy_seed": 7,
+    "task": 2,
+    "method": "gaussian_recovery",
+    "init_state": 0,
+    "success": false,
+    "steps": 600,
+    "video": "evaluation/gaussian_recovery_lib101_seed7/test_task2_init0.mp4"
+  },
+  {
+    "library_seed": 101,
+    "policy_seed": 7,
+    "task": 2,
+    "method": "scana_r",
+    "init_state": 0,
+    "success": true,
+    "steps": 117,
+    "video": "evaluation/scana_r_lib101_seed7/test_task2_init0.mp4"
+  },
+  {
+    "library_seed": 101,
+    "policy_seed": 7,
+    "task": 2,
+    "method": "gaussian_same_total_cost",
+    "init_state": 0,
+    "success": true,
+    "steps": 189,
+    "video": "evaluation/gaussian_same_total_cost_lib101_seed7/test_task2_init0.mp4"
+  },
+  {
+    "library_seed": 101,
+    "policy_seed": 7,
+    "task": 3,
+    "method": "clean_repeat",
+    "init_state": 0,
+    "success": true,
+    "steps": 87,
+    "video": "evaluation/clean_repeat_lib101_seed7/test_task3_init0.mp4"
+  },
+  {
+    "library_seed": 101,
+    "policy_seed": 7,
+    "task": 3,
+    "method": "gaussian_recovery",
+    "init_state": 0,
+    "success": true,
+    "steps": 86,
+    "video": "evaluation/gaussian_recovery_lib101_seed7/test_task3_init0.mp4"
+  },
+  {
+    "library_seed": 101,
+    "policy_seed": 7,
+    "task": 3,
+    "method": "scana_r",
+    "init_state": 0,
+    "success": true,
+    "steps": 90,
+    "video": "evaluation/scana_r_lib101_seed7/test_task3_init0.mp4"
+  },
+  {
+    "library_seed": 101,
+    "policy_seed": 7,
+    "task": 3,
+    "method": "gaussian_same_total_cost",
+    "init_state": 0,
+    "success": true,
+    "steps": 89,
+    "video": "evaluation/gaussian_same_total_cost_lib101_seed7/test_task3_init0.mp4"
+  },
+  {
+    "library_seed": 101,
+    "policy_seed": 7,
+    "task": 4,
+    "method": "clean_repeat",
+    "init_state": 0,
+    "success": false,
+    "steps": 600,
+    "video": "evaluation/clean_repeat_lib101_seed7/test_task4_init0.mp4"
+  },
+  {
+    "library_seed": 101,
+    "policy_seed": 7,
+    "task": 4,
+    "method": "gaussian_recovery",
+    "init_state": 0,
+    "success": true,
+    "steps": 130,
+    "video": "evaluation/gaussian_recovery_lib101_seed7/test_task4_init0.mp4"
+  },
+  {
+    "library_seed": 101,
+    "policy_seed": 7,
+    "task": 4,
+    "method": "scana_r",
+    "init_state": 0,
+    "success": true,
+    "steps": 133,
+    "video": "evaluation/scana_r_lib101_seed7/test_task4_init0.mp4"
+  },
+  {
+    "library_seed": 101,
+    "policy_seed": 7,
+    "task": 4,
+    "method": "gaussian_same_total_cost",
+    "init_state": 0,
+    "success": true,
+    "steps": 125,
+    "video": "evaluation/gaussian_same_total_cost_lib101_seed7/test_task4_init0.mp4"
+  },
+  {
+    "library_seed": 101,
+    "policy_seed": 7,
+    "task": 5,
+    "method": "clean_repeat",
+    "init_state": 0,
+    "success": true,
+    "steps": 98,
+    "video": "evaluation/clean_repeat_lib101_seed7/test_task5_init0.mp4"
+  },
+  {
+    "library_seed": 101,
+    "policy_seed": 7,
+    "task": 5,
+    "method": "gaussian_recovery",
+    "init_state": 0,
+    "success": true,
+    "steps": 91,
+    "video": "evaluation/gaussian_recovery_lib101_seed7/test_task5_init0.mp4"
+  },
+  {
+    "library_seed": 101,
+    "policy_seed": 7,
+    "task": 5,
+    "method": "scana_r",
+    "init_state": 0,
+    "success": true,
+    "steps": 95,
+    "video": "evaluation/scana_r_lib101_seed7/test_task5_init0.mp4"
+  },
+  {
+    "library_seed": 101,
+    "policy_seed": 7,
+    "task": 5,
+    "method": "gaussian_same_total_cost",
+    "init_state": 0,
+    "success": true,
+    "steps": 97,
+    "video": "evaluation/gaussian_same_total_cost_lib101_seed7/test_task5_init0.mp4"
+  },
+  {
+    "library_seed": 101,
+    "policy_seed": 7,
+    "task": 6,
+    "method": "clean_repeat",
+    "init_state": 0,
+    "success": true,
+    "steps": 108,
+    "video": "evaluation/clean_repeat_lib101_seed7/test_task6_init0.mp4"
+  },
+  {
+    "library_seed": 101,
+    "policy_seed": 7,
+    "task": 6,
+    "method": "gaussian_recovery",
+    "init_state": 0,
+    "success": true,
+    "steps": 109,
+    "video": "evaluation/gaussian_recovery_lib101_seed7/test_task6_init0.mp4"
+  },
+  {
+    "library_seed": 101,
+    "policy_seed": 7,
+    "task": 6,
+    "method": "scana_r",
+    "init_state": 0,
+    "success": true,
+    "steps": 120,
+    "video": "evaluation/scana_r_lib101_seed7/test_task6_init0.mp4"
+  },
+  {
+    "library_seed": 101,
+    "policy_seed": 7,
+    "task": 6,
+    "method": "gaussian_same_total_cost",
+    "init_state": 0,
+    "success": true,
+    "steps": 108,
+    "video": "evaluation/gaussian_same_total_cost_lib101_seed7/test_task6_init0.mp4"
+  },
+  {
+    "library_seed": 101,
+    "policy_seed": 7,
+    "task": 7,
+    "method": "clean_repeat",
+    "init_state": 0,
+    "success": true,
+    "steps": 117,
+    "video": "evaluation/clean_repeat_lib101_seed7/test_task7_init0.mp4"
+  },
+  {
+    "library_seed": 101,
+    "policy_seed": 7,
+    "task": 7,
+    "method": "gaussian_recovery",
+    "init_state": 0,
+    "success": false,
+    "steps": 600,
+    "video": "evaluation/gaussian_recovery_lib101_seed7/test_task7_init0.mp4"
+  },
+  {
+    "library_seed": 101,
+    "policy_seed": 7,
+    "task": 7,
+    "method": "scana_r",
+    "init_state": 0,
+    "success": true,
+    "steps": 126,
+    "video": "evaluation/scana_r_lib101_seed7/test_task7_init0.mp4"
+  },
+  {
+    "library_seed": 101,
+    "policy_seed": 7,
+    "task": 7,
+    "method": "gaussian_same_total_cost",
+    "init_state": 0,
+    "success": false,
+    "steps": 600,
+    "video": "evaluation/gaussian_same_total_cost_lib101_seed7/test_task7_init0.mp4"
+  },
+  {
+    "library_seed": 101,
+    "policy_seed": 7,
+    "task": 8,
+    "method": "clean_repeat",
+    "init_state": 0,
+    "success": true,
+    "steps": 219,
+    "video": "evaluation/clean_repeat_lib101_seed7/test_task8_init0.mp4"
+  },
+  {
+    "library_seed": 101,
+    "policy_seed": 7,
+    "task": 8,
+    "method": "gaussian_recovery",
+    "init_state": 0,
+    "success": true,
+    "steps": 95,
+    "video": "evaluation/gaussian_recovery_lib101_seed7/test_task8_init0.mp4"
+  },
+  {
+    "library_seed": 101,
+    "policy_seed": 7,
+    "task": 8,
+    "method": "scana_r",
+    "init_state": 0,
+    "success": true,
+    "steps": 106,
+    "video": "evaluation/scana_r_lib101_seed7/test_task8_init0.mp4"
+  },
+  {
+    "library_seed": 101,
+    "policy_seed": 7,
+    "task": 8,
+    "method": "gaussian_same_total_cost",
+    "init_state": 0,
+    "success": true,
+    "steps": 99,
+    "video": "evaluation/gaussian_same_total_cost_lib101_seed7/test_task8_init0.mp4"
+  },
+  {
+    "library_seed": 101,
+    "policy_seed": 7,
+    "task": 9,
+    "method": "clean_repeat",
+    "init_state": 0,
+    "success": true,
+    "steps": 116,
+    "video": "evaluation/clean_repeat_lib101_seed7/test_task9_init0.mp4"
+  },
+  {
+    "library_seed": 101,
+    "policy_seed": 7,
+    "task": 9,
+    "method": "gaussian_recovery",
+    "init_state": 0,
+    "success": true,
+    "steps": 114,
+    "video": "evaluation/gaussian_recovery_lib101_seed7/test_task9_init0.mp4"
+  },
+  {
+    "library_seed": 101,
+    "policy_seed": 7,
+    "task": 9,
+    "method": "scana_r",
+    "init_state": 0,
+    "success": true,
+    "steps": 114,
+    "video": "evaluation/scana_r_lib101_seed7/test_task9_init0.mp4"
+  },
+  {
+    "library_seed": 101,
+    "policy_seed": 7,
+    "task": 9,
+    "method": "gaussian_same_total_cost",
+    "init_state": 0,
+    "success": true,
+    "steps": 124,
+    "video": "evaluation/gaussian_same_total_cost_lib101_seed7/test_task9_init0.mp4"
+  },
+  {
+    "library_seed": 202,
+    "policy_seed": 11,
+    "task": 0,
+    "method": "clean_repeat",
+    "init_state": 0,
+    "success": true,
+    "steps": 77,
+    "video": "evaluation/clean_repeat_lib202_seed11/test_task0_init0.mp4"
+  },
+  {
+    "library_seed": 202,
+    "policy_seed": 11,
+    "task": 0,
+    "method": "gaussian_recovery",
+    "init_state": 0,
+    "success": true,
+    "steps": 70,
+    "video": "evaluation/gaussian_recovery_lib202_seed11/test_task0_init0.mp4"
+  },
+  {
+    "library_seed": 202,
+    "policy_seed": 11,
+    "task": 0,
+    "method": "scana_r",
+    "init_state": 0,
+    "success": true,
+    "steps": 80,
+    "video": "evaluation/scana_r_lib202_seed11/test_task0_init0.mp4"
+  },
+  {
+    "library_seed": 202,
+    "policy_seed": 11,
+    "task": 0,
+    "method": "gaussian_same_total_cost",
+    "init_state": 0,
+    "success": true,
+    "steps": 71,
+    "video": "evaluation/gaussian_same_total_cost_lib202_seed11/test_task0_init0.mp4"
+  },
+  {
+    "library_seed": 202,
+    "policy_seed": 11,
+    "task": 1,
+    "method": "clean_repeat",
+    "init_state": 0,
+    "success": true,
+    "steps": 114,
+    "video": "evaluation/clean_repeat_lib202_seed11/test_task1_init0.mp4"
+  },
+  {
+    "library_seed": 202,
+    "policy_seed": 11,
+    "task": 1,
+    "method": "gaussian_recovery",
+    "init_state": 0,
+    "success": true,
+    "steps": 125,
+    "video": "evaluation/gaussian_recovery_lib202_seed11/test_task1_init0.mp4"
+  },
+  {
+    "library_seed": 202,
+    "policy_seed": 11,
+    "task": 1,
+    "method": "scana_r",
+    "init_state": 0,
+    "success": true,
+    "steps": 128,
+    "video": "evaluation/scana_r_lib202_seed11/test_task1_init0.mp4"
+  },
+  {
+    "library_seed": 202,
+    "policy_seed": 11,
+    "task": 1,
+    "method": "gaussian_same_total_cost",
+    "init_state": 0,
+    "success": true,
+    "steps": 120,
+    "video": "evaluation/gaussian_same_total_cost_lib202_seed11/test_task1_init0.mp4"
+  },
+  {
+    "library_seed": 202,
+    "policy_seed": 11,
+    "task": 2,
+    "method": "clean_repeat",
+    "init_state": 0,
+    "success": true,
+    "steps": 106,
+    "video": "evaluation/clean_repeat_lib202_seed11/test_task2_init0.mp4"
+  },
+  {
+    "library_seed": 202,
+    "policy_seed": 11,
+    "task": 2,
+    "method": "gaussian_recovery",
+    "init_state": 0,
+    "success": true,
+    "steps": 109,
+    "video": "evaluation/gaussian_recovery_lib202_seed11/test_task2_init0.mp4"
+  },
+  {
+    "library_seed": 202,
+    "policy_seed": 11,
+    "task": 2,
+    "method": "scana_r",
+    "init_state": 0,
+    "success": true,
+    "steps": 108,
+    "video": "evaluation/scana_r_lib202_seed11/test_task2_init0.mp4"
+  },
+  {
+    "library_seed": 202,
+    "policy_seed": 11,
+    "task": 2,
+    "method": "gaussian_same_total_cost",
+    "init_state": 0,
+    "success": false,
+    "steps": 600,
+    "video": "evaluation/gaussian_same_total_cost_lib202_seed11/test_task2_init0.mp4"
+  },
+  {
+    "library_seed": 202,
+    "policy_seed": 11,
+    "task": 3,
+    "method": "clean_repeat",
+    "init_state": 0,
+    "success": true,
+    "steps": 87,
+    "video": "evaluation/clean_repeat_lib202_seed11/test_task3_init0.mp4"
+  },
+  {
+    "library_seed": 202,
+    "policy_seed": 11,
+    "task": 3,
+    "method": "gaussian_recovery",
+    "init_state": 0,
+    "success": true,
+    "steps": 92,
+    "video": "evaluation/gaussian_recovery_lib202_seed11/test_task3_init0.mp4"
+  },
+  {
+    "library_seed": 202,
+    "policy_seed": 11,
+    "task": 3,
+    "method": "scana_r",
+    "init_state": 0,
+    "success": true,
+    "steps": 87,
+    "video": "evaluation/scana_r_lib202_seed11/test_task3_init0.mp4"
+  },
+  {
+    "library_seed": 202,
+    "policy_seed": 11,
+    "task": 3,
+    "method": "gaussian_same_total_cost",
+    "init_state": 0,
+    "success": true,
+    "steps": 97,
+    "video": "evaluation/gaussian_same_total_cost_lib202_seed11/test_task3_init0.mp4"
+  },
+  {
+    "library_seed": 202,
+    "policy_seed": 11,
+    "task": 4,
+    "method": "clean_repeat",
+    "init_state": 0,
+    "success": true,
+    "steps": 126,
+    "video": "evaluation/clean_repeat_lib202_seed11/test_task4_init0.mp4"
+  },
+  {
+    "library_seed": 202,
+    "policy_seed": 11,
+    "task": 4,
+    "method": "gaussian_recovery",
+    "init_state": 0,
+    "success": false,
+    "steps": 600,
+    "video": "evaluation/gaussian_recovery_lib202_seed11/test_task4_init0.mp4"
+  },
+  {
+    "library_seed": 202,
+    "policy_seed": 11,
+    "task": 4,
+    "method": "scana_r",
+    "init_state": 0,
+    "success": true,
+    "steps": 120,
+    "video": "evaluation/scana_r_lib202_seed11/test_task4_init0.mp4"
+  },
+  {
+    "library_seed": 202,
+    "policy_seed": 11,
+    "task": 4,
+    "method": "gaussian_same_total_cost",
+    "init_state": 0,
+    "success": false,
+    "steps": 600,
+    "video": "evaluation/gaussian_same_total_cost_lib202_seed11/test_task4_init0.mp4"
+  },
+  {
+    "library_seed": 202,
+    "policy_seed": 11,
+    "task": 5,
+    "method": "clean_repeat",
+    "init_state": 0,
+    "success": true,
+    "steps": 95,
+    "video": "evaluation/clean_repeat_lib202_seed11/test_task5_init0.mp4"
+  },
+  {
+    "library_seed": 202,
+    "policy_seed": 11,
+    "task": 5,
+    "method": "gaussian_recovery",
+    "init_state": 0,
+    "success": true,
+    "steps": 96,
+    "video": "evaluation/gaussian_recovery_lib202_seed11/test_task5_init0.mp4"
+  },
+  {
+    "library_seed": 202,
+    "policy_seed": 11,
+    "task": 5,
+    "method": "scana_r",
+    "init_state": 0,
+    "success": true,
+    "steps": 92,
+    "video": "evaluation/scana_r_lib202_seed11/test_task5_init0.mp4"
+  },
+  {
+    "library_seed": 202,
+    "policy_seed": 11,
+    "task": 5,
+    "method": "gaussian_same_total_cost",
+    "init_state": 0,
+    "success": true,
+    "steps": 93,
+    "video": "evaluation/gaussian_same_total_cost_lib202_seed11/test_task5_init0.mp4"
+  },
+  {
+    "library_seed": 202,
+    "policy_seed": 11,
+    "task": 6,
+    "method": "clean_repeat",
+    "init_state": 0,
+    "success": true,
+    "steps": 119,
+    "video": "evaluation/clean_repeat_lib202_seed11/test_task6_init0.mp4"
+  },
+  {
+    "library_seed": 202,
+    "policy_seed": 11,
+    "task": 6,
+    "method": "gaussian_recovery",
+    "init_state": 0,
+    "success": true,
+    "steps": 101,
+    "video": "evaluation/gaussian_recovery_lib202_seed11/test_task6_init0.mp4"
+  },
+  {
+    "library_seed": 202,
+    "policy_seed": 11,
+    "task": 6,
+    "method": "scana_r",
+    "init_state": 0,
+    "success": true,
+    "steps": 109,
+    "video": "evaluation/scana_r_lib202_seed11/test_task6_init0.mp4"
+  },
+  {
+    "library_seed": 202,
+    "policy_seed": 11,
+    "task": 6,
+    "method": "gaussian_same_total_cost",
+    "init_state": 0,
+    "success": true,
+    "steps": 105,
+    "video": "evaluation/gaussian_same_total_cost_lib202_seed11/test_task6_init0.mp4"
+  },
+  {
+    "library_seed": 202,
+    "policy_seed": 11,
+    "task": 7,
+    "method": "clean_repeat",
+    "init_state": 0,
+    "success": true,
+    "steps": 156,
+    "video": "evaluation/clean_repeat_lib202_seed11/test_task7_init0.mp4"
+  },
+  {
+    "library_seed": 202,
+    "policy_seed": 11,
+    "task": 7,
+    "method": "gaussian_recovery",
+    "init_state": 0,
+    "success": false,
+    "steps": 600,
+    "video": "evaluation/gaussian_recovery_lib202_seed11/test_task7_init0.mp4"
+  },
+  {
+    "library_seed": 202,
+    "policy_seed": 11,
+    "task": 7,
+    "method": "scana_r",
+    "init_state": 0,
+    "success": true,
+    "steps": 114,
+    "video": "evaluation/scana_r_lib202_seed11/test_task7_init0.mp4"
+  },
+  {
+    "library_seed": 202,
+    "policy_seed": 11,
+    "task": 7,
+    "method": "gaussian_same_total_cost",
+    "init_state": 0,
+    "success": true,
+    "steps": 115,
+    "video": "evaluation/gaussian_same_total_cost_lib202_seed11/test_task7_init0.mp4"
+  },
+  {
+    "library_seed": 202,
+    "policy_seed": 11,
+    "task": 8,
+    "method": "clean_repeat",
+    "init_state": 0,
+    "success": true,
+    "steps": 96,
+    "video": "evaluation/clean_repeat_lib202_seed11/test_task8_init0.mp4"
+  },
+  {
+    "library_seed": 202,
+    "policy_seed": 11,
+    "task": 8,
+    "method": "gaussian_recovery",
+    "init_state": 0,
+    "success": true,
+    "steps": 98,
+    "video": "evaluation/gaussian_recovery_lib202_seed11/test_task8_init0.mp4"
+  },
+  {
+    "library_seed": 202,
+    "policy_seed": 11,
+    "task": 8,
+    "method": "scana_r",
+    "init_state": 0,
+    "success": false,
+    "steps": 600,
+    "video": "evaluation/scana_r_lib202_seed11/test_task8_init0.mp4"
+  },
+  {
+    "library_seed": 202,
+    "policy_seed": 11,
+    "task": 8,
+    "method": "gaussian_same_total_cost",
+    "init_state": 0,
+    "success": true,
+    "steps": 105,
+    "video": "evaluation/gaussian_same_total_cost_lib202_seed11/test_task8_init0.mp4"
+  },
+  {
+    "library_seed": 202,
+    "policy_seed": 11,
+    "task": 9,
+    "method": "clean_repeat",
+    "init_state": 0,
+    "success": true,
+    "steps": 131,
+    "video": "evaluation/clean_repeat_lib202_seed11/test_task9_init0.mp4"
+  },
+  {
+    "library_seed": 202,
+    "policy_seed": 11,
+    "task": 9,
+    "method": "gaussian_recovery",
+    "init_state": 0,
+    "success": true,
+    "steps": 120,
+    "video": "evaluation/gaussian_recovery_lib202_seed11/test_task9_init0.mp4"
+  },
+  {
+    "library_seed": 202,
+    "policy_seed": 11,
+    "task": 9,
+    "method": "scana_r",
+    "init_state": 0,
+    "success": true,
+    "steps": 114,
+    "video": "evaluation/scana_r_lib202_seed11/test_task9_init0.mp4"
+  },
+  {
+    "library_seed": 202,
+    "policy_seed": 11,
+    "task": 9,
+    "method": "gaussian_same_total_cost",
+    "init_state": 0,
+    "success": true,
+    "steps": 120,
+    "video": "evaluation/gaussian_same_total_cost_lib202_seed11/test_task9_init0.mp4"
+  },
+  {
+    "library_seed": 303,
+    "policy_seed": 23,
+    "task": 0,
+    "method": "clean_repeat",
+    "init_state": 0,
+    "success": true,
+    "steps": 263,
+    "video": "evaluation/clean_repeat_lib303_seed23/test_task0_init0.mp4"
+  },
+  {
+    "library_seed": 303,
+    "policy_seed": 23,
+    "task": 0,
+    "method": "gaussian_recovery",
+    "init_state": 0,
+    "success": true,
+    "steps": 109,
+    "video": "evaluation/gaussian_recovery_lib303_seed23/test_task0_init0.mp4"
+  },
+  {
+    "library_seed": 303,
+    "policy_seed": 23,
+    "task": 0,
+    "method": "scana_r",
+    "init_state": 0,
+    "success": true,
+    "steps": 73,
+    "video": "evaluation/scana_r_lib303_seed23/test_task0_init0.mp4"
+  },
+  {
+    "library_seed": 303,
+    "policy_seed": 23,
+    "task": 0,
+    "method": "gaussian_same_total_cost",
+    "init_state": 0,
+    "success": false,
+    "steps": 600,
+    "video": "evaluation/gaussian_same_total_cost_lib303_seed23/test_task0_init0.mp4"
+  },
+  {
+    "library_seed": 303,
+    "policy_seed": 23,
+    "task": 1,
+    "method": "clean_repeat",
+    "init_state": 0,
+    "success": true,
+    "steps": 112,
+    "video": "evaluation/clean_repeat_lib303_seed23/test_task1_init0.mp4"
+  },
+  {
+    "library_seed": 303,
+    "policy_seed": 23,
+    "task": 1,
+    "method": "gaussian_recovery",
+    "init_state": 0,
+    "success": true,
+    "steps": 122,
+    "video": "evaluation/gaussian_recovery_lib303_seed23/test_task1_init0.mp4"
+  },
+  {
+    "library_seed": 303,
+    "policy_seed": 23,
+    "task": 1,
+    "method": "scana_r",
+    "init_state": 0,
+    "success": true,
+    "steps": 117,
+    "video": "evaluation/scana_r_lib303_seed23/test_task1_init0.mp4"
+  },
+  {
+    "library_seed": 303,
+    "policy_seed": 23,
+    "task": 1,
+    "method": "gaussian_same_total_cost",
+    "init_state": 0,
+    "success": false,
+    "steps": 600,
+    "video": "evaluation/gaussian_same_total_cost_lib303_seed23/test_task1_init0.mp4"
+  },
+  {
+    "library_seed": 303,
+    "policy_seed": 23,
+    "task": 2,
+    "method": "clean_repeat",
+    "init_state": 0,
+    "success": false,
+    "steps": 600,
+    "video": "evaluation/clean_repeat_lib303_seed23/test_task2_init0.mp4"
+  },
+  {
+    "library_seed": 303,
+    "policy_seed": 23,
+    "task": 2,
+    "method": "gaussian_recovery",
+    "init_state": 0,
+    "success": true,
+    "steps": 97,
+    "video": "evaluation/gaussian_recovery_lib303_seed23/test_task2_init0.mp4"
+  },
+  {
+    "library_seed": 303,
+    "policy_seed": 23,
+    "task": 2,
+    "method": "scana_r",
+    "init_state": 0,
+    "success": false,
+    "steps": 600,
+    "video": "evaluation/scana_r_lib303_seed23/test_task2_init0.mp4"
+  },
+  {
+    "library_seed": 303,
+    "policy_seed": 23,
+    "task": 2,
+    "method": "gaussian_same_total_cost",
+    "init_state": 0,
+    "success": true,
+    "steps": 93,
+    "video": "evaluation/gaussian_same_total_cost_lib303_seed23/test_task2_init0.mp4"
+  },
+  {
+    "library_seed": 303,
+    "policy_seed": 23,
+    "task": 3,
+    "method": "clean_repeat",
+    "init_state": 0,
+    "success": false,
+    "steps": 600,
+    "video": "evaluation/clean_repeat_lib303_seed23/test_task3_init0.mp4"
+  },
+  {
+    "library_seed": 303,
+    "policy_seed": 23,
+    "task": 3,
+    "method": "gaussian_recovery",
+    "init_state": 0,
+    "success": true,
+    "steps": 88,
+    "video": "evaluation/gaussian_recovery_lib303_seed23/test_task3_init0.mp4"
+  },
+  {
+    "library_seed": 303,
+    "policy_seed": 23,
+    "task": 3,
+    "method": "scana_r",
+    "init_state": 0,
+    "success": true,
+    "steps": 90,
+    "video": "evaluation/scana_r_lib303_seed23/test_task3_init0.mp4"
+  },
+  {
+    "library_seed": 303,
+    "policy_seed": 23,
+    "task": 3,
+    "method": "gaussian_same_total_cost",
+    "init_state": 0,
+    "success": false,
+    "steps": 600,
+    "video": "evaluation/gaussian_same_total_cost_lib303_seed23/test_task3_init0.mp4"
+  },
+  {
+    "library_seed": 303,
+    "policy_seed": 23,
+    "task": 4,
+    "method": "clean_repeat",
+    "init_state": 0,
+    "success": true,
+    "steps": 131,
+    "video": "evaluation/clean_repeat_lib303_seed23/test_task4_init0.mp4"
+  },
+  {
+    "library_seed": 303,
+    "policy_seed": 23,
+    "task": 4,
+    "method": "gaussian_recovery",
+    "init_state": 0,
+    "success": true,
+    "steps": 146,
+    "video": "evaluation/gaussian_recovery_lib303_seed23/test_task4_init0.mp4"
+  },
+  {
+    "library_seed": 303,
+    "policy_seed": 23,
+    "task": 4,
+    "method": "scana_r",
+    "init_state": 0,
+    "success": true,
+    "steps": 128,
+    "video": "evaluation/scana_r_lib303_seed23/test_task4_init0.mp4"
+  },
+  {
+    "library_seed": 303,
+    "policy_seed": 23,
+    "task": 4,
+    "method": "gaussian_same_total_cost",
+    "init_state": 0,
+    "success": true,
+    "steps": 125,
+    "video": "evaluation/gaussian_same_total_cost_lib303_seed23/test_task4_init0.mp4"
+  },
+  {
+    "library_seed": 303,
+    "policy_seed": 23,
+    "task": 5,
+    "method": "clean_repeat",
+    "init_state": 0,
+    "success": true,
+    "steps": 259,
+    "video": "evaluation/clean_repeat_lib303_seed23/test_task5_init0.mp4"
+  },
+  {
+    "library_seed": 303,
+    "policy_seed": 23,
+    "task": 5,
+    "method": "gaussian_recovery",
+    "init_state": 0,
+    "success": true,
+    "steps": 100,
+    "video": "evaluation/gaussian_recovery_lib303_seed23/test_task5_init0.mp4"
+  },
+  {
+    "library_seed": 303,
+    "policy_seed": 23,
+    "task": 5,
+    "method": "scana_r",
+    "init_state": 0,
+    "success": true,
+    "steps": 101,
+    "video": "evaluation/scana_r_lib303_seed23/test_task5_init0.mp4"
+  },
+  {
+    "library_seed": 303,
+    "policy_seed": 23,
+    "task": 5,
+    "method": "gaussian_same_total_cost",
+    "init_state": 0,
+    "success": true,
+    "steps": 99,
+    "video": "evaluation/gaussian_same_total_cost_lib303_seed23/test_task5_init0.mp4"
+  },
+  {
+    "library_seed": 303,
+    "policy_seed": 23,
+    "task": 6,
+    "method": "clean_repeat",
+    "init_state": 0,
+    "success": true,
+    "steps": 114,
+    "video": "evaluation/clean_repeat_lib303_seed23/test_task6_init0.mp4"
+  },
+  {
+    "library_seed": 303,
+    "policy_seed": 23,
+    "task": 6,
+    "method": "gaussian_recovery",
+    "init_state": 0,
+    "success": true,
+    "steps": 116,
+    "video": "evaluation/gaussian_recovery_lib303_seed23/test_task6_init0.mp4"
+  },
+  {
+    "library_seed": 303,
+    "policy_seed": 23,
+    "task": 6,
+    "method": "scana_r",
+    "init_state": 0,
+    "success": true,
+    "steps": 112,
+    "video": "evaluation/scana_r_lib303_seed23/test_task6_init0.mp4"
+  },
+  {
+    "library_seed": 303,
+    "policy_seed": 23,
+    "task": 6,
+    "method": "gaussian_same_total_cost",
+    "init_state": 0,
+    "success": true,
+    "steps": 121,
+    "video": "evaluation/gaussian_same_total_cost_lib303_seed23/test_task6_init0.mp4"
+  },
+  {
+    "library_seed": 303,
+    "policy_seed": 23,
+    "task": 7,
+    "method": "clean_repeat",
+    "init_state": 0,
+    "success": true,
+    "steps": 144,
+    "video": "evaluation/clean_repeat_lib303_seed23/test_task7_init0.mp4"
+  },
+  {
+    "library_seed": 303,
+    "policy_seed": 23,
+    "task": 7,
+    "method": "gaussian_recovery",
+    "init_state": 0,
+    "success": false,
+    "steps": 600,
+    "video": "evaluation/gaussian_recovery_lib303_seed23/test_task7_init0.mp4"
+  },
+  {
+    "library_seed": 303,
+    "policy_seed": 23,
+    "task": 7,
+    "method": "scana_r",
+    "init_state": 0,
+    "success": false,
+    "steps": 600,
+    "video": "evaluation/scana_r_lib303_seed23/test_task7_init0.mp4"
+  },
+  {
+    "library_seed": 303,
+    "policy_seed": 23,
+    "task": 7,
+    "method": "gaussian_same_total_cost",
+    "init_state": 0,
+    "success": true,
+    "steps": 126,
+    "video": "evaluation/gaussian_same_total_cost_lib303_seed23/test_task7_init0.mp4"
+  },
+  {
+    "library_seed": 303,
+    "policy_seed": 23,
+    "task": 8,
+    "method": "clean_repeat",
+    "init_state": 0,
+    "success": true,
+    "steps": 110,
+    "video": "evaluation/clean_repeat_lib303_seed23/test_task8_init0.mp4"
+  },
+  {
+    "library_seed": 303,
+    "policy_seed": 23,
+    "task": 8,
+    "method": "gaussian_recovery",
+    "init_state": 0,
+    "success": true,
+    "steps": 97,
+    "video": "evaluation/gaussian_recovery_lib303_seed23/test_task8_init0.mp4"
+  },
+  {
+    "library_seed": 303,
+    "policy_seed": 23,
+    "task": 8,
+    "method": "scana_r",
+    "init_state": 0,
+    "success": true,
+    "steps": 98,
+    "video": "evaluation/scana_r_lib303_seed23/test_task8_init0.mp4"
+  },
+  {
+    "library_seed": 303,
+    "policy_seed": 23,
+    "task": 8,
+    "method": "gaussian_same_total_cost",
+    "init_state": 0,
+    "success": true,
+    "steps": 112,
+    "video": "evaluation/gaussian_same_total_cost_lib303_seed23/test_task8_init0.mp4"
+  },
+  {
+    "library_seed": 303,
+    "policy_seed": 23,
+    "task": 9,
+    "method": "clean_repeat",
+    "init_state": 0,
+    "success": false,
+    "steps": 600,
+    "video": "evaluation/clean_repeat_lib303_seed23/test_task9_init0.mp4"
+  },
+  {
+    "library_seed": 303,
+    "policy_seed": 23,
+    "task": 9,
+    "method": "gaussian_recovery",
+    "init_state": 0,
+    "success": true,
+    "steps": 110,
+    "video": "evaluation/gaussian_recovery_lib303_seed23/test_task9_init0.mp4"
+  },
+  {
+    "library_seed": 303,
+    "policy_seed": 23,
+    "task": 9,
+    "method": "scana_r",
+    "init_state": 0,
+    "success": true,
+    "steps": 107,
+    "video": "evaluation/scana_r_lib303_seed23/test_task9_init0.mp4"
+  },
+  {
+    "library_seed": 303,
+    "policy_seed": 23,
+    "task": 9,
+    "method": "gaussian_same_total_cost",
+    "init_state": 0,
+    "success": true,
+    "steps": 114,
+    "video": "evaluation/gaussian_same_total_cost_lib303_seed23/test_task9_init0.mp4"
+  }
+]

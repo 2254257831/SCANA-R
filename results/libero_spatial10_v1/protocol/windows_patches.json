@@ -1,0 +1,14 @@
+[
+  {
+    "file": "robosuite/utils/log_utils.py",
+    "change": "Redirect Linux /tmp log file into isolated project logs; no dynamics changes",
+    "before_sha256": "f89259ab1809772f10353bc2c4ce45d29cd4017f27ffde225e5e70c0c60a3199",
+    "after_sha256": "6b75e1dea1e28b8bd6f215fe44d1c1378e9e8e9ab3472e2bfa82713c631870f7"
+  },
+  {
+    "file": "robosuite/utils/binding_utils.py",
+    "change": "Load official mujoco.dll from its installed package; retain GLFW on Windows instead of forcing unsupported EGL. No physics or controller edits.",
+    "before_sha256": "f5c8aada3bc85d3e66b9c4719c62892f0a32e4ea3489f66cc9abcaa170282c04",
+    "after_sha256": "7a2bd3a6fb8306c61b66070b12f7a952ede74e386de3165ab5006c1e691cb5d1"
+  }
+]

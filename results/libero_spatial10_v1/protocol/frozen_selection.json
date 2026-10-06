@@ -1,0 +1,46 @@
+{
+  "development_rates": {
+    "0": 1.0,
+    "1": 0.9,
+    "2": 0.8,
+    "3": 0.9,
+    "4": 0.7,
+    "5": 1.0,
+    "6": 1.0,
+    "7": 0.4,
+    "8": 0.9,
+    "9": 0.4
+  },
+  "nonzero_probe_branches_by_task": {
+    "0": 6,
+    "1": 6,
+    "2": 4,
+    "3": 6,
+    "4": 6,
+    "5": 5,
+    "6": 6,
+    "7": 3,
+    "8": 6,
+    "9": 6
+  },
+  "all_tasks_retained": true,
+  "amplitude": 0.05,
+  "protocol_sha256": "74e10658ca9be93dae9b420be80b76f721ca42b72e87bd8c0fba1b06f073ad87",
+  "final_checkpoint": "last fixed update; no test selection",
+  "final_updates": 33334,
+  "auxiliary_updates": 10000,
+  "replicates": [
+    [
+      101,
+      7
+    ],
+    [
+      202,
+      11
+    ],
+    [
+      303,
+      23
+    ]
+  ]
+}

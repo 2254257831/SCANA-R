@@ -1,54 +1,66 @@
 [
   {
     "figure": 1,
-    "manuscript_version": "v47",
+    "manuscript_version": "v55",
     "source_file": "Figure_1.pdf",
     "pdf": "figure-1.pdf",
-    "pdf_sha256": "013aaf48aa34eaaa930f061865b9a3d07c3672de9a9177829eeab0f87a9ddca4",
+    "pdf_sha256": "b42af4092433e7a31614e79c2b2297e293bd6a6168ca1054988e123709b8be5a",
     "svg": "figure-1.svg",
-    "svg_sha256": "244e733eada66bbaae8c00abb9f66b2d69dbbc8c60b5c5cbad0ea6813fab744f",
+    "svg_sha256": "64a1f6e710f04bb6167c94af7a2435028606c3d8fa12eda81cdd1a6ca45d7a41",
     "pages": 1,
     "metadata": {
-      "/Producer": "pypdf"
+      "/Producer": "pypdf",
+      "/Title": "SCANA-R Figure 1 \u2014 190 mm artwork",
+      "/Author": "",
+      "/Creator": "PowerPoint vector artwork; verified 190 mm export"
     }
   },
   {
     "figure": 2,
-    "manuscript_version": "v47",
+    "manuscript_version": "v55",
     "source_file": "Figure_2.pdf",
     "pdf": "figure-2.pdf",
-    "pdf_sha256": "a50465f6a38c11e2bdaa6979d6ad8fcb5fe03e49e949f4603186c393e5b6550f",
+    "pdf_sha256": "2645734530fb957755efcb5b7e9d61e85d2c2bcaf1535546e67690176ac52485",
     "svg": "figure-2.svg",
-    "svg_sha256": "151300997489b7a67053fb9057388d130c5d20730246dc1df240997cdd8c639a",
+    "svg_sha256": "2c83a91372e04e6bdb7ecca802473229ef089a19f3c9f24b3412acafe2064e2a",
     "pages": 1,
     "metadata": {
-      "/Producer": "pypdf"
+      "/Producer": "pypdf",
+      "/Title": "SCANA-R Figure 2 \u2014 190 mm artwork",
+      "/Author": "",
+      "/Creator": "PowerPoint vector artwork; verified 190 mm export"
     }
   },
   {
     "figure": 3,
-    "manuscript_version": "v47",
+    "manuscript_version": "v55",
     "source_file": "Figure_3.pdf",
     "pdf": "figure-3.pdf",
-    "pdf_sha256": "b1622e093f496ac40d94d712cd55e19fe1cc8b64db951244032e4f831e1cc24e",
+    "pdf_sha256": "146d77d39474d6e706e5e47a4ec20a750c762df3c3e7375b0f88bcbdc0c059a6",
     "svg": "figure-3.svg",
-    "svg_sha256": "0548063267c64e3a4c91ea83effe7913376acf2b66d3f41386f06829deee96ba",
+    "svg_sha256": "5c4de04f32be9e6204397f42cbec35642daa29b03b5b74bf3a18cc4f6cea7bea",
     "pages": 1,
     "metadata": {
-      "/Producer": "pypdf"
+      "/Producer": "pypdf",
+      "/Title": "SCANA-R Figure 3 \u2014 190 mm artwork",
+      "/Author": "",
+      "/Creator": "PowerPoint vector artwork; verified 190 mm export"
     }
   },
   {
     "figure": 4,
-    "manuscript_version": "v47",
+    "manuscript_version": "v55",
     "source_file": "Figure_4.pdf",
     "pdf": "figure-4.pdf",
-    "pdf_sha256": "7e17c36c92c619a76b6cb932412550f47381ac216ca25ceb774f1ad8412bb170",
+    "pdf_sha256": "d0d42d750ae6c2d42246c5c8b2265330c1894e8947db32751895e0078e9154a1",
     "svg": "figure-4.svg",
-    "svg_sha256": "9de136437f61b7e22e5e4f3d9c68ae151b9b8caf181cd259f5324395b539073c",
+    "svg_sha256": "29e1a3f347edd0c0f8519f027ecc346b8259473d25e3c196435cc3c785d85980",
     "pages": 1,
     "metadata": {
-      "/Producer": "pypdf"
+      "/Producer": "pypdf",
+      "/Title": "SCANA-R Figure 4 \u2014 190 mm artwork",
+      "/Author": "",
+      "/Creator": "PowerPoint vector artwork; verified 190 mm export"
     }
   },
   {
@@ -79,6 +91,36 @@
       "/Creator": "Matplotlib v3.10.3, https://matplotlib.org",
       "/Producer": "Matplotlib pdf backend v3.10.3",
       "/CreationDate": "D:20260929162124+08'00'"
+    }
+  },
+  {
+    "figure": 10,
+    "manuscript_version": "v55",
+    "source_file": "Figure_10.pdf",
+    "pdf": "figure-10.pdf",
+    "pdf_sha256": "8c13acc1c359a008aa1efdd0dd97648cc114b5b86580b4a3cfe4c10361add13c",
+    "svg": "figure-10.svg",
+    "svg_sha256": "667848d1ee7af8c8f7e151409bc38bc8393682f25ae2db6f3c856a5379778d98",
+    "pages": 1,
+    "metadata": {
+      "/Creator": "Matplotlib v3.8.4, https://matplotlib.org",
+      "/Producer": "Matplotlib pdf backend v3.8.4",
+      "/CreationDate": "D:20261004125542+08'00'"
+    }
+  },
+  {
+    "figure": 11,
+    "manuscript_version": "v55",
+    "source_file": "Figure_11.pdf",
+    "pdf": "figure-11.pdf",
+    "pdf_sha256": "c859a51c4765352a89c7b336c62446d2cea0287cc061090897e8782dc796d4eb",
+    "svg": "figure-11.svg",
+    "svg_sha256": "37b2a77815d6c74e3a36fb81041611aa42e7d0440a4db34cba97e8fcf33c7b72",
+    "pages": 1,
+    "metadata": {
+      "/Creator": "Matplotlib v3.8.4, https://matplotlib.org",
+      "/Producer": "Matplotlib pdf backend v3.8.4",
+      "/CreationDate": "D:20261004125543+08'00'"
     }
   }
 ]

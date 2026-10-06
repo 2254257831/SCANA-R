@@ -1,0 +1,36 @@
+{
+  "backend": "Python / existing matplotlib environment",
+  "font": "Times New Roman",
+  "claim": "Error calibration has no uniform benefit on the Spatial suite; original repetition has the highest macro mean.",
+  "figure10": {
+    "archetype": "single task-by-method annotated matrix",
+    "width_mm": 164,
+    "height_mm": 125,
+    "evidence": "data/tasks.csv; data/macro.csv",
+    "n": "3 paired library-policy repeats, 20 common starts per task per method",
+    "center": "mean task success percentage; macro averages ten task means",
+    "spread": "repeat sample SD in Table13; no error-bar inference"
+  },
+  "figure11": {
+    "archetype": "aligned kinematic time traces",
+    "case": {
+      "task": 7,
+      "init": 1,
+      "library": 101,
+      "policy_seed": 7
+    },
+    "selection": "smallest initial-state index with a SCANA failure in task7, first frozen repeat",
+    "claim": "Case-specific pickup/placement trajectory, not a causal failure mechanism or representative success-rate estimate",
+    "source": "canonical frozen-state NPZ and native free-joint indices",
+    "thresholds": "post-hoc lift +0.03m and plate XY distance <0.08m; sensitivity .02/.05m"
+  },
+  "integrity": "no generated scene pixels; no outcome changes; accepted original method figures unchanged",
+  "exports": [
+    "PDF with embedded selectable text",
+    "SVG text",
+    "600-dpi PNG",
+    "source script",
+    "CSV"
+  ],
+  "statistics": "descriptive repeat variability only; no significance/p-value claim"
+}

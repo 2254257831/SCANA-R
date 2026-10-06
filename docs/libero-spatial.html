@@ -1,0 +1,82 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>LIBERO-Spatial: ten-task results and reviewer access · SCANA-R</title><link rel="stylesheet" href="assets/style.css"><style>main{max-width:1100px;margin:40px auto;padding:0 24px}main h1{font-size:36px;margin-bottom:26px}main table{font-size:16px;margin:25px 0}main h2{margin-top:35px}li{margin-bottom:10px}main pre{background:#f3f7f8}main code{overflow-wrap:anywhere}</style><script defer src="assets/site.js"></script></head><body><header class="topbar"><a href="index.html" class="wordmark">SCANA-R</a><nav><a href="index.html#reproduce">Back to project</a></nav></header><main><h1>LIBERO-Spatial: ten-task results and reviewer access</h1>
+<p>Four methods × three paired library/policy repetitions × ten official Spatial tasks × twenty test initial states = <strong>2,400 formal test episodes</strong>.
+The policy is a compact RGB/proprioception/instruction-conditioned model trained from scratch.
+This custom multitask experiment does not evaluate all LIBERO suites, the default lifelong protocol,
+a pretrained foundation VLA, CALVIN or SimplerEnv.</p>
+<h2>Results</h2>
+<div class="table-scroll" role="region" aria-label="Scrollable data table" tabindex="0"><table>
+<thead>
+<tr>
+<th>Method</th>
+<th align="right">Macro success (%)</th>
+<th align="right">SD across repetitions</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Repeated original data</td>
+<td align="right">76.3</td>
+<td align="right">4.2</td>
+</tr>
+<tr>
+<td>Correlated Gaussian recovery</td>
+<td align="right">70.7</td>
+<td align="right">4.5</td>
+</tr>
+<tr>
+<td>SCANA-R</td>
+<td align="right">72.3</td>
+<td align="right">4.5</td>
+</tr>
+<tr>
+<td>Gaussian, matched total active wall time</td>
+<td align="right">70.3</td>
+<td align="right">3.5</td>
+</tr>
+</tbody></table></div>
+<p>SD uses three paired recovery-library/policy repetitions, not 2,400 independent training fits.
+The point estimate for SCANA-R is below original repetition. The paired comparisons do not establish
+a stable calibration advantage. Original demonstrations remain fixed; active wall time is not energy use.</p>
+<figure><img src="assets/figures/figure-10.svg" style="width:100%;height:auto" alt="Ten-task Spatial success rates and paired repetition results"><figcaption>Figure 10 · All ten tasks and three paired repetitions. <a href="assets/figures/figure-10.pdf">Vector PDF</a>.</figcaption></figure>
+<figure><img src="assets/figures/figure-11.svg" style="width:100%;height:auto" alt="Motion-proxy failure categories and matched-cost deviations"><figcaption>Figure 11 · Failure proxies and cost accounting. These descriptive proxies do not identify causal failure mechanisms. <a href="assets/figures/figure-11.pdf">Vector PDF</a>.</figcaption></figure>
+
+<h2>Review and recompute</h2>
+<p>Download the small reviewer ZIP below and run <code>python recompute_statistics.py</code>.
+It uses only the Python standard library, validates 2,400 unique rows and 120 groups,
+and recomputes task rates, repetition SD, paired differences, failure-proxy counts and recorded costs.
+From a repository clone, the equivalent command is <code>python scripts/reproduce_libero.py</code>;
+<code>python scripts/reproduce.py</code> now also includes this extension and keeps the older batches separate.</p>
+<h2>Downloadable evidence</h2>
+<ul>
+<li><a href="https://github.com/2254257831/SCANA-R/releases/download/libero-spatial10-v1/SCANA-R-LIBERO-Spatial-review-v1.zip">SCANA-R-LIBERO-Spatial-review-v1.zip</a> — 0.62 MB. Small standalone reviewer statistics package; Python standard library only.</li>
+<li><a href="https://github.com/2254257831/SCANA-R/releases/download/libero-spatial10-v1/SCANA-R-LIBERO-Spatial-evaluation-models-v1.zip">SCANA-R-LIBERO-Spatial-evaluation-models-v1.zip</a> — 523.94 MB. All formal evaluation traces, final/auxiliary models, error banks, protocol and fixed-ID clips; warm-up records explicitly separate.</li>
+<li><a href="https://github.com/2254257831/SCANA-R/releases/download/libero-spatial10-v1/SCANA-R-LIBERO-Spatial-recovery-lib101-gaussian-v1.zip">SCANA-R-LIBERO-Spatial-recovery-lib101-gaussian-v1.zip</a> — 387.72 MB. Complete lib101_gaussian recovery library, cameras, rollouts and observation-action audits.</li>
+<li><a href="https://github.com/2254257831/SCANA-R/releases/download/libero-spatial10-v1/SCANA-R-LIBERO-Spatial-recovery-lib101-scana-r-v1.zip">SCANA-R-LIBERO-Spatial-recovery-lib101-scana-r-v1.zip</a> — 387.01 MB. Complete lib101_scana_r recovery library, cameras, rollouts and observation-action audits.</li>
+<li><a href="https://github.com/2254257831/SCANA-R/releases/download/libero-spatial10-v1/SCANA-R-LIBERO-Spatial-recovery-lib202-gaussian-v1.zip">SCANA-R-LIBERO-Spatial-recovery-lib202-gaussian-v1.zip</a> — 387.65 MB. Complete lib202_gaussian recovery library, cameras, rollouts and observation-action audits.</li>
+<li><a href="https://github.com/2254257831/SCANA-R/releases/download/libero-spatial10-v1/SCANA-R-LIBERO-Spatial-recovery-lib202-scana-r-v1.zip">SCANA-R-LIBERO-Spatial-recovery-lib202-scana-r-v1.zip</a> — 387.64 MB. Complete lib202_scana_r recovery library, cameras, rollouts and observation-action audits.</li>
+<li><a href="https://github.com/2254257831/SCANA-R/releases/download/libero-spatial10-v1/SCANA-R-LIBERO-Spatial-recovery-lib303-gaussian-v1.zip">SCANA-R-LIBERO-Spatial-recovery-lib303-gaussian-v1.zip</a> — 388.02 MB. Complete lib303_gaussian recovery library, cameras, rollouts and observation-action audits.</li>
+<li><a href="https://github.com/2254257831/SCANA-R/releases/download/libero-spatial10-v1/SCANA-R-LIBERO-Spatial-recovery-lib303-scana-r-v1.zip">SCANA-R-LIBERO-Spatial-recovery-lib303-scana-r-v1.zip</a> — 387.77 MB. Complete lib303_scana_r recovery library, cameras, rollouts and observation-action audits.</li>
+</ul>
+<p><a href="assets/libero-spatial10-SHA256SUMS.txt">Archive SHA-256 values</a> · <a href="assets/libero-spatial10-downloads.json">Machine-readable manifest</a></p>
+<p>Extract the evaluation/model ZIP and desired recovery ZIPs into the same directory;
+their common root is <code>libero_spatial10/</code>. Each archive contains a per-file SHA-256 manifest.
+All 2,400 formal traces, six recovery libraries including newly captured camera arrays,
+12 final policies, 15 auxiliary fold models, collection attempts, costs and audits are included.
+Warm-up records are explicitly separated. Fixed-ID recorded clips are in the evaluation/model archive;
+they do not replace the aggregate statistics. The separate 720-episode pilot is not pooled and remains local.</p>
+<h2>Protocol and limitations</h2>
+<p>Each task uses 40 source training episodes and 10 development episodes; test initial states
+are separate. Five-fold auxiliary fitting excludes the source episode used for error calibration.
+Library/policy seed pairs are 101/7, 202/11 and 303/23. The frozen horizon is 600 steps.
+Evaluation pairing checks dynamic state, fixed object poses, initial images and proprioception.
+The archive records evaluation-only memory repairs and a paired rerun of twelve discrepant image hashes;
+the old pixels were unavailable, so the cause of that discrepancy is unresolved.
+No method or training budget was changed in these evaluation repairs.</p>
+<p>The compact package includes exact executed core sources, environment versions, upstream commits
+and the official dataset source. Original LIBERO demonstrations and third-party assets are not
+redistributed here. Obtain them from the pinned official links. Full collection/training has not
+been repeated on another machine; the independently checked workflow is the statistics reanalysis.
+Only local metadata paths were normalized in checkpoints; all tensor storage and numerical arrays
+were preserved and all 28 model files loaded successfully on CPU.</p>
+<p>The manuscript full text and private physical-robot materials remain unpublished.
+The visible hosting account and retained Git history mean this site is not fully anonymous.</p>
+</main><footer>SCANA-R · Release documentation</footer></body></html>

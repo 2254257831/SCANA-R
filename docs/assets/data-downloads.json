@@ -26,5 +26,69 @@
     "bytes": 280716419,
     "files": 12442,
     "public_url": "https://github.com/2254257831/SCANA-R/releases/download/reproducibility-v1/SCANA-R-independent-MetaWorld-v1.zip"
+  },
+  {
+    "filename": "SCANA-R-LIBERO-Spatial-review-v1.zip",
+    "bytes": 616020,
+    "sha256": "9eb5df5a51626b5d6934a2f7e0defddc2283a7a64895ef120af7dd049a59a6ff",
+    "files": 71,
+    "public_url": "https://github.com/2254257831/SCANA-R/releases/download/libero-spatial10-v1/SCANA-R-LIBERO-Spatial-review-v1.zip",
+    "description": "Small standalone reviewer statistics package; Python standard library only."
+  },
+  {
+    "filename": "SCANA-R-LIBERO-Spatial-evaluation-models-v1.zip",
+    "bytes": 523937774,
+    "sha256": "4e6e70b8610e0719d47955ca80ae4817e8f3fb8c0215b2ed2d7bcded19cae06a",
+    "files": 2741,
+    "public_url": "https://github.com/2254257831/SCANA-R/releases/download/libero-spatial10-v1/SCANA-R-LIBERO-Spatial-evaluation-models-v1.zip",
+    "description": "All formal evaluation traces, final/auxiliary models, error banks, protocol and fixed-ID clips; warm-up records explicitly separate."
+  },
+  {
+    "filename": "SCANA-R-LIBERO-Spatial-recovery-lib101-gaussian-v1.zip",
+    "bytes": 387719853,
+    "sha256": "f80b0f3bf383bb6a7eaac86c39360765ca7e7deebdeb77dd38301193b7d4551d",
+    "files": 2673,
+    "public_url": "https://github.com/2254257831/SCANA-R/releases/download/libero-spatial10-v1/SCANA-R-LIBERO-Spatial-recovery-lib101-gaussian-v1.zip",
+    "description": "Complete lib101_gaussian recovery library, cameras, rollouts and observation-action audits."
+  },
+  {
+    "filename": "SCANA-R-LIBERO-Spatial-recovery-lib101-scana-r-v1.zip",
+    "bytes": 387013372,
+    "sha256": "7f573a47d472d601fede93d969c2ddec6f3a5537039a28a3abe2dbdb820a9f5c",
+    "files": 2673,
+    "public_url": "https://github.com/2254257831/SCANA-R/releases/download/libero-spatial10-v1/SCANA-R-LIBERO-Spatial-recovery-lib101-scana-r-v1.zip",
+    "description": "Complete lib101_scana_r recovery library, cameras, rollouts and observation-action audits."
+  },
+  {
+    "filename": "SCANA-R-LIBERO-Spatial-recovery-lib202-gaussian-v1.zip",
+    "bytes": 387653958,
+    "sha256": "1ea8a30affda2699badf5c9958b091690818e78eb1a1e19e4b6678b7758e31e1",
+    "files": 2670,
+    "public_url": "https://github.com/2254257831/SCANA-R/releases/download/libero-spatial10-v1/SCANA-R-LIBERO-Spatial-recovery-lib202-gaussian-v1.zip",
+    "description": "Complete lib202_gaussian recovery library, cameras, rollouts and observation-action audits."
+  },
+  {
+    "filename": "SCANA-R-LIBERO-Spatial-recovery-lib202-scana-r-v1.zip",
+    "bytes": 387636136,
+    "sha256": "25fa8a2c71383747011e572248a824b95d112a6bbf3a9118e1c64b09c68de27e",
+    "files": 2678,
+    "public_url": "https://github.com/2254257831/SCANA-R/releases/download/libero-spatial10-v1/SCANA-R-LIBERO-Spatial-recovery-lib202-scana-r-v1.zip",
+    "description": "Complete lib202_scana_r recovery library, cameras, rollouts and observation-action audits."
+  },
+  {
+    "filename": "SCANA-R-LIBERO-Spatial-recovery-lib303-gaussian-v1.zip",
+    "bytes": 388017119,
+    "sha256": "00bdfba8ec905c258dde522e945ae952d1511e3ff1a181852b283e6fb930541e",
+    "files": 2679,
+    "public_url": "https://github.com/2254257831/SCANA-R/releases/download/libero-spatial10-v1/SCANA-R-LIBERO-Spatial-recovery-lib303-gaussian-v1.zip",
+    "description": "Complete lib303_gaussian recovery library, cameras, rollouts and observation-action audits."
+  },
+  {
+    "filename": "SCANA-R-LIBERO-Spatial-recovery-lib303-scana-r-v1.zip",
+    "bytes": 387772597,
+    "sha256": "a65c5c09e8e8230788fd3680a7527127557cb4ea4fabc13336dde7bd7c7570fa",
+    "files": 2683,
+    "public_url": "https://github.com/2254257831/SCANA-R/releases/download/libero-spatial10-v1/SCANA-R-LIBERO-Spatial-recovery-lib303-scana-r-v1.zip",
+    "description": "Complete lib303_scana_r recovery library, cameras, rollouts and observation-action audits."
   }
 ]

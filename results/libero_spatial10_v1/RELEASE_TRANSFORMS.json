@@ -1,0 +1,498 @@
+[
+  {
+    "file": "SCANA-R-LIBERO-Spatial-review/data/collection_audits.json",
+    "source_sha256": "b2205b24ef9cb95ceee59dbabc71868db94376a8a0d931cc9a90c21910cad300",
+    "published_sha256": "01d72a411ac11a77ca7987bc6ee40316a0b95614fc1aaa9f6b6bd3df5eeb2ce0",
+    "kind": "path normalization / English-only metadata"
+  },
+  {
+    "file": "SCANA-R-LIBERO-Spatial-review/data/evaluation_episodes.csv",
+    "source_sha256": "36f0642f3dee0e03dedc58de9110a85dd640cbdf5c1b7add10305f7b017c970d",
+    "published_sha256": "3764750353d9ab0cc88bf36b68812904f383b6e45bd91518d84b644cc48e07f5",
+    "kind": "path normalization / English-only metadata"
+  },
+  {
+    "file": "SCANA-R-LIBERO-Spatial-review/data/evidence_audit_2400.json",
+    "source_sha256": "14e93a68dca0476e15ee276fbfb1d01f10910e64ae7a974de5ec4f3fb3bd49f9",
+    "published_sha256": "7223e63d92e9363562078a7597bb02d89298c731a25be00f347696d1f825a007",
+    "kind": "path normalization / English-only metadata"
+  },
+  {
+    "file": "SCANA-R-LIBERO-Spatial-review/data/final_effects.json",
+    "source_sha256": "74f37b0351f9a481ef331b3c31fe3ae534614d5fb19d893563cee21e0baa68ce",
+    "published_sha256": "3d49f6a7f745fcaea6f2099d9bc30981e8e77dc6d5c4a95d50feef397a31ea16",
+    "kind": "path normalization / English-only metadata"
+  },
+  {
+    "file": "SCANA-R-LIBERO-Spatial-review/data/kinematic_joint_indices.json",
+    "source_sha256": "e223b4bb7334b6e390f4784fe7d897312028a8b79fc59f12dd0c3204e846a6a2",
+    "published_sha256": "6dc1bddcba0d51332a8cbd529f794648740d8f43cd78f4c09d1078d23435c3da",
+    "kind": "path normalization / English-only metadata"
+  },
+  {
+    "file": "SCANA-R-LIBERO-Spatial-review/data/matched_cost_accounting.csv",
+    "source_sha256": "e0eb69a6147bdd922883ae472cc9f7beb4d3b3d0f55a600e2e34d62298758453",
+    "published_sha256": "38440a3613a8ffd3acd145e27a1d26a97419c7aa53d4c540aa2c9ec8b1480108",
+    "kind": "path normalization / English-only metadata"
+  },
+  {
+    "file": "SCANA-R-LIBERO-Spatial-review/data/protocol.json",
+    "source_sha256": "74e10658ca9be93dae9b420be80b76f721ca42b72e87bd8c0fba1b06f073ad87",
+    "published_sha256": "22e922b01da0cc6070a30702183ccbf9e364577d14eb60db2ba16a2c81c251f1",
+    "kind": "path normalization / English-only metadata"
+  },
+  {
+    "file": "SCANA-R-LIBERO-Spatial-review/data/task_map.json",
+    "source_sha256": "cdcf11dd5dd6b72a399b083d4b726830b5e39e87dd4c970c3393438b2ea5b8b1",
+    "published_sha256": "6223968cc4481fe6cce5c5b31ed158b25e9bb6fb088b392e07dba54971d7ad99",
+    "kind": "path normalization / English-only metadata"
+  },
+  {
+    "file": "SCANA-R-LIBERO-Spatial-review/protocol/cost_budget_lib101.json",
+    "source_sha256": "714cc34ea518b8a15d865dbda4a0bba7feab6ff8817be4ee8028b1847dc33b11",
+    "published_sha256": "01355e3d41fce59479de441d7eaf8551d48c2eb346cf1ac07bc9f71cb75b53a7",
+    "kind": "path normalization / English-only metadata"
+  },
+  {
+    "file": "SCANA-R-LIBERO-Spatial-review/protocol/cost_budget_lib202.json",
+    "source_sha256": "6933d249e1afc3dde6f84ae04f811bc26b86206040fb26151abe1ee81ca399a0",
+    "published_sha256": "4060978003c29ecece7075cd321b3eb971381692d5dcffbba75d7db11c1285b9",
+    "kind": "path normalization / English-only metadata"
+  },
+  {
+    "file": "SCANA-R-LIBERO-Spatial-review/protocol/cost_budget_lib303.json",
+    "source_sha256": "0eb72ae97770eab5c1876d29a79856feaf8836224e7d4d46c3fc32b6f78932f8",
+    "published_sha256": "4aff055cfc8499b11ac29f188ac58fded78cafefa76e8d79fff32f2497545a35",
+    "kind": "path normalization / English-only metadata"
+  },
+  {
+    "file": "SCANA-R-LIBERO-Spatial-review/protocol/dataset_selection.json",
+    "source_sha256": "a88df0a662485aea56a28ef1804033c31a7d9f5ccbec00eac710da3644570953",
+    "published_sha256": "68221202e413d75106d4f69bfba7e7c18b77dd20a0bcfcd4d92b2a585a88e7cd",
+    "kind": "path normalization / English-only metadata"
+  },
+  {
+    "file": "SCANA-R-LIBERO-Spatial-review/protocol/data_manifest.json",
+    "source_sha256": "4d06f97239b656eaf7a559d660d6092712819427d37e06a140da7dcb4eb1728c",
+    "published_sha256": "a6eeb7cc80a00b5745555e54cbf63532bdc10b6e86455f154f8ddf5b2434d61d",
+    "kind": "path normalization / English-only metadata"
+  },
+  {
+    "file": "SCANA-R-LIBERO-Spatial-review/protocol/development_gate.json",
+    "source_sha256": "3612f593d07ac66417ade82b2855af703a259c963b5986efb5d2f5da06895b97",
+    "published_sha256": "17eff00014ba6dd93853ab4be9a85ba1cbf2be7b7560e6e4439f891211ce7c39",
+    "kind": "path normalization / English-only metadata"
+  },
+  {
+    "file": "SCANA-R-LIBERO-Spatial-review/protocol/environment_snapshot.json",
+    "source_sha256": "ac1e5ee52c4bba282235bf6453fee2895da8dd1fd5583cd9ea56d3b75bf917cb",
+    "published_sha256": "337b82648f55d1e876b3fc497c91479b201f33f577b345c72a7c87b546788b81",
+    "kind": "path normalization / English-only metadata"
+  },
+  {
+    "file": "SCANA-R-LIBERO-Spatial-review/protocol/execution_sha256.json",
+    "source_sha256": "7c2fd0d4e307631be1445c1a5187d5d88c7760a308d8bfe400b0b8c38a0ae620",
+    "published_sha256": "ad0df5f0eb756afc8ab9547d212450362984ff82a131283fbbc23357ebebf136",
+    "kind": "path normalization / English-only metadata"
+  },
+  {
+    "file": "SCANA-R-LIBERO-Spatial-review/protocol/frozen_selection.json",
+    "source_sha256": "e727a55774c50bfda0c9a1820d93ff011730fb57669e4ba920fbb09d89029a8c",
+    "published_sha256": "3203a039bede400afabf003fa31cbfffd8a659426ed6d500490d82c287ecbedd",
+    "kind": "path normalization / English-only metadata"
+  },
+  {
+    "file": "SCANA-R-LIBERO-Spatial-review/protocol/parent_provenance.json",
+    "source_sha256": "5744d9897661b77a130e61ec38fa6ab50ee79ff480c8c0d84dbc1f2c6a363740",
+    "published_sha256": "cdb7da26eb88129d59eafb1c3fcabbf5655207425e9b97d1f1184835378f998f",
+    "kind": "path normalization / English-only metadata"
+  },
+  {
+    "file": "SCANA-R-LIBERO-Spatial-review/protocol/protocol.json",
+    "source_sha256": "74e10658ca9be93dae9b420be80b76f721ca42b72e87bd8c0fba1b06f073ad87",
+    "published_sha256": "22e922b01da0cc6070a30702183ccbf9e364577d14eb60db2ba16a2c81c251f1",
+    "kind": "path normalization / English-only metadata"
+  },
+  {
+    "file": "SCANA-R-LIBERO-Spatial-review/protocol/setup_protocol_before_official_horizon.json",
+    "source_sha256": "ab24974797d33d8fa456fcdabec8d9145f2b05634d8b680cdfc38046ba8dc953",
+    "published_sha256": "a2fe35cc72343692868af828396385da1426c632af9238977e7d56b1c6573740",
+    "kind": "path normalization / English-only metadata"
+  },
+  {
+    "file": "SCANA-R-LIBERO-Spatial-review/protocol/source_provenance.json",
+    "source_sha256": "35bb4022e6d22c084a2125111d7faa01449ae662463426a053404cf021802ad8",
+    "published_sha256": "251ed903f87156e652633fc367320ad63e9c05467edbb893e598d685a724a6e9",
+    "kind": "path normalization / English-only metadata"
+  },
+  {
+    "file": "SCANA-R-LIBERO-Spatial-review/protocol/source_splits.json",
+    "source_sha256": "d79224c1742563d3c15e0594e6001812b97f0ee663e79ffb9b14d2130c099eff",
+    "published_sha256": "9a26cc0fa520efac06fb7105e6a4e21ed93f4b5916d93cc677f97483736a81af",
+    "kind": "path normalization / English-only metadata"
+  },
+  {
+    "file": "SCANA-R-LIBERO-Spatial-review/protocol/task_map.json",
+    "source_sha256": "cdcf11dd5dd6b72a399b083d4b726830b5e39e87dd4c970c3393438b2ea5b8b1",
+    "published_sha256": "6223968cc4481fe6cce5c5b31ed158b25e9bb6fb088b392e07dba54971d7ad99",
+    "kind": "path normalization / English-only metadata"
+  },
+  {
+    "file": "SCANA-R-LIBERO-Spatial-review/protocol/windows_patches.json",
+    "source_sha256": "72539234984b8bbf36edc11cd88ded03f3d6fcb207eaebf2bad3e3aaec34230f",
+    "published_sha256": "a1a7382a7bba13e13ab37fa2ad4a86821cee98aa37cfaa2fff7656108a384584",
+    "kind": "path normalization / English-only metadata"
+  },
+  {
+    "file": "SCANA-R-LIBERO-Spatial-review/audits/collection_audits.json",
+    "source_sha256": "b2205b24ef9cb95ceee59dbabc71868db94376a8a0d931cc9a90c21910cad300",
+    "published_sha256": "01d72a411ac11a77ca7987bc6ee40316a0b95614fc1aaa9f6b6bd3df5eeb2ce0",
+    "kind": "path normalization / English-only metadata"
+  },
+  {
+    "file": "SCANA-R-LIBERO-Spatial-review/audits/evidence_audit_2400.json",
+    "source_sha256": "14e93a68dca0476e15ee276fbfb1d01f10910e64ae7a974de5ec4f3fb3bd49f9",
+    "published_sha256": "7223e63d92e9363562078a7597bb02d89298c731a25be00f347696d1f825a007",
+    "kind": "path normalization / English-only metadata"
+  },
+  {
+    "file": "SCANA-R-LIBERO-Spatial-review/audits/identity_fallback_consistency.json",
+    "source_sha256": "ae3f7a25fe514acd7aaed550d7f79d16c3d69707f148528e29e613ab3a264d63",
+    "published_sha256": "5852ad03d2dc85ba5f5daa3ddff298e8f6dc56fb49163e28a048f051a2878213",
+    "kind": "path normalization / English-only metadata"
+  },
+  {
+    "file": "SCANA-R-LIBERO-Spatial-review/audits/official_source_reaudit.json",
+    "source_sha256": "972fc6c12476b3bb760e469802cfb7ec32e5745fd4e1de7b8e5208735053c92b",
+    "published_sha256": "73aca92590f75350e732bae0fe27b8e586b3581a4b16cac9691715fd970480b1",
+    "kind": "path normalization / English-only metadata"
+  },
+  {
+    "file": "SCANA-R-LIBERO-Spatial-review/audits/rgb_adoption_audit.json",
+    "source_sha256": "84fd9fd54317e2f02b9fb821178acfb942717e6f39abce98efdfc9beafeb1bef",
+    "published_sha256": "e09bb708857e8fff55bd633cb3155a0a69d3193451604c98886928c93c72651a",
+    "kind": "path normalization / English-only metadata"
+  },
+  {
+    "file": "SCANA-R-LIBERO-Spatial-review/audits/rgb_reexecution_audit.json",
+    "source_sha256": "f558b5c0cef53340d1af1a568159d853e8831e5cf49bf22666766b427bb0e149",
+    "published_sha256": "1ff692542e26e0ad792cebdf409539855e97608657786a1926601e7e57bfb1c2",
+    "kind": "path normalization / English-only metadata"
+  },
+  {
+    "file": "SCANA-R-LIBERO-Spatial-review/audits/rgb_repair_plan.json",
+    "source_sha256": "37a3bac7bdfc7d846590a1a18a71d44cc2c22e8b0ae995b5b034cb760bf9205b",
+    "published_sha256": "1bdcd0fdec75c9048e1144e0613b80b5759da8cd813610f13e1b3f32e0fad388",
+    "kind": "path normalization / English-only metadata"
+  },
+  {
+    "file": "SCANA-R-LIBERO-Spatial-review/audits/source_integrity.json",
+    "source_sha256": "f5f60879c1dd89e340f6229c91b92e618827278f964b0a77e2132ea82db35d92",
+    "published_sha256": "b6bb8f4fb6a9fac00d529ccd9806f970d8ebeef0d1422df18ed5883876b82124",
+    "kind": "path normalization / English-only metadata"
+  },
+  {
+    "file": "SCANA-R-LIBERO-Spatial-review/audits/video_selection_manifest.json",
+    "source_sha256": "dce032ad44862a7f307e01cfacaf1d7625c75ed21759379ef780bc98b58e88ae",
+    "published_sha256": "9c7f64a225e3083dffa9679d433182e01013c65bf39cf46a900cd3f5a345a9f5",
+    "kind": "path normalization / English-only metadata"
+  },
+  {
+    "file": "SCANA-R-LIBERO-Spatial-review/analysis.json",
+    "source_sha256": "48b3524afd6356e03630f2477da1fd510ab31499dbddfe1531b6056b0a8cb58d",
+    "published_sha256": "51207480a091eaee8997edc8403630a3bb9952f448cd96a0dbed009ce328a3d9",
+    "kind": "path normalization / English-only metadata"
+  },
+  {
+    "file": "SCANA-R-LIBERO-Spatial-review/figure_contract.json",
+    "source_sha256": "74679b6a9021cf4881bc6b70b2031538509b4904ca571d1e105b43a0ad790a81",
+    "published_sha256": "24a16961badb602daafb91591198e2bb1db334f26ebd732f48513788b9316720",
+    "kind": "path normalization / English-only metadata"
+  },
+  {
+    "file": "SCANA-R-LIBERO-Spatial-review/recomputed_statistics.json",
+    "source_sha256": "24de1a12bc9ed69b183b6aff43ae3ecb150ff79f40c7df1fda33761428ee68e1",
+    "published_sha256": "8e2bd5713e16e716cd9bb9d98e20af3d405b99662f8655d9ff06b4805724bc3a",
+    "kind": "path normalization / English-only metadata"
+  },
+  {
+    "file": "models/aux_lib101_fold0/latest.pt",
+    "source_sha256": "336d5fd36557169ef8477c302456b9b970a4548b97a4bf04bf6a56e0e4f6e72b",
+    "published_sha256": "9e98b884fe1c51b8f30a36dcc41d0e054d7f1620ab943af4114be4361ec9986f",
+    "metadata_changes": [
+      "workspace metadata made relative"
+    ],
+    "tensor_storage_members_unchanged": 100,
+    "tensor_storage_sha256": "6034b79c3f4c189740c28c04a8b0320f96c142e7cfc8eeedc2d58b5b41913be8"
+  },
+  {
+    "file": "models/aux_lib101_fold1/latest.pt",
+    "source_sha256": "0d38e864acf86b0e702fc592db2d466a8811483c0374ea49505244538784dab6",
+    "published_sha256": "b6262cfeb72ae4b8feaa19cc2b1c8aad3c6d36a6376f1d84d43a72a58280e226",
+    "metadata_changes": [
+      "workspace metadata made relative"
+    ],
+    "tensor_storage_members_unchanged": 100,
+    "tensor_storage_sha256": "87bddc5d3eac60bf6818bd1094768012f9db48ac2603afaafd9353d7c81c879f"
+  },
+  {
+    "file": "models/aux_lib101_fold2/latest.pt",
+    "source_sha256": "aaea71e8e28cd92e9128bde27224e7c3f6c59b800e4d0c83cf29be836f295a70",
+    "published_sha256": "6ce5b6edcac130f70b6ae13dbb057781bd677006ea0cadfee270da3a255d29ac",
+    "metadata_changes": [
+      "workspace metadata made relative"
+    ],
+    "tensor_storage_members_unchanged": 100,
+    "tensor_storage_sha256": "5f5169a2b7773fbda07b27b603f560613219344fd92f6c575f8fd6f31369027d"
+  },
+  {
+    "file": "models/aux_lib101_fold3/latest.pt",
+    "source_sha256": "3aef64b678f382c7ecc36c1a70097c62f444988fa3c94347bb3969fb293b4af4",
+    "published_sha256": "4104ac45283b9b11c5f16da1fa3469742550b3b0e21ae53bde96176dc3aeb7a6",
+    "metadata_changes": [
+      "workspace metadata made relative"
+    ],
+    "tensor_storage_members_unchanged": 100,
+    "tensor_storage_sha256": "3e3ce32c930d0a4d018048b9e1e7626001e474ab55fd4f72e88b7de4f0839c09"
+  },
+  {
+    "file": "models/aux_lib101_fold4/latest.pt",
+    "source_sha256": "80d49a86caa4a975cfb6a7f780a803c0b498707732a106021021759edc3eded7",
+    "published_sha256": "8bfc764feccf9d1fbda0b1a6fa0d2b5ecdade7d8a8dfc09cac3dba81fef038d2",
+    "metadata_changes": [
+      "workspace metadata made relative"
+    ],
+    "tensor_storage_members_unchanged": 100,
+    "tensor_storage_sha256": "441ce1f0fd1b090029cf7b626d57e1803503aa83d32b87f035f9215ae30f0402"
+  },
+  {
+    "file": "models/aux_lib202_fold0/latest.pt",
+    "source_sha256": "9db08dddbb790eb96f1b0206639dafcaa690341f3cbc359904018ba9d00a5b43",
+    "published_sha256": "b7e29d62379ca86c28d745894384c2a311601c0cd9b0154bfb1e24e53c52318c",
+    "metadata_changes": [
+      "workspace metadata made relative"
+    ],
+    "tensor_storage_members_unchanged": 100,
+    "tensor_storage_sha256": "f1f1928779fb88ab20b5f1235e57eb36040b0ef92cf3dba518ec0aeac37e1fb1"
+  },
+  {
+    "file": "models/aux_lib202_fold1/latest.pt",
+    "source_sha256": "7bfbb419df1543246147819b235557389e355bcd3628caa3a74f6b0cb7cf5596",
+    "published_sha256": "56b65aa404193fcde32079757bf1b15b47f4e750e6b79be5dd203425a765b621",
+    "metadata_changes": [
+      "workspace metadata made relative"
+    ],
+    "tensor_storage_members_unchanged": 100,
+    "tensor_storage_sha256": "d8eac29c62865980444754c0171328a108753bc3d631ed456827072e2bc9ac09"
+  },
+  {
+    "file": "models/aux_lib202_fold2/latest.pt",
+    "source_sha256": "e5d7ece7593eafe4cff0a8530ba6fea1df7c2aa396a2b14fec4d25af858a37c0",
+    "published_sha256": "af5ffbe0e4e5d6184eb3455d117574235667857b5a687980db57d9fbcd7fea5b",
+    "metadata_changes": [
+      "workspace metadata made relative"
+    ],
+    "tensor_storage_members_unchanged": 100,
+    "tensor_storage_sha256": "3a19dccc8046f8d787f4ece06c5b41715f3e7d6dc5d80d8555098fc9bd88736f"
+  },
+  {
+    "file": "models/aux_lib202_fold3/latest.pt",
+    "source_sha256": "50addd65028987cb9f2578af102ba76a84247bd5f72f48e2f72cb5b7db5e641b",
+    "published_sha256": "27e71deedef1e8197fdb3a30514e602cc844f0f3850af8ebf4f377707d013ca6",
+    "metadata_changes": [
+      "workspace metadata made relative"
+    ],
+    "tensor_storage_members_unchanged": 100,
+    "tensor_storage_sha256": "5d59bd8ae503fa25f249cf2a7c29375ded9df0fc8c0e2fcc85c50aae3e396261"
+  },
+  {
+    "file": "models/aux_lib202_fold4/latest.pt",
+    "source_sha256": "70a0cd84d9d22937f9770e3593ddccfb4222abba243427362f64e5ae56e8bc13",
+    "published_sha256": "7cda7c2510aed3a297cbeb32919818193543cf49c4a5b5b4b273a09cbae09bd9",
+    "metadata_changes": [
+      "workspace metadata made relative"
+    ],
+    "tensor_storage_members_unchanged": 100,
+    "tensor_storage_sha256": "167a851241446a77466fe2caacb6beb6cfbb4e5b980c7da0bc5af15abae702f5"
+  },
+  {
+    "file": "models/aux_lib303_fold0/latest.pt",
+    "source_sha256": "3bc1b8850621d0377728ef480ae40fd8c4a3044a918411bd252616e6a3b0ee0a",
+    "published_sha256": "fe0cda16b8209e5b1f5471c1d09d37a16101e0b4a6cfbdda61cf9db73064a243",
+    "metadata_changes": [
+      "workspace metadata made relative"
+    ],
+    "tensor_storage_members_unchanged": 100,
+    "tensor_storage_sha256": "47e8708862e3aa388e41ed086d110f07895a0422f893b60510cf4df7aaf0b8f8"
+  },
+  {
+    "file": "models/aux_lib303_fold1/latest.pt",
+    "source_sha256": "ae0a14c95789e3e1b3ca6ab2b6dab5695b1775845ccc708787f092ed45097c05",
+    "published_sha256": "9d48f84fdcc0dafb1463f6e3ea54225574cc95326cc4ed9f39ea945a5406f553",
+    "metadata_changes": [
+      "workspace metadata made relative"
+    ],
+    "tensor_storage_members_unchanged": 100,
+    "tensor_storage_sha256": "452bd1a8d4f715ccacac211cbe434cbdd460f1c6739ce59dd9992dfc592edb24"
+  },
+  {
+    "file": "models/aux_lib303_fold2/latest.pt",
+    "source_sha256": "aa63a2474bce6ba0a53c74c7e039c1176f9ce527b6f71c7a2ea57a5218ffca2e",
+    "published_sha256": "70abc0d055635378cde282167d54b01a948e10913da012fae778769ddee24190",
+    "metadata_changes": [
+      "workspace metadata made relative"
+    ],
+    "tensor_storage_members_unchanged": 100,
+    "tensor_storage_sha256": "bb4633b131593e0065ddbfae8291155553fa02e564d14487c4e1d49e4330d2d5"
+  },
+  {
+    "file": "models/aux_lib303_fold3/latest.pt",
+    "source_sha256": "72e509eb1d76cebca7eec5940c2ca794e6c7576752945c05e21d7cf629030f60",
+    "published_sha256": "a75c584db75d0df42fec13c0b811e25ec122f6ec8a86102dbb4724fcc867ded0",
+    "metadata_changes": [
+      "workspace metadata made relative"
+    ],
+    "tensor_storage_members_unchanged": 100,
+    "tensor_storage_sha256": "bcbd4746d81c697f5cac2378861039539872d5a259b2d1781d14e538404b312c"
+  },
+  {
+    "file": "models/aux_lib303_fold4/latest.pt",
+    "source_sha256": "47200b90bce5b16c42b8dba5f0aa1bddb4112b80b25a07c9a3adb0698cca8546",
+    "published_sha256": "e84d91ab901cf2d2669b355c2f98355d1d14b1d212ff32ac26342d0101df40f0",
+    "metadata_changes": [
+      "workspace metadata made relative"
+    ],
+    "tensor_storage_members_unchanged": 100,
+    "tensor_storage_sha256": "0ef21dc61584b14ef0d3bcb836ede4fdb27d850dcf7d250cc8aeaf07842b9bc1"
+  },
+  {
+    "file": "models/clean_repeat_lib101_seed7/latest.pt",
+    "source_sha256": "cfc28b4af7c29d664c9be65f116fc9aba2627167b547b42703277fc212d74644",
+    "published_sha256": "116d24d0b8b1328f740d478b8e10751170c6939e27ca749db181a4d03d66deac",
+    "metadata_changes": [
+      "workspace metadata made relative"
+    ],
+    "tensor_storage_members_unchanged": 100,
+    "tensor_storage_sha256": "0f3cd5f4b04dff975309ab77db5e79190ae5d1eaefbfe1770beea21dd9b0ac50"
+  },
+  {
+    "file": "models/clean_repeat_lib202_seed11/latest.pt",
+    "source_sha256": "6693da3f79af24ba80878951ba30c3af135893492f015315fb2af91a63853bb0",
+    "published_sha256": "7b81cfe9dacc5df6704ecd34bc6d8736a60d3e921cc02d4a23cd62b0a7609894",
+    "metadata_changes": [
+      "workspace metadata made relative"
+    ],
+    "tensor_storage_members_unchanged": 100,
+    "tensor_storage_sha256": "cfb5323f312caf120008afc9cef14b10cb2857c95d84650d058d8156d5a78973"
+  },
+  {
+    "file": "models/clean_repeat_lib303_seed23/latest.pt",
+    "source_sha256": "0ecccbf82a19d003d14281f5c5c1eaf23844f46fedc4e81980759073af554e12",
+    "published_sha256": "91cef43727cc16d5d11a42e77c22c54e9389c9b980a04496471554e4ca219f09",
+    "metadata_changes": [
+      "workspace metadata made relative"
+    ],
+    "tensor_storage_members_unchanged": 100,
+    "tensor_storage_sha256": "7ed9feeb16927f24c12e8074034a2c64eb0d290070a458522e1a82c398344938"
+  },
+  {
+    "file": "models/clean_warmup_seed7/latest.pt",
+    "source_sha256": "216f971fc8db5cdd1b981767310cc20aff890c0c771c8183201b31f77ea4626d",
+    "published_sha256": "a9409df447d1529e486221c9eb0c9f0030acd98a3cd349b222e4a70835d5e83e",
+    "metadata_changes": [
+      "workspace metadata made relative"
+    ],
+    "tensor_storage_members_unchanged": 100,
+    "tensor_storage_sha256": "2f92aea45d55be1d09f6a2159704d4e066b50fb4a376860750c6199b5c15552d"
+  },
+  {
+    "file": "models/gaussian_recovery_lib101_seed7/latest.pt",
+    "source_sha256": "34999069e2be743cc2de9eef410ed5ae136a10ebdb82d103b98485b213ec4107",
+    "published_sha256": "c025d062ed3aaf8d836c041dd2e8fe52e13864d0aed5917faa7d8995dc196863",
+    "metadata_changes": [
+      "workspace metadata made relative"
+    ],
+    "tensor_storage_members_unchanged": 100,
+    "tensor_storage_sha256": "e4c3fd8bebcf3d2f4bbe2437dac8abb7232017c872f0cbdbf6a8315dc1294e22"
+  },
+  {
+    "file": "models/gaussian_recovery_lib202_seed11/latest.pt",
+    "source_sha256": "6617aa9cecd00eb9d8f6e565738f78e469fe1a9e595c306922fe00115f07e4c6",
+    "published_sha256": "66d52733ad7110bb3afe2b5f7435358cd4ee10125dd48bbed131c62211de4c65",
+    "metadata_changes": [
+      "workspace metadata made relative"
+    ],
+    "tensor_storage_members_unchanged": 100,
+    "tensor_storage_sha256": "9e977eb4509192e792642b1f7ba1d8dd948207886b594c4f82244b80a2be80eb"
+  },
+  {
+    "file": "models/gaussian_recovery_lib303_seed23/latest.pt",
+    "source_sha256": "57436a8aacc7b4a72b40212a8ed8e8c637a22c1484b5d9d5b87875d885da0086",
+    "published_sha256": "6ec7ba168a93f26f76a5a6130e3a8f059a8eb32442ea858fc91740ab5cd41f57",
+    "metadata_changes": [
+      "workspace metadata made relative"
+    ],
+    "tensor_storage_members_unchanged": 100,
+    "tensor_storage_sha256": "dda66d802ad5a1082c99df95b3063914a29a7890f68687f626cc56aeba80486b"
+  },
+  {
+    "file": "models/gaussian_same_total_cost_lib101_seed7/latest.pt",
+    "source_sha256": "a7830b71172d757757109fac34d248d6e41bbd9968a0601d09f34e35224c32a3",
+    "published_sha256": "daddc3c0317c3306c0c15e11945a69d71c72956010227f12d1f8c91ef6b981f2",
+    "metadata_changes": [
+      "workspace metadata made relative"
+    ],
+    "tensor_storage_members_unchanged": 100,
+    "tensor_storage_sha256": "7d75794d33ec246b6941993a1c5fadb4faf02701e571e111c1b5dea69bbc5db5"
+  },
+  {
+    "file": "models/gaussian_same_total_cost_lib202_seed11/latest.pt",
+    "source_sha256": "caec88dbb41b1b87d3b3e0ecfdd6fffe50332a5290a70668d77ea77f3b8df60f",
+    "published_sha256": "2d8f8b9557af49073dbfed312966ccd62fa81fc6baf756aa5cb37caad993acc4",
+    "metadata_changes": [
+      "workspace metadata made relative"
+    ],
+    "tensor_storage_members_unchanged": 100,
+    "tensor_storage_sha256": "c5db8f6d1e3a149ca8fd03832db45a054061f3488033f1a755911c30c3761f97"
+  },
+  {
+    "file": "models/gaussian_same_total_cost_lib303_seed23/latest.pt",
+    "source_sha256": "65c3a174ed238da799faeb9d84832ed72fd3412a9f3dae661d9f63dda3a18fc6",
+    "published_sha256": "3ba144cd9b18af4eb91f483f1ec5ab3f797da648e2b2e776dba65cbb98090482",
+    "metadata_changes": [
+      "workspace metadata made relative"
+    ],
+    "tensor_storage_members_unchanged": 100,
+    "tensor_storage_sha256": "e90fdbee653dddea940acdd7be1d253674c1818f25ac49ff38abc1f3405d71d8"
+  },
+  {
+    "file": "models/scana_r_lib101_seed7/latest.pt",
+    "source_sha256": "c82f5224ce18340210e160f1028ff122cdf5f06c5b62d1c5328691039d73d0b1",
+    "published_sha256": "339260e20603b37f55ee1a7aa8b38d175d5bb7aff282937211030291f9dcdf6e",
+    "metadata_changes": [
+      "workspace metadata made relative"
+    ],
+    "tensor_storage_members_unchanged": 100,
+    "tensor_storage_sha256": "04e2cd34e563fb5cc36da382005669da8556aca87c94f8c68113e94746c220a4"
+  },
+  {
+    "file": "models/scana_r_lib202_seed11/latest.pt",
+    "source_sha256": "bfed108a92d81b7052dd074260c271486f0c4d7af41572053d4cb4d09a3cb61b",
+    "published_sha256": "842b1db37893eca12e1df1129d828d20210dac1b7a3e7dba2f193901f494259c",
+    "metadata_changes": [
+      "workspace metadata made relative"
+    ],
+    "tensor_storage_members_unchanged": 100,
+    "tensor_storage_sha256": "4fbfc1ef2999e80adda01544ea79ab84838866605fa55edb372ddc03343ab54d"
+  },
+  {
+    "file": "models/scana_r_lib303_seed23/latest.pt",
+    "source_sha256": "b46d22f77e770e6d543c1da287b9bcfdd00822fcb4fdc4a7a47dd8ddb13ce5d3",
+    "published_sha256": "b31928614d1f4b2fedab0bf86fa7621ebcc683f95cd10fcb109def4f725202a8",
+    "metadata_changes": [
+      "workspace metadata made relative"
+    ],
+    "tensor_storage_members_unchanged": 100,
+    "tensor_storage_sha256": "a052bb15122fe88527a4ccc4a4d984f4a79ad4733cbdb82b2dcede2ad4d1aad6"
+  }
+]

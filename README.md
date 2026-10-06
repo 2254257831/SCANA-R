@@ -16,9 +16,30 @@ and contact details are omitted from this review version. The hosting account
 remains visible in GitHub and Pages URLs. Earlier Git history is retained and
 may contain identifying metadata; this repository is not fully anonymous.
 
+## LIBERO-Spatial: all ten tasks
+
+The latest extension contains **2,400 formal test episodes** from four methods,
+three paired recovery-library/policy repetitions and twenty initial states per task.
+The compact visual/instruction-conditioned policy is trained from scratch.
+This is a custom multitask evaluation of Spatial, not all LIBERO suites or a foundation VLA benchmark.
+
+| Method | Macro success (%) | SD across three repetitions |
+|---|---:|---:|
+| Repeated original data | 76.3 | 4.2 |
+| Correlated Gaussian recovery | 70.7 | 4.5 |
+| SCANA-R | 72.3 | 4.5 |
+| Gaussian, matched total active wall time | 70.3 | 3.5 |
+
+These results do not establish a stable calibration advantage; source demonstrations remain fixed.
+See [protocol, figures and download links](docs/libero-spatial.md),
+[compact reviewer data](results/libero_spatial10_v1) and the
+[complete raw-record/model release](https://github.com/2254257831/SCANA-R/releases/tag/libero-spatial10-v1).
+Run `python scripts/reproduce_libero.py` using the Python standard library alone.
+The manuscript maps this extension to Figures 10–11, Tables 11–13 and Appendix F.
+
 ## Independent-library and cost study (v46)
 
-The current manuscript adds **11,040 evaluation episodes**. Five independently rebuilt
+The independent-library study contains **11,040 evaluation episodes**. Five independently rebuilt
 libraries per bimanual task yield **89.7% / 49.7% SCANA-R**, **81.7% / 38.7% Gaussian
 recovery**, and **92.7% / 54.7% Gaussian at matched total active CPU cost**.
 Three-library repeats on six Meta-World tasks yield macro success **89.9% SCANA-R,
@@ -174,7 +195,7 @@ equal in collection cost to simply repeating clean data.
 
 The project page follows the classic computer-vision paper layout: a centered
 title and resource links, a current failure-intervention teaser, abstract, original PPT
-method figures with v47 vector labels (SVG display and PDF downloads), synchronized baseline comparisons, and quantitative results.
+method figures refined for 190 mm reproduction width (SVG display and PDF downloads), synchronized baseline comparisons, and quantitative results.
 The current six H.264 comparisons replay 20 archived source clips, all with zero state error and identical rewards. They cover independent libraries, compute-matched Gaussian recovery and channel/replanning interventions. Fixed IDs are chosen independently of outcomes; failures and baseline wins remain visible. Earlier selected contrasts are labeled separately. Selection never replaces aggregate evaluation. See
 [current video provenance and rendering](docs/current-videos.md) for the exact source records,
 optional dependencies and reproduction commands.

@@ -1,6 +1,8 @@
 # Evidence and reproducibility scope
 
-The current v47 evidence adds 11,040 evaluations: 4,200 ACT library/cost/component comparisons, 3,240 Meta-World library repetitions and 3,600 frozen-policy interventions. See [the protocol and manuscript map](study-protocol.md), [compact-data reanalysis and raw downloads](reproduction.md), and [current videos](current-videos.md). The older records below remain separate studies.
+The latest **LIBERO-Spatial ten-task extension (2,400 test episodes)** is available in the [reviewer package, raw archives and protocol](libero-spatial.md). The older studies below are separate batches.
+
+The independent-library and cost study contains 11,040 evaluations: 4,200 ACT library/cost/component comparisons, 3,240 Meta-World library repetitions and 3,600 frozen-policy interventions. See [the protocol and manuscript map](study-protocol.md), [compact-data reanalysis and raw downloads](reproduction.md), and [study videos](current-videos.md). The older records below remain separate studies.
 
 The expanded eight-task simulation study adds 11,600 records in `results/act_extension_v1/` and `results/metaworld_extension_v1/`. Six-task macro performance does not improve over Clean repeat. See [the extension protocol](mujoco-extension.md) and [all-task gallery](mujoco-gallery.html); the original results below are retained as a separate study.
 
@@ -16,7 +18,7 @@ intermediate values when reporting differences.
 | Earlier success rates and contrasts | `results/independent_test/`, `scripts/summarize.py` | All 3,200 per-rollout rows included |
 | Development amplitude choice | `results/development/`, `configs/protocol_frozen.json` | Recorded CSV/JSON included |
 | Recovery contract, attempts, weights and trajectories | Four separate evidence bundles | [Release downloads and SHA-256 verification](reproduction.md) |
-| Four current method diagrams | `docs/assets/figures/figure-1` through `figure-4` | v47 vector PDFs and SVGs; the editable source PPT is preserved in `figures/` |
+| Four current method diagrams | `docs/assets/figures/figure-1` through `figure-4` | Vector PDFs and SVGs refined for 190 mm width; the editable source PPT is preserved in `figures/` |
 | Historical single-arm offline tables | `legacy/` and historical modules in `src/` | Code archived; original private data excluded |
 | Historical public-data residual training | `legacy/original_v35/`, `legacy/tools/` | Requires original public caches / dataset versions; no fresh reproduction claim |
 | GR00T, visual policy, real robot | None in the current study | Not evaluated |

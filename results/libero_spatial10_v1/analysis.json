@@ -1,0 +1,476 @@
+{
+  "macro": [
+    {
+      "method": "clean_repeat",
+      "name": "Clean repeat",
+      "successes": 458,
+      "episodes": 600,
+      "mean": 76.33333333333333,
+      "sd": 4.163331998932265,
+      "repeat1": 75.0,
+      "repeat2": 81.0,
+      "repeat3": 73.0
+    },
+    {
+      "method": "gaussian_recovery",
+      "name": "Gaussian recovery",
+      "successes": 424,
+      "episodes": 600,
+      "mean": 70.66666666666667,
+      "sd": 4.536885862938733,
+      "repeat1": 66.5,
+      "repeat2": 75.5,
+      "repeat3": 70.0
+    },
+    {
+      "method": "scana_r",
+      "name": "SCANA-R",
+      "successes": 434,
+      "episodes": 600,
+      "mean": 72.33333333333333,
+      "sd": 4.481443219916251,
+      "repeat1": 70.0,
+      "repeat2": 77.5,
+      "repeat3": 69.5
+    },
+    {
+      "method": "gaussian_same_total_cost",
+      "name": "Gaussian, total cost",
+      "successes": 422,
+      "episodes": 600,
+      "mean": 70.33333333333333,
+      "sd": 3.547299442298794,
+      "repeat1": 66.5,
+      "repeat2": 71.0,
+      "repeat3": 73.5
+    }
+  ],
+  "paired": [
+    {
+      "baseline": "clean_repeat",
+      "mean_pp": -4.0000000000000036,
+      "sd_pp": 0.8660254037844394,
+      "repeat1": -5.000000000000004,
+      "repeat2": -3.500000000000003,
+      "repeat3": -3.500000000000003
+    },
+    {
+      "baseline": "gaussian_recovery",
+      "mean_pp": 1.6666666666666643,
+      "sd_pp": 2.0207259421636867,
+      "repeat1": 3.499999999999992,
+      "repeat2": 2.0000000000000018,
+      "repeat3": -0.5000000000000004
+    },
+    {
+      "baseline": "gaussian_same_total_cost",
+      "mean_pp": 1.9999999999999976,
+      "sd_pp": 5.408326913195987,
+      "repeat1": 3.499999999999992,
+      "repeat2": 6.500000000000005,
+      "repeat3": -4.0000000000000036
+    }
+  ],
+  "collections": [
+    {
+      "library": "lib101_gaussian",
+      "attempts": 1527,
+      "accepted_1.0": 1044,
+      "accepted_0.5": 60,
+      "accepted_0.25": 21,
+      "accepted_0.0": 14,
+      "failed_branches": 61,
+      "windows": 4555,
+      "collection_seconds": 5690.720660499999
+    },
+    {
+      "library": "lib101_scana_r",
+      "attempts": 1534,
+      "accepted_1.0": 1041,
+      "accepted_0.5": 59,
+      "accepted_0.25": 25,
+      "accepted_0.0": 7,
+      "failed_branches": 68,
+      "windows": 4527,
+      "collection_seconds": 5975.945261699999
+    },
+    {
+      "library": "lib202_gaussian",
+      "attempts": 1529,
+      "accepted_1.0": 1042,
+      "accepted_0.5": 63,
+      "accepted_0.25": 19,
+      "accepted_0.0": 10,
+      "failed_branches": 66,
+      "windows": 4535,
+      "collection_seconds": 6887.226094199999
+    },
+    {
+      "library": "lib202_scana_r",
+      "attempts": 1538,
+      "accepted_1.0": 1039,
+      "accepted_0.5": 65,
+      "accepted_0.25": 15,
+      "accepted_0.0": 14,
+      "failed_branches": 67,
+      "windows": 4531,
+      "collection_seconds": 6496.072960999998
+    },
+    {
+      "library": "lib303_gaussian",
+      "attempts": 1538,
+      "accepted_1.0": 1034,
+      "accepted_0.5": 71,
+      "accepted_0.25": 18,
+      "accepted_0.0": 11,
+      "failed_branches": 66,
+      "windows": 4535,
+      "collection_seconds": 5567.054829300003
+    },
+    {
+      "library": "lib303_scana_r",
+      "attempts": 1544,
+      "accepted_1.0": 1035,
+      "accepted_0.5": 65,
+      "accepted_0.25": 21,
+      "accepted_0.0": 11,
+      "failed_branches": 68,
+      "windows": 4527,
+      "collection_seconds": 5071.461572600001
+    }
+  ],
+  "case": {
+    "task": 7,
+    "init_state": 1,
+    "library_seed": 101,
+    "policy_seed": 7
+  },
+  "failure_counts": [
+    {
+      "task": 0,
+      "method": "clean_repeat",
+      "lifted_no_plate_approach": 2,
+      "lifted_plate_approach_goal_failed": 1,
+      "no_lift_proxy": 5,
+      "successful": 52
+    },
+    {
+      "task": 0,
+      "method": "gaussian_recovery",
+      "lifted_no_plate_approach": 3,
+      "lifted_plate_approach_goal_failed": 0,
+      "no_lift_proxy": 10,
+      "successful": 47
+    },
+    {
+      "task": 0,
+      "method": "gaussian_same_total_cost",
+      "lifted_no_plate_approach": 3,
+      "lifted_plate_approach_goal_failed": 4,
+      "no_lift_proxy": 10,
+      "successful": 43
+    },
+    {
+      "task": 0,
+      "method": "scana_r",
+      "lifted_no_plate_approach": 2,
+      "lifted_plate_approach_goal_failed": 0,
+      "no_lift_proxy": 7,
+      "successful": 51
+    },
+    {
+      "task": 1,
+      "method": "clean_repeat",
+      "lifted_no_plate_approach": 7,
+      "lifted_plate_approach_goal_failed": 1,
+      "no_lift_proxy": 2,
+      "successful": 50
+    },
+    {
+      "task": 1,
+      "method": "gaussian_recovery",
+      "lifted_no_plate_approach": 3,
+      "lifted_plate_approach_goal_failed": 1,
+      "no_lift_proxy": 6,
+      "successful": 50
+    },
+    {
+      "task": 1,
+      "method": "gaussian_same_total_cost",
+      "lifted_no_plate_approach": 2,
+      "lifted_plate_approach_goal_failed": 3,
+      "no_lift_proxy": 7,
+      "successful": 48
+    },
+    {
+      "task": 1,
+      "method": "scana_r",
+      "lifted_no_plate_approach": 6,
+      "lifted_plate_approach_goal_failed": 0,
+      "no_lift_proxy": 7,
+      "successful": 47
+    },
+    {
+      "task": 2,
+      "method": "clean_repeat",
+      "lifted_no_plate_approach": 3,
+      "lifted_plate_approach_goal_failed": 2,
+      "no_lift_proxy": 1,
+      "successful": 54
+    },
+    {
+      "task": 2,
+      "method": "gaussian_recovery",
+      "lifted_no_plate_approach": 2,
+      "lifted_plate_approach_goal_failed": 1,
+      "no_lift_proxy": 5,
+      "successful": 52
+    },
+    {
+      "task": 2,
+      "method": "gaussian_same_total_cost",
+      "lifted_no_plate_approach": 1,
+      "lifted_plate_approach_goal_failed": 1,
+      "no_lift_proxy": 6,
+      "successful": 52
+    },
+    {
+      "task": 2,
+      "method": "scana_r",
+      "lifted_no_plate_approach": 7,
+      "lifted_plate_approach_goal_failed": 3,
+      "no_lift_proxy": 4,
+      "successful": 46
+    },
+    {
+      "task": 3,
+      "method": "clean_repeat",
+      "lifted_no_plate_approach": 1,
+      "lifted_plate_approach_goal_failed": 1,
+      "no_lift_proxy": 4,
+      "successful": 54
+    },
+    {
+      "task": 3,
+      "method": "gaussian_recovery",
+      "lifted_no_plate_approach": 2,
+      "lifted_plate_approach_goal_failed": 1,
+      "no_lift_proxy": 5,
+      "successful": 52
+    },
+    {
+      "task": 3,
+      "method": "gaussian_same_total_cost",
+      "lifted_no_plate_approach": 2,
+      "lifted_plate_approach_goal_failed": 0,
+      "no_lift_proxy": 7,
+      "successful": 51
+    },
+    {
+      "task": 3,
+      "method": "scana_r",
+      "lifted_no_plate_approach": 1,
+      "lifted_plate_approach_goal_failed": 2,
+      "no_lift_proxy": 4,
+      "successful": 53
+    },
+    {
+      "task": 4,
+      "method": "clean_repeat",
+      "lifted_no_plate_approach": 1,
+      "lifted_plate_approach_goal_failed": 0,
+      "no_lift_proxy": 12,
+      "successful": 47
+    },
+    {
+      "task": 4,
+      "method": "gaussian_recovery",
+      "lifted_no_plate_approach": 1,
+      "lifted_plate_approach_goal_failed": 1,
+      "no_lift_proxy": 14,
+      "successful": 44
+    },
+    {
+      "task": 4,
+      "method": "gaussian_same_total_cost",
+      "lifted_no_plate_approach": 3,
+      "lifted_plate_approach_goal_failed": 1,
+      "no_lift_proxy": 16,
+      "successful": 40
+    },
+    {
+      "task": 4,
+      "method": "scana_r",
+      "lifted_no_plate_approach": 0,
+      "lifted_plate_approach_goal_failed": 1,
+      "no_lift_proxy": 13,
+      "successful": 46
+    },
+    {
+      "task": 5,
+      "method": "clean_repeat",
+      "lifted_no_plate_approach": 3,
+      "lifted_plate_approach_goal_failed": 5,
+      "no_lift_proxy": 6,
+      "successful": 46
+    },
+    {
+      "task": 5,
+      "method": "gaussian_recovery",
+      "lifted_no_plate_approach": 7,
+      "lifted_plate_approach_goal_failed": 4,
+      "no_lift_proxy": 12,
+      "successful": 37
+    },
+    {
+      "task": 5,
+      "method": "gaussian_same_total_cost",
+      "lifted_no_plate_approach": 9,
+      "lifted_plate_approach_goal_failed": 7,
+      "no_lift_proxy": 12,
+      "successful": 32
+    },
+    {
+      "task": 5,
+      "method": "scana_r",
+      "lifted_no_plate_approach": 4,
+      "lifted_plate_approach_goal_failed": 4,
+      "no_lift_proxy": 6,
+      "successful": 46
+    },
+    {
+      "task": 6,
+      "method": "clean_repeat",
+      "lifted_no_plate_approach": 0,
+      "lifted_plate_approach_goal_failed": 2,
+      "no_lift_proxy": 4,
+      "successful": 54
+    },
+    {
+      "task": 6,
+      "method": "gaussian_recovery",
+      "lifted_no_plate_approach": 0,
+      "lifted_plate_approach_goal_failed": 2,
+      "no_lift_proxy": 11,
+      "successful": 47
+    },
+    {
+      "task": 6,
+      "method": "gaussian_same_total_cost",
+      "lifted_no_plate_approach": 3,
+      "lifted_plate_approach_goal_failed": 2,
+      "no_lift_proxy": 9,
+      "successful": 46
+    },
+    {
+      "task": 6,
+      "method": "scana_r",
+      "lifted_no_plate_approach": 2,
+      "lifted_plate_approach_goal_failed": 2,
+      "no_lift_proxy": 4,
+      "successful": 52
+    },
+    {
+      "task": 7,
+      "method": "clean_repeat",
+      "lifted_no_plate_approach": 1,
+      "lifted_plate_approach_goal_failed": 1,
+      "no_lift_proxy": 33,
+      "successful": 25
+    },
+    {
+      "task": 7,
+      "method": "gaussian_recovery",
+      "lifted_no_plate_approach": 4,
+      "lifted_plate_approach_goal_failed": 1,
+      "no_lift_proxy": 40,
+      "successful": 15
+    },
+    {
+      "task": 7,
+      "method": "gaussian_same_total_cost",
+      "lifted_no_plate_approach": 4,
+      "lifted_plate_approach_goal_failed": 2,
+      "no_lift_proxy": 31,
+      "successful": 23
+    },
+    {
+      "task": 7,
+      "method": "scana_r",
+      "lifted_no_plate_approach": 4,
+      "lifted_plate_approach_goal_failed": 0,
+      "no_lift_proxy": 37,
+      "successful": 19
+    },
+    {
+      "task": 8,
+      "method": "clean_repeat",
+      "lifted_no_plate_approach": 1,
+      "lifted_plate_approach_goal_failed": 1,
+      "no_lift_proxy": 7,
+      "successful": 51
+    },
+    {
+      "task": 8,
+      "method": "gaussian_recovery",
+      "lifted_no_plate_approach": 1,
+      "lifted_plate_approach_goal_failed": 0,
+      "no_lift_proxy": 6,
+      "successful": 53
+    },
+    {
+      "task": 8,
+      "method": "gaussian_same_total_cost",
+      "lifted_no_plate_approach": 0,
+      "lifted_plate_approach_goal_failed": 1,
+      "no_lift_proxy": 6,
+      "successful": 53
+    },
+    {
+      "task": 8,
+      "method": "scana_r",
+      "lifted_no_plate_approach": 2,
+      "lifted_plate_approach_goal_failed": 2,
+      "no_lift_proxy": 7,
+      "successful": 49
+    },
+    {
+      "task": 9,
+      "method": "clean_repeat",
+      "lifted_no_plate_approach": 8,
+      "lifted_plate_approach_goal_failed": 0,
+      "no_lift_proxy": 27,
+      "successful": 25
+    },
+    {
+      "task": 9,
+      "method": "gaussian_recovery",
+      "lifted_no_plate_approach": 5,
+      "lifted_plate_approach_goal_failed": 1,
+      "no_lift_proxy": 27,
+      "successful": 27
+    },
+    {
+      "task": 9,
+      "method": "gaussian_same_total_cost",
+      "lifted_no_plate_approach": 5,
+      "lifted_plate_approach_goal_failed": 1,
+      "no_lift_proxy": 20,
+      "successful": 34
+    },
+    {
+      "task": 9,
+      "method": "scana_r",
+      "lifted_no_plate_approach": 4,
+      "lifted_plate_approach_goal_failed": 1,
+      "no_lift_proxy": 30,
+      "successful": 25
+    }
+  ],
+  "classification_sensitivity": {
+    "0.02": "{('clean_repeat', 'no_lift_proxy'): 93, ('clean_repeat', 'lifted_no_plate_approach'): 34, ('clean_repeat', 'lifted_plate_approach_goal_failed'): 15, ('gaussian_recovery', 'no_lift_proxy'): 113, ('gaussian_recovery', 'lifted_no_plate_approach'): 51, ('gaussian_recovery', 'lifted_plate_approach_goal_failed'): 12, ('gaussian_same_total_cost', 'no_lift_proxy'): 111, ('gaussian_same_total_cost', 'lifted_no_plate_approach'): 45, ('gaussian_same_total_cost', 'lifted_plate_approach_goal_failed'): 22, ('scana_r', 'no_lift_proxy'): 105, ('scana_r', 'lifted_no_plate_approach'): 46, ('scana_r', 'lifted_plate_approach_goal_failed'): 15}",
+    "0.03": "{('clean_repeat', 'no_lift_proxy'): 101, ('clean_repeat', 'lifted_no_plate_approach'): 27, ('clean_repeat', 'lifted_plate_approach_goal_failed'): 14, ('gaussian_recovery', 'no_lift_proxy'): 136, ('gaussian_recovery', 'lifted_no_plate_approach'): 28, ('gaussian_recovery', 'lifted_plate_approach_goal_failed'): 12, ('gaussian_same_total_cost', 'no_lift_proxy'): 124, ('gaussian_same_total_cost', 'lifted_no_plate_approach'): 32, ('gaussian_same_total_cost', 'lifted_plate_approach_goal_failed'): 22, ('scana_r', 'no_lift_proxy'): 119, ('scana_r', 'lifted_no_plate_approach'): 32, ('scana_r', 'lifted_plate_approach_goal_failed'): 15}",
+    "0.05": "{('clean_repeat', 'no_lift_proxy'): 113, ('clean_repeat', 'lifted_no_plate_approach'): 15, ('clean_repeat', 'lifted_plate_approach_goal_failed'): 14, ('gaussian_recovery', 'no_lift_proxy'): 149, ('gaussian_recovery', 'lifted_no_plate_approach'): 16, ('gaussian_recovery', 'lifted_plate_approach_goal_failed'): 11, ('gaussian_same_total_cost', 'no_lift_proxy'): 136, ('gaussian_same_total_cost', 'lifted_no_plate_approach'): 21, ('gaussian_same_total_cost', 'lifted_plate_approach_goal_failed'): 21, ('scana_r', 'no_lift_proxy'): 134, ('scana_r', 'lifted_no_plate_approach'): 18, ('scana_r', 'lifted_plate_approach_goal_failed'): 14}"
+  },
+  "scope": "Spatial ten tasks, custom from-scratch multitask policy; no CALVIN/SimplerEnv or foundation VLA."
+}
